@@ -1,0 +1,7 @@
+"0","library(ggplot2)"
+"0","library(reshape2)"
+"0","library(readxl)"
+"0","cooling <- read_excel(""~/College Work/Chemistry/104/Labs/Lab 2/Data"")"
+"2","Warning: cannot open file 'C:/Users/coyne/OneDrive/Documents/College Work/Chemistry/104/Labs/Lab 2/Data': Permission denied"
+"2","Error in file(con, ""rb"") : cannot open the connection
+"

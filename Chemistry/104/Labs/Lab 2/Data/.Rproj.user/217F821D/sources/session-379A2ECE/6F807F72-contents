@@ -1,0 +1,4 @@
+my.knit = knitr::knit("Lab2.Rnw")
+
+system(paste0("pdflatex", "Lab_2.tex"))
+system(paste0("pdflatex", "Lab_2.tex"))

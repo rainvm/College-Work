@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="091D552F-A46F-496A-B8B8-E0536558E133">
+            <Title>Notes</Title>
+        </Document>
+        <Document ID="0A49AFF2-BB49-46AF-89BD-77935EBDD825">
+            <Title>Ideas</Title>
+        </Document>
+        <Document ID="1575EE1A-683C-485F-B825-96675DC3BA15">
+            <Title>Future</Title>
+            <Text>	I’ve known since I was a child that I would like to do some type of a research as a career, but tutoring for these last few months has helped me realize that I would enjoy teaching as well. When I decided to go back to school I planned on eventually getting a PhD in physics and my experience with tutoring has solidified that goal. I plan on getting a PhD in physics or math and becoming a professor of the subject.</Text>
+        </Document>
+        <Document ID="39D9C368-60EA-4708-8642-5941215A40FF">
+            <Title>Main Content</Title>
+        </Document>
+        <Document ID="56957253-B604-4F96-A6CF-754A7F6D0865">
+            <Title>About</Title>
+            <Text>MLA PAPER TEMPLATE
+About This Template
+This template is designed to produce an essay that adheres to the MLA (Modern Language Association of America) format, following the 8th edition guidelines. However, you should check the exact guidelines of the institution to which you are submitting your paper, as there can be slight variations in expectations (such as whether the first page has a header or not, or whether citations should use italics or underlines). See “Adjusting This Template” (below) for information on how to tweak your project to meet your requirements.
+How To Use This Template
+Edit the “Title” document so that it contains the title of your essay, your instructor’s name and so on.
+
+Compose your essay in text documents inside the “Main Content” folder. Whether you use a single document or multiple text files to write your essay is entirely up to you - just make sure they are all inside the “Main Content” folder.
+
+Indent block quotes or other special passages using styles. For instance, to add a block quote, choose “Block Quote” from the Format &gt; Style menu (or from the styles button in the format bar). The required MLA formatting will be applied to block quotes during Compile.
+
+For specially-formatted passages you can also use the exact formatting you require and enclose them in a “Preserve Formatting” block. This tells Scrivener not to override or change the formatting for such passages during Compile. To do so, select the passage and go to Format &gt; Preserve Formatting. All other text (excepting text with styles applied) will have the default MLA indentation assigned during the compilation process.
+
+This template includes a “Notes” document which will be used to hold any footnotes you have created in the main body of the text. If you have not created any footnotes, you should either delete this document or deselect its “Include in Compile” setting in the inspector or the compile window.
+
+Edit the “Works Cited” file so that it contains your own bibliography, being careful to adhere to MLA formatting. (Please note that the sample text in the “Works Cited” file is provided only as a rough example and not as an exemplar. Do not use it as the basis for your own references—instead, refer to the MLA formatting guidelines online or as provided by your institution.)
+Tables and Figures
+If you need to use tables or figures in your essay, you can label them using the following tags, replacing “KEYWORD” with a unique word that identifies your table or figure.
+
+!fig(KEYWORD)
+!table(KEYWORD)
+
+These tags will be replaced with numbers in the compiled document, with the numbering stream for figures being separate from the numbering stream for tables.
+
+You can refer to such tags as follows:
+
+#fig(KEYWORD)
+#table(KEYWORD)
+
+Here’s an example:
+
+Table !table(sales): Sales 2011
+Table !table(dates): Shipment dates
+Figure !fig(skeleton): The skeleton of the gnu.
+Figure !fig(malcolmreynolds): The second coolest character in Firefly.
+
+… (For sales figures, see table #table(sales))… For shipment dates, see table #table(dates)… where he discovered the skeleton of a gnarled gnu (see figure #fig(skeleton))… Chronicles providing a similar role, albeit without the Castle actor (see figure #fig(malcolmreynolds)).
+
+In the compiled document, the above text would look like this:
+
+Table 1: Sales 2011
+Table 2: Shipment dates
+Figure 1: The skeleton of the gnu.
+Figure 2: The second coolest character in Firefly.
+
+… (For sales figures, see table 1)… For shipment dates, see table 2… where he discovered the skeleton of a gnarled gnu (see figure 1)… Chronicles providing a similar role, albeit without the Castle actor (see figure 2).
+Compiling
+Go to File &gt; Compile…
+Ensure “MLA Format” is selected in the “Formats” sidebar.
+The first time you compile your paper:
+Click on the tag icon in the the rightmost header bar of the compile window to open the metadata tab.
+Fill in the title, abbreviated title and author information. The title will be used on the title page, and the surname will be used in page headers.
+Click on “Compile” when everything is set up as you want.
+Adjusting This Template
+Start header on second page: If you require the header to be omitted from the first page and only start on the second:
+In the compile window, double-click on “MLA Format” in the left sidebar to edit the format in the the compile format designer.
+Click on “Page Settings” in the sidebar.
+Tick “Different header and footer on first pages”.
+Click the “Save” button.
+Font: Compile is set to use Times New Roman by default. If you require a different font, set the “Font” at the top of the “Section Layouts” in the centre area of the compile window.
+Sample Document
+The “Example Essay” PDF file in the Research folder shows how the essay will look when compiled.
+Final Note
+Scrivener project templates are flexible and are not intended to restrict you to a particular workflow. You can change, delete or move the files and folders contained in the template to suit how you work.
+
+Like all templates in Scrivener, this project was originally created from the “Blank” template. Everything you can do with this project, you could equally do by creating a “Blank” project and setting it up yourself.
+
+You can create your own templates by setting up a skeletal project with the files, folders and settings you would like to use for new projects and using File &gt; Save As Template…</Text>
+        </Document>
+        <Document ID="64FBE296-135E-47C6-B6B7-F5F240B419EC">
+            <Title>Tech Support</Title>
+            <Text>The next few months were some of the worst of my life. I had nothing going on in my life and wasn’t looking for a job. Eventually my family pestered me about it enough that I started applying places and I put my resumé up on job sites. After about a month of applying to places sporadically, I hadn’t even had an interview, but my luck was about to turn around. I got an email about a job opportunity from a recruiter who had seen my resumé on Indeed. His email didn’t have any specifics except that he recruits for the IT and software development fields but I was interested in software development and I was willing to try anything.
+I started working at a company that makes software for non-profits as a temp, but would probably become a full employee after six months. I was doing phone, chat, and email tech support for a web application that private K-12 schools use to manage their website, classes, schedule, students and many other such things. The job was good at first. I liked many of the people I worked with and our clients. I also but my own desk for the first time, but most importantly, I was really good at the job. However, It was a while before I really know how good I was.
+In a meeting about a year after I started working at this company, my latest supervisor brought up that I seemed to be extra stressed. He assumed it was because of the job and suggested that I try to take it slower, essentially get less work done, which was surprising. It wasn’t something I had ever expected to hear from a manager. It began to make sense when he showed me that statistics. I was handling twice as many issues every day as any of my coworkers. He was right that I was stressed, or maybe frustrated is a better word for it. I liked many aspects of the job, but I had started finding things I disliked as well. 
+Many of our clients were great to work with, they knew what they were doing or were willing to learn, but some either struggled to follow step by step instructions or did not want to learn to use this software. I understood to some extent; they were usually people that had been working at the school for years and suddenly had to use this new piece of technology that they maybe felt shouldn’t be part of their job. However, they still made my job a lot harder and frustration with that began to build up. I also began to realize that working in a corporate environment was not fulfilling to me. I felt like my job was almost pointless, because what I was accomplishing didn’t feel like it mattered, and many of the jobs I could see myself doing if I stayed were the same. I realized I was much more interested in working in academia and decided to go back to school.</Text>
+            <Comments>Separate for clarity</Comments>
+        </Document>
+        <Document ID="771649AE-80DF-4EEC-B3AC-9CF250030D2B">
+            <Title>Example Essay</Title>
+            <Text>                                                                                                         Tewdent 1
+
+Sarah Tewdent
+Professor Rosewater
+Philosophy of Whales 101
+February 28, 2021
+
+                                   String Theory, Time and Tralfamadore
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod porta tortor,
+non pretium justo tristique id. Nunc dignissim, metus at fringilla congue, diam sapien aliquet
+quam, sed eleifend nunc odio quis mi. In blandit nec dolor ullamcorper cursus. Maecenas in
+lorem sit amet lorem tempor tincidunt sit amet non ligula.
+         This is a block quote consisting of a single paragraph. Phasellus rutrum ex quis sagittis
+         condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+         inceptos himenaeos. Ut hendrerit ante et vehicula vulputate.
+         Nulla venenatis pretium nisl, quis ullamcorper mi condimentum a. Nam ultrices elit arcu,
+tincidunt aliquet risus tempor et. Morbi ac rutrum urna. Pellentesque commodo mi vel congue
+scelerisque. Fusce a lorem sed urna dignissim pulvinar non in magna.1
+         Mauris blandit in nisl vitae scelerisque. Vestibulum sagittis felis et mauris euismod
+posuere. Curabitur in tellus sit amet lorem ornare pharetra. Vestibulum vel magna placerat,
+fermentum elit id, hendrerit libero.2 Etiam mattis consectetur egestas.
+         Etiam nec nunc ornare, blandit ex sit amet, feugiat ligula. Pellentesque bibendum placerat
+risus a semper. Pellentesque consequat faucibus pellentesque. Nullam in aliquet est. Ut imperdiet
+augue sed mauris molestie ultrices. Aliquam eros tellus, venenatis sit amet arcu et, placerat
+lacinia ex.
+         Nam euismod pharetra faucibus. Praesent scelerisque fermentum tortor, bibendum ornare
+
+
+                                                                                                         Tewdent 2
+
+turpis posuere nec. Morbi feugiat quam non ornare bibendum.
+         This is a longer quotation, comprising more than one paragraph, so the first line of each
+         paragraph after the first is indented an additional .25&quot;. Donec sollicitudin odio id urna
+         semper, tempus maximus nibh sagittis. Cras lacinia orci ut vehicula molestie.
+             Nulla facilisi. Aenean sodales ut neque sed sodales. Nulla pellentesque tincidunt ante,
+         ut eleifend risus finibus eu. In quis luctus orci. Donec a lorem tristique, egestas dui nec,
+         interdum augue. Aliquam imperdiet vestibulum ultricies.
+             Suspendisse augue ante, tristique gravida dolor id, finibus volutpat nisl. Aenean
+         dapibus sollicitudin est. Duis aliquam lacus nec velit lobortis, vitae pulvinar diam
+         commodo.3
+         Suspendisse scelerisque purus nec nunc ornare rhoncus. Vivamus eu aliquet est.
+
+Maecenas cursus quis elit vel ornare. Fusce vitae nisi non purus pretium pellentesque nec
+imperdiet justo. Morbi dictum elementum felis non sollicitudin.
+
+         Ut in turpis varius, suscipit magna non, cursus mi. Suspendisse sem nunc, facilisis eu
+scelerisque at, tincidunt id nulla. Ut condimentum orci et erat venenatis varius. Vestibulum
+dapibus, mauris eu rhoncus elementum, ante purus ultrices est, id ultricies metus tellus vel tortor.
+
+         Curabitur in odio eu massa condimentum tincidunt. Pellentesque dapibus metus tellus,
+quis porta lectus feugiat in. In ac imperdiet elit. In risus est, rhoncus eget vehicula id, feugiat at
+ipsum. Morbi pulvinar dolor quis nisi tincidunt vulputate ut id felis. Maecenas sed nisi laoreet
+purus consectetur semper at eget nulla.4
+
+         Aliquam erat volutpat. Sed semper vel purus ac feugiat. Praesent arcu nulla, porttitor
+vitae leo id, convallis molestie sem. Proin molestie, tellus eget volutpat egestas, diam lorem
+dictum massa, lobortis egestas leo massa convallis enim. Praesent mollis vitae leo a sodales.
+
+
+                                                                                                         Tewdent 3
+
+Nullam mollis dolor quis nisi congue, at maximus enim tempor. Vestibulum ut leo ac dui ornare
+malesuada.
+
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec condimentum quam.
+Fusce mi massa, mollis vitae lacinia ac, faucibus sed ipsum. Suspendisse purus mi, varius a eros
+in, hendrerit tristique nisl. Proin sapien nulla, porta vitae ex in, congue cursus metus. Curabitur
+neque nulla, posuere vel porttitor a, ullamcorper et felis. Integer ultrices et odio quis hendrerit.
+Phasellus et dui pretium, cursus quam at, luctus nunc. Pellentesque lectus urna, facilisis aliquet
+tincidunt id, ultricies consectetur lacus. Proin ac libero sit amet turpis finibus condimentum
+placerat ut nulla. Donec quis ipsum nec est semper fermentum. In hac habitasse platea dictumst.
+Maecenas faucibus vitae nulla sit amet convallis.
+
+         Nam vulputate vulputate lorem, et egestas massa semper in. Nullam vehicula mauris eu
+lectus tristique, vitae tristique justo ultrices. Pellentesque sit amet dictum orci. Vivamus
+accumsan, enim ut suscipit vehicula, sem nulla commodo magna, sit amet placerat augue ante ac
+turpis. Morbi tristique et velit a imperdiet. Cras convallis tortor in tristique convallis. In sed
+convallis libero.
+
+
+                                                                                                         Tewdent 4
+
+                                                       Notes
+         1. This endnote was added to the text as an inspector footnote, but gets moved to the
+endnotes page during the compile process.
+         2. Inline footnotes will also become endnotes during the compile process.
+         3. Scrivener’s Compile settings handle the block quote indentation in the final document
+so long as you use the “Block Quote” style for your quotes.
+         4. Donec faucibus velit tortor, eget venenatis eros laoreet vel. Duis non lacus metus.
+Donec suscipit sodales velit nec lobortis.
+
+
+                                                                                                         Tewdent 5
+
+                                                   Works Cited
+Barron, W. R. J. Trawthe and Treason: The Sin of Gawain Reconsidered. Manchester UP, 1980.
+Brewer, Derek. “The Social Context of Medieval English Literature.” The New Pelican Guide to
+
+         English Literature: 1. Medieval Literature Part One: Chaucer and the Alliterative
+         Tradition, edited by Boris Ford. Penguin, 1995, pp. 15-40.
+Burrow, J. A. A Reading of Sir Gawain and the Green Knight. Routledge, 1965.
+Haines, Victor Yelverton. The Fortunate Fall of Sir Gawain: The Typology of Sir Gawain and the
+         Green Knight. UP of America, 1982.
+Jokinen, Annina, editor. “Sir Gawain and the Green Knight.” Luminarium: Anthology of English
+         Literature. 28 Jan. 2010, www.completewebaddress.com.
+Jones, Alfred. “Understanding Old English Poetry.” Time, 10 Oct. 2001, pp. 50-62.
+Kiteley, J. F. “The Knight Who Cared for His Life.” Critical Studies of Gawain and the Green
+         Knight. Edited by Donald R. Howard and Christian K. Zacher. U of Notre Dame P, 1968,
+         pp. 215-222.
+Pearsall, Derek. Old English and Middle English Poetry. Routledge, 1977.
+Shepherd, Geoffrey. “The Nature of Alliterative Poetry in Late Medieval England.” Proceedings
+         of the British Academy [New York] vol. 56, no. 1, Winter 1970, pp. 57-76. MLA
+         International Bibliography, www.mlaaddress/complete.
+Thurby, Andrew and Samuel Gray. Heroes of Middle English Alliterative Poetry. DK, 2001.
+</Text>
+        </Document>
+        <Document ID="7A021F85-240E-470F-A716-5DA8C1260825">
+            <Title>Body</Title>
+        </Document>
+        <Document ID="82D0584D-00F1-4A89-A2E7-297D2D65C27A">
+            <Title>Conclusion</Title>
+        </Document>
+        <Document ID="87A4BBB9-B177-4FA9-87D3-31624384A79E">
+            <Title>Thesis</Title>
+            <Text>In the summer of 2017 I was adrift. I had just graduated from high school and was working as a sales associate at Staples in Bedford, NH, but did not know what was next. I had always planned on going to college after high school but I was a poor student and didn’t even finish applying to schools. It was a long journey through jobs, unemployment, and mental health treatment after high school before I finally felt ready to go back to school at NHTI. </Text>
+            <Notes>Finish </Notes>
+        </Document>
+        <Document ID="8907950D-E430-42CD-B8DB-DF0B4E80FEA9">
+            <Title>School</Title>
+            <Synopsis>Struggles
+Love</Synopsis>
+            <Text>As a child I was considered very smart and was praised by my teachers who often went out of their way to give me extra enrichment, but as I got older I found it more and more difficult to succeed. In sixth grade I stopped turning in some homework assignments and in Eight grade I failed my first class. Things did not get better throughout high school and by my senior year I was late almost every day and had failed several classes in previous years. I managed to graduate only by the skin of my teeth. 
+I still loved learning, Math and Physics were my favorite, but I have interests in every field. I wanted to go to college but I knew it was not realistic and I would most likely continue to do poorly, so I didn’t apply. Instead I continued working in retail at Staples and I hated it. I found it menial, demeaning, and frankly, beneath me. I eventually had a breakdown before work and quit on the spot. </Text>
+        </Document>
+        <Document ID="94AF3FB9-33A1-4990-B12F-E4194B143CA5">
+            <Title>Note on MLA Guidelines</Title>
+            <Text>General Guidelines
+For full guidelines, you should of course refer to the MLA Handbook.
+Citations
+Some examples of how to cite sources in the body of the paper:
+
+When the author’s name is in the sentence:	Jeffrey Jones states that “good times they are a’coming” (89).
+
+When the author’s name is not in the sentence:	It has been stated that good times are coming (Jones 89).
+
+When more than one work by the same author are cited:	One assertion is that his back was “hairy” (Solo-Organa, That Hairy Thing 84) - so hirsute, in fact, that he was likened to “a walking carpet” (Solo-Organa, Second Fiddle to Chewbacca 189).
+
+Two or more authors:	The closed-universe theory has been called into question (Rifle and Hartley 346-69).
+
+No author listed:	The zoo was apparently enclosed in a large drape to emulate night (Tralfamadore in Focus 57).
+Works Cited Page
+All entries should be double-spaced and listed in alphabetical order by the author’s last name. If no author is given, base the order on the first word of the entry. All entries should have a hanging indent of half an inch (that is, the first line of each entry should be flush with the left margin, and subsequent lines should be indented by half an inch). Do not add an extra line between entries.
+Online Resources
+The following web resources may be helpful.
+
+General Formatting Guidelines
+MLA Style Introduction // Purdue Writing Lab
+Writing Help Online - MLA Format Summary of Rules
+Home - MLA Style Guide - Research Guides &amp; Tutorials at California State University Sacramento (libguides.com)
+
+Citation Guidelines
+Quick Guide to citing MLA 8th edition (csun.edu)</Text>
+        </Document>
+        <Document ID="CB62745A-94E6-4EA1-BA10-57D7F5F8524A">
+            <Title>Works Cited</Title>
+        </Document>
+        <Document ID="D3E77CE7-556E-491C-824C-4FDFFE9A5800">
+            <Title>Notes</Title>
+            <Text>&lt;$--ENDNOTES--&gt; All footnotes will get inserted here upon print, and this bubble will be removed automatically.</Text>
+        </Document>
+        <Document ID="D86DA694-DF58-4EA5-8EE0-C437460A91EA">
+            <Title>MLA Format Notes</Title>
+        </Document>
+        <Document ID="DA38BAFD-D34D-492D-9240-18CD8284FEFB">
+            <Title>Tutoring</Title>
+            <Text>After a few years of tech support I applied to NHTI and quit my job. Quitting was exciting and nerve wracking at the same time. It was a big risk. I wasn’t sure if I would do well in school this time and if I didn’t, I had just lost any progress I had made at that position. I also no longer had an income and while I had savings, and not many expenses because I still lived at home. The expenses that I did have would all have to come out of my savings. 
+After being accepted to NHTI, I spoke with Kerry Cook, the mathematics department head, about my schedule. During the conversation she asked if I would be interested in tutoring students in math for the school which sounded great to me. It was a job that I thought I would be good at and it would be able to easily work around my schedule so I agreed to do it. Now that I’ve been tutoring for a few months, I’ve found that I love it. It is similar to tech support in it’s format and goal, but I find it much more fulfilling and not frustrating at all. I also love math which also makes tutoring math enjoyable.</Text>
+        </Document>
+        <Document ID="F918ADBF-A745-4EFA-A26F-694017A4B348">
+            <Title>Title</Title>
+            <Text>&lt;$fullname&gt;
+Derek Castle
+English Composition
+&lt;$longdate&gt;
+&lt;$projecttitle&gt;</Text>
+            <Notes>The &lt;$PROJECTTITLE&gt; and &lt;$fullname&gt; tags get replaced with metadata information you can set when compiling. &lt;$longdate&gt; will be based on your Windows settings for the “long date” format.
+
+Feel free to edit the text of the title page as required.</Notes>
+        </Document>
+    </Documents>
+</SearchIndexes>

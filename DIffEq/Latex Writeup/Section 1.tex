@@ -1,0 +1,75 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{float}
+ 
+
+\begin{document}
+    \chapter{Introduction To Differential Equations}
+    \section{Definitions and Terminology}
+        \paragraph{}Ordinary differential equations, ODEs, have only one independent variable but may have one or more 
+        dependant variables. The equations 
+        \begin{center}
+            \(\frac{dy}{dx}+5y=e^x\), \, \(\frac{d^2y}{dx^2}-\frac{dy}{dx}+6y = 0\), and \(\frac{dx}{dt}+
+            \frac{dy}{dt} = 2x+y\)
+        \end{center}
+        are all examples of ordinary differential equations.\\
+        
+        Partial differential equations have more than one independent variable and therefore involve partial 
+        derivatives. The equations 
+        \begin{center}
+            \(\frac{\partial^2u}{\partial x^2}+\frac{\partial^2u}{\partial y^2} = 0\), and 
+            \(\frac{\partial^2u}{\partial y^2} = \frac{\partial^2u}{\partial t^2} - 2\frac{\partial u}{
+                \partial t}\)
+        \end{center}
+        are examples of partial differential equations. This text will only discuss ordinary DEs.\\
+        
+        The order of a differential equation is the order of the highest order derivative in the DE. For example, the 
+        equation
+        \begin{center}
+            \(5y''+y'-10xy=0\)
+        \end{center}
+        is a second order differential equation.\\
+
+        Linear ODEs are equations if the dependant variable(s) are linear. In other words the 
+        coefficients must only contain the dependant variable and/or constants and no functions such as 
+        sine or logarithms are applied to the dependant variable(s). Linear ODEs have the form 
+        \begin{center}
+            \(a_n(x)y^{(n)}+a_{n-1}(x)y^{(n-1)} + ... + a_1(x)y'+a_0(x)y-g(x) = 0\)
+        \end{center}
+        The equations 
+        \begin{center}
+            \(y''-3y=0\), \, \(x^3\frac{d^3y}{dx^3}+x\frac{dy}{dx}-5y=e^x\), and \((y-x)dx+4xdy=0\)
+        \end{center}
+        are examples of linear ODEs and the equations
+        \begin{center}
+            \((1-y)y'+2y=e^x\), \(\frac{d^2y}{dx^2}+\sin y = 0\), and \(\frac{d^4y}{dx^4}+y^2 = 0\)
+        \end{center}
+        are nonlinear ODEs.\\
+
+        The solution of a differential equation is a function \(\phi\) such that it reduces the ODE to an identity when 
+        substituted into the equation. In other words \(\phi\) has at least \(n\) derivatives for which
+        \begin{center}
+            \(F(x, \phi(x), \phi'(x),...,\phi^{(n)}(x)) = 0\).
+        \end{center}
+        The solution will often be denoted by \(y\) or \(y(x)\).\\
+
+        A relation \(G(x,y)=0\) is said to be an implicit solution of an ODE provided there is at least one function 
+        \(\phi\) that satisfies the relation as well as the differential equation.\\
+
+        If a differential equation has n solutions, \(y_1 , \, y_2, ..., \, y_n\), then we can say a general solution 
+        is \(y = c_1y_1 + c_2y_2 + ... + c_ny_n\) where \(c_1\) to \(c_n\) are constant coefficients. A solution to 
+        a differential equation that is free of unknown coefficients is called a particular solution. 
+    \section{Initial-Value Problems}
+        \paragraph{}Sometimes we want to find a solution \(y(x)\) that satisfies certain conditions, these are called 
+        initial-value problems. The conditions for an initial value problem are called initial conditions. 
+        For an initial value problem involving an ODE of order \(n\) there are \(n\) initial conditions
+        \begin{center}
+            \(y(x_0)=y_0,\, y'(x_0) = y_0, . . . ,\, y^{(n-1)}(x_0)=y_{n-1}\).
+        \end{center}
+        To find the particular solution(s) to an IVP we plug the given conditions into the general solution and 
+        it's applicable derivatives and then solve the system of equations to find the constant coefficients.
+\end{document}

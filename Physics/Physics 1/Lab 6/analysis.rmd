@@ -1,0 +1,30 @@
+---
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+```{r Load, include=FALSE}
+library(readr)
+library(dplyr)
+library(ggplot2)
+angles <- read_csv("angles.csv")
+pend  <- read_csv("pendulum.csv")
+zla <- read.csv("Zero Launch Angle.csv")
+```
+
+```{r Process, include=FALSE}
+a1 <- max(angles[["Angle5"]], na.rm=TRUE)
+```
+
+```{r Display, echo=FALSE, warning=FALSE}
+aplot <- ggplot(data=angles, aes(x=Time5, y=Angle5)) +
+  geom_point(color="blue")+
+  geom_line(size=1.2, color="blue")+
+  xlab("t (s)")+
+  ylab(expression(paste(theta, " (\u00B0)")))+
+  xlim(2.6, 3.3)+
+  geom_hline(aes(yintercept=a1), size=1.1, linetype="dashed", color="green4")+
+  geom_text(x=2.8, y=a1-2, label=a1, size=4.5)
+aplot
+```

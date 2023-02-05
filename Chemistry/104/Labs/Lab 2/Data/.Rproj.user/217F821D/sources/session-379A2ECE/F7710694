@@ -1,0 +1,33 @@
+{
+    "id": "F7710694",
+    "path": "~/College Work/Chemistry/104/Labs/Lab 2/Data/main.Rmd",
+    "project_path": "main.Rmd",
+    "type": "r_markdown",
+    "hash": "658606377",
+    "contents": "",
+    "dirty": true,
+    "created": 1657648949285.0,
+    "source_on_save": true,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled1",
+        "chunk_output_type": "inline",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "13,67",
+        "scrollLine": "1",
+        "docOutlineVisible": "0",
+        "rmdVisualMode": "true",
+        "rmdVisualCollapsedChunks": "1",
+        "rmdVisualModeLocation": "310:0",
+        "rmdVisualWrapConfigured": "true"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1657655244,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1657656281119,
+    "read_only": false,
+    "read_only_alternatives": []
+}

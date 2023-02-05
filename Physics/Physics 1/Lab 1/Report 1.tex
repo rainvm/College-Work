@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage[letterpaper, total={7.5in, 8in}]{geometry}
+
+\allowdisplaybreaks
+
+\begin{document}
+    \title{The Density of Wood and an Unknown Metal}
+    \author{Ryan Coyne}
+    \maketitle
+    \section{Abstract}
+        The density of a block of wood and a cylinder made from an unknown metal were determined
+        from measurements of the dimensions and the mass. The dimensions of the wood block were
+        measured using a ruler and the dimensions of the metal cylinder were measured using vernier
+        calipers. The density of the wood was measured to be \(0.6129 \pm 0.0071\) \( \text{g}/\text{\text{cm}}^3\) and the
+        density of the metal cylinder was measured to be \(2.7344 \pm 0.0278\) \(\text{g}/\text{\text{cm}}^3\).
+    \section{Introduction}
+        In this lab the density of two materials was calculated from the Mass of an object and certain
+        lengths of that object. Density is the mass per unit volume of a material and is commonly
+        expressed in units of kilograms per cubic meter or grams per cubic centimeter. 
+    \section{Procedure}
+        The length, width, and height of a rectangular prism made of wood were measured using a ruler
+        with markings at each millimeter. The height and diameter of a cylinder made of an unknown
+        metal were measured using vernier calipers with markings at each millimeter. The mass of 
+        both objects was measured using a triple beam balance. The beam with the largest weight has 
+        notches indicating hundreds of grams, the beam with the middle weight has notches 
+        indicating tens of grams, and the beam with the smallest weight has markings indicating 
+        tenths of grams.
+    \section{Data}
+        \begin{center}
+            \begin{tabular} {>{\centering\arraybackslash}p{0.07\textwidth}|>{\centering\arraybackslash}p{0.1\textwidth}>{\centering\arraybackslash}p{0.1\textwidth}>{\centering\arraybackslash}p{0.1\textwidth}>{\centering\arraybackslash}p{0.1\textwidth}>{\centering\arraybackslash}p{0.1\textwidth}|}
+                \multicolumn{5}{c}{Table 1. Wooden Block}\\ 
+                Trial & $M(\text{g})$ & $L(\text{cm})$ & $W(\text{cm})$ & $H(\text{cm})$\\ 
+                \hline
+                1 & 73.72 & 6.19 & 6.02 & 3.25\\
+                2 & 73.85 & 6.21 & 6.01 & 3.27\\
+                3 & 73.80 & 6.22 & 5.99 & 3.21\\
+                4 & 73.73 & 6.19 & 6.01 & 3.19\\
+                \hline
+                $\overline{x}$ & 73.775 & 6.203 & 6.008 & 3.230\\
+                \(\sigma\) & 0.061 & 0.015 & 0.013 & 0.037\\
+            \end{tabular}\\[12pt]
+
+            \begin{tabular}{>{\centering\arraybackslash}p{0.05\textwidth}|>{\centering\arraybackslash}p{0.17\textwidth}>{\centering\arraybackslash}p{0.17\textwidth}>{\centering\arraybackslash}p{0.17\textwidth}}
+                \multicolumn{4}{c}{Table 2. Metal Cylinder}\\
+                Trial & $M(\text{g})$ & $H(\text{cm})$ & $D(\text{cm})$\\
+                \hline
+                1 & 65.81 & 5.01 & 2.47\\
+                2 & 65.83 & 5.01 & 2.49\\
+                3 & 65.85 & 5.01 & 2.46\\
+                4 & 65.88 & 5.02 & 2.47\\
+                \hline
+                $\overline{x}$ & 65.843 & 5.0150 & 2.473\\
+                $\sigma$ & 0.030 & 0.0058 & 0.013
+            \end{tabular}\\[12pt]
+            \begin{tabular}{c|c c c}
+                \multicolumn{3}{c}{Table 3. Results}\\
+                & Wood & Metal\\
+                \hline
+                $\rho$($\text{g}/\text{cm}^3$) & 0.6129 & 2.734\\
+                $\sigma_{\rho}$ & 0.0071 & 0.028\\
+            \end{tabular}\\[12pt]
+
+        \end{center}
+
+    \section{Calculations}
+    \begin{align*}
+        \overline{m}_w &= \frac{73.72\text{g}+73.85\text{g}+73.80\text{g}+73.73\text{g}}{4}\\
+        &=73.775\text{g}\\
+        \sigma_{mw}^2 &= \frac{(73.72\text{g}-73.775\text{g})^2+(73.85\text{g}-73.775\text{g})^2+(73.80\text{g}-73.775\text{g})^2+(73.73\text{g}-73.775\text{g})^2}{3}\\
+        &=\frac{(-0.055\text{g})^2+(0.075\text{g})^2+(0.025\text{g})^2+(-0.045\text{g})^2}{3}\\
+        &=\frac{0.0113\text{g}^2}{3}\\
+        &=0.00376667\text{g}^2\\
+        \sigma_{mw} &= \sqrt{0.00376667\text{g}^2}\\
+        &=0.061\text{\text{g}}\\
+        \frac{\sigma_{mw}}{\overline{m}_w} & = \frac{73.775\text{\text{g}}}{0.061\text{\text{g}}}\\
+        &=0.083\%\\
+        \rho_w &= \frac{73.775 \text{g}}{(6.203\text{cm})(6.008\text{cm})(3.230\text{cm})}\\
+        &= 0.6129 \text{g}/\text{\text{cm}}^3\\
+        \rho_{wM} &= \frac{73.775 \text{g}+0.061\text{g}}{(6.203\text{cm})(6.008\text{cm})(3.230\text{cm})}\\
+        &= 0.6134\text{g}/\text{\text{cm}}^3\\
+        \rho_{wL} &= \frac{73.775 \text{g}}{(6.203\text{cm}+0.015\text{cm})(6.008\text{cm})(3.230\text{cm})}\\
+        &= 0.6115\text{g}/\text{\text{cm}}^3\\
+        \rho_{wW} &= \frac{73.775\text{g}}{(6.203\text{cm})(6.008\text{cm}+0.013\text{cm})(3.230\text{cm})}\\
+        &= 0.6117\text{g}/\text{\text{cm}}^3\\
+        \rho_{wH} &= \frac{73.775\text{g}}{(6.203\text{cm})(6.008\text{cm})(3.230\text{cm}+0.037\text{cm})}\\
+        &= 0.6061\text{g}/\text{\text{cm}}^3\\
+        \sigma_{\rho w}^2 &= (0.6115\text{g}/\text{\text{cm}}^3-0.6129\text{g}/\text{\text{cm}}^3)^2 + (0.6117\text{g}/\text{\text{cm}}^3-0.6129\text{g}/\text{\text{cm}}^3)^2 + (0.6061\text{g}/\text{\text{cm}}^3-0.6129\text{g}/\text{\text{cm}}^3)^2\\
+        &= 0.000051\text{g}^2/\text{\text{cm}}^6\\
+        \sigma_{\rho w} & = \sqrt{0.000051}\\
+        &= 0.0071\text{g}/\text{\text{cm}}^3\\
+        \rho_{m} &= \frac{65.843\text{g}}{\pi 5.0150\text{cm} (\frac{2.473\text{cm}}{2})^2}\\
+        &= 2.734\text{g}/\text{\text{cm}}^3\\
+        \sigma_{\rho m }^2 &= (2.731\text{g}/\text{\text{cm}}^3-2.734\text{g}/\text{\text{cm}}^3)^2 + (2.706\text{g}/\text{\text{cm}}^3-2.734\text{g}/\text{\text{cm}}^3)^2\\
+        &= 0.000773\text{g}^2/\text{\text{cm}}^6\\
+        \sigma_{\rho m } & = \sqrt{0.000773\text{g}^2/\text{\text{cm}}^6}\\
+        &= 0.028\text{g}/\text{\text{cm}}^3
+    \end{align*}
+
+    \section{Conclusion}
+        Overall this experiment succeeded in determining the density of these two materials. The 
+        published density of aluminum is within two standard deviations of the measured density 
+        of the cylinder in this experiment. The measured density of the wood block is well within 
+        the range of published values for types of 
+        wood, but there is such a wide range of densities for wood and the densities of many species 
+        of wood overlap so it is not possible to say what species of wood was measured without 
+        further investigation. Random error arose in this experiment from limitations in the precision 
+        of the instruments used for measurement. These results could be improved with more precise 
+        measurement instruments.
+\end{document}

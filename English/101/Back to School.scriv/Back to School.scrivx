@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrivenerProject Template="No" Version="2.0" Identifier="0E371A2C-5DA1-4763-A928-6E0B46504F77" Creator="SCRWIN-3.1.1.0" Device="RyansLaptop" Author="Ryan Coyne" Modified="2022-04-06 19:54:07 -0400" ModID="B4DC41D2-A592-4003-A0A8-6BC4B1025DB9">
+    <Binder>
+        <BinderItem UUID="56957253-B604-4F96-A6CF-754A7F6D0865" Type="Text" Created="2018-06-12 14:38:14 -0400" Modified="2022-03-30 18:47:00 -0400">
+            <Title>About</Title>
+            <MetaData>
+                <IconFileName>Information.tiff</IconFileName>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>848,0</TextSelection>
+            </TextSettings>
+        </BinderItem>
+        <BinderItem UUID="8BE709E3-2AD3-40C0-9C14-7343F754AD57" Type="DraftFolder" Created="2018-06-12 14:38:14 -0400" Modified="2022-03-30 18:20:23 -0400">
+            <Title>Draft</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <CorkboardAndOutliner>
+                <OutlinerExpandedState>
+                    <ItemID>39D9C368-60EA-4708-8642-5941215A40FF</ItemID>
+                </OutlinerExpandedState>
+                <CorkboardSettings>
+                    <Arrangement>Linear</Arrangement>
+                </CorkboardSettings>
+            </CorkboardAndOutliner>
+            <Children>
+                <BinderItem UUID="F918ADBF-A745-4EFA-A26F-694017A4B348" Type="Text" Created="2018-06-12 14:38:14 -0400" Modified="2022-04-06 19:52:09 -0400">
+                    <Title>Title</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <SectionType>6F9C3951-FDDC-438E-901E-0AA887F9D4C4</SectionType>
+                        <NotesTextSelection>186,0</NotesTextSelection>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>65,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="39D9C368-60EA-4708-8642-5941215A40FF" Type="Folder" Created="2018-06-12 14:38:14 -0400" Modified="2022-03-30 19:35:05 -0400">
+                    <Title>Main Content</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                        <IconFileName>Notes (White Notepad).tiff</IconFileName>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="87A4BBB9-B177-4FA9-87D3-31624384A79E" Type="Text" Created="2022-03-30 17:20:37 -0400" Modified="2022-04-05 19:29:17 -0400">
+                            <Title>Thesis</Title>
+                            <MetaData>
+                                <StatusID>1</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <NotesTextSelection>7,0</NotesTextSelection>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>264,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="8907950D-E430-42CD-B8DB-DF0B4E80FEA9" Type="Text" Created="2022-03-30 17:21:37 -0400" Modified="2022-04-06 16:34:54 -0400">
+                            <Title>School</Title>
+                            <MetaData>
+                                <StatusID>1</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>562,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="64FBE296-135E-47C6-B6B7-F5F240B419EC" Type="Text" Created="2022-03-30 17:20:55 -0400" Modified="2022-04-06 16:34:54 -0400">
+                            <Title>Tech Support</Title>
+                            <MetaData>
+                                <StatusID>1</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>981,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="DA38BAFD-D34D-492D-9240-18CD8284FEFB" Type="Text" Created="2022-03-30 17:21:58 -0400" Modified="2022-04-06 16:34:54 -0400">
+                            <Title>Tutoring</Title>
+                            <MetaData>
+                                <StatusID>1</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>454,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                        <BinderItem UUID="1575EE1A-683C-485F-B825-96675DC3BA15" Type="Text" Created="2022-03-30 17:22:02 -0400" Modified="2022-04-06 16:34:54 -0400">
+                            <Title>Future</Title>
+                            <MetaData>
+                                <StatusID>1</StatusID>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>417,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+                <BinderItem UUID="D3E77CE7-556E-491C-824C-4FDFFE9A5800" Type="Text" Created="2018-06-12 14:38:14 -0400" Modified="2022-03-30 19:34:59 -0400">
+                    <Title>Notes</Title>
+                    <MetaData>
+                        <SectionType>847EAE8D-9A8B-4566-B8EF-FF237754FACA</SectionType>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>22,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="CB62745A-94E6-4EA1-BA10-57D7F5F8524A" Type="Text" Created="2018-06-12 14:38:14 -0400" Modified="2022-04-06 18:18:34 -0400">
+                    <Title>Works Cited</Title>
+                    <MetaData>
+                        <SectionType>8F214CE3-4595-4357-BEF7-576EDC1B07E9</SectionType>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem UUID="B1E2914A-143E-4E46-8580-9D6D61F05862" Type="ResearchFolder" Created="2018-06-12 14:38:14 -0400" Modified="2022-03-28 16:34:42 -0400">
+            <Title>Research</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem UUID="D86DA694-DF58-4EA5-8EE0-C437460A91EA" Type="Folder" Created="2018-06-12 14:38:14 -0400" Modified="2018-06-12 14:38:14 -0400">
+                    <Title>MLA Format Notes</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                    <Children>
+                        <BinderItem UUID="771649AE-80DF-4EEC-B3AC-9CF250030D2B" Type="PDF" Created="2021-02-28 22:00:56 -0400" Modified="2022-03-28 16:34:42 -0400">
+                            <Title>Example Essay</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                                <FileExtension>pdf</FileExtension>
+                            </MetaData>
+                            <MediaSettings>
+                                <CurrentPDFPage>1</CurrentPDFPage>
+                            </MediaSettings>
+                        </BinderItem>
+                        <BinderItem UUID="94AF3FB9-33A1-4990-B12F-E4194B143CA5" Type="Text" Created="2018-06-12 14:38:14 -0400" Modified="2022-03-28 16:34:42 -0400">
+                            <Title>Note on MLA Guidelines</Title>
+                            <MetaData>
+                                <IncludeInCompile>Yes</IncludeInCompile>
+                            </MetaData>
+                            <TextSettings>
+                                <TextSelection>0,0</TextSelection>
+                            </TextSettings>
+                        </BinderItem>
+                    </Children>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+        <BinderItem UUID="091D552F-A46F-496A-B8B8-E0536558E133" Type="Folder" Created="2018-06-12 14:38:14 -0400" Modified="2021-02-28 21:22:24 -0400">
+            <Title>Notes</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+                <IconFileName>Notes (Blue Notepad).tiff</IconFileName>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>0,0</TextSelection>
+            </TextSettings>
+        </BinderItem>
+        <BinderItem UUID="0A49AFF2-BB49-46AF-89BD-77935EBDD825" Type="Folder" Created="2018-06-12 14:38:14 -0400" Modified="2021-02-28 21:22:24 -0400">
+            <Title>Ideas</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+                <IconFileName>Light Bulb.tiff</IconFileName>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>0,0</TextSelection>
+            </TextSettings>
+        </BinderItem>
+        <BinderItem UUID="2B6C581B-40F0-4759-B7C1-FA495A6CFECD" Type="TrashFolder" Created="2018-06-12 14:38:14 -0400" Modified="2022-03-28 16:34:42 -0400">
+            <Title>Trash</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <Children>
+                <BinderItem UUID="7A021F85-240E-470F-A716-5DA8C1260825" Type="Folder" Created="2018-06-12 14:38:14 -0400" Modified="2022-03-30 18:47:00 -0400">
+                    <Title>Body</Title>
+                    <MetaData>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+                <BinderItem UUID="82D0584D-00F1-4A89-A2E7-297D2D65C27A" Type="Text" Created="2022-03-30 17:23:01 -0400" Modified="2022-04-06 16:34:54 -0400">
+                    <Title>Conclusion</Title>
+                    <MetaData>
+                        <StatusID>0</StatusID>
+                        <IncludeInCompile>Yes</IncludeInCompile>
+                    </MetaData>
+                    <TextSettings>
+                        <TextSelection>0,0</TextSelection>
+                    </TextSettings>
+                </BinderItem>
+            </Children>
+        </BinderItem>
+    </Binder>
+    <Collections>
+        <Collection Type="Binder" ID="4C2F914B-7D10-4841-A6C9-435502CC55BF" Color="0.941176 0.937255 0.956863">
+            <Title>Binder</Title>
+        </Collection>
+        <Collection Type="RecentSearch" ID="ED9F42CB-8CEB-4870-9E2B-055AE0543F3E" Color="0.901961 0.901961 0.980392">
+            <Title>Search Results</Title>
+            <SearchSettings Operator="Any" Type="All" Scope="All" CompileSetting="All" CaseSensitive="No" IgnoreDiacritics="No"></SearchSettings>
+        </Collection>
+    </Collections>
+    <SectionTypes>
+        <TypeDefinitions>
+            <Type ID="43405063-67CE-4371-9E7C-D0934F23EF8F">Group</Type>
+            <Type ID="4FDA8A90-343A-457C-B47A-E776E0DE0CB7">Text Section</Type>
+            <Type ID="6F9C3951-FDDC-438E-901E-0AA887F9D4C4">Title</Type>
+            <Type ID="847EAE8D-9A8B-4566-B8EF-FF237754FACA">Endnotes</Type>
+            <Type ID="8F214CE3-4595-4357-BEF7-576EDC1B07E9">Works Cited</Type>
+        </TypeDefinitions>
+        <LevelTypes>
+            <Folders>
+                <Type>43405063-67CE-4371-9E7C-D0934F23EF8F</Type>
+            </Folders>
+            <Containers>
+                <Type>4FDA8A90-343A-457C-B47A-E776E0DE0CB7</Type>
+            </Containers>
+            <Files>
+                <Type>4FDA8A90-343A-457C-B47A-E776E0DE0CB7</Type>
+            </Files>
+        </LevelTypes>
+    </SectionTypes>
+    <LabelSettings>
+        <Title>Label</Title>
+        <DefaultLabelID>-1</DefaultLabelID>
+        <Labels>
+            <Label ID="-1">No Label</Label>
+            <Label ID="2" Color="0.993500 0.701213 0.732586">Red</Label>
+            <Label ID="3" Color="0.995422 0.790951 0.652384">Orange</Label>
+            <Label ID="4" Color="0.997726 0.892729 0.652567">Yellow</Label>
+            <Label ID="5" Color="0.715862 0.948714 0.697688">Green</Label>
+            <Label ID="6" Color="0.702312 0.888273 0.974258">Blue</Label>
+            <Label ID="7" Color="0.957565 0.766751 0.999619">Purple</Label>
+        </Labels>
+    </LabelSettings>
+    <StatusSettings>
+        <Title>Status</Title>
+        <DefaultStatusID>-1</DefaultStatusID>
+        <StatusItems>
+            <Status ID="-1">No Status</Status>
+            <Status ID="0">To Do</Status>
+            <Status ID="1">First Draft</Status>
+            <Status ID="2">Revised Draft</Status>
+            <Status ID="3">Final Draft</Status>
+            <Status ID="4">Done</Status>
+        </StatusItems>
+    </StatusSettings>
+    <ProjectTargets Notify="No">
+        <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="Yes" Deadline="2011-07-07 12:28:32 +0100" IgnoreDeadline="Yes">0</DraftTarget>
+        <SessionTarget Type="Words" CountDraftOnly="Yes" AllowNegatives="Yes" ResetType="Time" ResetTime="00:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="No" WritingDays="">0</SessionTarget>
+        <PreviousSession Words="0" Characters="0" Date="2022-04-06 19:54:07 -0400"/>
+    </ProjectTargets>
+    <BookmarksFolderUUID>091D552F-A46F-496A-B8B8-E0536558E133</BookmarksFolderUUID>
+    <RecentWritingHistory Date="2022-04-06 00:00:00 -0400">
+        <DraftWordCount>-6</DraftWordCount>
+        <DraftCharCount>-35</DraftCharCount>
+        <OtherWordCount>0</OtherWordCount>
+        <OtherCharCount>0</OtherCharCount>
+    </RecentWritingHistory>
+    <PrintSettings PaperSize="612.0,792.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="72.0" BottomMargin="72.0" PaperType="na-letter" Orientation="Portrait" HorizontalPagination="Clip" VerticalPagination="Auto" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" PagesAcross="1" PagesDown="1"/>
+</ScrivenerProject>

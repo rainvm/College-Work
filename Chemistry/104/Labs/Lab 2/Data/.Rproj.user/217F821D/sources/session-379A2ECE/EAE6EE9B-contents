@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+
+\allowdisplaybreaks
+
+\begin{document}
+    \title{Title}
+    \author{Ryan Coyne}
+    \maketitle
+    \section*{Introduction}
+
+    \section*{Theory Discussion}
+
+    \section*{Procedure}
+
+    \section*{Calculations}
+      <<coolingPlot, echo=FALSE>>=
+      library(ggplot2)
+      library(reshape2)
+      library(readxl)
+      cooling <- read_excel("Data\\cooling.xlsx")
+      cooling <- melt(cooling, id.vars = 'Time', variable.name = 'series')
+      ggplot(cooling, aes(Time, value))+
+        geom_line(aes(color = series), size = 1)+
+        geom_point(aes(shape = series), size = 2.3)+
+        xlab("Time (minutes)") + ylab("Temperature (\u00B0C)") +
+        labs(color = "Sample", shape = "Sample")
+      @
+    \section*{Conclusion}
+
+\end{document}

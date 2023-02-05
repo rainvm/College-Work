@@ -1,0 +1,79 @@
+\documentclass{article}
+
+\input{preamble/packages}
+\input{preamble/newcommands}
+\input{preamble/defs}
+\input{preamble/env}
+
+\title{your title here}
+\author{your name here}
+\date{\today}
+
+\setlength{\parindent}{0pt}
+
+
+\makeindex
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{include/1}
+
+\input{include/6}
+
+\input{include/5}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{include/7}
+
+\input{include/8}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{include/3}
+
+\input{include/9}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{include/4}
+
+
+\input{include/10}
+\input{include/2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\appendix
+
+\input{include/a}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \bibliography
+
+\newpage 
+
+\addcontentsline{toc}{section}{References}
+
+% \section{Bibliography}
+% \bibliographystyle{unsrt}
+% \bibliographystyle{apalike}
+\bibliographystyle{alpha}
+% \bibliographystyle{plain}
+\bibliography{include/biblio}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\addcontentsline{toc}{section}{Index}
+\printindex
+
+\end{document}

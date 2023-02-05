@@ -1,0 +1,26 @@
+"0","library(readr)"
+"0","library(dplyr)"
+"0","library(ggplot2)"
+"0","angles <- read_csv(""angles.csv"")"
+"1","[1mRows: [22m[34m620[39m [1mColumns: [22m[34m16[39m
+"
+"1","[36m--[39m [1mColumn specification[22m [36m-------------------------------------------------------------------------------------------------[39m
+[1mDelimiter:[22m "",""
+[32mdbl[39m (16): Time1, Angle1, Time (s) Run #2, Angle (°) Run #2, Time (s) Run #3, Angle (°) Run #3, Time (s) Run #4, Angle...
+"
+"1","
+[36mi[39m Use `spec()` to retrieve the full column specification for this data.
+[36mi[39m Specify the column types or set `show_col_types = FALSE` to quiet this message.
+"
+"0","pend  <- read_csv(""pendulum.csv"")"
+"1","[1mRows: [22m[34m4[39m [1mColumns: [22m[34m3[39m
+"
+"1","[36m--[39m [1mColumn specification[22m [36m-------------------------------------------------------------------------------------------------[39m
+[1mDelimiter:[22m "",""
+[32mdbl[39m (3): M (kg) Set, m (kg) Set, r (cm) Set
+"
+"1","
+[36mi[39m Use `spec()` to retrieve the full column specification for this data.
+[36mi[39m Specify the column types or set `show_col_types = FALSE` to quiet this message.
+"
+"0","zla <- read.csv(""Zero Launch Angle.csv"")"

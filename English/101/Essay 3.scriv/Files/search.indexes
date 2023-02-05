@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="091D552F-A46F-496A-B8B8-E0536558E133">
+            <Title>Notes</Title>
+        </Document>
+        <Document ID="0A49AFF2-BB49-46AF-89BD-77935EBDD825">
+            <Title>Ideas</Title>
+        </Document>
+        <Document ID="17C4A3BC-2022-46EA-B475-B39B3ACE5CE1">
+            <Title>Thesis</Title>
+            <Text>Across the United States, there has been increasing uproar by parents over what their children are being taught in schools. For example, there has been panic over sex education, critical race theory, and LGBT+ issues being taught in school. Parents have been protesting these things and others being taught in schools. They have shown up to school board meetings to state their case and have even been attempting to pass legislation such as Florida HB 1557, the Parental Rights in Education bill, also called the Don’t Say Gay bill by its opponents. This bill prevents sexual orientation and gender identity from being discussed in classrooms. Parents should not have this power to dictate what their children are taught.
+Many parents justify their imposition on their children’s education by saying that they know what is best for their child, but do they? Most parents aren’t experts in anything that their children are learning about in school, and many remember very little of their own grade school education. Some may be experts in one thing that their children are learning about, but that is not the case for most parents. In the case of most parents, they are no more equipped to determine what their children should learn than their children are.  Parents also use this statement to mean that they know what information, true or not, is suitable for their children to know because of how that information would affect their children. This is also false on its face. Parents may know their children personally, but most are not child psychologists or experts on education. 
+Allowing parents to dictate what their children learn also increases opportunities for abuse. The parents advocating for greater parental control of school curriculum may or may not be doing so with the intention of abusing their children, but the outcome is the same. Even when parents have the best intentions for their children, they still often act against their best interest. When children are restricted in what they are allowed to know, they are less likely to understand when what is being done to them is wrong. The restriction of information is also abusive in and of itself. When someone is prevented from learning something, they are robbed of the intellectual and emotional growth that can be gleaned from the restricted information and may cause children to grow up with a warped idea of reality.
+Young people should be given the tools to think for themselves, and parents invading the only space that many they have for freely exploring new ideas stifles their intellectual growth. When students aren’t challenged with different and potentially difficult ideas, they don’t learn the critical thinking skills that will help them succeed throughout life. Students may struggle with upsetting information that they learn later in life if they aren’t talked about in a safe school environment and aren’t taught to think critically about them. It is important for the ideas presented in school settings to be age-appropriate, but parents are not the best judges of this standard. They are too close to the issue and will often try to shelter their children from truths that the children should know about. 
+</Text>
+        </Document>
+        <Document ID="39D9C368-60EA-4708-8642-5941215A40FF">
+            <Title>Main Content</Title>
+        </Document>
+        <Document ID="498311B5-8950-42EC-8BED-5664B5DC0712">
+            <Title>Expertise</Title>
+        </Document>
+        <Document ID="56957253-B604-4F96-A6CF-754A7F6D0865">
+            <Title>About</Title>
+            <Text>MLA PAPER TEMPLATE
+About This Template
+This template is designed to produce an essay that adheres to the MLA (Modern Language Association of America) format, following the 8th edition guidelines. However, you should check the exact guidelines of the institution to which you are submitting your paper, as there can be slight variations in expectations (such as whether the first page has a header or not, or whether citations should use italics or underlines). See “Adjusting This Template” (below) for information on how to tweak your project to meet your requirements.
+How To Use This Template
+Edit the “Title” document so that it contains the title of your essay, your instructor’s name and so on.
+
+Compose your essay in text documents inside the “Main Content” folder. Whether you use a single document or multiple text files to write your essay is entirely up to you - just make sure they are all inside the “Main Content” folder.
+
+Indent block quotes or other special passages using styles. For instance, to add a block quote, choose “Block Quote” from the Format &gt; Style menu (or from the styles button in the format bar). The required MLA formatting will be applied to block quotes during Compile.
+
+For specially-formatted passages you can also use the exact formatting you require and enclose them in a “Preserve Formatting” block. This tells Scrivener not to override or change the formatting for such passages during Compile. To do so, select the passage and go to Format &gt; Preserve Formatting. All other text (excepting text with styles applied) will have the default MLA indentation assigned during the compilation process.
+
+This template includes a “Notes” document which will be used to hold any footnotes you have created in the main body of the text. If you have not created any footnotes, you should either delete this document or deselect its “Include in Compile” setting in the inspector or the compile window.
+
+Edit the “Works Cited” file so that it contains your own bibliography, being careful to adhere to MLA formatting. (Please note that the sample text in the “Works Cited” file is provided only as a rough example and not as an exemplar. Do not use it as the basis for your own references—instead, refer to the MLA formatting guidelines online or as provided by your institution.)
+Tables and Figures
+If you need to use tables or figures in your essay, you can label them using the following tags, replacing “KEYWORD” with a unique word that identifies your table or figure.
+
+!fig(KEYWORD)
+!table(KEYWORD)
+
+These tags will be replaced with numbers in the compiled document, with the numbering stream for figures being separate from the numbering stream for tables.
+
+You can refer to such tags as follows:
+
+#fig(KEYWORD)
+#table(KEYWORD)
+
+Here’s an example:
+
+Table !table(sales): Sales 2011
+Table !table(dates): Shipment dates
+Figure !fig(skeleton): The skeleton of the gnu.
+Figure !fig(malcolmreynolds): The second coolest character in Firefly.
+
+… (For sales figures, see table #table(sales))… For shipment dates, see table #table(dates)… where he discovered the skeleton of a gnarled gnu (see figure #fig(skeleton))… Chronicles providing a similar role, albeit without the Castle actor (see figure #fig(malcolmreynolds)).
+
+In the compiled document, the above text would look like this:
+
+Table 1: Sales 2011
+Table 2: Shipment dates
+Figure 1: The skeleton of the gnu.
+Figure 2: The second coolest character in Firefly.
+
+… (For sales figures, see table 1)… For shipment dates, see table 2… where he discovered the skeleton of a gnarled gnu (see figure 1)… Chronicles providing a similar role, albeit without the Castle actor (see figure 2).
+Compiling
+Go to File &gt; Compile…
+Ensure “MLA Format” is selected in the “Formats” sidebar.
+The first time you compile your paper:
+Click on the tag icon in the the rightmost header bar of the compile window to open the metadata tab.
+Fill in the title, abbreviated title and author information. The title will be used on the title page, and the surname will be used in page headers.
+Click on “Compile” when everything is set up as you want.
+Adjusting This Template
+Start header on second page: If you require the header to be omitted from the first page and only start on the second:
+In the compile window, double-click on “MLA Format” in the left sidebar to edit the format in the the compile format designer.
+Click on “Page Settings” in the sidebar.
+Tick “Different header and footer on first pages”.
+Click the “Save” button.
+Font: Compile is set to use Times New Roman by default. If you require a different font, set the “Font” at the top of the “Section Layouts” in the centre area of the compile window.
+Sample Document
+The “Example Essay” PDF file in the Research folder shows how the essay will look when compiled.
+Final Note
+Scrivener project templates are flexible and are not intended to restrict you to a particular workflow. You can change, delete or move the files and folders contained in the template to suit how you work.
+
+Like all templates in Scrivener, this project was originally created from the “Blank” template. Everything you can do with this project, you could equally do by creating a “Blank” project and setting it up yourself.
+
+You can create your own templates by setting up a skeletal project with the files, folders and settings you would like to use for new projects and using File &gt; Save As Template…</Text>
+        </Document>
+        <Document ID="771649AE-80DF-4EEC-B3AC-9CF250030D2B">
+            <Title>Example Essay</Title>
+            <Text>                                                                                                         Tewdent 1
+
+Sarah Tewdent
+Professor Rosewater
+Philosophy of Whales 101
+February 28, 2021
+
+                                   String Theory, Time and Tralfamadore
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod porta tortor,
+non pretium justo tristique id. Nunc dignissim, metus at fringilla congue, diam sapien aliquet
+quam, sed eleifend nunc odio quis mi. In blandit nec dolor ullamcorper cursus. Maecenas in
+lorem sit amet lorem tempor tincidunt sit amet non ligula.
+         This is a block quote consisting of a single paragraph. Phasellus rutrum ex quis sagittis
+         condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+         inceptos himenaeos. Ut hendrerit ante et vehicula vulputate.
+         Nulla venenatis pretium nisl, quis ullamcorper mi condimentum a. Nam ultrices elit arcu,
+tincidunt aliquet risus tempor et. Morbi ac rutrum urna. Pellentesque commodo mi vel congue
+scelerisque. Fusce a lorem sed urna dignissim pulvinar non in magna.1
+         Mauris blandit in nisl vitae scelerisque. Vestibulum sagittis felis et mauris euismod
+posuere. Curabitur in tellus sit amet lorem ornare pharetra. Vestibulum vel magna placerat,
+fermentum elit id, hendrerit libero.2 Etiam mattis consectetur egestas.
+         Etiam nec nunc ornare, blandit ex sit amet, feugiat ligula. Pellentesque bibendum placerat
+risus a semper. Pellentesque consequat faucibus pellentesque. Nullam in aliquet est. Ut imperdiet
+augue sed mauris molestie ultrices. Aliquam eros tellus, venenatis sit amet arcu et, placerat
+lacinia ex.
+         Nam euismod pharetra faucibus. Praesent scelerisque fermentum tortor, bibendum ornare
+
+
+                                                                                                         Tewdent 2
+
+turpis posuere nec. Morbi feugiat quam non ornare bibendum.
+         This is a longer quotation, comprising more than one paragraph, so the first line of each
+         paragraph after the first is indented an additional .25&quot;. Donec sollicitudin odio id urna
+         semper, tempus maximus nibh sagittis. Cras lacinia orci ut vehicula molestie.
+             Nulla facilisi. Aenean sodales ut neque sed sodales. Nulla pellentesque tincidunt ante,
+         ut eleifend risus finibus eu. In quis luctus orci. Donec a lorem tristique, egestas dui nec,
+         interdum augue. Aliquam imperdiet vestibulum ultricies.
+             Suspendisse augue ante, tristique gravida dolor id, finibus volutpat nisl. Aenean
+         dapibus sollicitudin est. Duis aliquam lacus nec velit lobortis, vitae pulvinar diam
+         commodo.3
+         Suspendisse scelerisque purus nec nunc ornare rhoncus. Vivamus eu aliquet est.
+
+Maecenas cursus quis elit vel ornare. Fusce vitae nisi non purus pretium pellentesque nec
+imperdiet justo. Morbi dictum elementum felis non sollicitudin.
+
+         Ut in turpis varius, suscipit magna non, cursus mi. Suspendisse sem nunc, facilisis eu
+scelerisque at, tincidunt id nulla. Ut condimentum orci et erat venenatis varius. Vestibulum
+dapibus, mauris eu rhoncus elementum, ante purus ultrices est, id ultricies metus tellus vel tortor.
+
+         Curabitur in odio eu massa condimentum tincidunt. Pellentesque dapibus metus tellus,
+quis porta lectus feugiat in. In ac imperdiet elit. In risus est, rhoncus eget vehicula id, feugiat at
+ipsum. Morbi pulvinar dolor quis nisi tincidunt vulputate ut id felis. Maecenas sed nisi laoreet
+purus consectetur semper at eget nulla.4
+
+         Aliquam erat volutpat. Sed semper vel purus ac feugiat. Praesent arcu nulla, porttitor
+vitae leo id, convallis molestie sem. Proin molestie, tellus eget volutpat egestas, diam lorem
+dictum massa, lobortis egestas leo massa convallis enim. Praesent mollis vitae leo a sodales.
+
+
+                                                                                                         Tewdent 3
+
+Nullam mollis dolor quis nisi congue, at maximus enim tempor. Vestibulum ut leo ac dui ornare
+malesuada.
+
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec condimentum quam.
+Fusce mi massa, mollis vitae lacinia ac, faucibus sed ipsum. Suspendisse purus mi, varius a eros
+in, hendrerit tristique nisl. Proin sapien nulla, porta vitae ex in, congue cursus metus. Curabitur
+neque nulla, posuere vel porttitor a, ullamcorper et felis. Integer ultrices et odio quis hendrerit.
+Phasellus et dui pretium, cursus quam at, luctus nunc. Pellentesque lectus urna, facilisis aliquet
+tincidunt id, ultricies consectetur lacus. Proin ac libero sit amet turpis finibus condimentum
+placerat ut nulla. Donec quis ipsum nec est semper fermentum. In hac habitasse platea dictumst.
+Maecenas faucibus vitae nulla sit amet convallis.
+
+         Nam vulputate vulputate lorem, et egestas massa semper in. Nullam vehicula mauris eu
+lectus tristique, vitae tristique justo ultrices. Pellentesque sit amet dictum orci. Vivamus
+accumsan, enim ut suscipit vehicula, sem nulla commodo magna, sit amet placerat augue ante ac
+turpis. Morbi tristique et velit a imperdiet. Cras convallis tortor in tristique convallis. In sed
+convallis libero.
+
+
+                                                                                                         Tewdent 4
+
+                                                       Notes
+         1. This endnote was added to the text as an inspector footnote, but gets moved to the
+endnotes page during the compile process.
+         2. Inline footnotes will also become endnotes during the compile process.
+         3. Scrivener’s Compile settings handle the block quote indentation in the final document
+so long as you use the “Block Quote” style for your quotes.
+         4. Donec faucibus velit tortor, eget venenatis eros laoreet vel. Duis non lacus metus.
+Donec suscipit sodales velit nec lobortis.
+
+
+                                                                                                         Tewdent 5
+
+                                                   Works Cited
+Barron, W. R. J. Trawthe and Treason: The Sin of Gawain Reconsidered. Manchester UP, 1980.
+Brewer, Derek. “The Social Context of Medieval English Literature.” The New Pelican Guide to
+
+         English Literature: 1. Medieval Literature Part One: Chaucer and the Alliterative
+         Tradition, edited by Boris Ford. Penguin, 1995, pp. 15-40.
+Burrow, J. A. A Reading of Sir Gawain and the Green Knight. Routledge, 1965.
+Haines, Victor Yelverton. The Fortunate Fall of Sir Gawain: The Typology of Sir Gawain and the
+         Green Knight. UP of America, 1982.
+Jokinen, Annina, editor. “Sir Gawain and the Green Knight.” Luminarium: Anthology of English
+         Literature. 28 Jan. 2010, www.completewebaddress.com.
+Jones, Alfred. “Understanding Old English Poetry.” Time, 10 Oct. 2001, pp. 50-62.
+Kiteley, J. F. “The Knight Who Cared for His Life.” Critical Studies of Gawain and the Green
+         Knight. Edited by Donald R. Howard and Christian K. Zacher. U of Notre Dame P, 1968,
+         pp. 215-222.
+Pearsall, Derek. Old English and Middle English Poetry. Routledge, 1977.
+Shepherd, Geoffrey. “The Nature of Alliterative Poetry in Late Medieval England.” Proceedings
+         of the British Academy [New York] vol. 56, no. 1, Winter 1970, pp. 57-76. MLA
+         International Bibliography, www.mlaaddress/complete.
+Thurby, Andrew and Samuel Gray. Heroes of Middle English Alliterative Poetry. DK, 2001.
+</Text>
+        </Document>
+        <Document ID="7A021F85-240E-470F-A716-5DA8C1260825">
+            <Title>Body</Title>
+        </Document>
+        <Document ID="94AF3FB9-33A1-4990-B12F-E4194B143CA5">
+            <Title>Note on MLA Guidelines</Title>
+            <Text>General Guidelines
+For full guidelines, you should of course refer to the MLA Handbook.
+Citations
+Some examples of how to cite sources in the body of the paper:
+
+When the author’s name is in the sentence:	Jeffrey Jones states that “good times they are a’coming” (89).
+
+When the author’s name is not in the sentence:	It has been stated that good times are coming (Jones 89).
+
+When more than one work by the same author are cited:	One assertion is that his back was “hairy” (Solo-Organa, That Hairy Thing 84) - so hirsute, in fact, that he was likened to “a walking carpet” (Solo-Organa, Second Fiddle to Chewbacca 189).
+
+Two or more authors:	The closed-universe theory has been called into question (Rifle and Hartley 346-69).
+
+No author listed:	The zoo was apparently enclosed in a large drape to emulate night (Tralfamadore in Focus 57).
+Works Cited Page
+All entries should be double-spaced and listed in alphabetical order by the author’s last name. If no author is given, base the order on the first word of the entry. All entries should have a hanging indent of half an inch (that is, the first line of each entry should be flush with the left margin, and subsequent lines should be indented by half an inch). Do not add an extra line between entries.
+Online Resources
+The following web resources may be helpful.
+
+General Formatting Guidelines
+MLA Style Introduction // Purdue Writing Lab
+Writing Help Online - MLA Format Summary of Rules
+Home - MLA Style Guide - Research Guides &amp; Tutorials at California State University Sacramento (libguides.com)
+
+Citation Guidelines
+Quick Guide to citing MLA 8th edition (csun.edu)</Text>
+        </Document>
+        <Document ID="CB62745A-94E6-4EA1-BA10-57D7F5F8524A">
+            <Title>Works Cited</Title>
+            <Text>NOTE: These references are provided only as a rough example. Before you replace them with your own references, be sure to check the MLA formatting guidelines either online or with your institution to ensure that you use the latest standards.
+Barron, W. R. J. Trawthe and Treason: The Sin of Gawain Reconsidered. Manchester UP, 1980. 
+Brewer, Derek. “The Social Context of Medieval English Literature.” The New Pelican Guide to English Literature: 1. Medieval Literature Part One: Chaucer and the Alliterative Tradition, edited by Boris Ford. Penguin, 1995, pp. 15-40. 
+Burrow, J. A. A Reading of Sir Gawain and the Green Knight. Routledge, 1965. 
+Haines, Victor Yelverton. The Fortunate Fall of Sir Gawain: The Typology of Sir Gawain and the Green Knight. UP of America, 1982. 
+Jokinen, Annina, editor. “Sir Gawain and the Green Knight.” Luminarium: Anthology of English Literature. 28 Jan. 2010, www.completewebaddress.com.
+Jones, Alfred. “Understanding Old English Poetry.” Time, 10 Oct. 2001, pp. 50-62. 
+Kiteley, J. F. “The Knight Who Cared for His Life.” Critical Studies of Gawain and the Green Knight. Edited by Donald R. Howard and Christian K. Zacher. U of Notre Dame P, 1968, pp. 215-222. 
+Pearsall, Derek. Old English and Middle English Poetry. Routledge, 1977.
+Shepherd, Geoffrey. “The Nature of Alliterative Poetry in Late Medieval England.” Proceedings of the British Academy [New York] vol. 56, no. 1, Winter 1970, pp.  57-76. MLA International Bibliography, www.mlaaddress/complete.
+Thurby, Andrew and Samuel Gray. Heroes of Middle English Alliterative Poetry. DK, 2001.</Text>
+        </Document>
+        <Document ID="D3E77CE7-556E-491C-824C-4FDFFE9A5800">
+            <Title>Notes</Title>
+            <Text>&lt;$--ENDNOTES--&gt; All footnotes will get inserted here upon print, and this bubble will be removed automatically.</Text>
+        </Document>
+        <Document ID="D86DA694-DF58-4EA5-8EE0-C437460A91EA">
+            <Title>MLA Format Notes</Title>
+        </Document>
+        <Document ID="F918ADBF-A745-4EFA-A26F-694017A4B348">
+            <Title>Title</Title>
+            <Text>&lt;$fullname&gt;
+Derek Castle
+English Composition
+&lt;$longdate&gt;
+&lt;$projecttitle&gt;</Text>
+            <Notes>The &lt;$PROJECTTITLE&gt; and &lt;$fullname&gt; tags get replaced with metadata information you can set when compiling. &lt;$longdate&gt; will be based on your Windows settings for the “long date” format.
+
+Feel free to edit the text of the title page as required.</Notes>
+        </Document>
+    </Documents>
+</SearchIndexes>

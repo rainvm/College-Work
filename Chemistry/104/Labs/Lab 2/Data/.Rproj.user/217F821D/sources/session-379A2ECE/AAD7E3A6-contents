@@ -1,0 +1,6 @@
+CREATE TABLE cooling (
+  Time int,
+  A float,
+  B float,
+  C float
+)

@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+
+\allowdisplaybreaks
+
+\begin{document}
+    \title{Acid--Base Titration}
+    \author{Ryan Coyne}
+    \maketitle
+    \section*{Introduction}
+        The purpose of this lab was to determine the concentration of an unknown solution of hydrochloric acid using titration with sodium hydroxide and to learn about how bases and acids neutralize each other. 
+    \section*{Theory Discussion}
+        An acid is a compound which donates a proton to a base which is a compound that accepts a proton. Water can act as both an acid and a base. When pure, water both donates and accepts protons creating hydronium ions. This is why pure water has pH of 7. pH can be calculated using the following equation:
+        \begin{equation*}
+            \text{pH} = -\log([\mathrm{H_3O^+}])
+        \end{equation*}
+        where \([\mathrm{H_3O^+}]\) is the concentration of hydronium ions in solution. Most bases produce OH\(^-\) ions in solution. The equivalent to pH for bases is pOH, which can be calculated using the equation:
+        \begin{equation*}
+            \text{pOH} = -\log(\mathrm{[OH^-]})
+        \end{equation*}
+        where \(\mathrm{[OH^-]}\) is the concentration of hydroxide ions in solution. pH and pOH can be related using the formula:
+        \begin{equation*}
+            \text{pOH} + \text{pH} = 14
+        \end{equation*}
+        
+        When acids and bases are in solution together they quickly and spontaneously react to to form a neutral salt and water. This is referred to as a neutralization reaction. If there is exactly enough of the base to react with all of the acid and vice versa, then the acid and base are completely neutralized resulting in a solution with a pH of 7. This occurs when the number of hydrogen ions is equal to the number of hydroxide ions. This can be related using the formula:
+        \begin{equation*}
+            \mathrm{N_A \cdot V_A = N_B \cdot V_B}
+        \end{equation*}
+        where \(\mathrm{N_A}\) is the normality of acid, \(\mathrm{V_A}\) is the volume of the acid, \(\mathrm{N_B}\) is the normality of the base, and \(\mathrm{V_B}\) is the volume of the base. In this case the normality and molarity of the acid and base are equivalent since each molecule contains only one hydrogen or hydroxide ion.
+    \section*{Procedure}
+        \begin{enumerate}
+            \item Weigh a weigh boat.
+            \item Add between 3.00 g to 4.00 g of NaOH pellets to the weigh boat.
+            \item Record the combined mass.
+            \item Add the pellets to an empty 100 ml volumetric flask. 
+            \item Add water to below the 100 ml line of the volumetric flask.
+            \item Cover the flask and shake until the pellets are fully dissolved.
+            \item Use an eye dropper to add water until the water level is at the 100 ml line of the volumetric flask.
+            \item Fill a burette with the unknown HCl solution.
+            \item Measure 20-25 ml of the NaOH solution with a graduated cylinder and pour this into a clean Erlenmeyer flask.
+            \item Add 6-8 drops of phenolphthalein indicator to the Erlenmeyer flask.
+            \item Record the initial volume of the burette and slowly add acid until the solution turns clear.
+            \item Record the final volume of the burette.
+            \item Repeat steps 9-12.
+        \end{enumerate}
+    \section*{Calculations}
+    \begin{table}[H]
+        \renewcommand{\arraystretch}{1.6}
+        \begin{tabular}{ll}
+            Mass of weigh boat and NaOH: & 5.00 g\\
+            Mass of weigh boat: & 2.00 g\\
+            Mass of NaOH: & 3.00 g\\
+            Molecular mass of NaOH: & 40.0 g/mole\\
+            Moles of NaOH: & \(\frac{3.00\text{ g}}{40.0\text{ g/mole}}\) = 0.075 moles\\
+            Molarity of NaOH solution: & \(\frac{0.075}{0.100 L}\) = 0.75 M\\
+        \end{tabular}
+    \end{table}
+    \begin{table}[H]
+        \renewcommand{\arraystretch}{1.6}
+        \begin{tabular}{lccc}
+            & Titration 1 & Titration 2 & Titration 3\\
+            ml of NaOH used: & 21.0 ml & 20.0 ml & 20.0 ml\\
+            Initial burette reading: & 19.1 ml & 28.5 ml & 39.5 ml\\
+            Final burette reading: & 28.5 ml & 39.5 ml & 48.5 ml\\
+            HCl used: & 9.4 ml & 11 ml & 9 ml\\
+            Molarity of HCl: & \(\frac{0.75 \text{ M}\cdot21.0\text{ ml}}{9.4\text{ ml}}\) = 1.68 M & \(\frac{0.75 \text{ M}\cdot20.0\text{ ml}}{11\text{ ml}}\) = 1.36 M & \(\frac{0.75 \text{ M}\cdot20.0\text{ ml}}{9\text{ ml}}\) = 1.67 M
+        \end{tabular}
+    \end{table}
+    \section*{Conclusion}
+        The goal of this lab was to use titration to determine the concentration of a solution of HCl. We performed the titration three times and the concentration was 1.68 M, 1.36 M, and 1.67 M respectively. We saw how acids and bases quickly react to neutralize each other in a solution and learned how to perform a titration. In our first attempt we turned the burette valve in the wrong direction when trying to close it which caused a lot of extra solution to be released, so we disregarded that attempted to performed the titration three times after the first attempt. It is likely that error arose from further inexperience with the equipment during one or more of the other trials. 
+\end{document}

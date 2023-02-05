@@ -1,0 +1,32 @@
+% \newcommand\df[1]{\index{#1@\myupper #1}{{\bf{#1}}}}
+% \newcommand\myupper[1]{\uppercase{#1}}
+
+% \newcommand\myscalar[1]{#1}
+\newcommand\myvector[1]{\mathbf{#1}}
+\newcommand\mymatrix[1]{\mathbf{#1}}
+
+% \newcommand\mytensor[1]{{\textit{\textsf{\uppercase{#1}}}}}
+
+% \newcommand\myrvscalar[1]{\textrm{#1}}
+% \newcommand\myrvvector[1]{\textbf{#1}}
+% \newcommand\myrvmatrix[1]{{\textbf{\uppercase{#1}}}}
+% \newcommand\myrvtensor[1]{{{\textsf{\uppercase{#1}}}}}
+
+% \newcommand\gup[1]{\textrm{\greektext p}}
+
+
+
+
+\newcommand{\df}[2][]{%
+  \ifthenelse{\isempty{#1}}%
+    {\index{#2@\myupper #2}{{\bf{#2}}}}% if #1 is empty
+    {\index{#2@\myupper #1}{{\bf{#2}}}}% if #1 is not empty
+}
+\newcommand\myupper[1]{\uppercase{#1}}
+
+
+
+\newcommand\twobytwo[4]{\left[\begin{array}{cc}
+#1 & #2 \\
+#3 & #4 
+\end{array}\right]}

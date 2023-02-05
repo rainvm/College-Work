@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{scalerel}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+
+\allowdisplaybreaks
+
+\begin{document}
+    \title{Specific Heat}
+    \author{Ryan Coyne}
+    \maketitle
+    \section*{Introduction}
+        In this lab we experimentally determine the specific heats of copper and lead to learn about how the specific heat of a material affects it's temperature. 
+    \section*{Theory Discussion}
+        The atoms and molecules in a material are always vibrating. Heat is the total kinetic energy of these vibrating atoms or molecules. The flow of heat can be described with the equation: 
+        \begin{equation*}
+            Q = mc\Delta T
+        \end{equation*}
+        Where Q is the amount of heat energy that a material has gained or lost, m is the mass of the material, c is the specific heat of the material, and \(\Delta T\) is the change in the temperature of the material.
+
+        Specific heat is a physical property which all materials have. It determines the amount of heat energy necessary to increase the temperature of the material by a particular amount. For example rubber has a very high specific heat relative to stainless steel meaning it is much easier to increase the temperature of stainless steel than rubber. This is why rubber is sometimes used to protect a person's hand from burns when handling hot cookware.
+    \section*{Procedure}
+        \begin{enumerate}
+            \item Fill a boiler about 2/3 full with water.
+            \item Set the boiler on a hot plate and turn the heat to high.
+            \item Fill the cup of the boiler with copper shot.
+            \item Put the cup into the boiler.
+            \item Insert a thermometer into the shot.
+            \item Weight the inner cup of the calorimeter.
+            \item Fill the inner cup to a little less than half full with water.
+            \item When the shot has reached a steady temperature after at least five minutes record the temperature.
+            \item Record the temperature of the water in the calorimeter.
+            \item Place the inner cup into the calorimeter.
+            \item With safety glasses on carefully pour the heated shot into the calorimeter.
+            \item Stir the water with the thermometer without touching it to the shot.
+            \item Record teh maximum temperature that the water reaches.
+            \item Weight the cup, water, and shot.
+            \item Repeat these steps with lead shot.
+        \end{enumerate}
+    \section*{Calculations}
+    \setstretch{1.4}
+        \begin{table}[h]
+            \centering
+            \caption*{Measurements}
+            \begin{tabular}{c|cc}
+                & Copper & Lead\\
+                \hline
+                Temp: Shot & 98.9\(\degree\)C & 98.7\(\degree\)C\\
+                Temp: Cold Water & 26.6\(\degree\)C & 26.9\(\degree\)C\\
+                Temp: Shot \& Water & 38.5\(\degree\)C & 31.4\(\degree\)C\\
+                Mass: Cup & 51.82 g & 51.82 g\\
+                Mass: Cup \& Water: & 197.34 g & 249.67g g\\
+                Mass: Cup, Water, \& Shot & 570.1g & 687.8 g
+            \end{tabular}
+        \end{table}
+        \noindent
+        \(
+            Q = mc\Delta T\\
+            \)
+            Calculations for Copper Shot\\
+            \(
+           -Q_{\mathrm{Cu}} = Q_{\mathrm{water}} + Q_{\mathrm{cup}}\\
+           (60.4\degree \mathrm{C})(272.76~\mathrm{g})c_{\scaleto{\mathrm{Cu}}{4pt}} = (11.9\degree \mathrm{C})(1~\mathrm{cal/g}\degree\mathrm{C})(145.52 \mathrm{g}) + (11.9\degree \mathrm{C})(0.214~\mathrm{cal/g}\degree\mathrm{C})(54.82~\mathrm{g})\\
+           c_{\scaleto{\mathrm{Cu}}{4pt}} = \frac{(4.5\degree \mathrm{C})(1~\mathrm{cal/g}\degree\mathrm{C})(145.52 \mathrm{g}) + (11.9\degree \mathrm{C})(0.214~\mathrm{cal/g}\degree\mathrm{C})(54.82~\mathrm{g})}{(60.4\degree \mathrm{C})(272.76~\mathrm{g})}\\
+           c_{\scaleto{\mathrm{Cu}}{4pt}} = 0.0828~\mathrm{cal/g}\degree\mathrm{C}\\
+           \)
+           Calculations for Lead Shot\\
+           \(
+           -Q_{\mathrm{Pb}} = Q_{\mathrm{water}} + Q_{\mathrm{cup}}\\
+           (67.3\degree \mathrm{C})(438.13~\mathrm{g})c_{\scaleto{\mathrm{Pb}}{4pt}} = (4.5\degree \mathrm{C})(1~\mathrm{cal/g}\degree\mathrm{C})(197.85 \mathrm{g}) + (4.5\degree \mathrm{C})(0.214~\mathrm{cal/g}\degree\mathrm{C})(54.82~\mathrm{g})\\
+           c_{\scaleto{\mathrm{Pb}}{4pt}} = \frac{(4.5\degree \mathrm{C})(1~\mathrm{cal/g}\degree\mathrm{C})(197.85 \mathrm{g}) + (4.5\degree \mathrm{C})(0.214~\mathrm{cal/g}\degree\mathrm{C})(54.82~\mathrm{g})}{(67.3\degree \mathrm{C})(438.13~\mathrm{g})}\\
+           c_{\scaleto{\mathrm{Pb}}{4pt}} = 0.0319~\mathrm{cal/g}\degree\mathrm{C}\\
+           \mathrm{\%~error~on}~c_{\scaleto{\mathrm{Cu}}{4pt}}  = \frac{|0.0828~\mathrm{cal/g}\degree\mathrm{C} - 0.0923~\mathrm{cal/g}\degree\mathrm{C}|}{0.0923~\mathrm{cal/g}\degree\mathrm{C}} = 15.5\%\\
+           \mathrm{\%~error~on}~c_{\scaleto{\mathrm{Pb}}{4pt}} = \frac{|0.0.0319~\mathrm{cal/g}\degree\mathrm{C} - 0.0305~\mathrm{cal/g}\degree\mathrm{C}|}{0.0305~\mathrm{cal/g}\degree\mathrm{C}} = 4.55\%
+        \)
+    \section*{Conclusion}
+        In this lab we used a calorimeter to determine the specific heat of copper and lead. The specific heat of copper was determined to be 0.0828 cal/g\(\degree\)C and the accepted value is 0.0923 cal/g\(\degree\)C. The specific head of lead was determined to be 0.0319 cal/g\(\degree\)C and the accepted value is 0.0305 cal/g\(\degree\)C. We learned how to use a calorimeter and how to use the specific heat equation.
+
+        There were many sources of error in this lab. One major source was that the calorimeter can't possibly perfectly contain the heat of the shot. We also only used one thermometer to measure the temperature of the shot and the water and so between taking the thermometer out of the shot and pouring the shot into the water, the temperature of the shot may have changed. The shot was also likely not a uniform temperature and the thermometer definitely touched the shot when it was stirring the water which had the shot int it which may have affected the resulting temperature.
+\end{document}

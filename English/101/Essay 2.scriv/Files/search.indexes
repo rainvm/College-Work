@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="007E8CF7-714D-4A33-B033-B20D458C3109">
+            <Title>Pros and Cons</Title>
+        </Document>
+        <Document ID="091D552F-A46F-496A-B8B8-E0536558E133">
+            <Title>Notes</Title>
+        </Document>
+        <Document ID="0A49AFF2-BB49-46AF-89BD-77935EBDD825">
+            <Title>Ideas</Title>
+        </Document>
+        <Document ID="2157CF02-88EA-4B25-8FB7-DE1B26F4FC3A">
+            <Title>Arrival and Story of your life</Title>
+            <Text>Pros
+Pretentious
+Short story so easy to review
+Watched the movie recently
+Love the movie
+Lots to analyze
+Cons
+Not as long as WoT so less material to pull from
+Pretentious
+</Text>
+        </Document>
+        <Document ID="22EF34A9-945F-47DD-A30C-80807F09FE11">
+            <Title>Comparison 1</Title>
+            <Text>There is one scene in Arrival that is lifted almost word for word from Story of Your Life. In the scene, Louise’s daughter asks her for a word that refers to a situation in which both sides of an interaction can have a positive outcome. Louise can’t remember the word and her daughter says that her father would know (124). A few pages later, the physicist that Louise has been working with says the phrase, “non-zero-sum game”, and the narrative returns to the point that the scene where her daughter asked about the word ended and Louise says “non-zero-sum game” (127). This scene in particular is useful for both mediums, because it illustrates Louise’s experience with time using a short phrase that many people have heard before. Because the phrase is short and memorable, it is easy to convey in both without losing the audience’s attention. It also uses a simple question to keep the first part of the scene in the their minds while waiting for the second part. </Text>
+        </Document>
+        <Document ID="32676BA8-D07D-4811-AFB5-7879CE65EF8B">
+            <Title>Wheel of Time</Title>
+            <Text>Pros
+Know it really well. I’ve read it like 4 times and I could easily watch the show again.
+Fun
+Professor knows it as well
+Cons
+Not pretentious
+Professor might disagree about the show
+Professor would know if I got something wrong
+</Text>
+        </Document>
+        <Document ID="39D9C368-60EA-4708-8642-5941215A40FF">
+            <Title>Main Content</Title>
+        </Document>
+        <Document ID="3C819F77-72DE-4144-9852-1D5A05475F5A">
+            <Title>Structure</Title>
+            <Text>If contrasts and comparisons are not equal front-load the ones you have the most of</Text>
+        </Document>
+        <Document ID="53288BD2-4179-4970-A05A-742EFC4CEE01">
+            <Title>Conclusion</Title>
+            <Text>Arrival follows the same general plot and has similar themes to Story of Your Life but the way that the two are presented to the audience is vastly different. Story of Your Life is a dense, low stakes, story that some readers may have difficulty understanding, and while Arrival is still cerebral it can be enjoyed without understanding some of the more complex ideas that it presents, and as such is likely more palatable for most people. </Text>
+        </Document>
+        <Document ID="54ABF62E-0C27-4474-B7CC-CBD1C64E521A">
+            <Title>Contrast 2</Title>
+            <Text>In contrast to the aliens in Story of Your Life, the aliens in Arrival are much more alien. In the movie the aliens are enormous creatures shrouded in mist that seem to have mysterious powers, such as their ability to expel some sort of ink that hangs in the air and can display words in their language. In the novella their size is not known because the characters are seeing them through something analogous to a video call and can only know their size relative to their environment. The aliens also are not in an empty environment filled with mist and instead Louise talks about seeing them entering and exiting through a door, they communicate in their written language using something that seems similar to a computer, and she even sees them eating. Louise also describes conversations with them in more depth than is shown in the movie. This all works together makes the aliens in Story of Your Life feel much more human than those in Arrival.</Text>
+        </Document>
+        <Document ID="56957253-B604-4F96-A6CF-754A7F6D0865">
+            <Title>About</Title>
+            <Text>MLA PAPER TEMPLATE
+About This Template
+This template is designed to produce an essay that adheres to the MLA (Modern Language Association of America) format, following the 8th edition guidelines. However, you should check the exact guidelines of the institution to which you are submitting your paper, as there can be slight variations in expectations (such as whether the first page has a header or not, or whether citations should use italics or underlines). See “Adjusting This Template” (below) for information on how to tweak your project to meet your requirements.
+How To Use This Template
+Edit the “Title” document so that it contains the title of your essay, your instructor’s name and so on.
+
+Compose your essay in text documents inside the “Main Content” folder. Whether you use a single document or multiple text files to write your essay is entirely up to you - just make sure they are all inside the “Main Content” folder.
+
+Indent block quotes or other special passages using styles. For instance, to add a block quote, choose “Block Quote” from the Format &gt; Style menu (or from the styles button in the format bar). The required MLA formatting will be applied to block quotes during Compile.
+
+For specially-formatted passages you can also use the exact formatting you require and enclose them in a “Preserve Formatting” block. This tells Scrivener not to override or change the formatting for such passages during Compile. To do so, select the passage and go to Format &gt; Preserve Formatting. All other text (excepting text with styles applied) will have the default MLA indentation assigned during the compilation process.
+
+This template includes a “Notes” document which will be used to hold any footnotes you have created in the main body of the text. If you have not created any footnotes, you should either delete this document or deselect its “Include in Compile” setting in the inspector or the compile window.
+
+Edit the “Works Cited” file so that it contains your own bibliography, being careful to adhere to MLA formatting. (Please note that the sample text in the “Works Cited” file is provided only as a rough example and not as an exemplar. Do not use it as the basis for your own references—instead, refer to the MLA formatting guidelines online or as provided by your institution.)
+Tables and Figures
+If you need to use tables or figures in your essay, you can label them using the following tags, replacing “KEYWORD” with a unique word that identifies your table or figure.
+
+!fig(KEYWORD)
+!table(KEYWORD)
+
+These tags will be replaced with numbers in the compiled document, with the numbering stream for figures being separate from the numbering stream for tables.
+
+You can refer to such tags as follows:
+
+#fig(KEYWORD)
+#table(KEYWORD)
+
+Here’s an example:
+
+Table !table(sales): Sales 2011
+Table !table(dates): Shipment dates
+Figure !fig(skeleton): The skeleton of the gnu.
+Figure !fig(malcolmreynolds): The second coolest character in Firefly.
+
+… (For sales figures, see table #table(sales))… For shipment dates, see table #table(dates)… where he discovered the skeleton of a gnarled gnu (see figure #fig(skeleton))… Chronicles providing a similar role, albeit without the Castle actor (see figure #fig(malcolmreynolds)).
+
+In the compiled document, the above text would look like this:
+
+Table 1: Sales 2011
+Table 2: Shipment dates
+Figure 1: The skeleton of the gnu.
+Figure 2: The second coolest character in Firefly.
+
+… (For sales figures, see table 1)… For shipment dates, see table 2… where he discovered the skeleton of a gnarled gnu (see figure 1)… Chronicles providing a similar role, albeit without the Castle actor (see figure 2).
+Compiling
+Go to File &gt; Compile…
+Ensure “MLA Format” is selected in the “Formats” sidebar.
+The first time you compile your paper:
+Click on the tag icon in the the rightmost header bar of the compile window to open the metadata tab.
+Fill in the title, abbreviated title and author information. The title will be used on the title page, and the surname will be used in page headers.
+Click on “Compile” when everything is set up as you want.
+Adjusting This Template
+Start header on second page: If you require the header to be omitted from the first page and only start on the second:
+In the compile window, double-click on “MLA Format” in the left sidebar to edit the format in the the compile format designer.
+Click on “Page Settings” in the sidebar.
+Tick “Different header and footer on first pages”.
+Click the “Save” button.
+Font: Compile is set to use Times New Roman by default. If you require a different font, set the “Font” at the top of the “Section Layouts” in the centre area of the compile window.
+Sample Document
+The “Example Essay” PDF file in the Research folder shows how the essay will look when compiled.
+Final Note
+Scrivener project templates are flexible and are not intended to restrict you to a particular workflow. You can change, delete or move the files and folders contained in the template to suit how you work.
+
+Like all templates in Scrivener, this project was originally created from the “Blank” template. Everything you can do with this project, you could equally do by creating a “Blank” project and setting it up yourself.
+
+You can create your own templates by setting up a skeletal project with the files, folders and settings you would like to use for new projects and using File &gt; Save As Template…</Text>
+        </Document>
+        <Document ID="5E80B630-CCE4-4DF2-A4B5-8D6DEC13D4D5">
+            <Title>Intro</Title>
+            <Text>The 2016 movie Arrival directed by Denis Villeneuve changed many aspects of the original 1998 novella Story of Your Life by Ted Chiang. Some parts were changed to appeal to a wider audience and others were changed because the original couldn’t be conveyed effectively on the screen. 
+The original novella is narrated in the first person by Dr. Louise Banks, a linguist who is asked by the military to help translate the language of aliens that have recently come to earth. The aliens have a nonlinear language and as Louise gains an increasing understanding of it, she begins to remember events of her life that have not happened yet, which seems to be similar to the way that the aliens see the world. Arrival also follows Dr. Banks along a similar storyline.</Text>
+        </Document>
+        <Document ID="64E05E31-696B-44C4-BAF9-331B156321EB">
+            <Title>Contrast 1</Title>
+            <Text>In both stories Louise will have a daughter who she knows will die young. In the movie Louise giving birth to this child is framed as a choice that Louise makes. In the novella there is more of a philosophical question of if this is a choice. Louise talks about how experiencing time the way that she does changes her. It makes her feel almost compelled to see the events of the future play out the way she knows they will. The story discusses certain concepts in physics for which the outcome appears to be the result of some goal of minimizing or maximizing a physical quantity. This is juxtaposed with the reader’s every day experience of cause an effect. Louise relates her new experience of time to this; she says, “by viewing events over a period of time, one recognized that there was a requirement that had to be satisfied, a goal of minimizing or maximizing” (129).  She ponders on what this means for the idea of free will but does not feel a dilemma like she appears to in the movie. 
+The movie also suggests that her husband leaves her because he finds out that she knew all along that their daughter would die, whereas in the book we know that he does not find out that she knew because Louise says that she does not tell anyone that she knows the future. Both of these emotional experiences, her daughter dieing and her husband leaving her, are treated as matter of fact by the narration and without much emotion even though it is Louise doing the narration. She seems to care about, but is at peace with, these events.</Text>
+        </Document>
+        <Document ID="771649AE-80DF-4EEC-B3AC-9CF250030D2B">
+            <Title>Example Essay</Title>
+            <Text>                                                                                                         Tewdent 1
+
+Sarah Tewdent
+Professor Rosewater
+Philosophy of Whales 101
+February 28, 2021
+
+                                   String Theory, Time and Tralfamadore
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod porta tortor,
+non pretium justo tristique id. Nunc dignissim, metus at fringilla congue, diam sapien aliquet
+quam, sed eleifend nunc odio quis mi. In blandit nec dolor ullamcorper cursus. Maecenas in
+lorem sit amet lorem tempor tincidunt sit amet non ligula.
+         This is a block quote consisting of a single paragraph. Phasellus rutrum ex quis sagittis
+         condimentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+         inceptos himenaeos. Ut hendrerit ante et vehicula vulputate.
+         Nulla venenatis pretium nisl, quis ullamcorper mi condimentum a. Nam ultrices elit arcu,
+tincidunt aliquet risus tempor et. Morbi ac rutrum urna. Pellentesque commodo mi vel congue
+scelerisque. Fusce a lorem sed urna dignissim pulvinar non in magna.1
+         Mauris blandit in nisl vitae scelerisque. Vestibulum sagittis felis et mauris euismod
+posuere. Curabitur in tellus sit amet lorem ornare pharetra. Vestibulum vel magna placerat,
+fermentum elit id, hendrerit libero.2 Etiam mattis consectetur egestas.
+         Etiam nec nunc ornare, blandit ex sit amet, feugiat ligula. Pellentesque bibendum placerat
+risus a semper. Pellentesque consequat faucibus pellentesque. Nullam in aliquet est. Ut imperdiet
+augue sed mauris molestie ultrices. Aliquam eros tellus, venenatis sit amet arcu et, placerat
+lacinia ex.
+         Nam euismod pharetra faucibus. Praesent scelerisque fermentum tortor, bibendum ornare
+
+
+                                                                                                         Tewdent 2
+
+turpis posuere nec. Morbi feugiat quam non ornare bibendum.
+         This is a longer quotation, comprising more than one paragraph, so the first line of each
+         paragraph after the first is indented an additional .25&quot;. Donec sollicitudin odio id urna
+         semper, tempus maximus nibh sagittis. Cras lacinia orci ut vehicula molestie.
+             Nulla facilisi. Aenean sodales ut neque sed sodales. Nulla pellentesque tincidunt ante,
+         ut eleifend risus finibus eu. In quis luctus orci. Donec a lorem tristique, egestas dui nec,
+         interdum augue. Aliquam imperdiet vestibulum ultricies.
+             Suspendisse augue ante, tristique gravida dolor id, finibus volutpat nisl. Aenean
+         dapibus sollicitudin est. Duis aliquam lacus nec velit lobortis, vitae pulvinar diam
+         commodo.3
+         Suspendisse scelerisque purus nec nunc ornare rhoncus. Vivamus eu aliquet est.
+
+Maecenas cursus quis elit vel ornare. Fusce vitae nisi non purus pretium pellentesque nec
+imperdiet justo. Morbi dictum elementum felis non sollicitudin.
+
+         Ut in turpis varius, suscipit magna non, cursus mi. Suspendisse sem nunc, facilisis eu
+scelerisque at, tincidunt id nulla. Ut condimentum orci et erat venenatis varius. Vestibulum
+dapibus, mauris eu rhoncus elementum, ante purus ultrices est, id ultricies metus tellus vel tortor.
+
+         Curabitur in odio eu massa condimentum tincidunt. Pellentesque dapibus metus tellus,
+quis porta lectus feugiat in. In ac imperdiet elit. In risus est, rhoncus eget vehicula id, feugiat at
+ipsum. Morbi pulvinar dolor quis nisi tincidunt vulputate ut id felis. Maecenas sed nisi laoreet
+purus consectetur semper at eget nulla.4
+
+         Aliquam erat volutpat. Sed semper vel purus ac feugiat. Praesent arcu nulla, porttitor
+vitae leo id, convallis molestie sem. Proin molestie, tellus eget volutpat egestas, diam lorem
+dictum massa, lobortis egestas leo massa convallis enim. Praesent mollis vitae leo a sodales.
+
+
+                                                                                                         Tewdent 3
+
+Nullam mollis dolor quis nisi congue, at maximus enim tempor. Vestibulum ut leo ac dui ornare
+malesuada.
+
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec condimentum quam.
+Fusce mi massa, mollis vitae lacinia ac, faucibus sed ipsum. Suspendisse purus mi, varius a eros
+in, hendrerit tristique nisl. Proin sapien nulla, porta vitae ex in, congue cursus metus. Curabitur
+neque nulla, posuere vel porttitor a, ullamcorper et felis. Integer ultrices et odio quis hendrerit.
+Phasellus et dui pretium, cursus quam at, luctus nunc. Pellentesque lectus urna, facilisis aliquet
+tincidunt id, ultricies consectetur lacus. Proin ac libero sit amet turpis finibus condimentum
+placerat ut nulla. Donec quis ipsum nec est semper fermentum. In hac habitasse platea dictumst.
+Maecenas faucibus vitae nulla sit amet convallis.
+
+         Nam vulputate vulputate lorem, et egestas massa semper in. Nullam vehicula mauris eu
+lectus tristique, vitae tristique justo ultrices. Pellentesque sit amet dictum orci. Vivamus
+accumsan, enim ut suscipit vehicula, sem nulla commodo magna, sit amet placerat augue ante ac
+turpis. Morbi tristique et velit a imperdiet. Cras convallis tortor in tristique convallis. In sed
+convallis libero.
+
+
+                                                                                                         Tewdent 4
+
+                                                       Notes
+         1. This endnote was added to the text as an inspector footnote, but gets moved to the
+endnotes page during the compile process.
+         2. Inline footnotes will also become endnotes during the compile process.
+         3. Scrivener’s Compile settings handle the block quote indentation in the final document
+so long as you use the “Block Quote” style for your quotes.
+         4. Donec faucibus velit tortor, eget venenatis eros laoreet vel. Duis non lacus metus.
+Donec suscipit sodales velit nec lobortis.
+
+
+                                                                                                         Tewdent 5
+
+                                                   Works Cited
+Barron, W. R. J. Trawthe and Treason: The Sin of Gawain Reconsidered. Manchester UP, 1980.
+Brewer, Derek. “The Social Context of Medieval English Literature.” The New Pelican Guide to
+
+         English Literature: 1. Medieval Literature Part One: Chaucer and the Alliterative
+         Tradition, edited by Boris Ford. Penguin, 1995, pp. 15-40.
+Burrow, J. A. A Reading of Sir Gawain and the Green Knight. Routledge, 1965.
+Haines, Victor Yelverton. The Fortunate Fall of Sir Gawain: The Typology of Sir Gawain and the
+         Green Knight. UP of America, 1982.
+Jokinen, Annina, editor. “Sir Gawain and the Green Knight.” Luminarium: Anthology of English
+         Literature. 28 Jan. 2010, www.completewebaddress.com.
+Jones, Alfred. “Understanding Old English Poetry.” Time, 10 Oct. 2001, pp. 50-62.
+Kiteley, J. F. “The Knight Who Cared for His Life.” Critical Studies of Gawain and the Green
+         Knight. Edited by Donald R. Howard and Christian K. Zacher. U of Notre Dame P, 1968,
+         pp. 215-222.
+Pearsall, Derek. Old English and Middle English Poetry. Routledge, 1977.
+Shepherd, Geoffrey. “The Nature of Alliterative Poetry in Late Medieval England.” Proceedings
+         of the British Academy [New York] vol. 56, no. 1, Winter 1970, pp. 57-76. MLA
+         International Bibliography, www.mlaaddress/complete.
+Thurby, Andrew and Samuel Gray. Heroes of Middle English Alliterative Poetry. DK, 2001.
+</Text>
+        </Document>
+        <Document ID="7A021F85-240E-470F-A716-5DA8C1260825">
+            <Title>Body</Title>
+        </Document>
+        <Document ID="94AF3FB9-33A1-4990-B12F-E4194B143CA5">
+            <Title>Note on MLA Guidelines</Title>
+            <Text>General Guidelines
+For full guidelines, you should of course refer to the MLA Handbook.
+Citations
+Some examples of how to cite sources in the body of the paper:
+
+When the author’s name is in the sentence:	Jeffrey Jones states that “good times they are a’coming” (89).
+
+When the author’s name is not in the sentence:	It has been stated that good times are coming (Jones 89).
+
+When more than one work by the same author are cited:	One assertion is that his back was “hairy” (Solo-Organa, That Hairy Thing 84) - so hirsute, in fact, that he was likened to “a walking carpet” (Solo-Organa, Second Fiddle to Chewbacca 189).
+
+Two or more authors:	The closed-universe theory has been called into question (Rifle and Hartley 346-69).
+
+No author listed:	The zoo was apparently enclosed in a large drape to emulate night (Tralfamadore in Focus 57).
+Works Cited Page
+All entries should be double-spaced and listed in alphabetical order by the author’s last name. If no author is given, base the order on the first word of the entry. All entries should have a hanging indent of half an inch (that is, the first line of each entry should be flush with the left margin, and subsequent lines should be indented by half an inch). Do not add an extra line between entries.
+Online Resources
+The following web resources may be helpful.
+
+General Formatting Guidelines
+MLA Style Introduction // Purdue Writing Lab
+Writing Help Online - MLA Format Summary of Rules
+Home - MLA Style Guide - Research Guides &amp; Tutorials at California State University Sacramento (libguides.com)
+
+Citation Guidelines
+Quick Guide to citing MLA 8th edition (csun.edu)</Text>
+        </Document>
+        <Document ID="CB62745A-94E6-4EA1-BA10-57D7F5F8524A">
+            <Title>Works Cited</Title>
+            <Text>Chiang, Ted. “Story of Your Life.” Stories of Your Life and Others, Reissue, Vintage, 2010.  	
+Villeneuve, Denis. Arrival. Paramount Pictures, 2016.</Text>
+        </Document>
+        <Document ID="D0CDAAAE-A313-4DC0-83BE-B3E5326BF24D">
+            <Title>Arrival and Slaughterhouse five</Title>
+            <Text>Pros
+Interesting comparison
+Super pretentious to use slaughterhouse unexpected
+Watched the movie recently
+Love the movie
+Lots to analyze
+Cons
+Not technically a remake
+Have re-read slaughterhouse five</Text>
+        </Document>
+        <Document ID="D3E77CE7-556E-491C-824C-4FDFFE9A5800">
+            <Title>Notes</Title>
+            <Text>&lt;$--ENDNOTES--&gt; All footnotes will get inserted here upon print, and this bubble will be removed automatically.</Text>
+        </Document>
+        <Document ID="D86DA694-DF58-4EA5-8EE0-C437460A91EA">
+            <Title>MLA Format Notes</Title>
+        </Document>
+        <Document ID="F918ADBF-A745-4EFA-A26F-694017A4B348">
+            <Title>Title</Title>
+            <Text>&lt;$fullname&gt;
+Derek Castle
+English Composition
+&lt;$longdate&gt;
+&lt;$projecttitle&gt;</Text>
+            <Notes>The &lt;$PROJECTTITLE&gt; and &lt;$fullname&gt; tags get replaced with metadata information you can set when compiling. &lt;$longdate&gt; will be based on your Windows settings for the “long date” format.
+
+Feel free to edit the text of the title page as required.</Notes>
+        </Document>
+        <Document ID="FC0F99DE-07B7-43B4-8664-71C4B62F222C">
+            <Title>Contrast 3</Title>
+            <Text>The novella is much more explicit in it’s discussion of it’s metaphysical ideas. In the narration Louise talks about how her knowledge of the events over time allows her to see that there are constraints on events that need to be satisfied and knowing the future seems to have “evoked a sense of urgency, a sense of obligation to act precisely as she knew she would” (131). She also describes a time that she reaches up to take a bowl off a shelf and she says that it “didn’t feel like something I was forced to do. Instead it seemed just as urgent as my rushing to catch the bowl when it falls on you: an instinct that I felt right in following.” (132).  The movie on the other hand doesn’t dive into these ideas at all and barely does more than imply the ways in which seeing the future works. 
+Story of Your Life even goes into some detail about mathematic concepts underlying it’s conception of foresight, while the closest that Arrival comes to talking about academic ideas is that it bases the change in Louise’s perception of time on the Sapir-Whorf hypothesis, the idea that speaking a language effects the ways that you think. The novella mentions the calculus of variations and even explains Fermat’s principle of least time, which says that light will always take the path between two points which minimizes the time it spends traveling between those points and is the reason that light refracts in different mediums.</Text>
+        </Document>
+    </Documents>
+</SearchIndexes>

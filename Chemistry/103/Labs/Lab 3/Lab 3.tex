@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{multirow}
+
+\allowdisplaybreaks
+
+\begin{document}
+    \title{Design of Experiment}
+    \author{Ryan Coyne}
+    \maketitle
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{cc|cccc}
+            &&\multicolumn{2}{c}{Cold} & \multicolumn{2}{c}{Hot}\\
+            &&5 min & 10 min & 5 min & 10 min\\
+            \hline
+            \multirow{2}{*}{No Bleach} 
+            & No Soap & 5 & 3 & 4 & 3\\
+            & Soap & 5 & 2 & 3 & 2\\
+            \multirow{2}{*}{Bleach} 
+            & No Soap & 3 & 2 & 2 & 1\\
+            & Soap & 3 & 1 & 2 & 1
+        \end{tabular}
+        \caption*{1=Best, 5=Worst}
+    \end{table}
+    
+    From this lab I learned that tables are useful for designing experiments that test every combination of variables. I also learned that grape juice stains on a shirt continue to set over years because the shirt had been stained a couple of years ago before the pandemic the stains are usually fully removed from this shirt in this lab but this time it was difficult to see much of a difference.
+    
+    \begin{table}[H]
+        \centering
+        \caption*{Example DOE table for cooking a pizza}
+        \begin{tabular}{cc|cccc}
+            &&\multicolumn{2}{c}{Pepperoni} &\multicolumn{2}{c}{BBQ Chicken}\\
+            &&Sicilian & New York & Sicilian & New York\\
+            \hline
+            \multirow{2}{*}{Oven}
+            & Mozzarella & 1 & 2 & 3 & 4\\
+            & Provolone & 5 & 6 & 7 & 8\\
+            \multirow{2}{*}{Stovetop} & Mozzarella & 9 & 10 & 11 & 12\\
+            & Provolone & 13 & 14 & 15 & 16
+        \end{tabular}
+    \end{table}
+\end{document}

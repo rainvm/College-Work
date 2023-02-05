@@ -1,0 +1,109 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{float}
+
+\begin{document}
+    \chapter{First Order Differential Equations}
+    \section{Separable Equations}
+    \paragraph{}The simplest of all differential equations are first order differential equations with 
+    separable variables. These are equations of the form 
+    \begin{center}
+        \(\frac{dy}{dx}=g(x)h(y)\).
+    \end{center}
+    For example the equation
+    \begin{center}
+        \((1+x)\frac{dy}{dx}-y=0\)
+    \end{center}
+    is separable. We can rewrite this equation as 
+    \begin{center}
+        \((1+x)dy-ydx=0\)
+    \end{center}
+    This looks like we have multiplied by \(dx\) but that is not what happened since \(\frac{dy}{dx}\) is not actually a faction. If you want to know how we got there you can ask me but 
+    it doesn't really matter because you can just think of it as multiplying both sides by \(dx\) and just know that's not actually what's happening. My professor didn't explain it to us and I didn't know 
+    what was actually going on until I read about it in the textbook.\\\\
+    By dividing by \((1+x)y\) we can rewrite this equation as 
+    \begin{center}
+        \(\frac{dy}{y}=\frac{dx}{1+x}\).
+    \end{center}
+    Now that we have the equation in that form we can integrate both sides
+    \begin{center}
+        \(\int\frac{dy}{y}=\int\frac{dx}{1+x}\)
+    \end{center}
+    and we find the implicit solution is. 
+    \begin{center}
+        \(\ln|y|=\ln|1+x| + c\)
+    \end{center}
+    The explicit solution is 
+    \begin{center}
+        \(|y|=|1+x|e^c\)\\
+        \(y=\pm e^c(1+x) \)
+    \end{center}
+    Relabeling \( \pm e^c \) as c gives us
+    \begin{center}
+        \( y=c(1+x) \)
+    \end{center}
+    \section{Integrating Factors}
+    \paragraph{}A first order differential equation of the form 
+    \begin{center}
+        \(a_1(x)\frac{dy}{dx}+a_0(x)y=g(x)\)
+    \end{center}
+    is said to be linear in the variable y.\\
+
+    By dividing both sides by \(a_1(x)\) we obtain a more useful form of the equation, referred to as standard form:
+    \begin{center}
+        \(\frac{dy}{dx}+P(x)y=f(x)\)
+    \end{center}
+
+    In some instances these equations can be solved by separation of variables such as these:
+    \begin{center}
+        \(\frac{dy}{dx}+2xy=0\) \,\, and \,\, \(\frac{dy}{dx}=y+5\)
+    \end{center}
+    The linear equation 
+    \begin{center}
+        \(\frac{dy}{dx}+y=x\)
+    \end{center}
+    however is not separable.\\
+
+    The method for solving these hinges on the fact that the left hand side can be converted into the form of the derivative of the product of two functions of \(x\). This 
+    is done by multiplying both sides by a special function \(\mu (x)\). The form we want the left sie to be in looks like
+    \begin{center}
+        \(\frac{d}{dx}[\mu(x)y] = \mu\frac{dy}{dx}+\frac{d\mu}{dx}y=\mu\frac{dy}{dx}+\mu P(x)y\)
+    \end{center}
+    Based on this equation we know that \(\frac{d\mu}{dx}y\) = \(\mu P(x)y\). Which is true provided that 
+    \begin{center}
+        \(\frac{d\mu}{dx}=\mu P(x)\)
+    \end{center}
+    which can be solved for \(\mu\) by separation of variables.
+    \begin{align*}
+        \int\frac{d\mu}{\mu}&=\int P(x)dx\\
+        \ln|\mu(x)|&=\int P(x) dx\\
+        \mu(x) &= e^{\int P(x) dx} 
+    \end{align*}
+
+    Here the function \(\mu(x)\) is what we call an integrating factor. \\
+
+    Multiplying the standard form of a first order linear DE by \(\mu(x)\) gives us
+    \begin{align*}
+        e^{\int P(x)dx}\frac{dy}{dx}+P(x)e^{\int P(x)dx}y&=e^{\int P(x)dx}f(x)\\
+        \frac{d}{dx}\left[e^{\int P(x)dx}y\right]&=e^{\int P(x)dx}f(x)
+    \end{align*}
+    
+    As an example we will solve the equation \(\frac{dy}{dx}-3y=0\)\\
+    \begin{align*}
+        P(x) &=-3\\
+        \mu &= e^{\int -3dx}\\
+        \mu &= e^{-3x}\\
+        e^{-3x}\frac{dy}{dx} - 3e^{-3x}y&=0\\
+        \frac{d}{dx}\left[e^{-3x}y\right]&=0\\
+        e^{-3x}y&=c\\
+        y&=ce^{3x}
+    \end{align*}
+    Exercises: \\
+    (1) \(x\frac{dy}{dx}-4y=x^6e^x\)\\
+    (2) \((x^2-9)\frac{dy}{dx}+xy=0\)
+    \section{Exact Equations}
+\end{document}
