@@ -1,0 +1,11 @@
+# Fdb version 3
+["lualatex"] 1675581715 "2.tex" "2.pdf" "2" 1675581715
+  "/usr/share/texlive/texmf-dist/tex/latex/base/ltluatex.lua" 1636758526 19214 9fefc6dff80101966499ea0d8ae2e503 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.lua" 1642022539 15627 866398a1358608205cb87da529bd41e8 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/latexconfig/lualatexquotejobname.lua" 1308175312 1031 977f79ff10b802fc398926378bec58e9 ""
+  "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1675581306 4555352 816bf2e924acdd5e5550cd09b221ef66 ""
+  "2.aux" 1675581596 32 3985256e7290058c681f74d7a3565a19 ""
+  "2.tex" 1675578974 32 037fda3c4f3c0341872f0b983e837275 ""
+  (generated)
+  "2.log"
+  "2.pdf"

@@ -1,0 +1,25 @@
+\section{Introduction}
+The first part of this text is primarily concerned with solutions to differential equations of the form
+\begin{equation}
+    Lu=\phi
+\end{equation}
+over an interval \(a \leq x \leq b\) and subject to boundary conditions \( \{ B_1, \dots ,B_n \} \), where \(L\) is an nth order linear ordinary differential operator.  For L to be linear it must satisfy the conditition
+\begin{equation}
+	L(\alpha v + \beta w) = \alpha Lv + \beta Lw
+\end{equation}
+for arbitrary functions \(v\) and \(w\), with \(\alpha\) and \(\beta\) being constant. For this condition to be met \(L\) must be of the form
+\begin{equation} 
+	L = a_0(x) \frac{d^n}{dx^n} + a_1(x) \frac{d^{n-1}}{dx^{n-1}} + \cdots + a_n(x)
+\end{equation}
+The boundary conditions are linear functionals of the form 
+\begin{equation}
+	B_j (u) = c_j;~~~~ j=1,2,\dots,n
+\end{equation}
+where \(c_j\) is an arbitrary constant. 
+
+A functional, as used here, is a transformation from function space to the real numbers. As an example
+\begin{equation}
+	B (u) = u(0) = 0
+\end{equation}
+is a simple boundary condition for a 1st order differential operator. Specifically, our \(B_j\)'s will be limited to linear combinations of u and it's derivatives up to order \(n-1\). These boundary conditions have the same linearity conditons palce on them as L. 
+
