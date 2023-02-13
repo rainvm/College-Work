@@ -31,4 +31,25 @@ and so the formal adjoint of a second order linear differential operator \(L\) m
 	L^*=A\frac{d^2}{dx^2} + (2A'-B)\frac{d}{dx}+(A''-B'+C)
 \end{equation}
 
-If \(L^*\) is found to be equal to \(L\) then \(L\) is called formally self adjoint. By comparing equations (2.2) and (2.5) we can see that for a second order linear differentiable operator to be formally self adjoint, \(A'\) must be equal to \(B\). 
+If \(L^*\) is found to be equal to \(L\) then \(L\) is called formally self adjoint. By comparing equations (2.2) and (2.5) we can see that for a second order linear differentiable operator to be formally self adjoint, \(A'\) must be equal to \(B\). You may notice that \(A''-B'+C\) must also be equal to C but this is always true given that \(A'\) equals \(B\).
+
+If the boundary conditions on \(L\) are homogenous then we can also define an adjoint operator, \(\mathcal{L}^*\), by the relation
+\begin{equation}
+	(Lu,v) = (L^*v,u)
+\end{equation}
+where \((f,g)\) is the inner produce of \(f\) and \(g\)
+\begin{equation}
+	(f,g) = \int_a^bf(x)g(x)dx
+\end{equation}
+We now can understand that the adjoint operator \(\mathcal{L}^*\) must consist of \(L^*\) and boundary conditions to force the terms that come about from integrating by parts to be zero.
+
+As an example of \(\mathcal{L}\) and \(\mathcal{L}^*\), consider \(\mathcal{L}\) to consist of \(L=\frac{d}{dx}\) and the boundary condition \(u(0)=3u(1)\) over the interval \(0\leq x \leq 1\). Then
+\begin{equation}
+	\begin{split}
+		(Lu,v) &= \int_0^1u'vdx\\
+		       &= (uv)\biggr\rvert_0^1 - \int_0^1 uv'dx\\
+		       &= u(1)v(1)-u(0)v(0)+\int_0^1uL^*vdx\\
+		       &= u(1)(v(1)-3v(0)) + \int_0^1uL^*vdx
+	\end{split}
+\end{equation}
+Since the particular value of \(u(1)\) is not given, we must make \(v(1)-3v(0)\) equal zero, because choosing \(u(1)=0\) would undully restrict our solution. Lastly, if \(\mathcal{L}=\mathcal{L}^*\), then \(\mathcal{L}\) is called self-adjoint.
