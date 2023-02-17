@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{setspace}
+
+\newcommand{\units}[1]{\mathrm{~#1}}
+
+\allowdisplaybreaks
+
+\begin{document}
+    The electric output of a power plant is 720 MW . Cooling water flows through the power plant at the rate 1.30\(\times\)\(10^8\) L/hr. The cooling water enters the plant at 11.0\(\degree\)C and exits at 26.0\(\degree\)C.
+    \begin{align*}
+        \frac{m}{t} &= 1.30\times 10^8 \units{kg/h}\\
+        &=1.30 \times 10^{11} \units{g/h}\\
+        &=3.61 \times 10^7 \units{g/s}\\
+        \frac{n}{t} &= \frac{3.61 \times 10^7 \units{g/s}}{18.015 \units{g/mol}}\\
+        &= 2.0045 \times 10^6 \units{mol}\\
+        Q_c&=n \cdot c \cdot \Delta T\\
+        &= 2.0045 \times 10^6 \units{mol} \cdot 4190 \units{J/mol~K} \cdot 15 \units{K}\\
+        &= 1.26 \times 10^11 \units{J}\\
+        \eta &= \frac{W_{out}}{Q_H}\\
+        & = \frac{7.20\times 10^8 \units{J}}{7.20\times 10^8 \units{J} + 1.26 \times 10^{11} \units{J}}\\
+        &=0.57\%
+    \end{align*}        
+\end{document}
