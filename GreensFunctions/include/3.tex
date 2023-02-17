@@ -1,1 +1,18 @@
 \section{The Delta Function}
+The Dirac delta function is integral to the method of green's functions. It is typically represented by the symbol \(\delta\) and has the properties
+\begin{equation}
+    \delta(x) = 0~~~ \text{for } t\neq0
+\end{equation}
+and
+\begin{equation}
+    \int_{-\infty}^{\infty} \delta(x) dx = 1
+\end{equation}
+but its most important property is 
+\begin{equation}
+    \int_a^b f(x)\delta(x-t) dt= f(t), ~~~ a\leq t \leq b
+\end{equation}
+If, in the previous integral, \(t\) is not between \(a\) and \(b\), then the integral is equal to 0. 
+
+To attempt to find an intuition for the delta function, we can consider the idea of 
+
+While commonly referred to as a function, \(\delta\) is more appropriately defined as a generalized function or a distribution. 
