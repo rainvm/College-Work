@@ -1,18 +1,124 @@
 \section{The Delta Function}
-The Dirac delta function is integral to the method of green's functions. It is typically represented by the symbol \(\delta\) and has the properties
+In physics and engineering, there exists a notion of "point actions". These are actions that are highly localized in space and/or time. As an example, suppose a circular coin is pressed with unit force against the edge of a metal plate that extends over, \(y>0\) and \(-\infty < x < \infty\), as shown in Figure 3.1. We are interested in the resulting stress field but do not know the details of the force distribution, say \(w(x)\). We do, however, know it will be very concentrated in space and that 
 \begin{equation}
-    \delta(x) = 0~~~ \text{for } t\neq0
+    \int_{-\infty}^{\infty} w(x) dx = 1
 \end{equation}
-and
-\begin{equation}
-    \int_{-\infty}^{\infty} \delta(x) dx = 1
-\end{equation}
-but its most important property is 
-\begin{equation}
-    \int_a^b f(x)\delta(x-t) dt= f(t), ~~~ a\leq t \leq b
-\end{equation}
-If, in the previous integral, \(t\) is not between \(a\) and \(b\), then the integral is equal to 0. 
+so that the net force is unity.
 
-To attempt to find an intuition for the delta function, we can make use of the idea of "point actions", or actions which are highly localized in space or time. As an example, consider a sharp hammer blow, with force \(f(t)\). We do not necessarily know the shape of the force function, but 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{3.1.png}
+    \caption{Coin pressed to the edge of a plate.}
+\end{figure}
 
-While commonly referred to as a function, \(\delta\) is more appropriately defined as a generalized function or a distribution. 
+We expect that two highly concentrated force distributions would produce nearly identical stress fields except in the immediate neighborhood of the point at which the force is applied. This is provided they are statically equivalent, meaning that their resultant forces and couples are identical. As such we might simplify the problem by deciding, a priori, on a definite form for \(w\), such as
+\begin{equation}
+    w_k(x) = \begin{cases}
+        \frac{k}{2}, & |x|<\frac{1}{k}\\
+        0, & |x|>\frac{1}{k}
+    \end{cases}
+\end{equation}
+or
+\begin{equation}
+    w_k(x)=\frac{k}{\pi (1+k^2x^2)}
+\end{equation}
+where \(k>0\). In Fig 3.2 we can see that \(w\) becomes highly concentrated when \(k\) is large.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{3.2.png}
+    \caption{Distributed Force;  eq. 3.3}
+\end{figure}
+
+If we let \(k \rightarrow \infty\) then the force distribution approaches our idea of a "point-action" which in this case is a force of unit strength, acting at \(x=0\). Calling this "point-action" \(\delta(x)\), then
+\begin{equation}
+    \delta(x) = \lim_{k\rightarrow \infty} w_k(x)
+\end{equation}
+This, however, cannot be considered a rigorous definition of the delta function because the limit is infinite for \(x=0\). 
+
+The delta function is more appropriately defined as a generalized function. To understand this way of defining \(\delta\) consider the following functional.
+\begin{equation}
+    \int_{-\infty}^{\infty} g(x)h(x) = \mathcal{F}(h)
+\end{equation}
+This functional assigns a numerical value, \(\mathcal{F}(h)\), for each function \(h\) within the domain, \(\mathcal{D}\), of \(\mathcal{F}\). We will take \(\mathcal{D}\) to be the set of all functions that are defined over \(-\infty <x<\infty\), are infinitely differentiable, and approach zero outside of some finite interval,
+
+Suppose \(\mathcal{F}(h)\) is the integral of \(h\) from \(\xi\) to \(\infty\).
+\begin{equation}
+    \int_{\infty}^{\infty} g(x)h(x)dx = \int_{\xi}^{\infty} h(x) dx
+\end{equation}
+Then, \(g(x)\) must be the Heaviside step function,
+\begin{equation}
+    H(x-\xi) = \begin{cases}
+        1, & x>\xi\\
+        0, & x<\xi
+    \end{cases}
+\end{equation}
+which is a function in the classical sense.
+
+If \(\mathcal{F}(h)\) is \(h(0)\) so that
+\begin{equation}
+    \int_{-\infty}^{\infty}g(x)h(x) dx=h(0)
+\end{equation}
+then it can be shown that there is no function, \(g(x)\), which exists such that (3.8) is true for all functions, \(h(x)\), in the domain, \(\mathcal{D}\). It is then the case that \(g\) must be a generalized function, which we call the delta function. As such, \(\delta\) can be defined in the following way.
+\begin{equation}
+    \int_{-\infty}^{\infty} \delta(x)h(x) dx = h(0)
+\end{equation}
+
+Although \(\delta(x)\) acts at \(x=0\), it can be adjusted to act at any point by shifting the argument. Thus, \(\delta(x-\xi)\) acts at \(x=\xi\),
+\begin{equation}
+    \int_{-infty}^{\infty} \delta(x-\xi)h(x)dx = h(\xi)
+\end{equation}
+As a generalized function, \(\delta\) is also differentiable. By referring to (3.5), one can see that defining the derivative of a generalized function involves determining the functional, \(\mathcal{F}(h)\) for
+\begin{equation}
+    \int_{-\infty}^{\infty} g'(x)h(x) dx= \mathcal{F}(h)
+\end{equation}
+Next, we integrate by parts
+\begin{equation}
+    \intR g'(x)h(x)dx = g(x)h(x)\biggr\rvert_{-\infty}^{\infty} - \intR g(x)h'(x)dx
+\end{equation}
+The integral term is fairly simple to interpret since it is of the same form as (3.5), but the boundary term is not as nice because it involves knowing the values of \(g\). To deal with this we will simply discard the boundary term, and define \(g'\) with the formula
+\begin{equation}
+    \intR g'(x)h(x)dx = -\intR g(x)h'(x)dx
+\end{equation}
+For the delta function, this means
+\begin{equation}
+    \begin{split}
+        \intR \delta'(x-\xi)h(x)dx &= -\intR\delta(x-\xi)h'(x)dx\\
+        &=-h'(\xi)
+    \end{split}
+\end{equation}
+
+By repeating the integration by parts for subsequent derivatives of \(\delta(x-\xi)\), it can be shown that the \(j\)th derivative of the delta function is defined by
+\begin{equation}
+     \intR \delta^{(j)}(x-\xi)h(x)dx = (-1)^jh^{(j)}(\xi)
+\end{equation}
+
+Note that because of the discontinuity in \(H(x-\xi)\) at the point \(x=\xi\), the derivative of \(H\) does not exist as an ordinary function, but using the previous method does allow us to find \(H'(x-\xi)\) as a generalized function. 
+\begin{equation}
+    \begin{split}
+        \intR H'(x-\xi)h(x)dx &= -\intR H(x-\xi)h'(x)dx\\
+        &=-\int_{\xi}^{\infty}h'(x)dx = h(\xi)
+    \end{split}
+\end{equation}
+and because
+\begin{equation}
+    \intR \delta(x-\xi)h(x)dx=h(\xi)
+\end{equation}
+it must be the case that
+\begin{equation}
+    H'(x-\xi) = \delta(x-\xi)
+\end{equation}
+Such equalities between generalized functions, as seen in (3.18), are understood in the sense that if some \(h\) in \(\mathcal{D}\) is multiplied through, and then we integrate over \((-\infty, \infty)\) then the result will be consistent. That is to say
+\begin{equation}
+    \intR g_1(x)h(x)dx = \intR g_2(x)h(x)dx
+\end{equation}
+for some equivalent generalized functions \(g_1\) and \(g_2\).
+
+As a final aside, notice that
+\begin{equation}
+    x\delta(x)=0
+\end{equation}
+as a result of
+\begin{equation}
+    \intR x\delta(x)h(x)dx=[xh(x)]|_{x=0} = 0
+\end{equation}
