@@ -1,17 +1,11 @@
 \section{The Delta Function}
-In physics and engineering, there exists a notion of "point actions." These are actions that are highly localized in space and/or time. As an example, suppose a circular coin is pressed with unit force against the edge of a metal plate that extends over, \(y>0\) and \(-\infty < x < \infty\), as shown in Figure 3.1. We are interested in the resulting stress field but do not know the details of the force distribution, say \(w(x)\). We do, however, know it will be very concentrated in space and that 
+In physics, we often consider the idea of a point mass. Suppose we have a unit point mass with mass density given by \(w(x)\). We are interested in the mass but do not know the details of its density. We do, however, know that the \(w(x)\) will be highly localized in space and that 
 \begin{equation}
     \int_{-\infty}^{\infty} w(x) dx = 1
 \end{equation}
 so that the net force is unity.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\linewidth]{3.1.png}
-    \caption{Coin pressed to the edge of a plate.}
-\end{figure}
-
-We expect that two highly concentrated force distributions would produce nearly identical stress fields except in the immediate neighborhood of the point at which the force is applied. This is provided they are statically equivalent, meaning that their resultant forces and couples are identical. As such, we might simplify the problem by deciding, a priori, on a definite form for \(w\), such as
+We expect two highly concentrated mass densities to produce nearly identical masses except in the immediate neighborhood of the point at which the mass is concentrated. As such, we might simplify the problem by deciding, a priori, on a definite form for \(w\), such as
 \begin{equation}
     w_k(x) = \begin{cases}
         \frac{k}{2}, & |x|<\frac{1}{k}\\
@@ -24,10 +18,44 @@ or
 \end{equation}
 where \(k>0\). In Fig 3.2, we can see that \(w\) becomes highly concentrated when \(k\) is large.
 
+%Delta sequence diagram
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{3.2.png}
-    \caption{Distributed Force;  eq. 3.3}
+    \begin{tikzpicture}
+        \begin{axis}[
+            axis lines = middle,
+            xlabel = \(x\),
+            ylabel = \(w_k(x)\),
+            xtick = {0},
+            ytick= {0},
+            ymin=0,
+            ymax = 2.65,
+            restrict y to domain=0:2.65
+        ]
+            \addplot[
+                samples=200, 
+                smooth,
+                domain = -1.5:1.5
+                ] 
+                {2/(pi*(1+2^2*x^2))};
+                \node at (axis cs:0.75, 0.32) {$k=2$};
+            \addplot[
+                samples=200, 
+                smooth,
+                domain = -1.5:1.5
+                ] 
+                {4/(pi*(1+4^2*x^2))} node[above, pos=1]{$x^2$};
+                \node at (axis cs:0.43, 0.65) {$k=4$};
+            \addplot[
+                samples=200, 
+                smooth,
+                domain = -1.5:1.5
+                ] 
+                {8/(pi*(1+8^2*x^2))} node[above, pos=1]{$x^2$};
+                \node at (axis cs:0.27, 1.5) {$k=8$};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Delta Sequence;  eq. 3.3}
 \end{figure}
 
 If we let \(k \rightarrow \infty\), then the force distribution approaches our idea of a "point-action," which in this case is a force of unit strength, acting at \(x=0\). Calling this "point-action" \(\delta(x)\), then
@@ -41,7 +69,7 @@ However, this cannot be considered a rigorous definition of the delta function b
 \end{definition}
 
 \begin{definition}
-    A function has compact support if the subset of its domain for which its range is non-zero is closed and bounded. 
+    A function has compact support if the subset of its domain for which its range is non-zero is closed and bounded.
 \end{definition}
 
 The delta function is more appropriately defined as a generalized function. To understand this way of defining \(\delta\), consider the following functional,
