@@ -2,3 +2,4 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
 \contentsline {section}{\numberline {2}The Adjoint Operator}{2}{section.2}%
 \contentsline {section}{\numberline {3}The Delta Function}{4}{section.3}%
+\contentsline {section}{\numberline {4}The Method of Green's Functions}{8}{section.4}%

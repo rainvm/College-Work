@@ -65,11 +65,11 @@ If we let \(k \rightarrow \infty\), then the force distribution approaches our i
 However, this cannot be considered a rigorous definition of the delta function because the limit is infinite for \(x=0\). 
 
 \begin{definition}
-    Generalized functions are continuous linear functionals that are continuous on the set of infinitely differentiable functions with compact support such that all generalized functions have derivatives which are also generalized functions.
+    A function has compact support if the subset of its domain for which its range is non-zero is closed and bounded.
 \end{definition}
 
 \begin{definition}
-    A function has compact support if the subset of its domain for which its range is non-zero is closed and bounded.
+    Generalized functions are continuous linear functionals that are continuous on the set of infinitely differentiable functions with compact support such that all generalized functions have derivatives which are also generalized functions.
 \end{definition}
 
 The delta function is more appropriately defined as a generalized function. To understand this way of defining \(\delta\), consider the following functional,
@@ -93,10 +93,10 @@ Then, \(g(x)\) must be the Heaviside step function,
 which is a function in the classical sense.
 
 If \(\mathcal{F}(h)\) is \(h(0)\) so that
-\begin{equation}
+\begin{equation}\label{eq:introtodelta}
     \int_{-\infty}^{\infty}g(x)h(x) dx=h(0)
 \end{equation}
-then it can be shown that there is no function, \(g(x)\), which exists such that (3.8) is true for all functions, \(h(x)\), in the domain, \(\mathcal{D}\). It is then the case that \(g\) must be a generalized function, which we call the delta function. As such, \(\delta\) can be defined in the following way.
+then it can be shown that there is no function, \(g(x)\), which exists such that equation (\ref{eq:introtodelta}) is true for all functions, \(h(x)\), in the domain, \(\mathcal{D}\). We call \(g\) defined by equation (\ref{eq:introtodelta}) a generalized function, and in particular, it is the delta function. As such, \(\delta\) is defined in the following way.
 \begin{equation}
     \int_{-\infty}^{\infty} \delta(x)h(x) dx = h(0)
 \end{equation}
@@ -109,31 +109,40 @@ As a generalized function, \(\delta\) is also differentiable. By referring to (3
 \begin{equation}
     \int_{-\infty}^{\infty} g'(x)h(x) dx= \mathcal{F}(h)
 \end{equation}
-Next, we integrate by parts
+Integrating by parts
 \begin{equation}
     \intR g'(x)h(x)dx = g(x)h(x)\biggr\rvert_{-\infty}^{\infty} - \intR g(x)h'(x)dx
 \end{equation}
-The integral term is fairly simple to interpret since it is of the same form as (3.5), but the boundary term is not as nice because it involves knowing the values of \(g\). To deal with this, we will discard the boundary term and define \(g'\) with the formula
+The integral term is fairly simple to interpret since it is of the same form as (3.5), but the boundary term is not as nice because it involves knowing the values of \(g\). However, our restriction that \(h\) has compact support means that it must vanish at infinity, and since we are integrating from \(-\inf\) to \(inf\), the boundary term must be zero.
 \begin{equation}
     \intR g'(x)h(x)dx = -\intR g(x)h'(x)dx
 \end{equation}
 For the delta function, this means
 \begin{equation}
-    \begin{split}
+    \begin{split} \label{eq:deltafirst}
         \intR \delta'(x-\xi)h(x)dx &= -\intR\delta(x-\xi)h'(x)dx\\
         &=-h'(\xi)
     \end{split}
 \end{equation}
 
 
-\begin{theorem}
+\begin{theorem} \label{th:deltad}
     The \(j\)th derivative of the delta function is defined by
     \begin{equation}
-         \intR \delta^{(j)}(x-\xi)h(x)dx = (-1)^jh^{(j)}(\xi)
+         \intR \delta^{(j)}(\xi-x)h(\xi)d\xi = (-1)^jh^{(j)}(x)
     \end{equation}
 \end{theorem}
-\begin{proof}
-    By induction. I haven't figured out how to do this yet.
+\begin{proof} 
+    \textbf{3.1}\\
+    \noindent\rule{\textwidth}{1pt}
+    \textbf{Base case:} Proven to be true for \(j\) = 1 in equation (\ref{eq:deltafirst}).\\
+    \textbf{Induction step:} Let \(k \in \mathbb{N}\) and suppose theorem \ref{th:deltad} is true for \(j=k\). Then
+    \begin{align*}
+        \intR \delta^{(k+1)}(\xi-x)h(\xi)d\xi &= \d^{(k)}(\xi-x)h(\xi)\bounds{-\inf}{\inf}-\intR \delta^{(k)}(\xi-x)h'(\xi)d\xi\\
+        &=-\intR \delta^{(k)}(\xi-x)h'(\xi)d\xi\\
+        &=-(-1)^{k}(h')^{(k)}(x)\\
+        &=(-1)^{k+1}h^{(k+1)}(x)
+    \end{align*}
 \end{proof}
 
 Note that because of the discontinuity in \(H(x-\xi)\) at the point \(x=\xi\), the derivative of \(H\) does not exist as an ordinary function, but using the previous method does allow us to find \(H'(x-\xi)\) as a generalized function. 

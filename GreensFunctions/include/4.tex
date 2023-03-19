@@ -1,0 +1,37 @@
+\section{The Method of Green's Functions}
+\setcounter{example}{0}
+A Green's function is the solution to a differential equation of the form
+\begin{equation} \label{eq:greensdef}
+    \opp{L^*} G = \delta.
+\end{equation}
+By making use of some of the delta function's unusual properties, Green's functions can be used to solve nonhomogeneous linear differential equations.
+
+To find the solution to the linear differential equation
+\begin{equation} \label{eq:4.2}
+    \opp{L}u=\phi,
+\end{equation}
+we start by finding the formal adjoint as in equation (\ref{eq:adjoint}). If instead of \(v\), we use \(G\) to represent the Green's function, and we replace \(x\) with a dummy variable \(\xi\), we are left with an equation of the form
+\begin{equation} \label{eq:greenadjoint}
+    \intl G(\xi, x)\opp{L}u(\xi) d\xi = \bterms + \intl u(\xi)\opp{L^*}G(\xi,x) d\xi.
+\end{equation} 
+It follows from equation (\ref{eq:g reensdef}) that the we can replace \(\opp{L^*}G\) with \(\d\), and from equation (\ref{eq:4.2}) that we can replace \(\opp{L}u\) with \(\phi\). 
+\begin{equation}
+    \begin{split}
+        \intl G(\xi,x)\phi(\xi) d\xi &= \bterms + \intl u(\xi)\d(\xi-x) d\xi\\
+        &=\bterms + u(x).
+    \end{split}
+\end{equation}
+Therefore, if we choose boundary conditions for \(G\) such that the boundary terms do not depend on \(u\) and we are able to find \(G\), then finding \(u\) is reduced to a problem of integrating \(G\phi\). 
+
+To illustrate the key ideas of the method, we will consider several examples which begin simply and become more complex. Each example will be concerned with a key concept in implementing the method of Green's functions.
+\begin{example}
+    \textit{Loaded String}
+    
+    Consider the boundary value problem
+    \begin{equation}
+        u''(x) = \phi(x);\quad u(0)=u(1)=0
+    \end{equation}
+    where \(\phi(x)\) is prescribed. \textbf{EXPLAIN LOADED STRING WITH DIAGRAM}. 
+    
+    We must first find the formal adjoint \(\opp{L^*}\) as in equation (\ref{eq:greenadjoint}). 
+\end{example}

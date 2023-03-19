@@ -1,7 +1,6 @@
-PWD /home/rain/CollegeWork/GreensFunctions/include
-INPUT /var/lib/texmf/web2c/luahbtex/lualatex.fmt
-INPUT ./2.tex
+PWD c:/College-Work/GreensFunctions/include
+INPUT c:/texlive/2022/texmf.cnf
+INPUT c:/texlive/2022/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT c:/College-Work/GreensFunctions/include/2.tex
 OUTPUT 2.log
-INPUT /usr/share/texlive/texmf-dist/tex/latex/latexconfig/lualatexquotejobname.lua
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ltluatex.lua
-INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.lua
