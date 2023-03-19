@@ -1,7 +1,8 @@
 \section{The Delta Function}
+\subsection{Delta Seqeunces}
 In physics, we often consider the idea of a point mass. Suppose we have a unit point mass with mass density given by \(w(x)\). We are interested in the mass but do not know the details of its density. We do, however, know that the \(w(x)\) will be highly localized in space and that 
 \begin{equation}
-    \int_{-\infty}^{\infty} w(x) dx = 1
+    \int_{-\infty}^{\infty} w(x) dx = 1a
 \end{equation}
 so that the net force is unity.
 
@@ -18,14 +19,39 @@ or
 \end{equation}
 where \(k>0\). In Fig 3.2, we see that \(w\) becomes highly concentrated when \(k\) is large.
 
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[
+        declare function ={
+            func(\x,\k)=and(\x<(1/\k), \x>(-1/\k))*(\k/2);
+        }
+    ]
+        \begin{axis}[
+            axis lines = middle,
+            xlabel = \(x\),
+            ylabel = \(w_k(x)\),
+            ymin = 0,
+            x label style = {anchor=north},
+            xtick = {0},
+            ytick= {0},
+        ]
+            \addplot[]{func(x,1)};
+            \addplot[]{func(x,2)};
+            \addplot[]{func(x,4)};
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Delta Sequence; eq 3.2}
+\end{figure}
+
 %Delta sequence diagram
-\begin{figure}[H]
+\begin{figure}
     \centering
     \begin{tikzpicture}
         \begin{axis}[
             axis lines = middle,
             xlabel = \(x\),
             ylabel = \(w_k(x)\),
+            x label style = {anchor=north},
             xtick = {0},
             ytick= {0},
             ymin=0,
@@ -44,14 +70,14 @@ where \(k>0\). In Fig 3.2, we see that \(w\) becomes highly concentrated when \(
                 smooth,
                 domain = -1.5:1.5
                 ] 
-                {4/(pi*(1+4^2*x^2))} node[above, pos=1]{$x^2$};
+                {4/(pi*(1+4^2*x^2))};
                 \node at (axis cs:0.43, 0.65) {$k=4$};
             \addplot[
                 samples=200, 
                 smooth,
                 domain = -1.5:1.5
                 ] 
-                {8/(pi*(1+8^2*x^2))} node[above, pos=1]{$x^2$};
+                {8/(pi*(1+8^2*x^2))};
                 \node at (axis cs:0.27, 1.5) {$k=8$};
         \end{axis}
     \end{tikzpicture}
