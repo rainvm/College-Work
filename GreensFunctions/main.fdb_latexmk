@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex main.idx"] 1679211371 "main.idx" "main.ind" "main" 1679211513
+["makeindex main.idx"] 1679211751 "main.idx" "main.ind" "main" 1679211868
   "main.idx" 0 -1 0 "pdflatex"
   (generated)
   "main.ilg"
   "main.ind"
-["pdflatex"] 1679211511 "c:/College-Work/GreensFunctions/main.tex" "main.pdf" "main" 1679211513
+["pdflatex"] 1679211866 "c:/College-Work/GreensFunctions/main.tex" "main.pdf" "main" 1679211868
   "c:/College-Work/GreensFunctions/main.tex" 1679188461 460 6411dcae3eb76599bc868428a4084546 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1659991465 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1659989475 1004 54797486969f23fa377b128694d548df ""
@@ -248,15 +248,15 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1659995908 4634946 d2848b86361d48ab78eef9225f65482b ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1659996054 2873721 7f24a4dcb404e828ddae762a8dc523a4 ""
   "c:/texlive/2022/texmf.cnf" 1659995886 713 e69b156964470283e0530f5060668171 ""
-  "include/1.tex" 1679211510 1836 06e5caa31028c11d02b7af093b2769d7 ""
-  "include/2.tex" 1679203221 3896 69be2fa3fb9090c5a9313f650f737eb9 ""
-  "include/3.tex" 1679211185 8009 77e4f692e39e42e7ff59a8924e6bc864 ""
+  "include/1.tex" 1679211805 1811 e1dd44fcde1e49c0db8b1ea03c3c3b23 ""
+  "include/2.tex" 1679211691 3910 1fddd3ac2a747ed161d9dea07fe0b985 ""
+  "include/3.tex" 1679211691 8650 56dfc42a44c70f74051c3b7297f2762a ""
   "include/4.tex" 1679210356 2060 3906fef77acc9f3271459a72166aa744 ""
-  "main.aux" 1679211513 1764 46f332033d4d5a59e8c733c4496b558b "pdflatex"
+  "main.aux" 1679211868 2030 ed17d9faea573928ac7795efa099277c "pdflatex"
   "main.ind" 0 -1 0 "makeindex main.idx"
-  "main.out" 1679211513 601 b7e903b25b31b1db58ca9f0a4708d634 "pdflatex"
+  "main.out" 1679211868 736 0b7b0ba50249a87dbf49e0a33c9ae5b4 "pdflatex"
   "main.tex" 1679188461 460 6411dcae3eb76599bc868428a4084546 ""
-  "main.toc" 1679211513 335 835c8c42eaccb635f49f5b61e5acc150 "pdflatex"
+  "main.toc" 1679211868 416 c25345f2e309419d6b0757ed7b50f8df "pdflatex"
   "preamble/defs.tex" 1679211491 917 b9e5168d0ae548e0abf10e0141a50269 ""
   "preamble/env.tex" 1679208949 1780 6f3c8beca1c4685be19869ceb789a90d ""
   "preamble/newcommands.tex" 1679205644 1080 d5ce9b722d703424e07e60aa9b9d76ac ""

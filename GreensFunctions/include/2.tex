@@ -3,7 +3,7 @@ To determine the Green's function for a particular differential equation and its
 \begin{equation} \label{eq:adjoint}
 	\intl vLu dx = [\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b} + \intl uL^*v dx,
 \end{equation}
-where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary terms resulting from the successive integration by parts. Here, \(u\) and \(v\) are arbitrary and sufficiently differentiable for functions so that the left and right sides are well defined. 
+where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary terms resulting from the successive integration by parts. Here, \(u\) and \(v\) must be sufficiently differentiable functions so that the left and right sides are well defined. 
 
 As an example, consider the linear differentiable operator
 \begin{equation}
@@ -21,18 +21,18 @@ To find \(L^*\), perform integration by parts on each term of the product \(vLu\
 From this, it is clear that 
 \begin{equation}
 	\begin{split}
-		L^*v &= (Av)''-(Bv)'+Cv\\
-		     &= (A'v+Av')'-B'v-Bv'+Cv\\
-		     &= Av''+(2A'-B)v'+(A''-B'+C)
+		L^*v &= (av)''-(bv)'+cv\\
+		     &= (a'v+av')'-b'v-bv'+cv\\
+		     &= av''+(2a'-b)v'+(a''-b'+c)
 	\end{split}
 \end{equation}
 and so the formal adjoint of the second-order linear differential operator \(L\) must be of the form
 \begin{equation}
-	L^*=A\frac{d^2}{dx^2} + (2A'-B)\frac{d}{dx}+(A''-B'+C)
+	L^*=a\frac{d^2}{dx^2} + (2a'-b)\frac{d}{dx}+(a''-b'+c).
 \end{equation}
 
 
-If \(L^* = L\), then \(L\) is called formally self-adjoint. By comparing equations (2.2) and (2.5), we can see that for a second-order linear differentiable operator to be formally self-adjoint, \(A'\) must be equal to \(B\). You may notice that \(A''-B'+C\) must also be equal to C, but this is always true given that \(A'\) equals \(B\).
+If \(L^* = L\), then \(L\) is called formally self-adjoint. By comparing equations (2.2) and (2.5), we can see that for a second-order linear differentiable operator to be formally self-adjoint, it is sufficient that \(\a'=b\). You may notice that \(a''-b'+c\) must also be equal to C, but this is always true given that \(a'\) equals \(b\).
 
 \begin{definition}
 	If the boundary conditions on \(L\) are homogeneous\footnote{By homogeneous, we mean that each boundary condition is of the form \(B_j(u)=0\) and only contains terms that are 0 when \(u(x)=0\).}, then we can also define an adjoint operator, \(\mathcal{L}^*\), by the relation
@@ -43,7 +43,7 @@ If \(L^* = L\), then \(L\) is called formally self-adjoint. By comparing equatio
 	\begin{equation}
 		(f,g) = \int_a^bf(x)g(x)dx.
 	\end{equation}
-	This means adjoint operator \(\mathcal{L}^*\) consists of \(L^*\) and boundary conditions for which the boundary terms of the integral are zero. 
+	This means that the adjoint operator \(\mathcal{L}^*\) consists of \(L^*\) and boundary conditions for which the boundary terms of the integral are zero. 
 \end{definition}
 
 \begin{example}
@@ -56,5 +56,9 @@ If \(L^* = L\), then \(L\) is called formally self-adjoint. By comparing equatio
 			       &= u(1)(v(1)-3v(0)) + \int_0^1uL^*vdx
 		\end{split}
 	\end{equation}
-	Since the particular value of \(u(1)\) is not given, we must make \(v(1)-3v(0)\) equal zero, because choosing \(u(1)=0\) would undully restrict our solution. Therefore \(\mathcal{L^*}\) consists of \(L^*\) which is \(-\frac{d}{dx}\) and the boundary condition \(v(1) - 3v(0)=0\). As a final note, if \(\mathcal{L}=\mathcal{L}^*\), then \(\mathcal{L}\) is called self-adjoint.
+	Since the particular value of \(u(1)\) is not given, we must impose the condition \(v(1)-3v(0)=0\), because choosing \(u(1)=0\) would undully restrict our solution. Therefore \(\mathcal{L^*}\) consists of \(L^*\) which is \(-\frac{d}{dx}\) and the boundary condition \(v(1) - 3v(0)=0\). 
 \end{example}
+
+\
+
+As a final note, if \(\mathcal{L}=\mathcal{L}^*\), then \(\mathcal{L}\) is called self-adjoint.

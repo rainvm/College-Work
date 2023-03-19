@@ -4,10 +4,13 @@
 \@nameuse{bbl@beforestart}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -21,11 +24,4 @@
 \newlabel{eq:adjoint}{{2.1}{2}{The Adjoint Operator}{equation.2.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}The Delta Function}{4}{section.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Delta Sequence; eq. 3.3\relax }}{5}{figure.caption.2}\protected@file@percent }
-\newlabel{eq:introtodelta}{{3.8}{6}{The Delta Function}{equation.3.8}{}}
-\newlabel{eq:deltafirst}{{3.14}{6}{The Delta Function}{equation.3.14}{}}
-\newlabel{th:deltad}{{3.1}{7}{}{theorem.3.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}The Method of Green's Functions}{8}{section.4}\protected@file@percent }
-\newlabel{eq:greensdef}{{4.1}{8}{The Method of Green's Functions}{equation.4.1}{}}
-\newlabel{eq:4.2}{{4.2}{8}{The Method of Green's Functions}{equation.4.2}{}}
-\newlabel{eq:greenadjoint}{{4.3}{8}{The Method of Green's Functions}{equation.4.3}{}}
-\gdef \@abspage@last{8}
+\gdef \@abspage@last{7}
