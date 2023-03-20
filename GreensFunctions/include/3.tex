@@ -2,11 +2,11 @@
 \subsection{Delta Seqeunces}
 In physics, we often consider the idea of a point mass. Suppose we have a unit point mass with mass density given by \(w(x)\). We are interested in the mass but do not know the details of its density. We do, however, know that the \(w(x)\) will be highly localized in space and that 
 \begin{equation}
-    \int_{-\infty}^{\infty} w(x) dx = 1a
+    \int_{-\infty}^{\infty} w(x) dx = 1
 \end{equation}
-so that the net force is unity.
+so that the net mass is unity.
 
-We expect two highly concentrated mass densities to produce nearly identical masses except in the immediate neighborhood of the point at which the mass is concentrated. As such, we might simplify the problem by deciding, a priori, on a definite form for \(w\), such as
+We expect two highly concentrated unit mass densities to produce nearly identical masses. As such, we might simplify the problem by deciding, a priori, on a definite form for \(w\), such as
 \begin{equation}
     w_k(x) = \begin{cases}
         \frac{k}{2}, & |x|<\frac{1}{k}\\
@@ -15,9 +15,9 @@ We expect two highly concentrated mass densities to produce nearly identical mas
 \end{equation}
 or
 \begin{equation}
-    w_k(x)=\frac{k}{\pi (1+k^2x^2)}
+    w_k(x)=\frac{k}{\pi (1+k^2x^2)}\,,
 \end{equation}
-where \(k>0\). In Fig 3.2, we see that \(w\) becomes highly concentrated when \(k\) is large.
+where \(k>0\). In Fig 3.2, we see that \(w\) becomes highly concentrated at \(x=0\) when \(k\) is large.
 
 \begin{figure}
     \centering
@@ -40,10 +40,9 @@ where \(k>0\). In Fig 3.2, we see that \(w\) becomes highly concentrated when \(
             \addplot[]{func(x,4)};
         \end{axis}
     \end{tikzpicture}
-    \caption{Delta Sequence; eq 3.2}
+    \caption{Mass Density; eq 3.2}
 \end{figure}
 
-%Delta sequence diagram
 \begin{figure}
     \centering
     \begin{tikzpicture}
@@ -81,21 +80,33 @@ where \(k>0\). In Fig 3.2, we see that \(w\) becomes highly concentrated when \(
                 \node at (axis cs:0.27, 1.5) {$k=8$};
         \end{axis}
     \end{tikzpicture}
-    \caption{Delta Sequence;  eq. 3.3}
+    \caption{Mass Density;  eq. 3.3}
 \end{figure}
 
-If we let \(k \rightarrow \infty\), then the force distribution approaches our idea of a "point-action," which in this case is a force of unit strength, acting at \(x=0\). Calling this "point-action" \(\delta(x)\), then
-\begin{equation}
+If we let \(k \rightarrow \infty\), then the mass distribution approaches our idea of a point mass at \(x=0\). Calling this \(\delta(x)\), then
+\begin{equation} \label{eq:deltaSeqLim}
     \delta(x) = \lim_{k\rightarrow \infty} w_k(x)
 \end{equation}
-However, this cannot be considered a rigorous definition of the delta function because the limit is infinite for \(x=0\). 
+This definition feels intuitive, but it is not a rigorous definition of the delta function because the limit is infinite for \(x=0\). We can instead define the delta function in the following way.
+\begin{equation}
+    \intR h(x)\d(x)dx = \lim_{k\rightarrow \inf}\intR h(x)w_k(x)dx
+\end{equation}
+This way of defining the delta function is more rigorous while still being intuitive because it is related to our understanding of delta sequences.
 
+\begin{assertion}
+    If w(x) is a non-negative function that satisfies \(\intR w dx=1\) and \(w(x)=O(1/x^{1+\alpha})\) where \(\alpha > 0\) as \(x\rightarrow \inf\) then \(kw(kx)\) is a \(\d-sequence\)
+\end{assertion}
+
+\subsection{Delta as a Generalized Function}
+\begin{definition}
+    An interval is closed if it includes its endpoints.
+\end{definition}
 \begin{definition}
     A function has compact support if the subset of its domain for which its range is non-zero is closed and bounded.
 \end{definition}
 
 \begin{definition}
-    Generalized functions are continuous linear functionals that are continuous on the set of infinitely differentiable functions with compact support such that all generalized functions have derivatives which are also generalized functions.
+    Generalized functions are linear functionals that are continuous on the set of infinitely differentiable functions with compact support such that all generalized functions have derivatives which are also generalized functions.
 \end{definition}
 
 The delta function is more appropriately defined as a generalized function. To understand this way of defining \(\delta\), consider the following functional,
@@ -116,7 +127,7 @@ Then, \(g(x)\) must be the Heaviside step function,
         \frac{1}{2}, & x=0
     \end{cases}
 \end{equation}
-which is a function in the classical sense.
+which is a function in the classical sense. \footnote{I have defined \(H(0)\) to be \(\frac{1}{2}\), which is the most commonly accepted value. However, for our purposes, the value at any particular point is not important since we are only ever interested in integrating the function.}
 
 If \(\mathcal{F}(h)\) is \(h(0)\) so that
 \begin{equation}\label{eq:introtodelta}
@@ -129,15 +140,15 @@ then it can be shown that there is no function, \(g(x)\), which exists such that
 
 Although \(\delta(x)\) acts at \(x=0\), it can be adjusted to act at any point by shifting the argument. Thus, \(\delta(x-\xi)\) acts at \(x=\xi\),
 \begin{equation}
-    \int_{-infty}^{\infty} \delta(x-\xi)h(x)dx = h(\xi)
+    \int_{-infty}^{\infty} \delta(x-\xi)h(x)dx = h(\xi).
 \end{equation}
 As a generalized function, \(\delta\) is also differentiable. By referring to (3.5), one can see that defining the derivative of a generalized function involves determining the functional, \(\mathcal{F}(h)\) for
 \begin{equation}
-    \int_{-\infty}^{\infty} g'(x)h(x) dx= \mathcal{F}(h)
+    \int_{-\infty}^{\infty} g'(x)h(x) dx= \mathcal{F}(h).
 \end{equation}
 Integrating by parts
 \begin{equation}
-    \intR g'(x)h(x)dx = g(x)h(x)\biggr\rvert_{-\infty}^{\infty} - \intR g(x)h'(x)dx
+    \intR g'(x)h(x)dx = g(x)h(x)\biggr\rvert_{-\infty}^{\infty} - \intR g(x)h'(x)dx.
 \end{equation}
 The integral term is fairly simple to interpret since it is of the same form as (3.5), but the boundary term is not as nice because it involves knowing the values of \(g\). However, our restriction that \(h\) has compact support means that it must vanish at infinity, and since we are integrating from \(-\inf\) to \(inf\), the boundary term must be zero.
 \begin{equation}
@@ -147,7 +158,7 @@ For the delta function, this means
 \begin{equation}
     \begin{split} \label{eq:deltafirst}
         \intR \delta'(x-\xi)h(x)dx &= -\intR\delta(x-\xi)h'(x)dx\\
-        &=-h'(\xi)
+        &=-h'(\xi).
     \end{split}
 \end{equation}
 
@@ -155,7 +166,7 @@ For the delta function, this means
 \begin{theorem} \label{th:deltad}
     The \(j\)th derivative of the delta function is defined by
     \begin{equation}
-         \intR \delta^{(j)}(\xi-x)h(\xi)d\xi = (-1)^jh^{(j)}(x)
+         \intR \delta^{(j)}(\xi-x)h(\xi)d\xi = (-1)^jh^{(j)}(x).
     \end{equation}
 \end{theorem}
 \begin{proof} 
@@ -171,7 +182,7 @@ For the delta function, this means
     \end{align*}
 \end{proof}
 
-Note that because of the discontinuity in \(H(x-\xi)\) at the point \(x=\xi\), the derivative of \(H\) does not exist as an ordinary function, but using the previous method does allow us to find \(H'(x-\xi)\) as a generalized function. 
+Note that because of the discontinuity in \(H(x-\xi)\) at the point \(x=\xi\), the derivative of \(H\) does not exist as an ordinary function, but using the previous method does allow us to find \(H'(x-\xi)\) as a generalized function, 
 \begin{equation}
     \begin{split}
         \intR H'(x-\xi)h(x)dx &= -\intR H(x-\xi)h'(x)dx\\
@@ -182,15 +193,14 @@ and because
 \begin{equation}
     \intR \delta(x-\xi)h(x)dx=h(\xi)
 \end{equation}
-it must be the case that
+it must be the case that, in the sense of generalized functions,
 \begin{equation}
-    H'(x-\xi) = \delta(x-\xi)
+    H'(x-\xi) = \delta(x-\xi).
 \end{equation}
-Such equalities between generalized functions, as seen in (3.18), are understood in the sense that if some \(h\) in \(\mathcal{D}\) is multiplied through, and we integrate over \((-\infty, \infty)\) then the result will be consistent. That is to say
+Such equalities between generalized functions, as seen in (3.18), are understood in the sense that if some \(h\) in \(\mathcal{D}\) is multiplied through, and we integrate over \((-\infty, \infty)\) then the result will be consistent. To wit, we consider generalized functions to be equal if
 \begin{equation}
-    \intR g_1(x)h(x)dx = \intR g_2(x)h(x)dx
+    \intR g_1(x)h(x)dx = \intR g_2(x)h(x)dx.
 \end{equation}
-for some equivalent generalized functions \(g_1\) and \(g_2\).
 
 As a final aside, notice that
 \begin{equation}
@@ -198,5 +208,5 @@ As a final aside, notice that
 \end{equation}
 as a result of
 \begin{equation}
-    \intR x\delta(x)h(x)dx=[xh(x)]|_{x=0} = 0
+    \intR x\delta(x)h(x)dx=[xh(x)]|_{x=0} = 0.
 \end{equation}

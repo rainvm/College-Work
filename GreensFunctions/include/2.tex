@@ -1,7 +1,7 @@
 \section{The Adjoint Operator}
-To determine the Green's function for a particular differential equation and its boundary conditions, begin by finding the adjoint operator, denoted \(\mathcal{L*}\). The adjoint operator consists of the formal adjoint, \(L^*\), and the boundary conditions associated with the Green's function. To determine these, first form the product, \(vLu\), and integrate it over the interval of interest. By repeated integration by parts, we can express the integral in the form
+To determine the Green's function for a particular differential equation and its boundary conditions, begin by finding the adjoint operator, denoted \(\mathcal{\Lstar  }\). The adjoint operator consists of the formal adjoint, \(\Lstar  \), and the boundary conditions associated with the Green's function. To determine these, first form the product, \(vLu\), and integrate it over the interval of interest. By repeated integration by parts, we can express the integral in the form
 \begin{equation} \label{eq:adjoint}
-	\intl vLu dx = [\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b} + \intl uL^*v dx,
+	\intl vLu dx = [\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b} + \intl u\Lstar  v dx,
 \end{equation}
 where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary terms resulting from the successive integration by parts. Here, \(u\) and \(v\) must be sufficiently differentiable functions so that the left and right sides are well defined. 
 
@@ -9,7 +9,7 @@ As an example, consider the linear differentiable operator
 \begin{equation}
 	L= a(x) \frac{d^2}{dx^2} + b(x)\frac{d}{dx} + c(x)
 \end{equation}
-To find \(L^*\), perform integration by parts on each term of the product \(vLu\) until there is no derivative of \(u\) within the integral. That is to say, integrate by parts twice on the first term, once on the second, and not at all on the third. Doing this, we are left with
+To find \(\Lstar  \), perform integration by parts on each term of the product \(vLu\) until there is no derivative of \(u\) within the integral. That is to say, integrate by parts twice on the first term, once on the second, and not at all on the third. Doing this, we are left with
 \begin{equation}
 	\begin{split}
 		\intl vLu dx &= \intl (vau''+ vbu' + vc)dx\\
@@ -21,29 +21,29 @@ To find \(L^*\), perform integration by parts on each term of the product \(vLu\
 From this, it is clear that 
 \begin{equation}
 	\begin{split}
-		L^*v &= (av)''-(bv)'+cv\\
+		\Lstar v &= (av)''-(bv)'+cv\\
 		     &= (a'v+av')'-b'v-bv'+cv\\
 		     &= av''+(2a'-b)v'+(a''-b'+c)
 	\end{split}
 \end{equation}
 and so the formal adjoint of the second-order linear differential operator \(L\) must be of the form
 \begin{equation}
-	L^*=a\frac{d^2}{dx^2} + (2a'-b)\frac{d}{dx}+(a''-b'+c).
+	\Lstar =a\frac{d^2}{dx^2} + (2a'-b)\frac{d}{dx}+(a''-b'+c).
 \end{equation}
 
 
-If \(L^* = L\), then \(L\) is called formally self-adjoint. By comparing equations (2.2) and (2.5), we can see that for a second-order linear differentiable operator to be formally self-adjoint, it is sufficient that \(\a'=b\). You may notice that \(a''-b'+c\) must also be equal to C, but this is always true given that \(a'\) equals \(b\).
+If \(\Lstar  = L\), then \(L\) is called formally self-adjoint. By comparing equations (2.2) and (2.5), we can see that for a second-order linear differentiable operator to be formally self-adjoint, it is sufficient that \(\a'=b\). You may notice that \(a''-b'+c\) must also be equal to C, but this is always true given that \(a'\) equals \(b\).
 
 \begin{definition}
-	If the boundary conditions on \(L\) are homogeneous\footnote{By homogeneous, we mean that each boundary condition is of the form \(B_j(u)=0\) and only contains terms that are 0 when \(u(x)=0\).}, then we can also define an adjoint operator, \(\mathcal{L}^*\), by the relation
+	If the boundary conditions on \(L\) are homogeneous\footnote{By homogeneous, we mean that each boundary condition is of the form \(B_j(u)=0\).}, then we can also define an adjoint operator, \(\mathcal{L}^*\), by the relation
 	\begin{equation}
-		(Lu,v) = (u,L^*v)
+		(Lu,v) = (u,\Lstar v)
 	\end{equation}
 	where \((f,g)\) is the inner product of \(f\) and \(g\),
 	\begin{equation}
 		(f,g) = \int_a^bf(x)g(x)dx.
 	\end{equation}
-	This means that the adjoint operator \(\mathcal{L}^*\) consists of \(L^*\) and boundary conditions for which the boundary terms of the integral are zero. 
+	This means that the adjoint operator \(\mathcal{L}^*\) consists of \(\Lstar \) and boundary conditions for which the boundary terms of the integral are zero. 
 \end{definition}
 
 \begin{example}
@@ -52,11 +52,11 @@ If \(L^* = L\), then \(L\) is called formally self-adjoint. By comparing equatio
 		\begin{split}
 			(Lu,v) &= \int_0^1u'vdx\\
 			       &= (uv)\biggr\rvert_0^1 - \int_0^1 uv'dx\\
-			       &= u(1)v(1)-u(0)v(0)+\int_0^1uL^*vdx\\
-			       &= u(1)(v(1)-3v(0)) + \int_0^1uL^*vdx
+			       &= u(1)v(1)-u(0)v(0)+\int_0^1u\Lstar vdx\\
+			       &= u(1)(v(1)-3v(0)) + \int_0^1u\Lstar vdx
 		\end{split}
 	\end{equation}
-	Since the particular value of \(u(1)\) is not given, we must impose the condition \(v(1)-3v(0)=0\), because choosing \(u(1)=0\) would undully restrict our solution. Therefore \(\mathcal{L^*}\) consists of \(L^*\) which is \(-\frac{d}{dx}\) and the boundary condition \(v(1) - 3v(0)=0\). 
+	Since the particular value of \(u(1)\) is not given, we must impose the condition \(v(1)-3v(0)=0\), because choosing \(u(1)=0\) would undully restrict our solution. Therefore \(\mathcal{\Lstar  }\) consists of \(\Lstar  \) which is \(-\frac{d}{dx}\) and the boundary condition \(v(1) - 3v(0)=0\). 
 \end{example}
 
 \
