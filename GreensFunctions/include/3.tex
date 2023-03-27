@@ -1,12 +1,13 @@
-\section{The Delta Function}
-\subsection{Delta Seqeunces}
-In physics, we often consider the idea of a point mass. Suppose we have a unit point mass with mass density given by \(w(x)\). We are interested in the mass but do not know the details of its density. We do, however, know that the \(w(x)\) will be highly localized in space and that 
+\section{the Dirac delta function}
+\setcounter{example}{0}
+\subsection{Delta Sequences}
+In physics, we often consider the idea of a point mass. Suppose we have a unit point mass at \(x=0\) with mass density given by \(w(x)\). We are interested in the mass but do not know the details of its density. We do, however, know that the \(w(x)\) will be highly localized in space and that 
 \begin{equation}
     \int_{-\infty}^{\infty} w(x) dx = 1
 \end{equation}
 so that the net mass is unity.
 
-We expect two highly concentrated unit mass densities to produce nearly identical masses. As such, we might simplify the problem by deciding, a priori, on a definite form for \(w\), such as
+We expect two highly concentrated unit mass densities to produce masses with nearly identical physical effects. As such, we might simplify the problem by deciding, a priori, on a definite form for \(w\), such as
 \begin{equation}
     w_k(x) = \begin{cases}
         \frac{k}{2}, & |x|<\frac{1}{k}\\
@@ -17,27 +18,38 @@ or
 \begin{equation}
     w_k(x)=\frac{k}{\pi (1+k^2x^2)}\,,
 \end{equation}
-where \(k>0\). In Fig 3.2, we see that \(w\) becomes highly concentrated at \(x=0\) when \(k\) is large.
+where \(k\) is some larger natural number. In Fig 3.2, we see that \(w\) becomes highly concentrated at \(x=0\) when \(k\) is large.
 
 \begin{figure}
     \centering
-    \begin{tikzpicture}[
-        declare function ={
-            func(\x,\k)=and(\x<(1/\k), \x>(-1/\k))*(\k/2);
-        }
-    ]
+    \begin{tikzpicture}
+        \def \a {1}
+        \def \b {2}
+        \def \c {3}
         \begin{axis}[
             axis lines = middle,
             xlabel = \(x\),
             ylabel = \(w_k(x)\),
             ymin = 0,
+            ymax = 4.3,
+            xmin = -1,
+            xmax = 1,
             x label style = {anchor=north},
             xtick = {0},
             ytick= {0},
-        ]
-            \addplot[]{func(x,1)};
-            \addplot[]{func(x,2)};
-            \addplot[]{func(x,4)};
+        ] 
+        \addplot [mark=none] coordinates {(1/2, 0) (1/2, 1)};
+        \addplot [mark=none] coordinates {(-1/2, 0) (-1/2, 1)};
+        \addplot [mark=none] coordinates {(-1/2, 1) (1/2, 1)};
+        \node at (axis cs:0.62, 0.32) {$k=2$};
+        \addplot [mark=none] coordinates {(1/4, 0) (1/4, 4/2)};
+        \addplot [mark=none] coordinates {(-1/4, 0) (-1/4, 4/2)};
+        \addplot [mark=none] coordinates {(-1/4, 4/2) (1/4, 4/2)};  
+        \node at (axis cs:0.36, 1.5) {$k=4$};  
+        \addplot [mark=none] coordinates {(1/8, 0) (1/8, 8/2)};
+        \addplot [mark=none] coordinates {(-1/8, 0) (-1/8, 8/2)};
+        \addplot [mark=none] coordinates {(-1/8, 8/2) (1/8, 8/2)};  
+        \node at (axis cs:0.25, 3) {$k=8$};  
         \end{axis}
     \end{tikzpicture}
     \caption{Mass Density; eq 3.2}
@@ -85,55 +97,101 @@ where \(k>0\). In Fig 3.2, we see that \(w\) becomes highly concentrated at \(x=
 
 If we let \(k \rightarrow \infty\), then the mass distribution approaches our idea of a point mass at \(x=0\). Calling this \(\delta(x)\), then
 \begin{equation} \label{eq:deltaSeqLim}
-    \delta(x) = \lim_{k\rightarrow \infty} w_k(x)
+    \delta(x) "=" \lim_{k\rightarrow \infty} w_k(x).
 \end{equation}
-This definition feels intuitive, but it is not a rigorous definition of the delta function because the limit is infinite for \(x=0\). We can instead define the delta function in the following way.
+This definition feels intuitive, but it is not a rigorous definition of the Dirac delta function because the limit is infinite for \(x=0\). That is, it is not a function. We can instead define the Dirac delta function, \(\d(x)\), in the following way.
 \begin{equation}
     \intR h(x)\d(x)dx = \lim_{k\rightarrow \inf}\intR h(x)w_k(x)dx
 \end{equation}
-This way of defining the delta function is more rigorous while still being intuitive because it is related to our understanding of delta sequences.
+This way of defining the Dirac delta function is more rigorous while still being intuitive because it is related to our understanding of delta sequences. However, keep in mind that the delta function is not a function.
 
-\begin{assertion}
-    If w(x) is a non-negative function that satisfies \(\intR w dx=1\) and \(w(x)=O(1/x^{1+\alpha})\) where \(\alpha > 0\) as \(x\rightarrow \inf\) then \(kw(kx)\) is a \(\d-sequence\)
-\end{assertion}
+\begin{theorem}
+    If \(w(x)\) is non-negative \(\intR w(x) dx = 1\), and \(w(x)=O(1/x^{1+\a})\) as \(|x| \rightarrow \inf\) with \(\a>0\), then \(kw(kx) \equiv w_k(x)\) is a \(\d\)-sequence.
+\end{theorem}
+\begin{proof}
+    \noindent\rule{\textwidth}{1pt}
+    
+    First \(\lim w_k(x=0)\) as \(k \rightarrow \inf\), for each fixed \(x \neq 0\), because \(w_k(x)=kw(kx)=O(k\cdot k^{-1-\a} x^{-1-\a}) = O(k^-\a) \rightarrow 0\) as \(k \rightarrow \inf\). 
+    
+    Then 
+    \begin{equation}\label{eq:deltaseqProof1}
+        \begin{split}
+            \lim_{k\rightarrow \inf}\intR w_k(x)h(x) dx &= \lim_{k\rightarrow\inf} \intR w_k(x)[h(x)-h(0)]dx + \lim_{k\rightarrow\inf} w_k(x)h(0)dx\\
+            &=I + J\text{, say.}
+        \end{split}
+    \end{equation}
+    Consider J.
+    \begin{equation}
+        \begin{split}
+            J &= h(0) \lim_{h\rightarrow\inf} \intR kw(kx)dx\\
+            &=h(0)\lim_{k\rightarrow \inf} \intR w(\xi) d\xi\\
+            &= h(0)
+        \end{split}
+    \end{equation}
+
+    Next, to show that \(I=0\) so that the right hand side of equation (\ref{eq:deltaseqProof1}) is \(h(0)\). Select a number \(\beta > 0\). Since \(h\) is assumed to be a continuous at \(x=0\), there must exist a number \(\gamma>0\) such that \(|h(x)-H(0)|<\beta\) whenever \(|x-0|=x<\gamma\). Breaking up the integral in \(I\),
+    \begin{equation}
+        \begin{split}
+            I &= \lim_{k\rightarrow \inf} \int_{-\inf}^{-\gamma} w_k(x)(h(x)-h(0)) dx + \lim_{k\rightarrow \inf} \int_{-\gamma}^{\gamma} w_k(x)(h(x)-h(0)) dx \\ & + \lim_{k\rightarrow \inf} \int_{\gamma}^{\inf} w_k(x)(h(x)-h(0)) dx\\
+            &\equiv I_1 + I_2 + I_3.
+        \end{split}
+    \end{equation}
+    Since \(w_k(x)\rightarrow 0\) uniformly, over \(-\inf< x < -\gamma\) and \(\gamma < x < \inf \), then \(I_1=I_3 =0\), as \(k \-> \inf\). \(I_2\) must also be zero because \(|h(x)-H(0)|\) must be less than an arbitrarily small choice of \(\b\). Thus, showing that \(I=0\) and that 
+    \begin{equation}
+        \lim_{k\rightarrow \inf}\intR w_k(x)h(x) dx = J = h(0).
+    \end{equation}
+\end{proof}
 
 \subsection{Delta as a Generalized Function}
+The Dirac delta function is more appropriately defined as a generalized function. To understand this way of defining \(\d\), we will begin by defining some terms.
+
 \begin{definition}
-    An interval is closed if it includes its endpoints.
-\end{definition}
-\begin{definition}
-    A function has compact support if the subset of its domain for which its range is non-zero is closed and bounded.
+     A \df{closed interval} is one that includes its endpoints.
 \end{definition}
 
 \begin{definition}
-    Generalized functions are linear functionals that are continuous on the set of infinitely differentiable functions with compact support such that all generalized functions have derivatives which are also generalized functions.
+    A function, \(f\), is \df[uniform continuity]{uniformly continuous} if 
+    \begin{equation}
+        \forall \epsilon > 0 ~ \exists \delta > 0 ~ \forall a \in X ~ \forall b \in X: |a-b| < \d \implies |f(a) - f(b)| < \epsilon.
+    \end{equation}
 \end{definition}
 
-The delta function is more appropriately defined as a generalized function. To understand this way of defining \(\delta\), consider the following functional,
+\begin{definition}
+    A function has \df{compact support} if the subset of its domain for which its range is non-zero is closed and bounded.
+\end{definition}
+We will call the space of infinitely differentiable functions with compact support \(\mathcal{D}\).
+
+\begin{definition}
+    \df[generalized function]{Generalized functions} are linear functionals that are uniformly continuous on \(\mathcal{D}\), such that all generalized functions have derivatives which are also generalized functions.
+\end{definition}
+
+Consider the following functional,
 \begin{equation}
-    \mathcal{F}(h) = \int_{-\infty}^{\infty} g(x)h(x).
+    \mathcal{F}(h) = \int_{-\infty}^{\infty} g(x)h(x)dx.
 \end{equation}
 This functional assigns a numerical value, \(\mathcal{F}(h)\), for each function \(h\) within the domain, \(\mathcal{D}\), of \(\mathcal{F}\). We will take \(\mathcal{D}\) to be the set of all functions that are defined over \(-\infty <x<\infty\), are infinitely differentiable, and approach zero outside of some finite interval,
 
-Suppose \(\mathcal{F}(h)\) is the integral of \(h\) from \(\xi\) to \(\infty\).
-\begin{equation}
-    \int_{\infty}^{\infty} g(x)h(x)dx = \int_{\xi}^{\infty} h(x) dx
-\end{equation}
-Then, \(g(x)\) must be the Heaviside step function,
-\begin{equation}
-    H(x) = \begin{cases}
-        1, & x>0\\
-        0, & x<0\\
-        \frac{1}{2}, & x=0
-    \end{cases}
-\end{equation}
-which is a function in the classical sense. \footnote{I have defined \(H(0)\) to be \(\frac{1}{2}\), which is the most commonly accepted value. However, for our purposes, the value at any particular point is not important since we are only ever interested in integrating the function.}
+\begin{example}
+    Suppose \(\mathcal{F}(h)\) is the integral of \(h\) from \(\xi\) to \(\infty\).
+    \begin{equation}
+        \int_{\infty}^{\infty} g(x)h(x)dx = \int_{\xi}^{\infty} h(x) dx
+    \end{equation}
+    Then, \(g(x)\) must be the Heaviside step function,
+    \begin{equation}
+        H(x) = \begin{cases}
+            1, & x>0\\
+            0, & x<0\\
+            \frac{1}{2}, & x=0
+        \end{cases}
+    \end{equation}
+    which is a function in the classical sense. \footnote{We have defined \(H(0)\) to be \(\frac{1}{2}\), which is the most commonly accepted value. However, for our purposes, the value at any particular point is not important since we are only ever interested in integrating the function.}    
+\end{example}
 
 If \(\mathcal{F}(h)\) is \(h(0)\) so that
 \begin{equation}\label{eq:introtodelta}
     \int_{-\infty}^{\infty}g(x)h(x) dx=h(0)
 \end{equation}
-then it can be shown that there is no function, \(g(x)\), which exists such that equation (\ref{eq:introtodelta}) is true for all functions, \(h(x)\), in the domain, \(\mathcal{D}\). We call \(g\) defined by equation (\ref{eq:introtodelta}) a generalized function, and in particular, it is the delta function. As such, \(\delta\) is defined in the following way.
+then it can be shown that there is no function, \(g(x)\), which exists such that equation (\ref{eq:introtodelta}) is true for all functions, \(h(x)\), in the domain, \(\mathcal{D}\). We call \(g\) defined by equation (\ref{eq:introtodelta}) a generalized function, and in particular, it is the Dirac delta function. As such, \(\delta\) is defined in the following way.
 \begin{equation}
     \int_{-\infty}^{\infty} \delta(x)h(x) dx = h(0)
 \end{equation}
@@ -154,7 +212,7 @@ The integral term is fairly simple to interpret since it is of the same form as 
 \begin{equation}
     \intR g'(x)h(x)dx = -\intR g(x)h'(x)dx
 \end{equation}
-For the delta function, this means
+For the Dirac delta function, this means
 \begin{equation}
     \begin{split} \label{eq:deltafirst}
         \intR \delta'(x-\xi)h(x)dx &= -\intR\delta(x-\xi)h'(x)dx\\
@@ -164,16 +222,15 @@ For the delta function, this means
 
 
 \begin{theorem} \label{th:deltad}
-    The \(j\)th derivative of the delta function is defined by
+    The \(j\)th derivative of the Dirac delta function is defined by
     \begin{equation}
          \intR \delta^{(j)}(\xi-x)h(\xi)d\xi = (-1)^jh^{(j)}(x).
     \end{equation}
 \end{theorem}
-\begin{proof} 
-    \textbf{3.1}\\
+\begin{proof}
     \noindent\rule{\textwidth}{1pt}
     \textbf{Base case:} Proven to be true for \(j\) = 1 in equation (\ref{eq:deltafirst}).\\
-    \textbf{Induction step:} Let \(k \in \mathbb{N}\) and suppose theorem \ref{th:deltad} is true for \(j=k\). Then
+    \textbf{Induction step:} Let \(k \in \mathbb{N}\) and suppose the statements holds for \(k>1\). Then
     \begin{align*}
         \intR \delta^{(k+1)}(\xi-x)h(\xi)d\xi &= \d^{(k)}(\xi-x)h(\xi)\bounds{-\inf}{\inf}-\intR \delta^{(k)}(\xi-x)h'(\xi)d\xi\\
         &=-\intR \delta^{(k)}(\xi-x)h'(\xi)d\xi\\
@@ -182,14 +239,14 @@ For the delta function, this means
     \end{align*}
 \end{proof}
 
-Note that because of the discontinuity in \(H(x-\xi)\) at the point \(x=\xi\), the derivative of \(H\) does not exist as an ordinary function, but using the previous method does allow us to find \(H'(x-\xi)\) as a generalized function, 
+Note that because of the discontinuity in \(H(x-\xi)\) at the point \(x=\xi\), the derivative of \(H\) does not exist as an ordinary function. However, the previous method does allow us to find \(H'(x-\xi)\) as a generalized function, 
 \begin{equation}
     \begin{split}
         \intR H'(x-\xi)h(x)dx &= -\intR H(x-\xi)h'(x)dx\\
-        &=-\int_{\xi}^{\infty}h'(x)dx = h(\xi)
+        &=-\int_{\xi}^{\infty}h'(x)dx = h(\xi).
     \end{split}
 \end{equation}
-and because
+Since
 \begin{equation}
     \intR \delta(x-\xi)h(x)dx=h(\xi)
 \end{equation}
@@ -197,10 +254,67 @@ it must be the case that, in the sense of generalized functions,
 \begin{equation}
     H'(x-\xi) = \delta(x-\xi).
 \end{equation}
-Such equalities between generalized functions, as seen in (3.18), are understood in the sense that if some \(h\) in \(\mathcal{D}\) is multiplied through, and we integrate over \((-\infty, \infty)\) then the result will be consistent. To wit, we consider generalized functions to be equal if
+Such equalities between generalized functions, as seen in (3.18), are understood in the sense that if some \(h\) in \(\mathcal{D}\) is multiplied through, and we integrate over \((-\infty, \infty)\) then the result will hold. To wit, we consider generalized functions, \(g_1\) and \(g_2\), to be equal if, for all \(h\in \mathcal{D}\),
 \begin{equation}
     \intR g_1(x)h(x)dx = \intR g_2(x)h(x)dx.
 \end{equation}
+
+\begin{example}
+    Consider the sequence 
+    \begin{equation}\label{ex:ds1}
+        w_k(x) = \begin{cases}
+            -k^2, 0\leq x < 1/k\\
+            k^2, -1/k < x < 0\\
+            0, |x| \geq 1/k
+        \end{cases}
+    \end{equation}
+    We want to verify that \(w_k\) is a \(\d '\) sequence. If this is true, then
+    \begin{equation}
+        \lim_{k\-> \inf} \intR h(x) w_k(x) dx = \intR h(x)\d ' (x) dx = -h'(0).
+    \end{equation}
+    Separating the integral for each case of \(w_k\),
+    \begin{equation}
+        \lim_{k\-> \inf} \left( k^2 \int_{-1/k}^0 h(x) dx \right) + \lim_{k\-> \inf} \left( -k^2 \int_0^{1/k} h(x)dx \right) .
+    \end{equation}
+    Selecting a and b such that, \(-1/k \leq \lima \leq 0 \) and \(0 < \limb < 1/k\). It follows from the mean value theorem of integral calculus that 
+    \begin{equation}
+        \lim_{k\-> \inf} \left( k^2 \cdot h(\lima) \cdot \left(\frac{1}{k}\right) \right) + \lim_{k\-> \inf} \left( -k^2 \cdot h(\limb) \cdot \left(\frac{1}{k}\right)\right) = 0.
+    \end{equation}
+    since a and b \(\-> 0\) as \(k \-> \inf\).
+    \begin{figure}
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[axis lines = middle,
+                xlabel = \(x\),
+                ylabel = \(w_k(x)\),
+                xmin = -1.2,
+                xmax = 1.2,
+                ymin = -16.3,
+                ymax = 16.3,
+                x label style = {anchor=north},
+                xtick = {0},
+                ytick= {0}]
+                \addplot [mark=none] coordinates {(-1/1, 0)(-1/1, 1^2)};
+                \addplot[mark=none] coordinates {(-1/1, 1^2)(0,1^2)};
+                \addplot [mark=none] coordinates {(1/1, 0)(1/1, -1^2)};
+                \addplot[mark=none] coordinates {(1/1, -1^2)(0,-1^2)};
+                \node at (axis cs:-0.7, 1.7) {$k=1$};
+                \addplot [mark=none] coordinates {(-1/2, 0)(-1/2, 2^2)};
+                \addplot[mark=none] coordinates {(-1/2, 2^2)(0,2^2)};
+                \addplot [mark=none] coordinates {(1/2, 0)(1/2, -2^2)};
+                \addplot[mark=none] coordinates {(1/2, -2^2)(0,-2^2)};
+                \node at (axis cs:-.45, 5) {$k=2$};
+                \addplot [mark=none] coordinates {(-1/4, 0)(-1/4, 4^2)};
+                \addplot[mark=none] coordinates {(-1/4, 4^2)(0,4^2)};
+                \addplot [mark=none] coordinates {(1/4, 0)(1/4, -4^2)};
+                \addplot[mark=none] coordinates {(1/4, -4^2)(0,-4^2)};
+                \node at (axis cs:-0.4, 14) {$k=4$};
+            \end{axis}
+        \end{tikzpicture}
+        \caption{Delta sequence, eq \ref{ex:ds1}}
+    \end{figure}
+    
+\end{example}
 
 As a final aside, notice that
 \begin{equation}

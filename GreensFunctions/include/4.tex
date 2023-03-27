@@ -1,7 +1,8 @@
 \section{The Method of Green's Functions}
-A Green's function is the solution to a differential equation of the form
+\setcounter{example}{0}
+A \df{Green's function} is the solution to a differential equation of the form
 \begin{equation} \label{eq:greensdef}
-    \opp{L^*} G = \delta.
+    \opp{L^*_\xi} G(\xi, x) = \delta(\xi - x).
 \end{equation}
 By making use of some of the delta function's unusual properties, Green's functions can be used to solve nonhomogeneous linear differential equations.
 
@@ -9,7 +10,7 @@ To find the solution to the linear differential equation
 \begin{equation} \label{eq:4.2}
     \opp{L}u=\phi,
 \end{equation}
-we start by finding the formal adjoint as in equation (\ref{eq:adjoint}). If instead of \(v\), we use \(G\) to represent the Green's function, and we replace \(x\) with a dummy variable \(\xi\), we are left with an equation of the form
+we start by finding the formal adjoint as in equation (\ref{eq:adjoint}). If we replace \(v\) with \(G\), and we replace \(x\) with a dummy variable \(\xi\), we are left with an equation of the form
 \begin{equation} \label{eq:greenadjoint}
     \intl G(\xi, x)\opp{L}u(\xi) d\xi = \bterms + \intl u(\xi)\opp{L^*}G(\xi,x) d\xi.
 \end{equation} 
@@ -27,10 +28,32 @@ To illustrate the key ideas of the method, we will consider several examples whi
     \textit{Loaded String}
     
     Consider the boundary value problem
-    \begin{equation}
+    \begin{equation} \label{ex1:initialize}
         u''(x) = \phi(x);\quad u(0)=u(1)=0
     \end{equation}
     where \(\phi(x)\) is prescribed. \textbf{EXPLAIN LOADED STRING WITH DIAGRAM}. 
     
-    We must first find the formal adjoint \(\L*\) as in equation (\ref{eq:greenadjoint}). 
+    To find a solution to this differential equation, we first find the formal adjoint \(\L*\) as in equation (\ref{eq:greenadjoint}). 
+    \begin{equation}
+        \begin{split}
+            \int_{0}^{1} G(\xi, x)\L u(\xi) d\xi  &= (G(\xi, x)u'(\xi)-G_\xi (\xi, x)u(\xi))\biggr\rvert_0^1 + \int_{0}^{1} uG_{\xi\xi}d\xi\\
+            &= G(1, x)u'(1) - G_\xi(1, x)u(1) \\&- G(0, x)u'(0) + G_\xi(0,x)u(0) + \int_{0}^{1} uG_{\xi\xi}d\xi.
+        \end{split}
+    \end{equation}
+    Therefore, 
+    \begin{equation}
+        \Lstar = \frac{d^2}{d\xi^2}
+    \end{equation}
+    and 
+    \begin{equation}
+        \Lstar G = G_{\xi\xi} = \delta(\xi-x).
+    \end{equation}
+    Because of the boundary conditions on \(u\) in equation (\ref{ex1:initialize}), two of our boundary terms are zero, making
+    \begin{equation}
+        \int_{0}^{1} G(\xi, x)\L u(\xi) d\xi = G(1, x)u'(1) - G(0, x)u'(0) + \int_{0}^{1} uG_{\xi\xi}d\xi.
+    \end{equation}
+    Now, we want to remove the \(u\) dependency from the boundary terms and, as such, decide that
+    \begin{equation}
+        G(1,x) = G(0,x) = 0.
+    \end{equation}
 \end{example}

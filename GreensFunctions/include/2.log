@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.8)  19 MAR 2023 01:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.8)  26 MAR 2023 02:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -178,6 +178,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 2.
+c:/College-Work/GreensFunctions/include/2.tex:2: Undefined control sequence.
+<argument> \Lstar 
+                  
+l.2 ...oint operator, denoted \(\mathcal{\Lstar  }
+                                                  \). The adjoint operator c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Missing character: There is no . in font nullfont!
 Missing character: There is no T in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -224,6 +235,15 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no , in font nullfont!
+c:/College-Work/GreensFunctions/include/2.tex:2: Undefined control sequence.
+l.2 ...or consists of the formal adjoint, \(\Lstar
+                                                    \), and the boundary con...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Missing character: There is no , in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -427,23 +447,13 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
  []
 
 
-Overfull \hbox (11.89726pt too wide) in paragraph at lines 1--3
-[]$
- []
-
-
-Overfull \hbox (11.4028pt too wide) in paragraph at lines 1--3
-\OML/cmm/m/it/10 L[]$
- []
-
-
 Overfull \hbox (17.73616pt too wide) in paragraph at lines 1--3
 \OML/cmm/m/it/10 vLu$
  []
 
 c:/College-Work/GreensFunctions/include/2.tex:4: Undefined control sequence.
 l.4 	\intl
-           vLu dx = [\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b} + \intl uL^*v...
+           vLu dx = [\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b} + \intl u\Lst...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -454,7 +464,7 @@ c:/College-Work/GreensFunctions/include/2.tex:4: Undefined control sequence.
 <argument> \rvert 
                   
 l.4 	\intl vLu dx = [\cdots]\biggr\rvert
-                                        _\mathrm{a}^\mathrm{b} + \intl uL^*v...
+                                        _\mathrm{a}^\mathrm{b} + \intl u\Lst...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -465,7 +475,7 @@ c:/College-Work/GreensFunctions/include/2.tex:4: Missing delimiter (. inserted).
 <to be read again> 
                    \vbox 
 l.4 	\intl vLu dx = [\cdots]\biggr\rvert
-                                        _\mathrm{a}^\mathrm{b} + \intl uL^*v...
+                                        _\mathrm{a}^\mathrm{b} + \intl u\Lst...
 I was expecting to see something like `(' or `\{' or
 `\}' here. If you typed, e.g., `{' instead of `\{', you
 should probably delete the `{' by typing `1' now, so that
@@ -475,7 +485,16 @@ nonnegative, or you can use `\delimiter <delimiter code>'.
 
 c:/College-Work/GreensFunctions/include/2.tex:4: Undefined control sequence.
 l.4 ...]\biggr\rvert_\mathrm{a}^\mathrm{b} + \intl
-                                                   uL^*v dx,
+                                                   u\Lstar  v dx,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/College-Work/GreensFunctions/include/2.tex:4: Undefined control sequence.
+l.4 ...rvert_\mathrm{a}^\mathrm{b} + \intl u\Lstar
+                                                    v dx,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -483,8 +502,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (107.9375pt too wide) detected at line 5
-\OML/cmm/m/it/10 vLudx \OT1/cmr/m/n/10 = [[]][][] + \OML/cmm/m/it/10 uL[]vdx;
+Overfull \hbox (96.5347pt too wide) detected at line 5
+[]\OML/cmm/m/it/10 vLudx \OT1/cmr/m/n/10 = [[]][][] + \OML/cmm/m/it/10 uvdx;
  []
 
 Missing character: There is no w in font nullfont!
@@ -594,21 +613,12 @@ Missing character: There is no , in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no y in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no f in font nullfont!
@@ -635,9 +645,6 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -782,6 +789,15 @@ Missing character: There is no f in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
+c:/College-Work/GreensFunctions/include/2.tex:12: Undefined control sequence.
+l.12 To find \(\Lstar
+                       \), perform integration by parts on each term of the ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Missing character: There is no , in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -983,11 +999,6 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
-
-Overfull \hbox (11.4028pt too wide) in paragraph at lines 11--13
-  $\OML/cmm/m/it/10 L[]$
- []
-
 
 Overfull \hbox (17.73616pt too wide) in paragraph at lines 11--13
 \OML/cmm/m/it/10 vLu$
@@ -1224,9 +1235,18 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+c:/College-Work/GreensFunctions/include/2.tex:24: Undefined control sequence.
+l.24 		\Lstar
+              v &= (av)''-(bv)'+cv\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 c:/College-Work/GreensFunctions/include/2.tex:24: Misplaced alignment tab character &.
-l.24 		L^*v &
-             = (Av)''-(Bv)'+Cv\\
+l.24 		\Lstar v &
+                 = (av)''-(bv)'+cv\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1238,7 +1258,7 @@ c:/College-Work/GreensFunctions/include/2.tex:25: Misplaced alignment tab charac
 <recently read> &
                  
 l.25 		     &
-             = (A'v+Av')'-B'v-Bv'+Cv\\
+             = (a'v+av')'-b'v-bv'+cv\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1250,7 +1270,7 @@ c:/College-Work/GreensFunctions/include/2.tex:26: Misplaced alignment tab charac
 <recently read> &
                  
 l.26 		     &
-             = Av''+(2A'-B)v'+(A''-B'+C)
+             = av''+(2a'-b)v'+(a''-b'+c)
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1272,8 +1292,8 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (387.71835pt too wide) detected at line 28
-\OML/cmm/m/it/10 L[]v \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 Av\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Bv\OT1/cmr/m/n/10 )[] + \OML/cmm/m/it/10 Cv[]  \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 A[]v \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 Av[]\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 B[]v \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 Bv[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 Cv[]  \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 Av[] \OT1/cmr/m/n/10 + (2\OML/cmm/m/it/10 A[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 B\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 + (\OML/cmm/m/it/10 A[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 B[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 )
+Overfull \hbox (333.45026pt too wide) detected at line 28
+\OML/cmm/m/it/10 v \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 av\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 bv\OT1/cmr/m/n/10 )[] + \OML/cmm/m/it/10 cv[]  \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 a[]v \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 av[]\OT1/cmr/m/n/10 )[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 b[]v \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 bv[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 cv[]  \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 av[] \OT1/cmr/m/n/10 + (2\OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 b\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 v[] \OT1/cmr/m/n/10 + (\OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 b[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 )
  []
 
 Missing character: There is no a in font nullfont!
@@ -1360,9 +1380,18 @@ Overfull \hbox (6.80557pt too wide) in paragraph at lines 28--30
            $\OML/cmm/m/it/10 L$
  []
 
+c:/College-Work/GreensFunctions/include/2.tex:31: Undefined control sequence.
+l.31 	\Lstar
+             =a\frac{d^2}{dx^2} + (2a'-b)\frac{d}{dx}+(a''-b'+c).
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (172.56541pt too wide) detected at line 32
-\OML/cmm/m/it/10 L[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 + (2\OML/cmm/m/it/10 A[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 B\OT1/cmr/m/n/10 )[] + (\OML/cmm/m/it/10 A[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 B[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 C\OT1/cmr/m/n/10 )
+
+Overfull \hbox (143.39508pt too wide) detected at line 32
+\OT1/cmr/m/n/10 = \OML/cmm/m/it/10 a[] \OT1/cmr/m/n/10 + (2\OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 b\OT1/cmr/m/n/10 )[] + (\OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 b[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 c\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :
  []
 
 
@@ -1373,12 +1402,21 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.35 I
-      f \(L^* = L\), then \(L\) is called formally self-adjoint. By comparin...
+      f \(\Lstar  = L\), then \(L\) is called formally self-adjoint. By comp...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no I in font nullfont!
 Missing character: There is no f in font nullfont!
+c:/College-Work/GreensFunctions/include/2.tex:35: Undefined control sequence.
+l.35 If \(\Lstar
+                  = L\), then \(L\) is called formally self-adjoint. By comp...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Missing character: There is no , in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -1528,19 +1566,79 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no , in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no u in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no q in font nullfont!
+Missing character: There is no s in font nullfont!
 Missing character: There is no u in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
-Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+
+LaTeX Warning: Command \' invalid in math mode on input line 35.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 35.
+
+LaTeX Font Info:    Trying to load font information for +cmr on input line 35.
+LaTeX Font Info:    No file cmr.fd. on input line 35.
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 35.
+
+c:/College-Work/GreensFunctions/include/2.tex:35: Corrupted NFSS tables.
+wrong@fontshape ...message {Corrupted NFSS tables}
+                                                  error@fontshape else let f...
+l.35 ...self-adjoint, it is sufficient that \(\a'=
+                                                  b\). You may notice that \...
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 35.
+
+c:/College-Work/GreensFunctions/include/2.tex:35: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.35 ...self-adjoint, it is sufficient that \(\a'=
+                                                  b\). You may notice that \...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+c:/College-Work/GreensFunctions/include/2.tex:35: Missing { inserted.
+<to be read again> 
+                   \edef 
+l.35 ...self-adjoint, it is sufficient that \(\a'=
+                                                  b\). You may notice that \...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+c:/College-Work/GreensFunctions/include/2.tex:35: Missing } inserted.
+<inserted text> 
+                }
+l.35 ...f-adjoint, it is sufficient that \(\a'=b\)
+                                                  . You may notice that \(a'...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 Missing character: There is no . in font nullfont!
 Missing character: There is no Y in font nullfont!
 Missing character: There is no o in font nullfont!
@@ -1618,8 +1716,8 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 35--36
  []
 
 
-Overfull \hbox (21.95831pt too wide) in paragraph at lines 35--36
-\OML/cmm/m/it/10 L[] \OT1/cmr/m/n/10 =
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 35--36
+\/cmr/m/n/10 =
  []
 
 
@@ -1633,38 +1731,33 @@ Overfull \hbox (6.80557pt too wide) in paragraph at lines 35--36
  []
 
 
-Overfull \hbox (10.30557pt too wide) in paragraph at lines 35--36
-\OML/cmm/m/it/10 A[]$
+Overfull \hbox (12.06946pt too wide) in paragraph at lines 35--36
+[]$
  []
 
 
-Overfull \hbox (8.0868pt too wide) in paragraph at lines 35--36
-\OML/cmm/m/it/10 B$
+Overfull \hbox (18.1748pt too wide) in paragraph at lines 35--36
+\OML/cmm/m/it/10 a[] \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (20.38893pt too wide) in paragraph at lines 35--36
-\OML/cmm/m/it/10 A[] \OMS/cmsy/m/n/10 ^^@
+Overfull \hbox (14.87502pt too wide) in paragraph at lines 35--36
+\OML/cmm/m/it/10 b[] \/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (18.67017pt too wide) in paragraph at lines 35--36
-\OML/cmm/m/it/10 B[] \OT1/cmr/m/n/10 +
+Overfull \hbox (4.32756pt too wide) in paragraph at lines 35--36
+\OML/cmm/m/it/10 c$
  []
 
 
-Overfull \hbox (7.86249pt too wide) in paragraph at lines 35--36
-\OML/cmm/m/it/10 C$
+Overfull \hbox (8.09145pt too wide) in paragraph at lines 35--36
+\OML/cmm/m/it/10 a[]$
  []
 
 
-Overfull \hbox (10.30557pt too wide) in paragraph at lines 35--36
-\OML/cmm/m/it/10 A[]$
- []
-
-
-Overfull \hbox (8.0868pt too wide) in paragraph at lines 35--36
-\OML/cmm/m/it/10 B$ 
+Overfull \hbox (4.29166pt too wide) in paragraph at lines 35--36
+\OML/cmm/m/it/10 b$ 
  []
 
 
@@ -1734,7 +1827,7 @@ Missing character: There is no s in font nullfont!
 c:/College-Work/GreensFunctions/include/2.tex:38: Undefined control sequence.
 \@footnotetext ...tins {\reset@font \footnotesize 
                                                   \interlinepenalty \interfo...
-l.38 ...ontains terms that are 0 when \(u(x)=0\).}
+l.38 ...ry condition is of the form \(B_j(u)=0\).}
                                                   , then we can also define ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1745,7 +1838,7 @@ and I'll forget about whatever was undefined.
 c:/College-Work/GreensFunctions/include/2.tex:38: Undefined control sequence.
 \@footnotetext ...}\color@begingroup \@makefntext 
                                                   {\rule \z@ \footnotesep \i...
-l.38 ...ontains terms that are 0 when \(u(x)=0\).}
+l.38 ...ry condition is of the form \(B_j(u)=0\).}
                                                   , then we can also define ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1755,157 +1848,102 @@ and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (12.36116pt too wide) in paragraph at lines 38--38
-[][]\OT1/cmr/m/n/10 By
+[][]\/cmr/m/n/10 By
  []
 
 
 Overfull \hbox (13.88892pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 ho-
+\/cmr/m/n/10 ho-
  []
 
 
 Overfull \hbox (16.6667pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 mo-
+\/cmr/m/n/10 mo-
  []
 
 
 Overfull \hbox (12.77779pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 ge-
+\/cmr/m/n/10 ge-
  []
 
 
 Overfull \hbox (27.27783pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 neous,
+\/cmr/m/n/10 neous,
  []
 
 
 Overfull \hbox (11.38889pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 we
+\/cmr/m/n/10 we
  []
 
 
 Overfull \hbox (23.33339pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 mean
+\/cmr/m/n/10 mean
  []
 
 
 Overfull \hbox (18.33339pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 that
+\/cmr/m/n/10 that
  []
 
 
 Overfull \hbox (19.16669pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 each
+\/cmr/m/n/10 each
  []
 
 
 Overfull \hbox (30.83342pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 bound-
+\/cmr/m/n/10 bound-
  []
 
 
 Overfull \hbox (14.19449pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 ary
+\/cmr/m/n/10 ary
  []
 
 
 Overfull \hbox (18.33336pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 con-
+\/cmr/m/n/10 con-
  []
 
 
 Overfull \hbox (11.66669pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 di-
+\/cmr/m/n/10 di-
  []
 
 
 Overfull \hbox (17.22227pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 tion
+\/cmr/m/n/10 tion
  []
 
 
 Overfull \hbox (6.72223pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 is
+\/cmr/m/n/10 is
  []
 
 
 Overfull \hbox (8.05559pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 of
+\/cmr/m/n/10 of
  []
 
 
 Overfull \hbox (13.88892pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 the
+\/cmr/m/n/10 the
  []
 
 
 Overfull \hbox (20.30562pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 form
+\/cmr/m/n/10 form
  []
 
 
 Overfull \hbox (35.85654pt too wide) in paragraph at lines 38--38
-\OML/cmm/m/it/10 B[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 ) =
- []
-
-
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 0$
- []
-
-
-Overfull \hbox (16.11116pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 and
- []
-
-
-Overfull \hbox (18.61118pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 only
- []
-
-
-Overfull \hbox (18.33336pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 con-
- []
-
-
-Overfull \hbox (21.16672pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 tains
- []
-
-
-Overfull \hbox (24.52782pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 terms
- []
-
-
-Overfull \hbox (18.33339pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 that
- []
-
-
-Overfull \hbox (13.36113pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 are
- []
-
-
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 0
- []
-
-
-Overfull \hbox (22.77782pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 when
- []
-
-
-Overfull \hbox (29.77316pt too wide) in paragraph at lines 38--38
-\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) =
+\OML/cmm/m/it/10 B[]\/cmr/m/n/10 (\OML/cmm/m/it/10 u\/cmr/m/n/10 ) =
  []
 
 
 Overfull \hbox (7.7778pt too wide) in paragraph at lines 38--38
-\OT1/cmr/m/n/10 0$.| 
+\/cmr/m/n/10 0$.| 
  []
 
 Missing character: There is no , in font nullfont!
@@ -1980,9 +2018,18 @@ Overfull \hbox (11.49448pt too wide) in paragraph at lines 38--39
 \OMS/cmsy/m/n/10 L[]$
  []
 
+c:/College-Work/GreensFunctions/include/2.tex:40: Undefined control sequence.
+l.40 		(Lu,v) = (u,\Lstar
+                          v)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (77.8472pt too wide) detected at line 41
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Lu; v\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 u; L[]v\OT1/cmr/m/n/10 )
+
+Overfull \hbox (66.4444pt too wide) detected at line 41
+\/cmr/m/n/10 (\OML/cmm/m/it/10 Lu; v\/cmr/m/n/10 ) = (\OML/cmm/m/it/10 u; v\/cmr/m/n/10 )
  []
 
 Missing character: There is no w in font nullfont!
@@ -2015,7 +2062,7 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no , in font nullfont!
 
 Overfull \hbox (22.76738pt too wide) in paragraph at lines 41--43
- $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f; g\OT1/cmr/m/n/10 )$
+ $\/cmr/m/n/10 (\OML/cmm/m/it/10 f; g\/cmr/m/n/10 )$
  []
 
 
@@ -2030,7 +2077,7 @@ Overfull \hbox (5.12846pt too wide) in paragraph at lines 41--43
 
 
 Overfull \hbox (103.5687pt too wide) detected at line 45
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f; g\OT1/cmr/m/n/10 ) = [][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx:
+\/cmr/m/n/10 (\OML/cmm/m/it/10 f; g\/cmr/m/n/10 ) = [][] \OML/cmm/m/it/10 f\/cmr/m/n/10 (\OML/cmm/m/it/10 x\/cmr/m/n/10 )\OML/cmm/m/it/10 g\/cmr/m/n/10 (\OML/cmm/m/it/10 x\/cmr/m/n/10 )\OML/cmm/m/it/10 dx:
  []
 
 Missing character: There is no T in font nullfont!
@@ -2042,6 +2089,13 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no j in font nullfont!
@@ -2067,6 +2121,15 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no f in font nullfont!
+c:/College-Work/GreensFunctions/include/2.tex:46: Undefined control sequence.
+l.46 ...tor \(\mathcal{L}^*\) consists of \(\Lstar
+                                                   \) and boundary condition...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
@@ -2148,12 +2211,7 @@ or  <return>  to continue without it.
 
 
 Overfull \hbox (11.49448pt too wide) in paragraph at lines 45--48
-    $\OMS/cmsy/m/n/10 L[]$
- []
-
-
-Overfull \hbox (11.4028pt too wide) in paragraph at lines 45--48
-\OML/cmm/m/it/10 L[]$
+      $\OMS/cmsy/m/n/10 L[]$
  []
 
 
@@ -2255,7 +2313,7 @@ Overfull \hbox (6.89725pt too wide) in paragraph at lines 50--51
 
 
 Overfull \hbox (17.36108pt too wide) in paragraph at lines 50--51
-\OML/cmm/m/it/10 L \OT1/cmr/m/n/10 =
+\OML/cmm/m/it/10 L \/cmr/m/n/10 =
  []
 
 
@@ -2265,17 +2323,17 @@ Overfull \hbox (11.0976pt too wide) in paragraph at lines 50--51
 
 
 Overfull \hbox (29.0579pt too wide) in paragraph at lines 50--51
-\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (0) =
+\OML/cmm/m/it/10 u\/cmr/m/n/10 (0) =
  []
 
 
 Overfull \hbox (23.50241pt too wide) in paragraph at lines 50--51
-\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (1)$
+\/cmr/m/n/10 3\OML/cmm/m/it/10 u\/cmr/m/n/10 (1)$
  []
 
 
 Overfull \hbox (15.55553pt too wide) in paragraph at lines 50--51
-\OT1/cmr/m/n/10 0 \OMS/cmsy/m/n/10 ^^T
+\/cmr/m/n/10 0 \OMS/cmsy/m/n/10 ^^T
  []
 
 
@@ -2285,7 +2343,7 @@ Overfull \hbox (16.27078pt too wide) in paragraph at lines 50--51
 
 
 Overfull \hbox (5.00002pt too wide) in paragraph at lines 50--51
-\OT1/cmr/m/n/10 1$
+\/cmr/m/n/10 1$
  []
 
 
@@ -2350,7 +2408,7 @@ c:/College-Work/GreensFunctions/include/2.tex:55: Misplaced alignment tab charac
 <recently read> &
                  
 l.55 			       &
-                = u(1)v(1)-u(0)v(0)+\int_0^1uL^*vdx\\
+                = u(1)v(1)-u(0)v(0)+\int_0^1u\Lstar vdx\\
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -2358,17 +2416,35 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
+c:/College-Work/GreensFunctions/include/2.tex:55: Undefined control sequence.
+l.55 ...      &= u(1)v(1)-u(0)v(0)+\int_0^1u\Lstar
+                                                   vdx\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 c:/College-Work/GreensFunctions/include/2.tex:56: Misplaced alignment tab character &.
 <recently read> &
                  
 l.56 			       &
-                = u(1)(v(1)-3v(0)) + \int_0^1uL^*vdx
+                = u(1)(v(1)-3v(0)) + \int_0^1u\Lstar vdx
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
 up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
+
+c:/College-Work/GreensFunctions/include/2.tex:56: Undefined control sequence.
+l.56 ...     &= u(1)(v(1)-3v(0)) + \int_0^1u\Lstar
+                                                   vdx
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
 c:/College-Work/GreensFunctions/include/2.tex:57: LaTeX Error: \begin{equation} on input line 51 ended by \end{split}.
@@ -2384,8 +2460,8 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (466.02579pt too wide) detected at line 58
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Lu; v\OT1/cmr/m/n/10 ) = [][] \OML/cmm/m/it/10 u[]vdx[]  \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 uv\OT1/cmr/m/n/10 )[][] \OMS/cmsy/m/n/10 ^^@ [][] \OML/cmm/m/it/10 uv[]dx[]  \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (1)\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 (1) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (0)\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 (0) + [][] \OML/cmm/m/it/10 uL[]vdx[]  \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 u\OT1/cmr/m/n/10 (1)(\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 (1) \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 3\OML/cmm/m/it/10 v\OT1/cmr/m/n/10 (0)) + [][] \OML/cmm/m/it/10 uL[]vdx
+Overfull \hbox (443.22018pt too wide) detected at line 58
+\/cmr/m/n/10 (\OML/cmm/m/it/10 Lu; v\/cmr/m/n/10 ) = [][] \OML/cmm/m/it/10 u[]vdx[]  \/cmr/m/n/10 = (\OML/cmm/m/it/10 uv\/cmr/m/n/10 )[][] \OMS/cmsy/m/n/10 ^^@ [][] \OML/cmm/m/it/10 uv[]dx[]  \/cmr/m/n/10 = \OML/cmm/m/it/10 u\/cmr/m/n/10 (1)\OML/cmm/m/it/10 v\/cmr/m/n/10 (1) \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 u\/cmr/m/n/10 (0)\OML/cmm/m/it/10 v\/cmr/m/n/10 (0) + [][] \OML/cmm/m/it/10 uvdx[]  \/cmr/m/n/10 = \OML/cmm/m/it/10 u\/cmr/m/n/10 (1)(\OML/cmm/m/it/10 v\/cmr/m/n/10 (1) \OMS/cmsy/m/n/10 ^^@ \/cmr/m/n/10 3\OML/cmm/m/it/10 v\/cmr/m/n/10 (0)) + [][] \OML/cmm/m/it/10 uvdx
  []
 
 Missing character: There is no S in font nullfont!
@@ -2430,19 +2506,24 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
 Missing character: There is no m in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no k in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no z in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
 Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -2500,6 +2581,17 @@ Missing character: There is no f in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
+c:/College-Work/GreensFunctions/include/2.tex:59: Undefined control sequence.
+<argument> \Lstar 
+                  
+l.59 ...r solution. Therefore \(\mathcal{\Lstar  }
+                                                  \) consists of \(\Lstar  \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -2510,6 +2602,15 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no f in font nullfont!
+c:/College-Work/GreensFunctions/include/2.tex:59: Undefined control sequence.
+l.59 ...(\mathcal{\Lstar  }\) consists of \(\Lstar
+                                                    \) which is \(-\frac{d}{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 Missing character: There is no w in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -2541,6 +2642,98 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
+
+c:/College-Work/GreensFunctions/include/2.tex:60: LaTeX Error: \begin{document} ended by \end{example}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \end{example}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (18.5024pt too wide) in paragraph at lines 58--61
+     $\OML/cmm/m/it/10 u\/cmr/m/n/10 (1)$
+ []
+
+
+Overfull \hbox (25.76163pt too wide) in paragraph at lines 58--61
+\OML/cmm/m/it/10 v\/cmr/m/n/10 (1) \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (33.53935pt too wide) in paragraph at lines 58--61
+\/cmr/m/n/10 3\OML/cmm/m/it/10 v\/cmr/m/n/10 (0) =
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 58--61
+\/cmr/m/n/10 0$
+ []
+
+
+Overfull \hbox (29.0579pt too wide) in paragraph at lines 58--61
+\OML/cmm/m/it/10 u\/cmr/m/n/10 (1) =
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 58--61
+\/cmr/m/n/10 0$
+ []
+
+
+Overfull \hbox (18.8754pt too wide) in paragraph at lines 58--61
+\OMS/cmsy/m/n/10 ^^@[]$
+ []
+
+
+Overfull \hbox (25.76163pt too wide) in paragraph at lines 58--61
+\OML/cmm/m/it/10 v\/cmr/m/n/10 (1) \OMS/cmsy/m/n/10 ^^@
+ []
+
+
+Overfull \hbox (33.53935pt too wide) in paragraph at lines 58--61
+\/cmr/m/n/10 3\OML/cmm/m/it/10 v\/cmr/m/n/10 (0) =
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 58--61
+\/cmr/m/n/10 0$
+ []
+
+
+c:/College-Work/GreensFunctions/include/2.tex:62: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \
+      
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 62--63
+[] 
+ []
+
+
+c:/College-Work/GreensFunctions/include/2.tex:64: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 A
+      s a final note, if \(\mathcal{L}=\mathcal{L}^*\), then \(\mathcal{L}\)...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 Missing character: There is no A in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -2582,19 +2775,6 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
-
-c:/College-Work/GreensFunctions/include/2.tex:60: LaTeX Error: \begin{document} ended by \end{example}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.60 \end{example}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 )
 ! Emergency stop.
 <*> c:/College-Work/GreensFunctions/include/2.tex
@@ -2603,11 +2783,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 24 strings out of 477678
- 545 string characters out of 5833468
+ 35 strings out of 477678
+ 632 string characters out of 5833468
  305842 words of memory out of 5000000
- 18922 multiletter control sequences out of 15000+600000
+ 18932 multiletter control sequences out of 15000+600000
  469259 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 19i,6n,12p,533b,112s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 23i,6n,32p,544b,112s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!

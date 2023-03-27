@@ -1,7 +1,7 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
 \contentsline {section}{\numberline {2}The Adjoint Operator}{2}{section.2}%
-\contentsline {section}{\numberline {3}The Delta Function}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Delta Seqeunces}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Delta as a Generalized Function}{6}{subsection.3.2}%
-\contentsline {section}{\numberline {4}The Method of Green's Functions}{8}{section.4}%
+\contentsline {section}{\numberline {3}the Dirac delta function}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Delta Sequences}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Delta as a Generalized Function}{7}{subsection.3.2}%
+\contentsline {section}{\numberline {4}The Method of Green's Functions}{10}{section.4}%

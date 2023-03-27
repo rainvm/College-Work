@@ -1,0 +1,15 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Notation for scalars, vectors, matrices}{2}{section.1}%
+\contentsline {section}{\numberline {2}Math operators}{2}{section.2}%
+\contentsline {section}{\numberline {3}Expressions, equations}{2}{section.3}%
+\contentsline {section}{\numberline {4}Arrays, entries math by default}{2}{section.4}%
+\contentsline {section}{\numberline {5}Tabular, entries not math by default}{3}{section.5}%
+\contentsline {section}{\numberline {6}Figures}{3}{section.6}%
+\contentsline {section}{\numberline {7}Environments}{4}{section.7}%
+\contentsline {section}{\numberline {8}Pseudocode}{4}{section.8}%
+\contentsline {section}{\numberline {9}Referring to figures, equations, and tables}{5}{section.9}%
+\contentsline {section}{\numberline {10}Creating an index}{5}{section.10}%
+\contentsline {section}{\numberline {11}Creating a bibliography}{5}{section.11}%
+\contentsline {section}{\numberline {A}This is an appendix}{6}{appendix.A}%
+\contentsline {section}{References}{7}{appendix.A}%
+\contentsline {section}{Index}{8}{section*.6}%

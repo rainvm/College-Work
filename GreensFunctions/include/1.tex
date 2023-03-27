@@ -1,29 +1,28 @@
 \section{Introduction}
 The first part of this text is primarily concerned with the solutions to differential equations of the form
 \begin{equation}
-    \L u=\phi
+    \L u=\phi,
 \end{equation}
-over an interval \(\lima \leq x \leq \limb\) and subject to certain boundary conditions, where \(\L\) is an \(n\)th order linear ordinary differential operator, where the function \(\phi\) is integrable on the given interval. For \(\L\) to be linear, it must satisfy the condition
+over an interval \(\lima \leq x \leq \limb\) and subject to certain boundary conditions, where \(\L\) is an \(n\)th order linear ordinary differential operator and where the function \(\phi\) is integrable on the given interval. For \(\L\) to be linear, it must satisfy the condition
 \begin{equation}
 	\L(\alpha v + \beta w) = \alpha \L v + \beta \L w
 \end{equation}
 for arbitrary functions \(v\) and \(w\), with \(\alpha\) and \(\beta\) being constant. We claim without proof that for this condition to be met, \(\L\) must be of the form
 \begin{equation} 
-	\L = a_0(x) \frac{d^n}{dx^n} + a_1(x) \frac{d^{n-1}}{dx^{n-1}} + \cdots + a_n(x).
+	\L = a_n(x) \frac{d^n}{dx^n} + a_{n-1}(x) \frac{d^{n-1}}{dx^{n-1}} + \cdots + a_n(0).
 \end{equation}
 	Since \(\L\) is of order \(n\), there will be \(n\) boundary conditions of the general form 
 \begin{equation}
-	B_j (u) = c_j;\quad j=1,2,\dots,n
+	\mathbf{B_j} (u) = c_j;\quad j=1,2,\dots,n
 \end{equation}
-where the \(B_j\)'s are prescribed functionals and \(c_j\)'s are prescribed constants. We will only consider \(B_j\)'s that are linear combinations of \(u\) and its derivatives through order \(n-1\) and evaluated at the endpoints, a and b. 
-
-A functional is a transformation with a set of functions as its domain and a set of numbers as its range. To illustrate, consider the functional 
+where the \(\mathbf{B_j}\)'s are prescribed functionals \footnote{A functional is a transformation with a set of functions as its domain and a set of numbers as its range. To illustrate, consider the functional 
 \begin{equation}
 	\mathcal{F}(u) = \int_{0}^{1} u^2(x)dx.
 \end{equation}
 The domain of this functional might be the set of functions defined over the interval \((0,1)\) and for which the integral of \(u^2\) from 0 to 1 exists, and the range is \((0, \infty)\).
+} and \(c_j\)'s are prescribed constants. We will only consider \(\mathbf{B_j}\)'s that are linear combinations of \(u\) and its derivatives through order \(n-1\) and evaluated at the endpoints, a and b. 
 
-For \(B_j\) to be linear, it must satisfy the condition
+For \(\mathbf{B_j}\) to be linear, it must satisfy the condition
 \begin{equation}
-	B_j(\alpha v + \beta w) = \alpha B_j (v) + \beta B_j(w)
+	\mathbf{B_j}(\alpha v + \beta w) = \alpha \mathbf{B_j} (v) + \beta \mathbf{B_j}(w).
 \end{equation}
