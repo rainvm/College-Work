@@ -2,9 +2,9 @@
 \setcounter{example}{0}
 A \df{Green's function} is the solution to a differential equation of the form
 \begin{equation} \label{eq:greensdef}
-    \opp{L^*_\xi} G(\xi, x) = \delta(\xi - x).
+    \opp{L^*_\xi} G(\xi, x) = \delta(\xi - x). 
 \end{equation}
-By making use of some of the delta function's unusual properties, Green's functions can be used to solve nonhomogeneous linear differential equations.
+The subscript \(\xi\) on the differential operator indicates that the derivatives are being taken with respect to the variable \(\xi\). By making use of some of the delta function's unusual properties, Green's functions can be used to solve nonhomogeneous linear differential equations.
 
 To find the solution to the linear differential equation
 \begin{equation} \label{eq:4.2}
@@ -14,7 +14,7 @@ we start by finding the formal adjoint as in equation (\ref{eq:adjoint}). If we 
 \begin{equation} \label{eq:greenadjoint}
     \intl G(\xi, x)\opp{L}u(\xi) d\xi = \bterms + \intl u(\xi)\opp{L^*}G(\xi,x) d\xi.
 \end{equation} 
-It follows from equation (\ref{eq:greensdef}) that the we can replace \(\opp{L^*}G\) with \(\d\), and from equation (\ref{eq:4.2}) that we can replace \(\opp{L}u\) with \(\phi\). 
+It follows from equation (\ref{eq:greensdef}) that we can replace \(\opp{L^*}G\) with \(\d\), and from equation (\ref{eq:4.2}) that we can replace \(\opp{L}u\) with \(\phi\), 
 \begin{equation}
     \begin{split}
         \intl G(\xi,x)\phi(\xi) d\xi &= \bterms + \intl u(\xi)\d(\xi-x) d\xi\\

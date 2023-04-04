@@ -1,9 +1,9 @@
-\section{the Dirac delta function}
+\section{The Dirac delta function}
 \setcounter{example}{0}
 \subsection{Delta Sequences}
 In physics, we often consider the idea of a point mass. Suppose we have a unit point mass at \(x=0\) with mass density given by \(w(x)\). We are interested in the mass but do not know the details of its density. We do, however, know that the \(w(x)\) will be highly localized in space and that 
 \begin{equation}
-    \int_{-\infty}^{\infty} w(x) dx = 1
+    \int_{-\infty}^{\infty} w(x) dx = 1,
 \end{equation}
 so that the net mass is unity.
 
@@ -95,11 +95,11 @@ where \(k\) is some larger natural number. In Fig 3.2, we see that \(w\) becomes
     \caption{Mass Density;  eq. 3.3}
 \end{figure}
 
-If we let \(k \rightarrow \infty\), then the mass distribution approaches our idea of a point mass at \(x=0\). Calling this \(\delta(x)\), then
+If we let \(k \rightarrow \infty\), then the mass distribution approaches our idea of a point mass at \(x=0\). Calling this \(\delta(x)\), we would like to write,
 \begin{equation} \label{eq:deltaSeqLim}
-    \delta(x) "=" \lim_{k\rightarrow \infty} w_k(x).
+    \delta(x)\ "="\ \lim_{k\rightarrow \infty} w_k(x).
 \end{equation}
-This definition feels intuitive, but it is not a rigorous definition of the Dirac delta function because the limit is infinite for \(x=0\). That is, it is not a function. We can instead define the Dirac delta function, \(\d(x)\), in the following way.
+This definition feels intuitive, but it is not a rigorous definition of the Dirac delta function because the limit is infinite for \(x=0\). That is, the right-hand side is not a function. We instead define the Dirac delta function, \(\d(x)\), in the following way.
 \begin{equation}
     \intR h(x)\d(x)dx = \lim_{k\rightarrow \inf}\intR h(x)w_k(x)dx
 \end{equation}
@@ -311,7 +311,7 @@ Such equalities between generalized functions, as seen in (3.18), are understood
                 \node at (axis cs:-0.4, 14) {$k=4$};
             \end{axis}
         \end{tikzpicture}
-        \caption{Delta sequence, eq \ref{ex:ds1}}
+        \caption{\(\d'\) sequence, eq \ref{ex:ds1}}
     \end{figure}
     
 \end{example}
