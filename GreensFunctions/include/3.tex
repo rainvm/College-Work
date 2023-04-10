@@ -109,7 +109,7 @@ and call \(w_k(x)\) a \df{\(\d\)-sequence}. This way of defining the Dirac delta
     If \(w(x)\) is non-negative \(\intR w(x) dx = 1\), and \(w(x)=O(1/x^{1+\a})\) as \(|x| \rightarrow \inf\) with \(\a>0\), then \(kw(kx) \equiv w_k(x)\) is a \(\d\)-sequence.
 \end{theorem}
 \begin{proof}
-    \noindent\rule{\textwidth}{1pt}
+    \noindent\rule{0.9236\textwidth}{1pt}
     
     First, \( \lim_{k\rightarrow \inf} w_k(x)=0\), for each fixed \(x \neq 0\), because \(w_k(x)=kw(kx)=O(k\cdot k^{-1-\alpha} x^{-1-\a}) = O(k^{-\a}) \rightarrow 0\) as \(k \rightarrow \inf\). Then 
     \begin{equation}\label{eq:deltaseqProof1}
@@ -189,7 +189,7 @@ If \(\mathcal{F}(h)\) is \(h(0)\) so that
     \int_{-\infty}^{\infty}g(x)h(x) dx=h(0)
 \end{equation}
 then it can be shown that there is no function, \(g(x)\), which exists such that equation (\ref{eq:introtodelta}) is true for all functions, \(h(x)\), in the domain, \(\mathcal{D}\). We call \(g\) defined by equation (\ref{eq:introtodelta}) a generalized function, and in particular, it is the Dirac delta function. As such, \(\delta\) is defined in the following way.
-\begin{equation}
+\begin{equation}\label{eq:deltadef}
     \int_{-\infty}^{\infty} \delta(x)h(x) dx = h(0)
 \end{equation}
 
@@ -256,7 +256,70 @@ Such equalities between generalized functions, as seen in (3.18), are understood
     \intR g_1(x)h(x)dx = \intR g_2(x)h(x)dx.
 \end{equation}
 
+<<<<<<< Updated upstream
 Notice that for all \(n > 0\)
+=======
+% \begin{example}
+%     Consider the sequence 
+%     \begin{equation}\label{ex:ds1}
+%         w_k(x) = \begin{cases}
+%             -k^2, 0\leq x < 1/k\\
+%             k^2, -1/k < x < 0\\
+%             0, |x| \geq 1/k
+%         \end{cases}
+%     \end{equation}
+%     We want to verify that \(w_k\) is a \(\d '\) sequence. If this is true, then
+%     \begin{equation}
+%         \lim_{k\-> \inf} \intR h(x) w_k(x) dx = \intR h(x)\d ' (x) dx = -h'(0).
+%     \end{equation}
+%     Separating the integral for each case of \(w_k\),
+%     \begin{equation}
+%         \lim_{k\-> \inf} \left( k^2 \int_{-1/k}^0 h(x) dx \right) + \lim_{k\-> \inf} \left( -k^2 \int_0^{1/k} h(x)dx \right) .
+%     \end{equation}
+%     Selecting a and b such that, \(-1/k \leq \lima \leq 0 \) and \(0 < \limb < 1/k\). It follows from the mean value theorem of integral calculus that 
+%     \begin{equation}
+%         \lim_{k\-> \inf} \left( k^2 \cdot h(\lima) \cdot \left(\frac{1}{k}\right) \right) + \lim_{k\-> \inf} \left( -k^2 \cdot h(\limb) \cdot \left(\frac{1}{k}\right)\right) = 0.
+%     \end{equation}
+%     since a and b \(\-> 0\) as \(k \-> \inf\).
+%     \begin{figure}
+%         \centering
+%         \begin{tikzpicture}
+%             \begin{axis}[axis lines = middle,
+%                 xlabel = \(x\),
+%                 ylabel = \(w_k(x)\),
+%                 xmin = -1.2,
+%                 xmax = 1.2,
+%                 ymin = -16.3,
+%                 ymax = 16.3,
+%                 x label style = {anchor=north},
+%                 xtick = {0},
+%                 ytick= {0}]
+%                 \addplot [mark=none] coordinates {(-1/1, 0)(-1/1, 1^2)};
+%                 \addplot[mark=none] coordinates {(-1/1, 1^2)(0,1^2)};
+%                 \addplot [mark=none] coordinates {(1/1, 0)(1/1, -1^2)};
+%                 \addplot[mark=none] coordinates {(1/1, -1^2)(0,-1^2)};
+%                 \node at (axis cs:-0.7, 1.7) {$k=1$};
+%                 \addplot [mark=none] coordinates {(-1/2, 0)(-1/2, 2^2)};
+%                 \addplot[mark=none] coordinates {(-1/2, 2^2)(0,2^2)};
+%                 \addplot [mark=none] coordinates {(1/2, 0)(1/2, -2^2)};
+%                 \addplot[mark=none] coordinates {(1/2, -2^2)(0,-2^2)};
+%                 \node at (axis cs:-.45, 5) {$k=2$};
+%                 \addplot [mark=none] coordinates {(-1/4, 0)(-1/4, 4^2)};
+%                 \addplot[mark=none] coordinates {(-1/4, 4^2)(0,4^2)};
+%                 \addplot [mark=none] coordinates {(1/4, 0)(1/4, -4^2)};
+%                 \addplot[mark=none] coordinates {(1/4, -4^2)(0,-4^2)};
+%                 \node at (axis cs:-0.4, 14) {$k=4$};
+%             \end{axis}
+%         \end{tikzpicture}
+%         \caption{\(\d'\) sequence, eq \ref{ex:ds1}}
+%     \end{figure}
+    
+% \end{example}
+
+\input{include/ex 3.6.tex}
+
+As a final aside, notice that
+>>>>>>> Stashed changes
 \begin{equation}
     x^n\delta(x)=0
 \end{equation}
