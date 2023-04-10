@@ -99,50 +99,47 @@ If we let \(k \rightarrow \infty\), then the mass distribution approaches our id
 \begin{equation} \label{eq:deltaSeqLim}
     \delta(x)\ "="\ \lim_{k\rightarrow \infty} w_k(x).
 \end{equation}
-This definition feels intuitive, but it is not a rigorous definition of the Dirac delta function because the limit is infinite for \(x=0\). That is, the right-hand side is not a function. We instead define the Dirac delta function, \(\d(x)\), in the following way.
+This definition feels intuitive, but it is not a rigorous definition of the Dirac delta function because the limit is infinite for \(x=0\). That is, the right-hand side is not a function. We instead define the Dirac delta function, \(\d(x)\), in the following way
 \begin{equation}
     \intR h(x)\d(x)dx = \lim_{k\rightarrow \inf}\intR h(x)w_k(x)dx
 \end{equation}
-This way of defining the Dirac delta function is more rigorous while still being intuitive because it is related to our understanding of delta sequences. However, keep in mind that the delta function is not a function.
+and call \(w_k(x)\) a \df{\(\d\)-sequence}. This way of defining the Dirac delta function is more rigorous while still being intuitive because it is related to our understanding of delta sequences. However, keep in mind that the delta function is not a function.
 
-\begin{theorem}
+\begin{theorem}\label{th:assertion}
     If \(w(x)\) is non-negative \(\intR w(x) dx = 1\), and \(w(x)=O(1/x^{1+\a})\) as \(|x| \rightarrow \inf\) with \(\a>0\), then \(kw(kx) \equiv w_k(x)\) is a \(\d\)-sequence.
 \end{theorem}
 \begin{proof}
     \noindent\rule{\textwidth}{1pt}
     
-    First \(\lim w_k(x=0)\) as \(k \rightarrow \inf\), for each fixed \(x \neq 0\), because \(w_k(x)=kw(kx)=O(k\cdot k^{-1-\a} x^{-1-\a}) = O(k^-\a) \rightarrow 0\) as \(k \rightarrow \inf\). 
-    
-    Then 
+    First, \( \lim_{k\rightarrow \inf} w_k(x)=0\), for each fixed \(x \neq 0\), because \(w_k(x)=kw(kx)=O(k\cdot k^{-1-\alpha} x^{-1-\a}) = O(k^{-\a}) \rightarrow 0\) as \(k \rightarrow \inf\). Then 
     \begin{equation}\label{eq:deltaseqProof1}
         \begin{split}
-            \lim_{k\rightarrow \inf}\intR w_k(x)h(x) dx &= \lim_{k\rightarrow\inf} \intR w_k(x)[h(x)-h(0)]dx + \lim_{k\rightarrow\inf} w_k(x)h(0)dx\\
-            &=I + J\text{, say.}
+            \lim_{k\rightarrow \inf}\intR w_k(x)h(x) dx &= \underbrace{\lim_{k\rightarrow\inf} \intR w_k(x)[h(x)-h(0)]dx}_I+ \underbrace{\lim_{k\rightarrow\inf} \intR w_k(x)h(0)dx}_J.
         \end{split}
     \end{equation}
     Consider J.
     \begin{equation}
         \begin{split}
             J &= h(0) \lim_{h\rightarrow\inf} \intR kw(kx)dx\\
-            &=h(0)\lim_{k\rightarrow \inf} \intR w(\xi) d\xi\\
+            \text{Let  }\xi & =kx\\
+            J&=h(0)\lim_{k\rightarrow \inf} \intR w(\xi) d\xi\\
             &= h(0)
         \end{split}
     \end{equation}
 
-    Next, to show that \(I=0\) so that the right hand side of equation (\ref{eq:deltaseqProof1}) is \(h(0)\). Select a number \(\beta > 0\). Since \(h\) is assumed to be a continuous at \(x=0\), there must exist a number \(\gamma>0\) such that \(|h(x)-H(0)|<\beta\) whenever \(|x-0|=x<\gamma\). Breaking up the integral in \(I\),
+    Next, we wish to show that \(I=0\), so that the right hand side of equation (\ref{eq:deltaseqProof1}) is \(h(0)\). Select a number \(\epsilon > 0\). Since \(h\) is assumed to be continuous at \(x=0\), there must exist a number \(\d>0\) such that \(|h(x)-H(0)|<\epsilon\) whenever \(|x-0|=x<\d\). Breaking up the integral \(I\),
     \begin{equation}
         \begin{split}
-            I &= \lim_{k\rightarrow \inf} \int_{-\inf}^{-\gamma} w_k(x)(h(x)-h(0)) dx + \lim_{k\rightarrow \inf} \int_{-\gamma}^{\gamma} w_k(x)(h(x)-h(0)) dx \\ & + \lim_{k\rightarrow \inf} \int_{\gamma}^{\inf} w_k(x)(h(x)-h(0)) dx\\
-            &\equiv I_1 + I_2 + I_3.
+            I &= \underbrace{\lim_{k\rightarrow \inf} \int_{-\inf}^{-\d} w_k(x)(h(x)-h(0)) dx}_{I_1} + \underbrace{\lim_{k\rightarrow \inf} \int_{-\d}^{\d} w_k(x)(h(x)-h(0)) dx}_{I_2} \\ & + \underbrace{\lim_{k\rightarrow \inf} \int_{\d}^{\inf} w_k(x)(h(x)-h(0)) dx}_{I_3}.\\
         \end{split}
     \end{equation}
-    Since \(w_k(x)\rightarrow 0\) uniformly, over \(-\inf< x < -\gamma\) and \(\gamma < x < \inf \), then \(I_1=I_3 =0\), as \(k \-> \inf\). \(I_2\) must also be zero because \(|h(x)-H(0)|\) must be less than an arbitrarily small choice of \(\b\). Thus, showing that \(I=0\) and that 
+    Since \(w_k(x)\rightarrow 0\) uniformly, over \(-\inf< x < -\d\) and \(\d < x < \inf \), then \(I_1=I_3 =0\). \(I_2\) must also be zero because \(|h(x)-h(0)|\) must be less than any positive real \(\b\). Thus, \(I=0\) and so 
     \begin{equation}
-        \lim_{k\rightarrow \inf}\intR w_k(x)h(x) dx = J = h(0).
+        \lim_{k\rightarrow \inf}\intR w_k(x)h(x) dx = h(0).
     \end{equation}
 \end{proof}
 
-\subsection{Delta as a Generalized Function}
+\subsection{The Dirac Delta Function as a Generalized Function}
 The Dirac delta function is more appropriately defined as a generalized function. To understand this way of defining \(\d\), we will begin by defining some terms.
 
 \begin{definition}
@@ -165,11 +162,11 @@ We will call the space of infinitely differentiable functions with compact suppo
     \df[generalized function]{Generalized functions} are linear functionals that are uniformly continuous on \(\mathcal{D}\), such that all generalized functions have derivatives which are also generalized functions.
 \end{definition}
 
-Consider the following functional,
+We consider the following functional,
 \begin{equation}
     \mathcal{F}(h) = \int_{-\infty}^{\infty} g(x)h(x)dx.
 \end{equation}
-This functional assigns a numerical value, \(\mathcal{F}(h)\), for each function \(h\) within the domain, \(\mathcal{D}\), of \(\mathcal{F}\). We will take \(\mathcal{D}\) to be the set of all functions that are defined over \(-\infty <x<\infty\), are infinitely differentiable, and approach zero outside of some finite interval,
+This functional assigns a numerical value, \(\mathcal{F}(h)\), for each function \(h\) within the domain, \(\mathcal{D}\), of \(\mathcal{F}\).
 
 \begin{example}
     Suppose \(\mathcal{F}(h)\) is the integral of \(h\) from \(\xi\) to \(\infty\).
@@ -184,7 +181,7 @@ This functional assigns a numerical value, \(\mathcal{F}(h)\), for each function
             \frac{1}{2}, & x=0
         \end{cases}
     \end{equation}
-    which is a function in the classical sense. \footnote{We have defined \(H(0)\) to be \(\frac{1}{2}\), which is the most commonly accepted value. However, for our purposes, the value at any particular point is not important since we are only ever interested in integrating the function.}    
+    which is a function in the classical sense. \footnote{We have defined \(H(0)\) to be \(\frac{1}{2}\), which is a common convention. However, for our purposes, the value at any particular point is not important since we are only ever interested in integrating the function.}    
 \end{example}
 
 If \(\mathcal{F}(h)\) is \(h(0)\) so that
@@ -198,7 +195,7 @@ then it can be shown that there is no function, \(g(x)\), which exists such that
 
 Although \(\delta(x)\) acts at \(x=0\), it can be adjusted to act at any point by shifting the argument. Thus, \(\delta(x-\xi)\) acts at \(x=\xi\),
 \begin{equation}
-    \int_{-infty}^{\infty} \delta(x-\xi)h(x)dx = h(\xi).
+    \int_{-\inf}^{\infty} \delta(x-\xi)h(x)dx = h(\xi).
 \end{equation}
 As a generalized function, \(\delta\) is also differentiable. By referring to (3.5), one can see that defining the derivative of a generalized function involves determining the functional, \(\mathcal{F}(h)\) for
 \begin{equation}
@@ -208,9 +205,9 @@ Integrating by parts
 \begin{equation}
     \intR g'(x)h(x)dx = g(x)h(x)\biggr\rvert_{-\infty}^{\infty} - \intR g(x)h'(x)dx.
 \end{equation}
-The integral term is fairly simple to interpret since it is of the same form as (3.5), but the boundary term is not as nice because it involves knowing the values of \(g\). However, our restriction that \(h\) has compact support means that it must vanish at infinity, and since we are integrating from \(-\inf\) to \(inf\), the boundary term must be zero.
+The integral term is fairly simple to interpret since it is of the same form as (3.5), but the boundary term is not as nice because it involves knowing the values of \(g\). However, our restriction that \(h\) has compact support means that it must vanish at infinity, and since we are integrating from \(-\inf\) to \(\inf\), the boundary term must be zero.
 \begin{equation}
-    \intR g'(x)h(x)dx = -\intR g(x)h'(x)dx
+    \intR g'(x)h(x)dx = -\intR g(x)h'(x)dx.
 \end{equation}
 For the Dirac delta function, this means
 \begin{equation}
@@ -222,7 +219,7 @@ For the Dirac delta function, this means
 
 
 \begin{theorem} \label{th:deltad}
-    The \(j\)th derivative of the Dirac delta function is defined by
+    The \(j\)th derivative of the Dirac delta function is
     \begin{equation}
          \intR \delta^{(j)}(\xi-x)h(\xi)d\xi = (-1)^jh^{(j)}(x).
     \end{equation}
@@ -259,68 +256,15 @@ Such equalities between generalized functions, as seen in (3.18), are understood
     \intR g_1(x)h(x)dx = \intR g_2(x)h(x)dx.
 \end{equation}
 
-\begin{example}
-    Consider the sequence 
-    \begin{equation}\label{ex:ds1}
-        w_k(x) = \begin{cases}
-            -k^2, 0\leq x < 1/k\\
-            k^2, -1/k < x < 0\\
-            0, |x| \geq 1/k
-        \end{cases}
-    \end{equation}
-    We want to verify that \(w_k\) is a \(\d '\) sequence. If this is true, then
-    \begin{equation}
-        \lim_{k\-> \inf} \intR h(x) w_k(x) dx = \intR h(x)\d ' (x) dx = -h'(0).
-    \end{equation}
-    Separating the integral for each case of \(w_k\),
-    \begin{equation}
-        \lim_{k\-> \inf} \left( k^2 \int_{-1/k}^0 h(x) dx \right) + \lim_{k\-> \inf} \left( -k^2 \int_0^{1/k} h(x)dx \right) .
-    \end{equation}
-    Selecting a and b such that, \(-1/k \leq \lima \leq 0 \) and \(0 < \limb < 1/k\). It follows from the mean value theorem of integral calculus that 
-    \begin{equation}
-        \lim_{k\-> \inf} \left( k^2 \cdot h(\lima) \cdot \left(\frac{1}{k}\right) \right) + \lim_{k\-> \inf} \left( -k^2 \cdot h(\limb) \cdot \left(\frac{1}{k}\right)\right) = 0.
-    \end{equation}
-    since a and b \(\-> 0\) as \(k \-> \inf\).
-    \begin{figure}
-        \centering
-        \begin{tikzpicture}
-            \begin{axis}[axis lines = middle,
-                xlabel = \(x\),
-                ylabel = \(w_k(x)\),
-                xmin = -1.2,
-                xmax = 1.2,
-                ymin = -16.3,
-                ymax = 16.3,
-                x label style = {anchor=north},
-                xtick = {0},
-                ytick= {0}]
-                \addplot [mark=none] coordinates {(-1/1, 0)(-1/1, 1^2)};
-                \addplot[mark=none] coordinates {(-1/1, 1^2)(0,1^2)};
-                \addplot [mark=none] coordinates {(1/1, 0)(1/1, -1^2)};
-                \addplot[mark=none] coordinates {(1/1, -1^2)(0,-1^2)};
-                \node at (axis cs:-0.7, 1.7) {$k=1$};
-                \addplot [mark=none] coordinates {(-1/2, 0)(-1/2, 2^2)};
-                \addplot[mark=none] coordinates {(-1/2, 2^2)(0,2^2)};
-                \addplot [mark=none] coordinates {(1/2, 0)(1/2, -2^2)};
-                \addplot[mark=none] coordinates {(1/2, -2^2)(0,-2^2)};
-                \node at (axis cs:-.45, 5) {$k=2$};
-                \addplot [mark=none] coordinates {(-1/4, 0)(-1/4, 4^2)};
-                \addplot[mark=none] coordinates {(-1/4, 4^2)(0,4^2)};
-                \addplot [mark=none] coordinates {(1/4, 0)(1/4, -4^2)};
-                \addplot[mark=none] coordinates {(1/4, -4^2)(0,-4^2)};
-                \node at (axis cs:-0.4, 14) {$k=4$};
-            \end{axis}
-        \end{tikzpicture}
-        \caption{\(\d'\) sequence, eq \ref{ex:ds1}}
-    \end{figure}
-    
-\end{example}
-
-As a final aside, notice that
+Notice that for all \(n > 0\)
 \begin{equation}
-    x\delta(x)=0
+    x^n\delta(x)=0
 \end{equation}
 as a result of
 \begin{equation}
-    \intR x\delta(x)h(x)dx=[xh(x)]|_{x=0} = 0.
+    \intR x^n\delta(x)h(x)dx=[x^nh(x)]|_{x=0} = 0.
 \end{equation}
+
+\input{include/3.1.tex}
+
+\input{include/3.6.tex}

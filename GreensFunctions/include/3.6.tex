@@ -1,0 +1,46 @@
+\begin{example}
+    We would like to show that \(e^x\d(x)=\d(x)\). To begin with, we integrate \(e^x\d(x)f(x)\) and would like to show that this is equal to \(f(0)\) to satisfy the generalized function definition of the delta function.
+    \begin{equation}
+        \begin{split}
+            \intR e^x\d(x)f(x)dx &= \intR \d(x)\underbrace{e^xf(x)}_{g(x)}dx\\
+            &=\intR \d(x)g(x)dx\\
+            &=g(0)\\
+            &=e^0f(0)\\
+            &=f(0)\\
+        \end{split}
+    \end{equation}
+    Therefore
+    \begin{equation}
+        \intR e^x\d(x)f(x)dx = \intR \d(x)f(x)dx
+    \end{equation}
+\end{example}
+\begin{example}
+    We would like to show that \(\frac{d^4}{dx^4}|x|^4 = 12\d(x)\). Note that \(|x|=2xH(x)-x\). We begin by manipulating \(|x|^3\) into a more convenient form.
+    \begin{equation}
+        \begin{split}
+            |x|^3 &= (2xH(x)-x)^3\\
+            &=x^3(2H(x)-1)^3\\
+        \end{split}
+    \end{equation}
+    Next, it is useful to simplify.
+    \begin{equation}
+        \begin{split}
+            (2H(x)-1)^3 &= (2H(x)-1)(2H(x)-1)^2\\
+            &=(4H^2(x)-4H(x)+1)(2H(x)-1)\\
+            &=(4H(x)-4H(x)+1)(2H(x)-1)\\
+            &=2H(x)-1
+        \end{split}
+    \end{equation}
+    Finally, we take successive derivatives.
+    \begin{equation}
+        \begin{split}
+            \frac{d}{dx}(x^3(2H(x)-1)) &= 3x^2(2H(x)-1) +2x^3\d(x)\\
+            &=3x^2(2H(x)-1)\\
+            \frac{d}{dx}(3x^2(2H(x)-1)) &= 6x(2H(x)-1) + 6x^2\d(x)\\
+            &=6x(2H(x)-1)\\
+            \frac{d}{dx}(6x(2H(x)-1)) &= 12(H(x)-1) + 12x\d(x)\\
+            &= 12(H(x)-1)\\
+            \frac{d}{dx}(12(H(x)-1)) &= 12\d(x)
+        \end{split}
+    \end{equation}
+\end{example}

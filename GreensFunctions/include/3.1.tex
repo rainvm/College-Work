@@ -1,0 +1,17 @@
+\begin{example}
+    We would like to show that
+    \begin{equation*}
+        w_k(x) = \begin{cases}
+            k, &  0<x<\frac{1}{k}\\
+            0, &x\leq 0 \text{ and } x \geq \frac{1}{k}
+        \end{cases}
+    \end{equation*}
+    is a \(\d\)-sequence using theorem (\ref{th:assertion}). It is clear that \(w_k(x)\geq 0\)  for all \(x\) and \(w(x)=O(1/x^{1+\a})\) as \(|x| \rightarrow \inf\) with \(\a>0\) since it is zero when \(\leq 0\) or \(x \geq 1/k\). Lastly, we must show that the area under \(w(x)\) is 1. Choosing \(w(x)\) so that \(kw(kx)=w_k(x)\)
+    \begin{equation}
+        \begin{split}
+            \intR w(x) dx &= \int_{-\inf}^{0} 0 dx +\int_0^1 1 dx + \int_{1}^{\inf} 0 dx\\
+            &=\int_0^1 1 dx\\
+            &=1
+        \end{split}
+    \end{equation}
+\end{example}
