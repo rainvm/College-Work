@@ -1,0 +1,32 @@
+\begin{figure}
+    \centering
+    \begin{tikzpicture}
+ 
+        % Definitions
+        \begin{axis}[
+                    axis x line = bottom,
+              axis x line shift=-0.05,
+              axis y line = left,
+              xlabel = \(\),
+              ylabel = \(u(x)\),
+              ymin = -0.05,
+              ymax = 0.7,
+              xmin = 0,
+              xmax = 1.3,
+              y label style={at={(axis description cs:0,0.98)},
+                       rotate=-90, anchor=west},,
+              x label style = {anchor=north},
+              xtick = {0,1},
+              ytick= {0},
+          ]
+              \addplot[samples=200, 
+                  smooth,
+                  domain = 0:1]{(-2*x+5*x^4-3*x^5)/20};
+               \addplot[samples = 200,
+               smooth,
+               domain = 0:1] {3*x^2*(1-x)+0.2};
+          \end{axis}
+  
+        
+  \end{tikzpicture}
+\end{figure}

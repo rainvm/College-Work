@@ -1,8 +1,8 @@
-PWD c:/Users/Ryan/College-Work/GreensFunctions
+PWD c:/Users/coyne/College Work/GreensFunctions
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/Ryan/College-Work/GreensFunctions/main.tex
+INPUT c:/Users/coyne/College Work/GreensFunctions/main.tex
 OUTPUT main.log
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
@@ -1133,6 +1133,7 @@ INPUT ./include/1.tex
 INPUT include/1.tex
 INPUT ./include/1.tex
 INPUT include/1.tex
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
@@ -1151,7 +1152,6 @@ INPUT ./include/3.tex
 INPUT include/3.tex
 INPUT ./include/3.tex
 INPUT include/3.tex
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT ./include/3.1.tex
 INPUT include/3.1.tex
@@ -1165,6 +1165,10 @@ INPUT ./include/4.tex
 INPUT include/4.tex
 INPUT ./include/4.tex
 INPUT include/4.tex
+INPUT ./include/loadedstringfig.tex
+INPUT include/loadedstringfig.tex
+INPUT ./include/loadedstringfig.tex
+INPUT include/loadedstringfig.tex
 INPUT ./main.ind
 INPUT main.ind
 INPUT ./main.ind
