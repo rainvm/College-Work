@@ -1,5 +1,5 @@
 \begin{example}
-    We would like to show that
+    We would like to show that the sequence
     \begin{equation*}
         w_k(x) = \begin{cases}
             k, &  0<x<\frac{1}{k}\\
@@ -14,4 +14,16 @@
             &=1
         \end{split}
     \end{equation}
+\end{example}
+
+\begin{example}
+    We would like to show that the sequence
+    \begin{equation}
+        w_k(x) = \begin{cases}
+            -k, &|x|<\frac{1}{2k}\\
+            2k, &\frac{1}{2k} \leq |x| \leq \frac{1}{k}\\
+            0, &|x|> \frac{1}{k} 
+        \end{cases}
+    \end{equation}
+    is a delta sequence. Theorem (\ref{th:assertion}) does not apply in this case becuase \(w_k(x)\) is negative for some values of \(x\). %TODO continue
 \end{example}

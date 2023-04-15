@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.6)  10 APR 2023 10:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.5)  12 APR 2023 14:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Ryan/College-Work/GreensFunctions/main.tex
-(c:/Users/Ryan/College-Work/GreensFunctions/main.tex
+**"c:/Users/coyne/College Work/GreensFunctions/main.tex"
+(c:/Users/coyne/College Work/GreensFunctions/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-03-30> (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -1090,12 +1090,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [1
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./include/1.tex) (./include/2.tex [2] [3]) (./include/3.tex [4] [5]
-Overfull \hbox (38.61107pt too wide) in paragraph at lines 112--113
-[][] 
- []
-
-[6]
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./include/1.tex) (./include/2.tex [2] [3]) (./include/3.tex [4] [5] [6]
 pdfTeX warning (ext4): destination with the same identifier (name{example.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -1110,31 +1105,31 @@ pdfTeX warning (ext4): destination with the same identifier (name{example.2}) ha
 <to be read again> 
                    \relax 
 l.2     W
-         e would like to show that) (./include/3.6.tex [9])) (./include/4.tex [10]
+         e would like to show that the sequence) (./include/3.6.tex [9] [10])) (./include/4.tex
 pdfTeX warning (ext4): destination with the same identifier (name{example.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29     \textit
-                {Loaded String} [11]) (./main.ind [12] [13
+l.30     \textit
+                {Loaded String} [11] (./include/loadedstringfig.tex) [12]) (./main.ind [13] [14
 
 
 ]) (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CF2A924667671C3F323FDC7F93C1599D;1214.
+(rerunfilecheck)             Checksum: 653CF18D9CF46CE7D186D1DC14BCEEDC;1597.
  ) 
 Here is how much of TeX's memory you used:
- 35889 strings out of 476017
- 819916 string characters out of 5793767
- 1873660 words of memory out of 5000000
- 55639 multiletter control sequences out of 15000+600000
+ 35950 strings out of 476017
+ 821198 string characters out of 5793761
+ 1874660 words of memory out of 5000000
+ 55689 multiletter control sequences out of 15000+600000
  526727 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,22n,106p,786b,2136s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 104i,22n,106p,789b,2194s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (13 pages, 246109 bytes).
+Output written on main.pdf (14 pages, 259909 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
- 94 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 338 PDF objects out of 1000 (max. 8388607)
+ 283 compressed objects within 3 object streams
+ 102 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
