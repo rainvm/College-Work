@@ -1,4 +1,14 @@
 \documentclass{beamer}
+
+\input{preamble/packages}
+\input{preamble/newcommands}
+\input{preamble/defs}
+
+
+\def\limfunc{\frac{x^2-1}{x-1}}
+
+\def\oneoverx{\frac{1}{x}}
+
 %Information to be included in the title page:
 \title{The Method of Green's Functions}
 \author{Ryan Coyne}
@@ -11,9 +21,169 @@
 
 \section*{Calculus}
 
-\begin{frame}
-\frametitle{The Limit}
+    \begin{frame}
+    \frametitle{The Limit}
+        \(f(x)=\limfunc\)\\[28.5pt]
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\linewidth]{include/images/limit_1.png}
+        \end{figure}
+    \end{frame}
 
-\end{frame}
+    \begin{frame}
+        \frametitle{The Limit}
+        \(f(x)=\limfunc\)\\
+        \(f(1)=\frac{1^2-1}{1-1}=\frac{0}{0}\)\\[12pt]
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\linewidth]{include/images/limit_2.png}
+        \end{figure}
+    \end{frame}
 
+    \begin{frame}
+        \frametitle{The Limit}
+        \(f(x)=\limfunc\)\\
+        \(f(1)=\frac{1^2-1}{1-1}=\frac{0}{0}\)\\[12pt]
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\linewidth]{include/images/limit_3.png}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Limit}
+        \(f(x)=\limfunc\)\\
+        \(f(1)=\frac{1^2-1}{1-1}=\frac{0}{0}\)\\[12pt]
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\linewidth]{include/images/limit_4.png}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Limit}
+        \(\Lim{x\to 1}\limfunc = 2\)\\[28.5pt]
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\linewidth]{include/images/limit_4.png}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Limit}
+        \(f(x)=\oneoverx\)\\
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.75\linewidth]{include/images/invx_1.png}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Derivative}
+        \(f(x)=x+1\)\\[28.5pt]
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\linewidth]{include/images/limit_1.png}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Derivative}
+        \(f(x)=\frac{1}{x}\)\\[26pt]
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\linewidth]{include/images/invx_2.png}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Derivative}
+        \(f(x)=\frac{1}{x}\)\\
+        \(f'(x)=-\frac{1}{x^2}\)\\[12pt]
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\linewidth]{include/images/invx_2.png}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Derivative}
+        \(f(x)=\frac{1}{x}\)\\
+        \(f'(x)=-\frac{1}{x^2}\)\\
+        \(f'(1)=1\)\\
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\linewidth]{include/images/invx_3.png}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Anti-Derivative}
+        \(\int f(x)dx = F(x)\)\\[12pt] \pause
+        \(f(x)=\frac{1}{x}\)\\[12pt]
+        \(\int \frac{1}{x} dx = \ln x +c\)
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Integral}
+        \(f(x)=\frac{1}{x}\)\\[26pt]
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\linewidth]{include/images/invx_2.png}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Integral}
+        \(f(x)=\frac{1}{x}\)\\[26pt]
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\linewidth]{include/images/invx_4.png}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Integral}
+        \(\int_\lima^\limb f(x) dx = F(a) - F(b)\)\\
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Integral}
+        \(f(x)=\frac{1}{x}\)\\
+        \(\int_1^3 f(x) dx = F(3) - F(1)\)\\
+        \(\hspace{49pt}=\ln(3)-\ln(1)\)
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.6\linewidth]{include/images/invx_4.png}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Differential Equations}
+        
+        
+    
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Adjoint Operator}
+    
+        
+    
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{The Dirac Delta Function}
+    
+        
+    
+    \end{frame}
+    
+    \begin{frame}
+        \frametitle{The Method of Green's Functions}
+    
+        
+    
+    \end{frame}
+    
 \end{document}

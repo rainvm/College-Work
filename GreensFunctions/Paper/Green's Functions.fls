@@ -1,9 +1,9 @@
-PWD c:/Users/Ryan/College-Work/GreensFunctions
+PWD c:/Users/Ryan/College-Work/GreensFunctions/Paper
 INPUT c:/texlive/2023/texmf.cnf
 INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/Ryan/College-Work/GreensFunctions/Green's Functions by Ryan Coyne.tex
-OUTPUT Green's Functions by Ryan Coyne.log
+INPUT c:/Users/Ryan/College-Work/GreensFunctions/Paper/Green's Functions.tex
+OUTPUT Green's Functions.log
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
@@ -1009,7 +1009,7 @@ INPUT preamble/env.tex
 INPUT ./preamble/env.tex
 INPUT ./preamble/env.tex
 INPUT preamble/env.tex
-OUTPUT Green's Functions by Ryan Coyne.idx
+OUTPUT Green's Functions.idx
 INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -1021,10 +1021,10 @@ INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT ./Green's Functions by Ryan Coyne.aux
-INPUT Green's Functions by Ryan Coyne.aux
-INPUT Green's Functions by Ryan Coyne.aux
-OUTPUT Green's Functions by Ryan Coyne.aux
+INPUT ./Green's Functions.aux
+INPUT Green's Functions.aux
+INPUT Green's Functions.aux
+OUTPUT Green's Functions.aux
 INPUT c:/texlive/2023/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 INPUT c:/texlive/2023/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 INPUT c:/texlive/2023/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
@@ -1056,18 +1056,18 @@ INPUT c:/texlive/2023/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
 INPUT c:/texlive/2023/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
 INPUT c:/texlive/2023/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
 INPUT c:/texlive/2023/texmf-dist/tex/latex/greek-fontenc/greek-fontenc.def
-INPUT ./Green's Functions by Ryan Coyne.out
-INPUT Green's Functions by Ryan Coyne.out
-INPUT ./Green's Functions by Ryan Coyne.out
-INPUT Green's Functions by Ryan Coyne.out
-INPUT ./Green's Functions by Ryan Coyne.out
-INPUT Green's Functions by Ryan Coyne.out
-INPUT ./Green's Functions by Ryan Coyne.out
-INPUT Green's Functions by Ryan Coyne.out
-OUTPUT Green's Functions by Ryan Coyne.pdf
-INPUT ./Green's Functions by Ryan Coyne.out
-INPUT ./Green's Functions by Ryan Coyne.out
-OUTPUT Green's Functions by Ryan Coyne.out
+INPUT ./Green's Functions.out
+INPUT Green's Functions.out
+INPUT ./Green's Functions.out
+INPUT Green's Functions.out
+INPUT ./Green's Functions.out
+INPUT Green's Functions.out
+INPUT ./Green's Functions.out
+INPUT Green's Functions.out
+OUTPUT Green's Functions.pdf
+INPUT ./Green's Functions.out
+INPUT ./Green's Functions.out
+OUTPUT Green's Functions.out
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
@@ -1100,9 +1100,9 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT ./Green's Functions by Ryan Coyne.toc
-INPUT Green's Functions by Ryan Coyne.toc
-INPUT Green's Functions by Ryan Coyne.toc
+INPUT ./Green's Functions.toc
+INPUT Green's Functions.toc
+INPUT Green's Functions.toc
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
@@ -1127,7 +1127,7 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-OUTPUT Green's Functions by Ryan Coyne.toc
+OUTPUT Green's Functions.toc
 INPUT c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./include/1.tex
 INPUT include/1.tex
@@ -1169,13 +1169,13 @@ INPUT ./include/loadedstringfig.tex
 INPUT include/loadedstringfig.tex
 INPUT ./include/loadedstringfig.tex
 INPUT include/loadedstringfig.tex
-INPUT ./Green's Functions by Ryan Coyne.ind
-INPUT Green's Functions by Ryan Coyne.ind
-INPUT ./Green's Functions by Ryan Coyne.ind
-INPUT Green's Functions by Ryan Coyne.ind
-INPUT Green's Functions by Ryan Coyne.aux
-INPUT ./Green's Functions by Ryan Coyne.out
-INPUT ./Green's Functions by Ryan Coyne.out
+INPUT ./Green's Functions.ind
+INPUT Green's Functions.ind
+INPUT ./Green's Functions.ind
+INPUT Green's Functions.ind
+INPUT Green's Functions.aux
+INPUT ./Green's Functions.out
+INPUT ./Green's Functions.out
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb

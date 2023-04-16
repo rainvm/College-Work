@@ -1,17 +1,17 @@
 # Fdb version 4
-["makeindex Green's Functions by Ryan Coyne.idx"] 1681605888 "Green's Functions by Ryan Coyne.idx" "Green's Functions by Ryan Coyne.ind" "Green's Functions by Ryan Coyne" 1681605893 0
-  "Green's Functions by Ryan Coyne.idx" 1681605893 923 7c4bbaffa1a7c40bef8cc058e1a1acaa "pdflatex"
+["makeindex Green's Functions.idx"] 1681607241 "Green's Functions.idx" "Green's Functions.ind" "Green's Functions" 1681607246 0
+  "Green's Functions.idx" 1681607246 923 7c4bbaffa1a7c40bef8cc058e1a1acaa "pdflatex"
   (generated)
-  "Green's Functions by Ryan Coyne.ilg"
-  "Green's Functions by Ryan Coyne.ind"
+  "Green's Functions.ilg"
+  "Green's Functions.ind"
   (rewritten before read)
-["pdflatex"] 1681605891 "c:/Users/Ryan/College-Work/GreensFunctions/Green's Functions by Ryan Coyne.tex" "Green's Functions by Ryan Coyne.pdf" "Green's Functions by Ryan Coyne" 1681605893 0
-  "Green's Functions by Ryan Coyne.aux" 1681605893 3085 75ff4606d95fd4976f0054bc719ae811 "pdflatex"
-  "Green's Functions by Ryan Coyne.ind" 1681605889 853 375e2e43422f9b419a5724f3e99da4d3 "makeindex Green's Functions by Ryan Coyne.idx"
-  "Green's Functions by Ryan Coyne.out" 1681605893 1597 653cf18d9cf46ce7d186d1dc14bceedc "pdflatex"
-  "Green's Functions by Ryan Coyne.tex" 1681605837 477 067737fd65f1860ef46087fed57816f0 ""
-  "Green's Functions by Ryan Coyne.toc" 1681605893 803 402f1daa669afccf1c6e4901d1c57b55 "pdflatex"
-  "c:/Users/Ryan/College-Work/GreensFunctions/Green's Functions by Ryan Coyne.tex" 1681605837 477 067737fd65f1860ef46087fed57816f0 ""
+["pdflatex"] 1681607244 "c:/Users/Ryan/College-Work/GreensFunctions/Paper/Green's Functions.tex" "Green's Functions.pdf" "Green's Functions" 1681607246 0
+  "Green's Functions.aux" 1681607246 3085 75ff4606d95fd4976f0054bc719ae811 "pdflatex"
+  "Green's Functions.ind" 1681607242 853 375e2e43422f9b419a5724f3e99da4d3 "makeindex Green's Functions.idx"
+  "Green's Functions.out" 1681607246 1597 653cf18d9cf46ce7d186d1dc14bceedc "pdflatex"
+  "Green's Functions.tex" 1681605837 477 067737fd65f1860ef46087fed57816f0 ""
+  "Green's Functions.toc" 1681607246 803 402f1daa669afccf1c6e4901d1c57b55 "pdflatex"
+  "c:/Users/Ryan/College-Work/GreensFunctions/Paper/Green's Functions.tex" 1681605837 477 067737fd65f1860ef46087fed57816f0 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1680761254 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1680759747 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1680759747 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -268,10 +268,10 @@
   "preamble/newcommands.tex" 1681000868 1080 d5ce9b722d703424e07e60aa9b9d76ac ""
   "preamble/packages.tex" 1681000868 630 1efa675dc6bb96f36a1789b89fc106d3 ""
   (generated)
-  "Green's Functions by Ryan Coyne.aux"
-  "Green's Functions by Ryan Coyne.idx"
-  "Green's Functions by Ryan Coyne.log"
-  "Green's Functions by Ryan Coyne.out"
-  "Green's Functions by Ryan Coyne.pdf"
-  "Green's Functions by Ryan Coyne.toc"
+  "Green's Functions.aux"
+  "Green's Functions.idx"
+  "Green's Functions.log"
+  "Green's Functions.out"
+  "Green's Functions.pdf"
+  "Green's Functions.toc"
   (rewritten before read)
