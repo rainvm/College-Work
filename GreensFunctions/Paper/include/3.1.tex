@@ -25,9 +25,12 @@
             0, &|x|> \frac{1}{k} 
         \end{cases}
     \end{equation}
-    is a delta sequence. Theorem (\ref{th:assertion}) does not apply in this case becuase \(w_k(x)\) is negative for some values of \(x\) so we should instead show that 
+    is a delta sequence. Theorem (\ref{th:assertion}) does not apply in this case because \(w_k(x)\) is negative for some values of \(x\) so we should instead show 
     \begin{equation}
         \lim_{k\to \inf}\intR w_k(x) h(x) dx = h(0).
     \end{equation}
-    
+    To begin, we break up the integral 
+    \begin{equation}
+        \lim_{k\to \inf}\intR w_k(x) h(x) dx = \lim_{k\to \inf}\int_{-\frac{1}{k}}^{-\frac{1}{2k}} 2kh(x)dx + \ 
+    \end{equation}
 \end{example}
