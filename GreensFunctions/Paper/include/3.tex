@@ -101,23 +101,24 @@ If we let \(k \rightarrow \infty\), then the mass distribution approaches our id
 \end{equation}
 This definition feels intuitive, but it is not a rigorous definition of the Dirac delta function because the limit is infinite for \(x=0\). That is, the right-hand side is not a function. We instead define the Dirac delta function, \(\d(x)\), in the following way
 \begin{equation}
-    \intR h(x)\d(x)dx = \lim_{k\rightarrow \inf}\intR h(x)w_k(x)dx
+    \begin{split}
+        \lim_{k\rightarrow \inf}\intR h(x)w_k(x)dx &= \intR h(x)\d(x)dx \\
+        &= h(0)
+    \end{split}
 \end{equation}
 and call \(w_k(x)\) a \df{\(\d\)-sequence}. This way of defining the Dirac delta function is more rigorous while still being intuitive because it is related to our understanding of delta sequences. However, keep in mind that the delta function is not a function.
 
 \begin{theorem}\label{th:assertion}
     If \(w(x)\) is non-negative \(\intR w(x) dx = 1\), and \(w(x)=O(1/x^{1+\a})\) as \(|x| \rightarrow \inf\) with \(\a>0\), then \(kw(kx) \equiv w_k(x)\) is a \(\d\)-sequence.
 \end{theorem}
-\begin{proof}
-    \noindent\rule{0.9236\textwidth}{1pt}
-    
+\begin{proof}    
     First, \( \lim_{k\rightarrow \inf} w_k(x)=0\), for each fixed \(x \neq 0\), because \(w_k(x)=kw(kx)=O(k\cdot k^{-1-\alpha} x^{-1-\a}) = O(k^{-\a}) \rightarrow 0\) as \(k \rightarrow \inf\). Then 
     \begin{equation}\label{eq:deltaseqProof1}
         \begin{split}
             \lim_{k\rightarrow \inf}\intR w_k(x)h(x) dx &= \underbrace{\lim_{k\rightarrow\inf} \intR w_k(x)[h(x)-h(0)]dx}_I+ \underbrace{\lim_{k\rightarrow\inf} \intR w_k(x)h(0)dx}_J.
         \end{split}
     \end{equation}
-    Consider J.
+    Consider J,
     \begin{equation}
         \begin{split}
             J &= h(0) \lim_{h\rightarrow\inf} \intR kw(kx)dx\\
@@ -224,10 +225,9 @@ For the Dirac delta function, this means
          \intR \delta^{(j)}(\xi-x)h(\xi)d\xi = (-1)^jh^{(j)}(x).
     \end{equation}
 \end{theorem}
-\begin{proof}
-    \noindent\rule{\textwidth}{1pt}
+\begin{proof} We prove the statement by induction.\\
     \textbf{Base case:} Proven to be true for \(j\) = 1 in equation (\ref{eq:deltafirst}).\\
-    \textbf{Induction step:} Let \(k \in \mathbb{N}\) and suppose the statements holds for \(k>1\). Then
+    \textbf{Induction step:} Let \(k \in \mathbb{N}\) and suppose the statements holds for \(k>1\). Then,
     \begin{align*}
         \intR \delta^{(k+1)}(\xi-x)h(\xi)d\xi &= \d^{(k)}(\xi-x)h(\xi)\bounds{-\inf}{\inf}-\intR \delta^{(k)}(\xi-x)h'(\xi)d\xi\\
         &=-\intR \delta^{(k)}(\xi-x)h'(\xi)d\xi\\
