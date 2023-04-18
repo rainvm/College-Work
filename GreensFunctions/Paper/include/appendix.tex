@@ -1,6 +1,7 @@
 \newpage
-\section{Tabular Integration by Parts}
-    One can use a table to perform repeated integration by parts quickly. Suppose we would like to use integration by parts to change the integral of \(v(x)u^{(4)}(x)\) into boundary terms plus the integral of \(v^{(4)}(x)u(x)\). In the first column, we write \(v(x)\) and its derivatives beneath it. In the second column, we write \(u^(4)(x)\) and its anti-derivatives beneath it. At the end of this process, the table should look as follows.
+\section{Appendix}
+\subsection{Tabular Integration by Parts}
+    One can use a table to perform repeated integration by parts quickly. Suppose we would like to use integration by parts to change the integral of \(v(x)u^{(4)}(x)\) into boundary terms plus the integral of \(v^{(4)}(x)u(x)\). In the first column, we write \(v(x)\) and its derivatives beneath it. In the second column, we write \(u^{(4)}(x)\) and its anti-derivatives beneath it. At the end of this process, the table should look as follows.
     \begin{table}[H]
         \centering
         \begin{tabular}{c|c}
@@ -36,7 +37,7 @@
     \begin{equation}
         \intl v(x)u^{(4)}(x) dx = (v(x)u'''(x) - v'(x)u''(x) + v''(x)u'(x)-v'''(x)u(x))\biggr\rvert_\mathrm{a}^\mathrm{b} + \intl v^{(4)}(x)u(x) dx.
     \end{equation}
-\section{The Mean Value Theorem}
+\subsection{The Mean Value Theorem}
     The mean value theorem states that for all \(f:[\lima,\limb]\to \mathbb{R}\) such that \(f\) is continuous on \([\lima,\limb]\), and differentiable on \((\lima, \limb)\), then 
     \begin{equation}
         \exists c \in (\lima, \limb) : f'(\text{c}) = \frac{f(\limb)-f(\lima)}{\limb-\lima}
@@ -52,7 +53,7 @@
             &=f'(\text{c})(\limb-\lima)
         \end{split}
     \end{equation}
-\section{Big O Notation}
+\subsection{Big O Notation}
 Big O notation is used to describe the limiting behavior of a function as the argument tends to some value or infinity. By \(f(x)=O(g(x)\) as \(x\to x_0\) we mean that \(\frac{f(x)}{g(x)}\) is bounded as \(x\to x_0\). For example 
 \begin{equation}
     \sin 6x = O(1) \text{ as } x\to \inf.
