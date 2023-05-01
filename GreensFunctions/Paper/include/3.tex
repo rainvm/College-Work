@@ -95,24 +95,30 @@ where \(k\) is some larger natural number. In Fig 3.2, we see that \(w\) becomes
     \caption{Mass Density;  eq. 3.3}
 \end{figure}
 
-If we let \(k \rightarrow \infty\), then the mass distribution approaches our idea of a point mass at \(x=0\). Calling this \(\delta(x)\), we would like to write,
+If we let \(k \rightarrow \infty\), then the mass distribution approaches our idea of a point mass at \(x=0\). We would like to write
 \begin{equation} \label{eq:deltaSeqLim}
-    \delta(x) \overset{?}{=} \lim_{k\rightarrow \infty} w_k(x).
+    \delta(x) \overset{?}{=} \lim_{k\rightarrow \infty} w_k(x)
 \end{equation}
-This definition feels intuitive, but it is not a rigorous definition of the Dirac delta function because the limit is infinite for \(x=0\). That is, the right-hand side is not a function. We instead define the Dirac delta function, \(\d(x)\), in the following way
-\begin{equation}
+where, \(\d(x)\) is the \df{Dirac delta function}. This "definition" feels intuitive, but it is not a rigorous definition of the Dirac delta function because the limit is infinite for \(x=0\). That is, the right-hand side is not a function. We instead define the Dirac delta function, \(\d(x)\), in the following way
+\begin{equation}\label{eq:seqDef}
     \begin{split}
         \lim_{k\rightarrow \inf}\intR h(x)w_k(x)dx &= \intR h(x)\d(x)dx \\
         &= h(0)
     \end{split}
 \end{equation}
-and call \(w_k(x)\) a \df{\(\d\)-sequence}. This way of defining the Dirac delta function is more rigorous while still being intuitive because it is related to our understanding of delta sequences. However, keep in mind that the delta function is not a function.
+and call any \(w_k(x)\) which has this property a \df{\(\d\)-sequence}. This way of defining the Dirac delta function is more rigorous while still being as intuitive as equation (\ref{eq:deltaSeqLim}). However, keep in mind that the delta function is not a function.
+
+We would like to be able to check that a particular sequence \(w_k(x)\), is a \(\d-sequence\). We can do this by showing that equation (\ref{eq:seqDef}), holds for \(w_k(x)\). However, for certain, \(w_k(x)\), it is sufficient to show that \(\intR w_k(x)dx=1\).
+
+\begin{definition}
+    A function, \(f\), is \df[uniform continuity]{uniformly continuous} if for all \(\e>0\), a \(\d >0\) exists such that, if \(|a-b|<\d\), then \(|f(a)-f(b)|<\e\), for all \(a,b\in X\).
+\end{definition}
 
 \begin{theorem}\label{th:assertion}
-    If \(w(x)\) is non-negative \(\intR w(x) dx = 1\), and \(w(x)=O(1/x^{1+\a})\) as \(|x| \rightarrow \inf\) with \(\a>0\), then \(kw(kx) \equiv w_k(x)\) is a \(\d\)-sequence.
+    If \(w(x)\) is non-negative \(\intR w(x) dx = 1\), and \(w(x)=O(1/x^{1+\a})\) as \(|x| \rightarrow \inf\) with \(\a>0\), then \( w_k(x) \equiv kw(kx)\) is a \(\d\)-sequence.
 \end{theorem}
 \begin{proof}    
-    First, \( \lim_{k\rightarrow \inf} w_k(x)=0\), for each fixed \(x \neq 0\), because \(w_k(x)=kw(kx)=O(k\cdot k^{-1-\alpha} x^{-1-\a}) = O(k^{-\a}) \rightarrow 0\) as \(k \rightarrow \inf\). Then 
+    We have
     \begin{equation}\label{eq:deltaseqProof1}
         \begin{split}
             \lim_{k\rightarrow \inf}\intR w_k(x)h(x) dx &= \underbrace{\lim_{k\rightarrow\inf} \intR w_k(x)[h(x)-h(0)]dx}_I+ \underbrace{\lim_{k\rightarrow\inf} \intR w_k(x)h(0)dx}_J.
@@ -121,37 +127,40 @@ and call \(w_k(x)\) a \df{\(\d\)-sequence}. This way of defining the Dirac delta
     Consider J,
     \begin{equation}
         \begin{split}
-            J &= h(0) \lim_{h\rightarrow\inf} \intR kw(kx)dx\\
-            \text{Let  }\xi & =kx\\
-            J&=h(0)\lim_{k\rightarrow \inf} \intR w(\xi) d\xi\\
-            &= h(0)
+            J &= h(0) \lim_{k\rightarrow\inf} \intR kw(kx)dx\ \&\ \text{Let  }\xi =kx\\
+            &=h(0){k\rightarrow \inf} \intR w(\xi) d\xi\\
+            &= h(0).
         \end{split}
     \end{equation}
-
-    Next, we wish to show that \(I=0\), so that the right hand side of equation (\ref{eq:deltaseqProof1}) is \(h(0)\). Select a number \(\epsilon > 0\). Since \(h\) is assumed to be continuous at \(x=0\), there must exist a number \(\d>0\) such that \(|h(x)-H(0)|<\epsilon\) whenever \(|x-0|=x<\d\). Breaking up the integral \(I\),
+    Next, we wish to show that \(I=0\), so that the right hand side of equation (\ref{eq:deltaseqProof1}) is \(h(0)\). Let \(\epsilon > 0\), and since \(h\) is continuous at \(x=0\), there must exist a number \(\d>0\) such that \(|h(x)-h(0)|<\epsilon\) whenever \(|x-0|=|x|<\d\). Breaking up the integral \(I\),
     \begin{equation}
         \begin{split}
             I &= \underbrace{\lim_{k\rightarrow \inf} \int_{-\inf}^{-\d} w_k(x)(h(x)-h(0)) dx}_{I_1} + \underbrace{\lim_{k\rightarrow \inf} \int_{-\d}^{\d} w_k(x)(h(x)-h(0)) dx}_{I_2} \\ & + \underbrace{\lim_{k\rightarrow \inf} \int_{\d}^{\inf} w_k(x)(h(x)-h(0)) dx}_{I_3}.\\
         \end{split}
     \end{equation}
-    Since \(w_k(x)\rightarrow 0\) uniformly, over \(-\inf< x < -\d\) and \(\d < x < \inf \), then \(I_1=I_3 =0\). \(I_2\) must also be zero because \(|h(x)-h(0)|\) must be less than any positive real \(\b\). Thus, \(I=0\) and so 
+    Clearly, \( \lim_{k\rightarrow \inf} w_k(x)=0\), for each fixed \(x \neq 0\) , because \(w_k(x)=kw(kx)=O(k\cdot k^{-1-\alpha} |x|^{-1-\a}) = O(k^{-\a}) \rightarrow 0\) as \(k \rightarrow \inf\). 
+    Since \(w_k(x)\rightarrow 0\) uniformly, over \(-\inf< x < -\d\) and \(\d < x < \inf \), then \(I_1=I_3 =0\). By the definition of uniform continuity \(|h(x)-h(0)|<\e\) whenever \(|x-0|=|x|<\d\). Because \(\e\) can be selected as small as we like, \(|h(x)-h(0)|=0\). As a result,
+    \begin{equation*}
+        \begin{split}
+            I_2 &= \lim_{k\rightarrow \inf} \int_{-\d}^{\d} w_k(x)(0) dx\\
+            &=0
+        \end{split}
+    \end{equation*}
+    Thus, \(I=0\) and so 
     \begin{equation}
         \lim_{k\rightarrow \inf}\intR w_k(x)h(x) dx = h(0).
     \end{equation}
 \end{proof}
 
 \subsection{The Dirac Delta Function as a Generalized Function}
-The Dirac delta function is more appropriately defined as a generalized function. To understand this way of defining \(\d\), we will begin by defining some terms.
+The Dirac delta function can also be defined as a generalized function. To understand this way of defining \(\d\), we will begin by defining some terms.
 
 \begin{definition}
-     A \df{closed interval} is one that includes its endpoints.
+     A \df{closed region} is one that includes its endpoints.
 \end{definition}
 
 \begin{definition}
-    A function, \(f\), is \df[uniform continuity]{uniformly continuous} if 
-    \begin{equation}
-        \forall \epsilon > 0 ~ \exists \delta > 0 ~ \forall a \in X ~ \forall b \in X: |a-b| < \d \implies |f(a) - f(b)| < \epsilon.
-    \end{equation}
+    The \df{support} of a function, \(f\), is the subset, \(\mathcal{S}\), of the domain of \(f\) such that for all \(x\in \mathcal{S}\), \(f(x) \neq 0\).
 \end{definition}
 
 \begin{definition}
@@ -164,7 +173,7 @@ We will call the space of infinitely differentiable functions with compact suppo
 \end{definition}
 
 We consider the following functional,
-\begin{equation}
+\begin{equation}\label{eq:generalizedFunction}
     \mathcal{F}(h) = \int_{-\infty}^{\infty} g(x)h(x)dx.
 \end{equation}
 This functional assigns a numerical value, \(\mathcal{F}(h)\), for each function \(h\) within the domain, \(\mathcal{D}\), of \(\mathcal{F}\).
@@ -174,7 +183,7 @@ This functional assigns a numerical value, \(\mathcal{F}(h)\), for each function
     \begin{equation}
         \int_{\infty}^{\infty} g(x)h(x)dx = \int_{\xi}^{\infty} h(x) dx
     \end{equation}
-    Then, \(g(x)\) must be the Heaviside step function,
+    Then, \(g(x)\) is equivalent to the \df{Heaviside step function},
     \begin{equation}
         H(x) = \begin{cases}
             1, & x>0\\
@@ -193,20 +202,20 @@ then it can be shown that there is no function, \(g(x)\), which exists such that
 \begin{equation}\label{eq:deltadef}
     \int_{-\infty}^{\infty} \delta(x)h(x) dx = h(0)
 \end{equation}
+for all \(h\in \mathcal{D}\).
 
-Although \(\delta(x)\) acts at \(x=0\), it can be adjusted to act at any point by shifting the argument. Thus, \(\delta(x-\xi)\) acts at \(x=\xi\),
+Although \(\delta(x)\) has support at \(x=0\), it can be adjusted to have support at any point by shifting the argument. Thus, \(\delta(x-\xi)\) acts at \(x=\xi\),
 \begin{equation}
     \int_{-\inf}^{\infty} \delta(x-\xi)h(x)dx = h(\xi).
 \end{equation}
-As a generalized function, \(\delta\) is also differentiable. By referring to (3.5), one can see that defining the derivative of a generalized function involves determining the functional, \(\mathcal{F}(h)\) for
-\begin{equation}
-    \int_{-\infty}^{\infty} g'(x)h(x) dx= \mathcal{F}(h).
-\end{equation}
-Integrating by parts
-\begin{equation}
-    \intR g'(x)h(x)dx = g(x)h(x)\biggr\rvert_{-\infty}^{\infty} - \intR g(x)h'(x)dx.
-\end{equation}
-The integral term is fairly simple to interpret since it is of the same form as (3.5), but the boundary term is not as nice because it involves knowing the values of \(g\). However, our restriction that \(h\) has compact support means that it must vanish at infinity, and since we are integrating from \(-\inf\) to \(\inf\), the boundary term must be zero.
+
+\begin{definition}
+    We define the derivative of a generlaized function, \(g'\), in relation to \(g\) by performing integration by parts on
+    \begin{equation}
+            \intR g'(x)h(x) dx= g(x)h(x)\biggr\rvert_{-\infty}^{\infty} - \intR g(x)h'(x)dx.
+    \end{equation}
+\end{definition}
+The integral term is fairly simple to interpret since it is of the same form as equation (\ref{eq:generalizedFunction}), but the boundary term is not as nice because it involves knowing the values of \(g\), which are never known. However, our restriction that \(h\) has compact support gives the intuition that it must vanish at infinity, and since we are integrating from \(-\inf\) to \(\inf\), the boundary term must be zero,
 \begin{equation}
     \intR g'(x)h(x)dx = -\intR g(x)h'(x)dx.
 \end{equation}
@@ -220,14 +229,14 @@ For the Dirac delta function, this means
 
 
 \begin{theorem} \label{th:deltad}
-    The \(j\)th derivative of the Dirac delta function is
+    The \(j\)th derivative of the Dirac delta function is defined by
     \begin{equation}
          \intR \delta^{(j)}(\xi-x)h(\xi)d\xi = (-1)^jh^{(j)}(x).
     \end{equation}
 \end{theorem}
 \begin{proof} We prove the statement by induction.\\
-    \textbf{Base case:} Proven to be true for \(j\) = 1 in equation (\ref{eq:deltafirst}).\\
-    \textbf{Induction step:} Let \(k \in \mathbb{N}\) and suppose the statements holds for \(k>1\). Then,
+    \textbf{Base case:} Proven to be true for \(k\) = 1 in equation (\ref{eq:deltafirst}).\\
+    \textbf{Induction step:} Let \(k \in \mathbb{N}\) and suppose the statements holds for some \(k\geq 1\). Then,
     \begin{align*}
         \intR \delta^{(k+1)}(\xi-x)h(\xi)d\xi &= \d^{(k)}(\xi-x)h(\xi)\bounds{-\inf}{\inf}-\intR \delta^{(k)}(\xi-x)h'(\xi)d\xi\\
         &=-\intR \delta^{(k)}(\xi-x)h'(\xi)d\xi\\
@@ -240,7 +249,8 @@ Note that because of the discontinuity in \(H(x-\xi)\) at the point \(x=\xi\), t
 \begin{equation}
     \begin{split}
         \intR H'(x-\xi)h(x)dx &= -\intR H(x-\xi)h'(x)dx\\
-        &=-\int_{\xi}^{\infty}h'(x)dx = h(\xi).
+        &=-\int_{\xi}^{\infty}h'(x)dx \\
+        &= h(\xi).
     \end{split}
 \end{equation}
 Since

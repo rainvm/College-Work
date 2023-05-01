@@ -1,7 +1,8 @@
 \newpage
 \section{Appendix}
 \subsection{Tabular Integration by Parts}
-    One can use a table to perform repeated integration by parts quickly. Suppose we would like to use integration by parts to change the integral of \(v(x)u^{(4)}(x)\) into boundary terms plus the integral of \(v^{(4)}(x)u(x)\). In the first column, we write \(v(x)\) and its derivatives beneath it. In the second column, we write \(u^{(4)}(x)\) and its anti-derivatives beneath it. At the end of this process, the table should look as follows.
+\label{appendix:parts}
+    One can use a table to perform repeated integration by parts quickly. Suppose we would like to use integration by parts to change the integral of \(u(x)v(x)\) into boundary terms plus the integral of \(u^{(n)}(x)v_{(n)}(x)\). In the first column, we write \(u(x)\) and its derivatives beneath it. In the second column, we write \(v(x)\) and its anti-derivatives beneath it. At the end of this process, the table should look as follows.
     \begin{table}[H]
         \centering
         \begin{tabular}{c|c}
@@ -23,7 +24,7 @@
             \(+v^{(4)}(x)\) &\(u(x)\)
         \end{tabular}
     \end{table}
-    Next we multiply diagonal terms and add each product.
+    Next, we multiply diagonal terms and add each product.
     \begin{figure}[H]
         \centering
         \includegraphics{include/tabular-boundary.png}

@@ -1,26 +1,26 @@
 \section{Introduction}
 \subsection{Nonhomogeneous Linear Differential Equations}
-The first part of this text is primarily concerned with the solutions to non-homogeneous linear differential equations, which have the form
+This text is concerned with the solutions to non-homogeneous linear differential equations, which have the form
 \begin{equation}
     \L u=\phi,
 \end{equation}
-over an interval \(\lima \leq x \leq \limb\) and subject to certain boundary conditions, where \(\L\) is an \(n\)th order linear ordinary differential operator and where the function \(\phi\) is integrable on the given interval. For \(\L\) to be linear, it must satisfy the condition
+over an interval \(\lima \leq x \leq \limb\) and subject to certain boundary conditions, where \(\L\) is an \(n\)th order linear ordinary differential operator and where the function \(\phi\) is integrable on the given interval.\footnote{For \(\L\) to be linear, it must satisfy the condition
 \begin{equation}\label{eq:linearity}
 	\L(\alpha v + \beta w) = \alpha \L v + \beta \L w
 \end{equation}
-for arbitrary functions \(v\) and \(w\), with \(\alpha\) and \(\beta\) being constant. 
+for arbitrary functions \(v\) and \(w\), with \(\alpha\) and \(\beta\) being constant.} 
 
 
 \begin{theorem}
-	\(\L\) is linear iff it is of the form
+	\(\L\) is linear if and only if it is of the form
 	\begin{equation} 
 		\L = a_n(x) \frac{d^n}{dx^n} + a_{n-1}(x) \frac{d^{n-1}}{dx^{n-1}} + \cdots + a_0(x).
 	\end{equation}
 \end{theorem}
 
-\begin{proof}\(\implies\)\\
+\begin{proof}\(\impliedby\)\\
 	We prove, by induction, that \(\D^{(i)}\) is a linear differential operator for all \(i \in \mathbb{N}\).\\
-	\textbf{Base Case} Let \(i=1\).\\
+	\textbf{Base Case} Let \(k=1\).\\
 	\begin{equation}
 		\begin{split}
 			\D (\a u(x) + \b v(x)) &= \lim_{h\to 0} \frac{\a u(x+h) + \b v(x+h)-(\a u(x) + \b v(x))}{h}\\
@@ -28,7 +28,7 @@ for arbitrary functions \(v\) and \(w\), with \(\alpha\) and \(\beta\) being con
 			&= \a \D u + \b \D v
 		\end{split}
 	\end{equation}
-	\textbf{Induction Step} Let \(k \in \mathbb{N}\) and suppose that the statement holds for all \(k>1\). Then,
+	\textbf{Induction Step} uppose that the statement holds for some \(k\in\mathbb{N}\), \(k>1\). Then,
 	\begin{equation}
 		\begin{split}
 			\D^{(k+1)} (\a u + \b v) &= \D ( \D^{(k)}(\a u + \b v))\\
@@ -39,14 +39,14 @@ for arbitrary functions \(v\) and \(w\), with \(\alpha\) and \(\beta\) being con
 	\end{equation}
 	It follows that 
 	\begin{equation}
-		\sum_{i=0}^{n} a_i(x) D^{(i)}
+		\sum_{i=0}^{n} a_i(x) D^{(k)}
 	\end{equation}
-	is also linear.\\
-	\(\impliedby\)\\
+	is also linear because the sum of linear operators is also linear.\\
+	\(\implies\)\\
 	Let
 	\begin{equation}
 		\begin{split}
-			\L u &= f(x, \underbrace{u, u', u'', \dots, u^(n)}_\u)\\
+			\L u &= f(x, \underbrace{u, u', u'', \dots, u^{(n)}}_\u)\\
 			&=f(x, \u).
 		\end{split}
 	\end{equation}
@@ -107,7 +107,7 @@ where the \(\mathbf{B}_j\)'s are prescribed functionals \footnote{A \df{function
 \begin{equation}
 	\mathcal{F}(u) = \int_{0}^{1} u^2(x)dx.
 \end{equation}
-The domain of this functional might be the set of functions defined over the interval \([0,1]\) and for which the integral of \(u^2\) from 0 to 1 exists. The range is \((0, \infty)\).
+The domain of this functional might be the set of functions defined over the interval \([0,1]\) and for which the integral of \(u^2\) from 0 to 1 exists. The range is \([0, \infty)\).
 } and \(c_j\)'s are prescribed constants. We will only consider \(\mathbf{B}_j\)'s that are linear combinations of \(u\) and its derivatives through order \(n-1\) and evaluated at the endpoints, a and b. 
 
 For \(\mathbf{B}_j\) to be \df{linear}, it must satisfy the condition

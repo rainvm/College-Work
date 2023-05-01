@@ -3,10 +3,17 @@
     \begin{equation*}
         w_k(x) = \begin{cases}
             k, &  0<x<\frac{1}{k}\\
-            0, &x\leq 0 \text{ and } x \geq \frac{1}{k}
+            0, &x\leq 0 \text{ or } x \geq \frac{1}{k}
         \end{cases}
     \end{equation*}
-    is a \(\d\)-sequence using theorem (\ref{th:assertion}). It is clear that \(w_k(x)\geq 0\)  for all \(x\) and \(w(x)=O(1/x^{1+\a})\) as \(|x| \rightarrow \inf\) with \(\a>0\) since it is zero when \(\leq 0\) or \(x \geq 1/k\). Lastly, we must show that the area under \(w(x)\) is 1. Choosing \(w(x)\) so that \(kw(kx)=w_k(x)\)
+    is a \(\d\)-sequence using theorem (\ref{th:assertion}). It is clear that \(w_k(x)\geq 0\)  for all \(x\) and \(w(x)=O(1/|x|^{1+\a})\) as \(|x| \rightarrow \inf\) with \(\a>0\) since it is zero when \(x \leq 0\) or \(x \geq 1/k\). Lastly, we must show that the area under \(w(x)\) is 1. Choosing \(w(x)\) so that \(kw(kx)=w_k(x)\)
+    \begin{equation*}
+        w(x)=\begin{cases}
+            1,& 0<x<1\\
+            0,& x\leq0 \text{ or } x \geq 1.
+        \end{cases}
+    \end{equation*}
+    Integrating:
     \begin{equation}
         \begin{split}
             \intR w(x) dx &= \int_{-\inf}^{0} 0 dx +\int_0^1 1 dx + \int_{1}^{\inf} 0 dx\\
@@ -17,12 +24,12 @@
 \end{example}
 
 \begin{example}
-    We would like to show that the sequence
+    We would like to show that the sequence,
     \begin{equation}
         w_k(x) = \begin{cases}
             -k, &|x|<\frac{1}{2k}\\
             2k, &\frac{1}{2k} \leq |x| \leq \frac{1}{k}\\
-            0, &|x|> \frac{1}{k} 
+            0, &|x|> \frac{1}{k},
         \end{cases}
     \end{equation}
     is a delta sequence. Theorem (\ref{th:assertion}) does not apply in this case because \(w_k(x)\) is negative for some values of \(x\) so we should instead show 
@@ -31,6 +38,37 @@
     \end{equation}
     To begin, we break up the integral 
     \begin{equation}
-        \lim_{k\to \inf}\intR w_k(x) h(x) dx = \lim_{k\to \inf}\int_{-\frac{1}{k}}^{-\frac{1}{2k}} 2kh(x)dx + \ 
+        \begin{split}
+            \lim_{k\to \inf}\intR w_k(x) h(x) dx &= \lim_{k\to \inf}\int_{-\frac{1}{k}}^{-\frac{1}{2k}} 2kh(x)dx - \lim_{k\to \inf}\int_{-\frac{1}{2k}}^{\frac{1}{2k}} kh(x)dx \\
+            &+ \lim_{k\to \inf}\int_{\frac{1}{2k}}^{\frac{1}{k}} 2kh(x)dx
+        \end{split}
     \end{equation}
+    
+    Consider each integral. Let \(-\frac{1}{k}<\xi<-\frac{1}{2k}\). By the mean value theorem
+    \begin{equation*}
+        \begin{split}
+            \lim_{k\to \inf}\int_{-\frac{1}{k}}^{-\frac{1}{2k}} 2kh(x)dx &= \lim_{k\to \inf}  \left( \left(-\frac{1}{2k} + \frac{1}{k}\right) 
+            \cdot 2k\cdot h(\xi)\right) \\
+            &=h(0).
+        \end{split}
+    \end{equation*}
+
+    \begin{equation*}
+        \begin{split}
+            \lim_{k\to \inf}\int_{-\frac{1}{2k}}^{\frac{1}{2k}} -kh(x)dx &= \lim_{k\to \inf}  \left( \left(\frac{1}{2k} + \frac{1}{2k}\right) 
+            \cdot -k\cdot h(\xi)\right) \\
+            &=-h(0).
+        \end{split}
+    \end{equation*}
+
+    \begin{equation*}
+        \begin{split}
+            \lim_{k\to \inf}\int_{\frac{1}{2k}}^{\frac{1}{k}} 2kh(x)dx &= \lim_{k\to \inf}  \left( \left(\frac{1}{k} - \frac{1}{2k}\right) \cdot 2k\cdot h(\xi)\right) \\
+            &=h(0).
+        \end{split}
+    \end{equation*}
+    The last step for each integral follows from the fact that as \(k \to \inf\) \(\xi\to 0\). Adding each integral shows that
+    \begin{equation*}
+        \lim_{k\to \inf}\intR w_k(x) h(x) dx = h(0).
+    \end{equation*}
 \end{example}

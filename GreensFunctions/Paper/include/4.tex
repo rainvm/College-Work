@@ -25,9 +25,8 @@ It follows from equation (\ref{eq:greensdef}) that we can replace \(\opp{L^*}G\)
 Therefore, if we choose boundary conditions for \(G\) such that the boundary terms do not depend on \(u\) and we are able to find \(G\), then finding \(u\) is reduced to a problem of integrating \(G\phi\). 
 
 To illustrate the key ideas of the method, we will consider several examples which begin simply and become more complex. Each example will be concerned with a key concept in implementing the method of Green's functions.
-\subsection{Examples}
-\begin{example} %add to table to contents
-    \textit{Loaded String}
+
+\subsection{Example 4.1\textit{ Loaded String}} %add to table to contents
     
     Consider the boundary value problem
     \begin{equation} \label{ex1:initialize}
@@ -83,12 +82,69 @@ To illustrate the key ideas of the method, we will consider several examples whi
         G(\xi,x) = (\xi-x)H(\xi-x) + (x-1)\xi.
     \end{equation}
 
-    Equation (\ref{eq:loadedStringLstarG}) can, like equation (\ref{ex1:initialize}), be interepreted as the deflection of a loaded string. Specifically it is the deflection as a function of \(\xi\) due to a point load of unit strength, \(\d(\xi-x)\), instead of a load distribution, \(\phi\). Rewriting our Green's function as
+    Equation (\ref{eq:loadedStringLstarG}) can, like equation (\ref{ex1:initialize}), be interpreted as the deflection of a loaded string. Specifically, it is the deflection as a function of \(\xi\) due to a point load of unit strength, \(\d(\xi-x)\), instead of a load distribution, \(\phi\). Rewriting our Green's function as
     \begin{equation}
         G(\xi,x)= \begin{cases}
             (x-1)\xi, & \xi \leq x\\
             (\xi-1)x, & \xi \geq x
         \end{cases}
     \end{equation}
-    makes it clear that \(G(\xi,x)\) is symemtric, \(G(\xi,x)=G(x,\xi)\). This is often referred to as "Maxwell Reciprocity." Because 
-\end{example}
+    makes it clear that \(G(\xi,x)\) is symemtric, to wit: \(G(\xi,x)=G(x,\xi)\). This is often referred to as "Maxwell Reciprocity." Because of this reciprocity, \(G(\xi,x)\) is also the deflection, as a function of \(x\), due to a unit load at \(\xi\). Then, \(G(\xi,x)\phi(\xi)d\xi\) is the deflection due to an incremental load \(\phi(\xi)d\xi\) at \(\xi\). As such, equation (\ref{eq:loadSln}) represents the superposition of these deflections. It is important to recognize that the superposition nature of equation (\ref{eq:loadSln}) is a result of the linearity of \(\mathcal{L}\).
+
+    Additionally, it should be noted that the boundary terms do not always vanish. For example, if we change the boundary condition \(u(1)=0\) to \(u(1)=\a\). We find
+    \begin{equation*}
+        u(x)=\a x + \int_{0}^{1} G(\xi,x)\phi(\xi)d\xi.
+    \end{equation*}
+
+\subsection{Example 4.2 \textit{Infinite Beam on an Elastic Foundation}}
+    It is prudent to, next, consider a differential operator defined over an infinite interval. We imagine an infinitely long beam on an elastic foundation. According to the classical Euler beam theory, the deflection, \(u(x)\), resulting from a load distribution of \(p(x)\) force per unit length satisfies the differential equation
+    \begin{equation}
+        (EIu'')'' = p(x).
+    \end{equation}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.75\linewidth]{include/Beam.png}
+        \caption{Infinite beam on elastic foundation}
+    \end{figure}
+
+    Where the flexural rigidity of the beam, \(EI\), may be a function of \(x\), \(k\)is the spring constant per unit length. For the purposes of this example we consider both \(EI\) and \(k\) to be constant.
+
+\subsection{Example 4.3 \textit{Sturm-Liouville Equations}}
+    Here we consider equations of the form 
+    \begin{equation*}\label{eq:sturmGen}
+        \L u(x) = \frac{1}{w}(p(x)u'(x))'+q(x)u(x) = \phi(x),
+    \end{equation*}
+    where \(u(x)\) must satisfy some boundary conditions such that the operator is self-adjoint. This constitutes a \df{Sturm-Liouville problem}. 
+
+    Note that the operator, \(\L\), is always formally self-adjoint, if we have chosen the scalar product to be
+    \begin{equation*}
+        (u,v) = \int_{0}^{1} u(x)v(x)w(x) dx.
+    \end{equation*}
+
+    For the purposes of analyzing these equations, we must define the conjoint. Recall from equation (\ref{eq:2OAdjoint}) that for a second order differential operator
+    \begin{equation*}
+        \Lstar v = av''+(2a'-b)v'+(a''-b'+c).
+    \end{equation*}
+    It follows that 
+    \begin{equation*}
+        \intl (v\L u - u\Lstar v)dx = J(v,u)\bounds{\lima}{\limb}
+    \end{equation*}
+    where
+    \begin{equation*}
+        \begin{split}
+            J(v,u) &= avu'-a'vu-av'u + bvu\\
+            &=avu'- u(av)' +bvu.
+        \end{split}
+    \end{equation*}
+    \(J(v,u)\) is the \df{conjunct} of \(v\) and \(u\).
+
+    Returning to our Sturm-Liouville equation (\ref{eq:sturmGen}), we would like to find the conditions under which \(\mathcal{L}\) is self-adjoint. As the first step, we consider
+    \begin{equation*}
+        \begin{split}
+            (v,\L u)-(u, \L v) &= J(v,u)\bounds{0}{1} \\
+            &= -p(x)(vu'-uv')\bounds{0}{1}\\
+        \end{split}
+    \end{equation*}
+
+\subsection{Example 4.4 \textit{The Generalized Green's Function}}
+    As a more complex example, consider, 

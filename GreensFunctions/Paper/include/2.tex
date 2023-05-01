@@ -1,12 +1,12 @@
 \section{The Adjoint Operator}
-To determine the Green's function for a particular differential equation and its boundary conditions, begin by finding the \df{adjoint operator}, denoted \(\mathcal{\Lstar  }\). The adjoint operator consists of the formal adjoint, \(\Lstar  \), and the boundary conditions associated with the Green's function. To determine these, first form the product, \(v\L u\), and integrate it over the interval of interest. By repeated integration by parts, we can express the integral in the form
+To determine the Green's function for a particular differential equation and its boundary conditions, begin by finding the \df{adjoint operator}, denoted \(\mathcal{L}^*\). The adjoint operator consists of the formal adjoint, \(\Lstar  \), and the boundary conditions associated with the Green's function. To determine these, first form the product, \(v\L u\), and integrate it over the interval of interest. By repeated integration by parts, we can express the integral in the form (see appendix \ref{appendix:parts} for information about integration by parts)
 \begin{equation} \label{eq:adjoint}
 	\intl v \L u dx = [\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b} + \intl u\Lstar  v dx,
 \end{equation}
 where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary terms resulting from successive integration by parts. Here, \(u\) and \(v\) must be sufficiently differentiable functions so that the left and right sides are well defined. 
 
-\begin{example}
-	Consider the linear differentiable operator
+\begin{example}\label{ex:selfAdjoint}
+	Consider the general second order linear differentiable operator
 	\begin{equation}
 		\L= a(x) \frac{d^2}{dx^2} + b(x)\frac{d}{dx} + c(x).
 	\end{equation}
@@ -20,7 +20,7 @@ where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary ter
 		\end{split}
 	\end{equation}
 	From this, it is clear that 
-	\begin{equation}
+	\begin{equation}\label{eq:2OAdjoint}
 		\begin{split}
 			\Lstar v &= (av)''-(bv)'+cv\\
 			     &= (a'v+av')'-b'v-bv'+cv\\
@@ -29,12 +29,36 @@ where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary ter
 	\end{equation}
 	and so the formal adjoint of the second-order linear differential operator \(L\) must be of the form
 	\begin{equation}
-		\Lstar =a\frac{d^2}{dx^2} + (2a'-b)\frac{d}{dx}+(a''-b'+c).
+		\begin{split}
+			\Lstar =a\frac{d^2}{dx^2} + (2a'-b)\frac{d}{dx}+(a''-b'+c).
+		\end{split}
 	\end{equation}
 	
 	
 	If \(\Lstar  = \L\), then \( \L\) is called \df{formally self-adjoint}. By comparing equations (2.2) and (2.5), we can see that for a second-order linear differentiable operator to be formally self-adjoint, it is sufficient that \(a'=b\) since this implies \(2a'-b=a'\) and \(a''-b'+c=a''-a''+c=c\).
 \end{example}
+
+\begin{theorem}
+	For any such \(\L\), \(\sigma\L\) is self adjoint if
+		\begin{equation}
+			\sigma = \exp\left({\int \frac{b-a'}{a}dx}\right).
+		\end{equation}
+\end{theorem}
+
+\begin{proof}
+	It follows from the previous example that \(\sigma\L\) is self adjoint if
+	\begin{equation*}
+		\frac{d}{dx}\left(a(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}\right) = b(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}.
+	\end{equation*}
+	Evaluating \(\frac{d}{dx}\left(a(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}\right)\), we find
+	\begin{equation*}
+		\begin{split}
+			\frac{d}{dx}(a(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}) &= a'(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx} + a(x)\frac{b(x)-a'(x)}{a(x)}e^{\int \frac{b(x)-a'(x)}{a(x)}dx}\\
+			&=a'(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx} + b(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx} - a'(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}\\
+			&=b(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}.
+		\end{split}
+	\end{equation*}
+\end{proof}
 
 \begin{definition}
 	If the boundary conditions on \(\L\) are homogeneous\footnote{By \df{homogeneous}, we mean that each boundary condition is of the form \(\mathbf{B}_j (u)=0\).}, then we can also define an adjoint operator, \(\mathcal{L}^*\), by the relation
@@ -58,7 +82,7 @@ where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary ter
 			       &= u(1)(v(1)-3v(0)) + \int_0^1u\Lstar vdx
 		\end{split}
 	\end{equation}
-	Since the particular value of \(u(1)\) is not given, we must impose the condition \(v(1)-3v(0)=0\), because choosing \(u(1)=0\) would undully restrict our solution. Therefore \(\mathcal{L^*}\) consists of \(\Lstar = -\frac{d}{dx}\) and the boundary condition \(v(1) - 3v(0)=0\). 
+	Since the particular value of \(u(1)\) is not given, we must impose the condition \(v(1)-3v(0)=0\), because choosing \(u(1)=0\) would unduly restrict our solution. Therefore \(\mathcal{L^*}\) consists of \(\Lstar = -\frac{d}{dx}\) and the boundary condition \(v(1) - 3v(0)=0\). 
 \end{example}
 
 \
