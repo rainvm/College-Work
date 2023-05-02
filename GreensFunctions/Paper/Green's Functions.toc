@@ -1,0 +1,17 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Nonhomogeneous Linear Differential Equations}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {2}The Adjoint Operator}{4}{section.2}%
+\contentsline {section}{\numberline {3}The Dirac delta function}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Delta Sequences}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}The Dirac Delta Function as a Generalized Function}{8}{subsection.3.2}%
+\contentsline {section}{\numberline {4}The Method of Green's Functions}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Introduction}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Example 1 \textit { Loaded String}}{14}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Example 2 \textit {Infinite Beam on an Elastic Foundation}}{16}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Sturm-Liouville Equations}{16}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Example 4.4 \textit {The Generalized Green's Function}}{17}{subsection.4.5}%
+\contentsline {section}{\numberline {A}Appendix}{18}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Tabular Integration by Parts}{18}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}The Mean Value Theorem}{19}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Big O Notation}{19}{subsection.A.3}%

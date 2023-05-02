@@ -26,7 +26,7 @@ Therefore, if we choose boundary conditions for \(G\) such that the boundary ter
 
 To illustrate the key ideas of the method, we will consider several examples which begin simply and become more complex. Each example will be concerned with a key concept in implementing the method of Green's functions.
 
-\subsection{Example 4.1\textit{ Loaded String}} %add to table to contents
+\subsection{Example 1 \textit{ Loaded String}}
     
     Consider the boundary value problem
     \begin{equation} \label{ex1:initialize}
@@ -96,7 +96,7 @@ To illustrate the key ideas of the method, we will consider several examples whi
         u(x)=\a x + \int_{0}^{1} G(\xi,x)\phi(\xi)d\xi.
     \end{equation*}
 
-\subsection{Example 4.2 \textit{Infinite Beam on an Elastic Foundation}}
+\subsection{Example 2 \textit{Infinite Beam on an Elastic Foundation}}
     It is prudent to, next, consider a differential operator defined over an infinite interval. We imagine an infinitely long beam on an elastic foundation. According to the classical Euler beam theory, the deflection, \(u(x)\), resulting from a load distribution of \(p(x)\) force per unit length satisfies the differential equation
     \begin{equation}
         (EIu'')'' = p(x).
@@ -109,19 +109,18 @@ To illustrate the key ideas of the method, we will consider several examples whi
 
     Where the flexural rigidity of the beam, \(EI\), may be a function of \(x\), \(k\)is the spring constant per unit length. For the purposes of this example we consider both \(EI\) and \(k\) to be constant.
 
-\subsection{Example 4.3 \textit{Sturm-Liouville Equations}}
-    Here we consider equations of the form 
-    \begin{equation*}\label{eq:sturmGen}
-        \L u(x) = \frac{1}{w}(p(x)u'(x))'+q(x)u(x) = \phi(x),
-    \end{equation*}
-    where \(u(x)\) must satisfy some boundary conditions such that the operator is self-adjoint. This constitutes a \df{Sturm-Liouville problem}. 
+\subsection{Sturm-Liouville Equations}
+    In this section subsection we are interested in finding the Green's function for the the general second order linear differential operator
+    \begin{equation}
+        L = -D^2(pD)+q
+    \end{equation}
+    with the general unmixed boundary conditions
+    \begin{equation}
+        B_1(u)=B_2(u)=0a
+    \end{equation}
+    where \(p\) and \(q\) are functions of the independent variable. Differential operators of this form are \df{Sturm-Liouville differential operators}. By referring to equation (\ref{eq:2OAdjoint}), it is clear that Sturm-Liouville differential operators are alwayse self adjoint since \(a=p\) and \(b=p'\). 
 
-    Note that the operator, \(\L\), is always formally self-adjoint, if we have chosen the scalar product to be
-    \begin{equation*}
-        (u,v) = \int_{0}^{1} u(x)v(x)w(x) dx.
-    \end{equation*}
-
-    For the purposes of analyzing these equations, we must define the conjoint. Recall from equation (\ref{eq:2OAdjoint}) that for a second order differential operator
+    For the purposes of analyzing these equations, we define the \df{conjoint}. Recall from equation (\ref{eq:2OAdjoint}) that for a second order differential operator
     \begin{equation*}
         \Lstar v = av''+(2a'-b)v'+(a''-b'+c).
     \end{equation*}
@@ -137,14 +136,6 @@ To illustrate the key ideas of the method, we will consider several examples whi
         \end{split}
     \end{equation*}
     \(J(v,u)\) is the \df{conjunct} of \(v\) and \(u\).
-
-    Returning to our Sturm-Liouville equation (\ref{eq:sturmGen}), we would like to find the conditions under which \(\mathcal{L}\) is self-adjoint. As the first step, we consider
-    \begin{equation*}
-        \begin{split}
-            (v,\L u)-(u, \L v) &= J(v,u)\bounds{0}{1} \\
-            &= -p(x)(vu'-uv')\bounds{0}{1}\\
-        \end{split}
-    \end{equation*}
 
 \subsection{Example 4.4 \textit{The Generalized Green's Function}}
     As a more complex example, consider, 
