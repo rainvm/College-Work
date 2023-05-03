@@ -91,33 +91,62 @@ To illustrate the key ideas of the method, we will consider several examples whi
     \end{equation}
     makes it clear that \(G(\xi,x)\) is symemtric, to wit: \(G(\xi,x)=G(x,\xi)\). This is often referred to as "Maxwell Reciprocity." Because of this reciprocity, \(G(\xi,x)\) is also the deflection, as a function of \(x\), due to a unit load at \(\xi\). Then, \(G(\xi,x)\phi(\xi)d\xi\) is the deflection due to an incremental load \(\phi(\xi)d\xi\) at \(\xi\). As such, equation (\ref{eq:loadSln}) represents the superposition of these deflections. It is important to recognize that the superposition nature of equation (\ref{eq:loadSln}) is a result of the linearity of \(\mathcal{L}\).
 
-    Additionally, it should be noted that the boundary terms do not always vanish. For example, if we change the boundary condition \(u(1)=0\) to \(u(1)=\a\). We find
+    Additionally, it should be noted that the boundary terms do not always vanish. For example, if we change the boundary condition \(u(1)=0\) to \(u(1)=\a\), then
     \begin{equation*}
         u(x)=\a x + \int_{0}^{1} G(\xi,x)\phi(\xi)d\xi.
     \end{equation*}
 
 \subsection{Example 2 \textit{Infinite Beam on an Elastic Foundation}}
-    It is prudent to, next, consider a differential operator defined over an infinite interval. We imagine an infinitely long beam on an elastic foundation. According to the classical Euler beam theory, the deflection, \(u(x)\), resulting from a load distribution of \(p(x)\) force per unit length satisfies the differential equation
-    \begin{equation}
+    It is prudent to, next, consider a differential operator defined over an infinite interval. We imagine an infinitely long beam on an elastic foundation. According to the classical Euler beam theory, the deflection, \(u(x)\), resulting from a net loading, \(p(x)\) force per unit length, satisfies the differential equation
+    \begin{equation*}\label{eq:loadedStringStart}
         (EIu'')'' = p(x).
-    \end{equation}
+    \end{equation*}
     \begin{figure}
         \centering
         \includegraphics[width=0.75\linewidth]{include/Beam.png}
         \caption{Infinite beam on elastic foundation}
     \end{figure}
 
-    Where the flexural rigidity of the beam, \(EI\), may be a function of \(x\), \(k\)is the spring constant per unit length. For the purposes of this example, we consider both \(EI\) and \(k\) to be constant.
+    Where the flexural rigidity of the beam, \(EI\), may be a function of \(x\). We also consider the spring constant per unit length,\(k\). For the purposes of this example, we consider both \(EI\) and \(k\) to be constant and the prescribed loading to be \(w(x)\), where \(p(x) = w(x)-ku(x)\). By substituting these into equation (\ref{eq:loadedStringStart}) it becomes
+    \begin{equation*}
+        EIu^{(4)}(x)+ku(x)=w(x).
+    \end{equation*} 
+    or
+    \begin{equation*}
+        u^{(4)}(x) + \a^4u(x)= W(x)
+    \end{equation*}
+    where
+    \begin{equation*}
+        \a =\frac{k}{EI} \text{ and } W(x)= \frac{w(x)}{EI}.
+    \end{equation*}
+    For boundary conditions, we only require that \(W(x)\) be such that \(u\) and each of its first three derivatives approach a finite value as \(|x|\to \inf\).
 
+    As before, we integrate by parts:
+    \begin{equation*}
+        \intR G\L u d\x = (Gu'''-G_\x u'' + G_{\x\x}u' - G_{\x\x\x}u)\bounds{-\inf}{\inf} + \intR u\Lstar Gd\x.
+    \end{equation*}
+    where \(\Lstar = \L\). 
+
+    Then, 
+    \begin{equation}\label{eq:LGDeltaBeam}
+        \L G = G_{\x\x\x\x} + \a^4 G = \d(\x-x)
+    \end{equation}
+    and
+    \begin{equation*}
+        \lim_{|x|\to\inf}\{G(\x,x)=G_\x(\x,x)=G_{\x\x}(\x,x)=G_{\x\x\x}(\x,x)\}= 0
+    \end{equation*}
+    to remove \(u\), \(u'\), \(u''\), and \(u'''\) from the boundary terms because they are finite, but not necessarily 0, as \(|x|\to\inf\).
+
+    To solve equation (\ref{eq:LGDeltaBeam}), we use the Laplace transform
 \subsection{Sturm-Liouville Equations}
     We are interested in finding the Green's function for the general second-order linear differential operator
     \begin{equation}
-        L = -D(pD)+q
+        L = D(pD)+q
     \end{equation}
-    with the general unmixed boundary conditions
-    \begin{equation}
-        B_1(u)=B_2(u)=0a
-    \end{equation}
+    with the general unmixed\footnote{A boundary condition being unmixed means that all functions it contains are evaluated at a or they are all evaluated at b.} boundary conditions
+    \begin{equation*}
+        B_1(u) =\a_{1}u(\lima)+\a_{2}u'(\lima) = 0;\quad B_2(u) = \b_{\limb}u(1)+\b_{2}u'(\limb) = 0
+    \end{equation*}
     where \(p\) and \(q\) are functions of the independent variable. Differential operators of this form are \df{Sturm-Liouville differential operators}. By referring to equation (\ref{eq:2OAdjoint}), it is clear that Sturm-Liouville differential operators are always self-adjoint since \(a=p\) and \(b=p'\). 
 
     To analyze these equations, we define the \df{conjoint}. Recall from equation (\ref{eq:2OAdjoint}) that for a second order differential operator
@@ -141,18 +170,175 @@ To illustrate the key ideas of the method, we will consider several examples whi
 
     The Green's function \(G(\xi,x)\), is the solution to the equation
     \begin{equation}\label{eq:SLGDE}
-        (p(\xi)G_\xi(\xi,x))_\xi-q(\xi)G(\xi,x)=-\d(\xi-x),
+        L_\xi G = (p(\xi)G_\xi(\xi,x))_\xi-q(\xi)G(\xi,x)=-\d(\xi-x),
     \end{equation}
     which satisfies the boundary conditions \(B_1(G)=B_2(G)=0\). independent of boundary conditions, such an equation has two linearly independent solutions, \(v_1(\xi)\) and \(v_2(\xi)\). Now to account for the boundary conditions we let \(w_1(\xi)\) be a linear combination of \(v_1(\xi)\) and \(v_2(\xi)\) which satisfies \(B_1(w_1(x)) = 0\) and let \(w_2(x)\) be a linear combination of \(v_1(\xi)\) and \(v_2(\xi)\) which satisfies \(B_2(w_2(x)) = 0\). Preliminarily our Green's Function should be
-    \begin{equation}
+    \begin{equation*}
         G(\xi,x)=\begin{cases}
-            w_1(\xi), \xi < x\\
-            w_2(\xi), \xi > x.
+            a_1w_1(\xi), & \xi < x\\
+            a_2w_2(\xi), & \xi > x.
         \end{cases}
+    \end{equation*}
+    This satisfies the boundary conditions because we defined it as such, and it almost satisfies equation (\ref{eq:SLGDE}); however, we see that \(G(\xi, x)\) has a discontinuity at \(\xi=x\), which is required of a Green's function, meaning that this Green's function is not yet complete. For \(G\) to be continuous it must satisfy
+    \begin{equation*}
+        G(x^+, x) = G(x^-, x).\footnote{Here, \(x^+\) and \(x^-\) are shorthand for \(\x\) as approached from the right or left side respectively. That is to say %TODO Check footnote
+        \begin{equation*}
+            G(x^+, x) = \lim_{\e\to 0} G(x+\e, x)
+        \end{equation*}
+        and
+        \begin{equation*}
+            G(x^-, x) = \lim_{\e\to 0} G(x-\e, x)
+        \end{equation*}}
+    \end{equation*}
+    Therefore, 
+    \begin{equation*}
+        a_1(x)w_1(x) = a_2(x)w_2(x)
+    \end{equation*}
+    and
+    \begin{equation*}
+        a_1(x)=c(x)w_2(x); \quad a_2(x)=c(x)w_1(x).
+    \end{equation*}
+    Substituting into \(G\) results in
+    \begin{equation*}
+        G(\xi,x)=\begin{cases}
+            c(x)w_2(x)w_1(\xi), &\xi < x\\
+            c(x)w_1(x)w_2(\xi), &\xi > x.
+        \end{cases}
+    \end{equation*}
+    Next, we must find the jump condition by integrating as follows:
+    \begin{equation*}
+        \begin{split}
+            \int_{x^-}^{x^+} L_\xi G(\x,x) d\x &= \int_{x^-}^{x^+} \d(\x-x)d\x = 1.\\
+            &=p(x)\left[G_\x(\x,x)\bounds{x^-}{x^+}-G(\x,x)\bounds{x^-}{x^+}\right]+q(x)\int_{x^-}^{x^+}G(\x,x)d\x=1.
+        \end{split}
+    \end{equation*}
+    Because we require \(G(\x,x)\) to be continuous at \(\x=x\), 
+    \begin{equation*}
+        G(\x,x)\bounds{x^-}{x^+} = \int_{x^-}^{x^+}G(\x,x)d\x = 0.
+    \end{equation*}
+    Leaving us with
+    \begin{equation*}
+        G_\x(\x,x)\bounds{x^-}{x^+} = 1.
+    \end{equation*}
+    Evaluating.
+    \begin{equation*}
+        \begin{split}
+            p(x)[G_\x(x^+,x) - G_\x(x^-,x)] &= 1\\
+            p(x)[c(x)w_1(x)w_2'(x) - c(x)w_2(x)w_1'(x)] &=1\\
+            c(x)w_1(x)w_2'(x) - c(x)w_2(x)w_1'(x) &=\frac{1}{p(x)}\\
+        \end{split}
+    \end{equation*}
+    \begin{equation*}
+        \begin{split}
+            c(x) &= \frac{1}{w_1(x)w_2'(x) - w_2(x)w_1'(x)}\left(\frac{1}{p(x)} \right)\\
+            &= \frac{1}{J(w_2,w_1)}
+        \end{split}
+    \end{equation*}
+    Therefore the Green's function for the general Sturm-Liouville differential operator is 
+    \begin{equation*}
+        G(\x,x) = \frac{1}{J(w_2,w_1)} \begin{cases}
+            w_2(x)w_1(\xi), &\xi < x\\
+            w_1(x)w_2(\xi), &\xi > x.
+        \end{cases}
+    \end{equation*}
+\subsection{Example 3 \textit{The Generalized Green's Function}}
+    As a more complex example, consider, the boundary value problem
+    \begin{equation}\label{eq:Gen1}
+        u''(x) + u(x) = \phi(x);\ \ u(0) = u(\pi) = 0.
     \end{equation}
-    This satisfies the boundary conditions because we defined it as such, and it almost satisfies equation (\ref{eq:SLGDE}); however, we see that \(G(\xi, x)\) has a discontinuity at \(\xi=x\), meaning that this Green's function is not yet complete. To ensure that \(G(\xi,x)\) is continuous at \(\xi=x\), 
+    It is not obvious, but this example will require some special treatment because, surprisingly, the Green's function does not exist if we attempt to find it na{\"i}vely in the same way as the previous examples. To illustrate the singular nature of this example, we proceed as before and integrate by parts:
+    \begin{equation*}
+        \begin{split}
+            \int_{0}^{\pi} G\L u d\x &= \int_{0}^{\pi} G(u''+u) d\x\\
+            &= G(\pi,x)u'(\pi) - G(0,x)u'(0) + \int_{0}^{\pi} u\L^* G d\x.
+        \end{split}
+    \end{equation*}
+    This tells us that
+    \begin{equation}\label{eq:LGDeltaGen}
+        \Lstar G = G_{\x\x} + G = \d(\xi-x)
+    \end{equation}
+    and 
+    \begin{equation*}
+        G(0,x)=G(\pi,x) = 0.
+    \end{equation*}
+    We split the interval into \(0\leq \x < x\) and \(x < \x \leq \pi\) and solve equation (\ref{eq:LGDeltaGen}) for \(G\) on each. Then,
+    \begin{equation*}
+        G(\x,x) = \begin{cases}
+            A\sin\x + B\cos\x, & 0\leq \x < x\\
+            C\sin\x + D\cos\x, & x < \x \leq \pi.
+        \end{cases}
+    \end{equation*}
+    The boundary conditions show that \(B=D=0\) because \(\cos(0)\neq 0\) and \(\cos(\pi)\neq0\). Next, we integrate the differential equation from equation (\ref{eq:LGDeltaGen}) from \(x^-\) to \(x^+\):
+    \begin{equation}\label{eq:GenGInt}
+        \int_{x^-}^{x^+} (G_\x\x + G) d\x = \int_{x^-}^{x^+} \d(\x-x)d\x
+    \end{equation}
+    Requiring \(G\) to be continuous at \(\x=x\) places the condition that
+    \begin{equation}\label{eq:AC}
+        A=C,
+    \end{equation}
+    and reduces equation (\ref{eq:GenGInt}) to the jump condition 
+    \begin{equation*}
+        G_\x\bounds{x^-}{x^+} = 1.
+    \end{equation*}
+    or
+    \begin{equation*}
+        C\cos x - A\cos x = 1.
+    \end{equation*}
+    This is a contraction with equation (\ref{eq:AC}) because if \(A=C\) then 
+    \begin{equation*}
+        C\cos x -A\cos x = 0 \neq 1.
+    \end{equation*}
 
-\subsection{Example 4.4 \textit{The Generalized Green's Function}}
-    As a more complex example, consider, 
+    Now that we have seen that there is a problem with the na\"ive approach, we will find the root of the problem by considering the homogeneous version of equation (\ref{eq:LGDeltaGen}):
+    \begin{equation}\label{eq:GenV1}
+        v_{\x\x} + v = 0;\quad v(0)=v(\pi)=0
+    \end{equation}
+    Which has the general solution 
+    \begin{equation*}
+        v(\x) = \a \sin \x.
+    \end{equation*}
 
+    If we modify equation (\ref{eq:GenGInt}) to 
+    \begin{equation}\label{eq:innerCont}
+            \int_{0}^{\pi} v(G_{\x\x}+G) d\x = \int_{0}^{\pi} v\d(\x-x) d\x.
+    \end{equation}
+    Using integration by parts, we change this into:
+    \begin{equation*}
+        (vG_\x - v_\x G)\bounds{0}{\pi} + \int_{0}^{\pi} G(v_{\x\x}+v)d\x = v(x) 
+    \end{equation*}
+    Recalling the boundary conditions on \(v\) from equation (\ref{eq:GenV1}) reveals the contradiction
+    \begin{equation*}
+        0+0 = v(x).
+    \end{equation*}
+    By writing equation (\ref{eq:GenGInt}) in terms of the inner product,
+    \begin{equation*}
+        (v, G_{\x\x}+G) = (v, \d(\x-x)),
+    \end{equation*}
+    we could say that the singularity arises becuase \(v\) is not "orthogonal" to \(\d(\x-x)\), to wit, the right side is not zero. Now, instead of requiring \(G\) satisfy equation (\ref{eq:LGDeltaGen}), we require
+    \begin{equation*}
+        \Lstar G = \d(\x-x) + F
+    \end{equation*}
+    where \(F\) is a function for which \(v(\x)\) is orthogonal to \(\d(\x-x) + F\). 
+
+    \begin{theorem}
+        A general form for \(F\) which satisfies the orthogonality requirement is
+    \begin{equation*}
+        F=-\frac{v(x)v(\x)}{\int_{\lima}^{\limb}v^2(\xi)d\x}
+    \end{equation*}
+    \end{theorem}
+    \begin{proof}
+        We integrate \(v(\x)(\d(\x-x)+F)\) over the interval (a,b):
+        \begin{equation*}
+            \begin{split}
+                \intl v(\x)\left[\d(\x-x) - \frac{v(x)v(\x)}{\int_{\lima}^{\limb}v^x(\xi)d\x} \right]d\x &= \intl \left(v(\x)\d(\x-x) - v(\x)\frac{v(x)v(\x)}{\int_{\lima}^{\limb}v^2(\xi)d\x} \right)d\x \\
+                &=\intl v(\x)\d(\x-x)d\x - v(x)\frac{\int_{\lima}^{\limb}v^2(\xi)d\x}{\int_{\lima}^{\limb}v^2(\xi)d\x}\\
+                &= v(x)-v(x)\\
+                &=0
+            \end{split}
+        \end{equation*}
+    \end{proof}
+
+    For this example, \(v(\x)= \sin \x\) so \(F=-\frac{\pi v(x)v(\x)}{2}\).
+
+    Note that equation (\ref{eq:Gen1}) is of the same form equation (\ref{eq:LGDeltaGen}). This means we can apply the same reasoning to show that just as how there is no solution to equation (\ref{eq:LGDeltaGen}) when the homogeneous solution \(v(\x)\) is not orthogonal to \(d(\x-x)\), there is no solution to equation (\ref{eq:Gen1}) when \(v(x)\) is not orthogonal to \(\phi(x)\). 
 \subsection{The Eigenfunction Method}

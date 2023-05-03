@@ -21,15 +21,19 @@
         \centering
         \includegraphics[width=0.34\linewidth]{include/tabular-boundary.png}
     \end{figure}
-    These are the boundary terms. Lastly, we multiply the bottom terms together. 
+    These are the boundary terms. Lastly, we multiply the bottom terms together, which becomes the integrand. 
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.34\linewidth]{include/tabular-integrand.png}
-    \end{figure}
-    This is the integrand. At the end of this process, the original integral has become 
+    \end{figure}At the end of this process, the original integral has become 
+    % \begin{equation*}
+    %     \begin{split}
+    %         \intl u(x)v(x) dx &= (u(x)v_{(1)}(x)-u^{(1)}(x)v_{(2)}(x)+u^{(2)}(x)v_{(3)}(x) + \cdots + (-1)^{n-1} u^{(n-1)}(x))\biggr\rvert_\mathrm{a}^\mathrm{b}\\ &+ \intl v^{(4)}(x)u(x) dx.
+    %     \end{split}
+    % \end{equation*}
     \begin{equation*}
         \begin{split}
-            \intl u(x)v(x) dx &= (u(x)v_{(1)}(x)-u^{(1)}(x)v_{(2)}(x)+u^{(2)}(x)v_{(3)}(x) + \cdots + (-1)^{n-1} u^{(n-1)}(x))\biggr\rvert_\mathrm{a}^\mathrm{b}\\ &+ \intl v^{(4)}(x)u(x) dx.
+            \intl u(x)v(x) dx &= \left(\sum_{i=1}^{n} (-1)^{i-1}u^{(i-1)}(x)v_{(i)}(x)\right)\biggr\rvert_\mathrm{a}^\mathrm{b} + \intl u^{(n)}(x)v_{(n)}(x) dx.
         \end{split}
     \end{equation*}
 \subsection{The Mean Value Theorem}
@@ -48,8 +52,8 @@
             &=f'(\text{c})(\limb-\lima)
         \end{split}
     \end{equation*}
-\subsection{Big O Notation}
-Big O notation is used to describe the limiting behavior of a function as the argument tends to some value or infinity. By \(f(x)=O(g(x)\) as \(x\to x_0\) we mean that \(\frac{f(x)}{g(x)}\) is bounded as \(x\to x_0\). For example 
+\subsection{Big O Notation} \label{sec:BigO}
+Big O notation is used to describe the limiting behavior of a function as the argument tends to some value or infinity. By \(f(x)=O(g(x))\) as \(x\to x_0\) we mean that \(\frac{f(x)}{g(x)}\) is bounded as \(x\to x_0\). For example 
 \begin{equation*}
     \sin 6x = O(1) \text{ as } x\to \inf.
 \end{equation*}
@@ -71,5 +75,9 @@ Then we can define \(G^*(\xi,x)\) to be a function that satisfies,
 \end{equation*}
 Clearly then,
 \begin{equation*}
-    \L_x u = \intl L_xG^*\phi d\xi = \phi.
+    \L_x u = \intl L_xG^*\phi d\xi = \phi
+\end{equation*}
+and
+\begin{equation*}
+    u = \intl G^* \phi d\x.
 \end{equation*}
