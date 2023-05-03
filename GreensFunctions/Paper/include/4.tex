@@ -107,20 +107,20 @@ To illustrate the key ideas of the method, we will consider several examples whi
         \caption{Infinite beam on elastic foundation}
     \end{figure}
 
-    Where the flexural rigidity of the beam, \(EI\), may be a function of \(x\), \(k\)is the spring constant per unit length. For the purposes of this example we consider both \(EI\) and \(k\) to be constant.
+    Where the flexural rigidity of the beam, \(EI\), may be a function of \(x\), \(k\)is the spring constant per unit length. For the purposes of this example, we consider both \(EI\) and \(k\) to be constant.
 
 \subsection{Sturm-Liouville Equations}
-    In this section subsection we are interested in finding the Green's function for the the general second order linear differential operator
+    We are interested in finding the Green's function for the general second-order linear differential operator
     \begin{equation}
-        L = -D^2(pD)+q
+        L = -D(pD)+q
     \end{equation}
     with the general unmixed boundary conditions
     \begin{equation}
         B_1(u)=B_2(u)=0a
     \end{equation}
-    where \(p\) and \(q\) are functions of the independent variable. Differential operators of this form are \df{Sturm-Liouville differential operators}. By referring to equation (\ref{eq:2OAdjoint}), it is clear that Sturm-Liouville differential operators are alwayse self adjoint since \(a=p\) and \(b=p'\). 
+    where \(p\) and \(q\) are functions of the independent variable. Differential operators of this form are \df{Sturm-Liouville differential operators}. By referring to equation (\ref{eq:2OAdjoint}), it is clear that Sturm-Liouville differential operators are always self-adjoint since \(a=p\) and \(b=p'\). 
 
-    For the purposes of analyzing these equations, we define the \df{conjoint}. Recall from equation (\ref{eq:2OAdjoint}) that for a second order differential operator
+    To analyze these equations, we define the \df{conjoint}. Recall from equation (\ref{eq:2OAdjoint}) that for a second order differential operator
     \begin{equation*}
         \Lstar v = av''+(2a'-b)v'+(a''-b'+c).
     \end{equation*}
@@ -137,5 +137,22 @@ To illustrate the key ideas of the method, we will consider several examples whi
     \end{equation*}
     \(J(v,u)\) is the \df{conjunct} of \(v\) and \(u\).
 
+    We now return to our Sturm-Liouville differential operator, \(\L\), with boundary conditions \(B_1(u)=B_2(u)=0\). Because, these boundary conditions are unmixed, we say \(B_1(u)\) only involves values at \(x=a\), and \(B_2(u)\) only invovles values at \(x=b\). We also assume that \(p(x)\neq 0\) on the interval \(0\leq x\leq 1\). 
+
+    The Green's function \(G(\xi,x)\), is the solution to the equation
+    \begin{equation}\label{eq:SLGDE}
+        (p(\xi)G_\xi(\xi,x))_\xi-q(\xi)G(\xi,x)=-\d(\xi-x),
+    \end{equation}
+    which satisfies the boundary conditions \(B_1(G)=B_2(G)=0\). independent of boundary conditions, such an equation has two linearly independent solutions, \(v_1(\xi)\) and \(v_2(\xi)\). Now to account for the boundary conditions we let \(w_1(\xi)\) be a linear combination of \(v_1(\xi)\) and \(v_2(\xi)\) which satisfies \(B_1(w_1(x)) = 0\) and let \(w_2(x)\) be a linear combination of \(v_1(\xi)\) and \(v_2(\xi)\) which satisfies \(B_2(w_2(x)) = 0\). Preliminarily our Green's Function should be
+    \begin{equation}
+        G(\xi,x)=\begin{cases}
+            w_1(\xi), \xi < x\\
+            w_2(\xi), \xi > x.
+        \end{cases}
+    \end{equation}
+    This satisfies the boundary conditions because we defined it as such, and it almost satisfies equation (\ref{eq:SLGDE}); however, we see that \(G(\xi, x)\) has a discontinuity at \(\xi=x\), meaning that this Green's function is not yet complete. To ensure that \(G(\xi,x)\) is continuous at \(\xi=x\), 
+
 \subsection{Example 4.4 \textit{The Generalized Green's Function}}
     As a more complex example, consider, 
+
+\subsection{The Eigenfunction Method}

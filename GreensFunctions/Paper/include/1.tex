@@ -19,84 +19,93 @@ for arbitrary functions \(v\) and \(w\), with \(\alpha\) and \(\beta\) being con
 \end{theorem}
 
 \begin{proof}\(\impliedby\)\\
-	We prove, by induction, that \(\D^{(i)}\) is a linear differential operator for all \(i \in \mathbb{N}\).\\
+	We prove, by induction, that \(\D^{(k)}\) is a linear differential operator for all \(i \in \mathbb{N}\). Note: \(f^{(i)}=\D^{(i)}f\)\\
 	\textbf{Base Case} Let \(k=1\).\\
-	\begin{equation}
+	\begin{equation*}
 		\begin{split}
 			\D (\a u(x) + \b v(x)) &= \lim_{h\to 0} \frac{\a u(x+h) + \b v(x+h)-(\a u(x) + \b v(x))}{h}\\
 			&=\a \frac{u(x+h) - u(x)}{h} + \b \frac{v(x+h)-v(x)}{h}\\
 			&= \a \D u + \b \D v
 		\end{split}
-	\end{equation}
-	\textbf{Induction Step} uppose that the statement holds for some \(k\in\mathbb{N}\), \(k>1\). Then,
-	\begin{equation}
+	\end{equation*}
+	\textbf{Induction Step} Suppose that the statement holds for some \(k\in\mathbb{N}\), \(k>1\). Then,
+	\begin{equation*}
 		\begin{split}
-			\D^{(k+1)} (\a u + \b v) &= \D ( \D^{(k)}(\a u + \b v))\\
-			&=\D(\a \D^{(k)} u + \b \D^{(k)} v)\\
-			&=\a \D(\D^{(k)} u) + \b \D (\D^{(k)} v)\\
-			&= \a \D^{(k+1)} u + \b \D^{(k+1)} v
+			\D^{k+1} (\a u + \b v) &= \D ( \D^{k}(\a u + \b v))\\
+			&=\D(\a \D^{k} u + \b \D^{k} v)\\
+			&=\a \D(\D^{k} u) + \b \D (\D^{k} v)\\
+			&= \a \D^{k+1} u + \b \D^{k+1} v
 		\end{split}
-	\end{equation}
+	\end{equation*}
 	It follows that 
-	\begin{equation}
-		\sum_{i=0}^{n} a_i(x) D^{(k)}
-	\end{equation}
-	is also linear because the sum of linear operators is also linear.\\
+	\begin{equation*}
+		\sum_{k=0}^{n} a_k(x) D^{k}
+	\end{equation*}
+	is also linear because \(a_k(x) D^{k}\).\\
 	\(\implies\)\\
 	Let
-	\begin{equation}
+	\begin{equation*}
 		\begin{split}
 			\L u &= f(x, \underbrace{u, u', u'', \dots, u^{(n)}}_\u)\\
 			&=f(x, \u).
 		\end{split}
-	\end{equation}
+	\end{equation*}
 	Then,
-	\begin{equation}
+	\begin{equation*}
 		\L (\a v + \b w) = f(x, \a \textbf{v} + \b \textbf{w})
-	\end{equation}
+	\end{equation*}
 	and
-	\begin{equation}
-		\a \L v + \b \L w = \a f(\textbf{v}) + \b f(\textbf{w}).
-	\end{equation}
+	\begin{equation*}
+		\a \L v + \b \L w = \a f(x,\textbf{v}) + \b f(x,\textbf{w}).
+	\end{equation*}
 	If \(\L\) is linear then 
-	\begin{equation}
-		\begin{split}
-			\L(\a v + \b w) &= \a \L v + \b \L w\\
-			f(\a v + \b w)&= \a f(x, \textbf{v}) + \b f(x, \textbf{u}).
-		\end{split}
-	\end{equation}
+	\begin{equation*}
+			\L(\a v + \b w) = \a \L v + \b \L w\
+	\end{equation*}
+	or
+	\begin{equation*}
+		f(x,\a \textbf{v} + \b \textbf{w})= \a f(x, \textbf{v}) + \b f(x, \textbf{u})
+	\end{equation*}
 	It follows that 
-	\begin{equation}
+	\begin{equation*}
 		f(x, \u + \epsilon \v) = f(x, \u) + \epsilon f(x, \v)
-	\end{equation}
-	\begin{equation}
+	\end{equation*}
+	\begin{equation*}
 		\frac{f(x, \u + \epsilon \v)-f(x,\u)}{\epsilon} = f(x,\v)
-	\end{equation}
+	\end{equation*}
 	Next, we take the limit as \(\epsilon \to 0\). 
 	\begin{equation}\label{eq:dirDiv}
 		\begin{split}
 			\lim_{\epsilon \to 0}\frac{f(x, \u + \epsilon \v )-f(x,\u )}{\epsilon} &= \D_\v f(x,\u)\\
-			&= \v \cdot \nabla f(x,\u)
+			&= \v \cdot \nabla f(x,\u)\\
+			&= f(x,\v).
 		\end{split}
 	\end{equation}
 	Let 
-	\begin{equation}
+	\begin{equation*}
 		\u = \v = \langle 0, \dots, u^{(i)}, 0, \dots, 0 \rangle
-	\end{equation}
+	\end{equation*}
 	and
-	\begin{equation}
+	\begin{equation*}
 		f(x,u^{(i)}) = f(x, \langle 0, \dots, u^{(i)}, 0, \dots, 0 \rangle ).
-	\end{equation}
+	\end{equation*}
 	Then it follows from equation (\ref{eq:dirDiv}) that,
-	\begin{equation}
+	\begin{equation*}
 		u^{(i)}\frac{\partial f(x, u^{(i)})}{\partial u^{(i)}} = f(x,u^{(i)}).
-	\end{equation}
-	\begin{equation}
+	\end{equation*}
+	Thus, 
+	\begin{equation*}
+		f(x,u^{(i)}) = a_i(x)u^{(i)}
+	\end{equation*} 
+	and so 
+	\begin{equation*}
 		\begin{split}
-			\sum_{i=0}^{n} u^{(i)}\frac{\partial f(x, u^{(i)})}{\partial u^{(i)}} &= f(x,u) + f(x, u') + \cdots + f(x, u^{(n)})\\
-			&= a_n(x) \frac{d^n}{dx^n}u + a_{n-1}(x) \frac{d^{n-1}}{dx^{n-1}}u + \cdots + a_0(x)u
+			f(x,\u) &= f(x, \sum_i \langle 0, 0, \dots, u^(i), \dots, 0, 0 \rangle)\\
+			&=\sum_i f(x,u^{(i)}) \\
+			&= \sum_i a_i(x)u^{(i)}(x)\\
+			&= a_n(x) \frac{d^n}{dx^n}u + a_{n-1}(x) \frac{d^{n-1}}{dx^{n-1}}u + \cdots + a_0(x)u.
 		\end{split}
-	\end{equation}
+	\end{equation*}
 \end{proof}
 
 	Since \(\L\) is of order \(n\), there will be \(n\) boundary conditions of the general form 
