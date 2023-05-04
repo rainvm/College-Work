@@ -36,7 +36,7 @@ To illustrate the key ideas of the method, we will consider several examples whi
 
     \input{include/loadedstringfig.tex}
     
-    To find a solution to this differential equation, we first find the formal adjoint \(\L*\) as in equation (\ref{eq:greenadjoint}). 
+    To find a solution to this differential equation, we first find the formal adjoint \(\L*\) as in equation~(\ref{eq:greenadjoint}). 
     \begin{equation}
         \begin{split}
             \int_{0}^{1} G(\xi, x)\L u(\xi) d\xi  &= (G(\xi, x)u'(\xi)-G_\xi (\xi, x)u(\xi))\biggr\rvert_0^1 + \int_{0}^{1} uG_{\xi\xi}d\xi\\
@@ -175,8 +175,8 @@ To illustrate the key ideas of the method, we will consider several examples whi
     which satisfies the boundary conditions \(B_1(G)=B_2(G)=0\). independent of boundary conditions, such an equation has two linearly independent solutions, \(v_1(\xi)\) and \(v_2(\xi)\). Now to account for the boundary conditions we let \(w_1(\xi)\) be a linear combination of \(v_1(\xi)\) and \(v_2(\xi)\) which satisfies \(B_1(w_1(x)) = 0\) and let \(w_2(x)\) be a linear combination of \(v_1(\xi)\) and \(v_2(\xi)\) which satisfies \(B_2(w_2(x)) = 0\). Preliminarily our Green's Function should be
     \begin{equation*}
         G(\xi,x)=\begin{cases}
-            a_1w_1(\xi), & \xi < x\\
-            a_2w_2(\xi), & \xi > x.
+            a_1(x)w_1(\xi), & \xi < x\\
+            a_2(x)w_2(\xi), & \xi > x.
         \end{cases}
     \end{equation*}
     This satisfies the boundary conditions because we defined it as such, and it almost satisfies equation (\ref{eq:SLGDE}); however, we see that \(G(\xi, x)\) has a discontinuity at \(\xi=x\), which is required of a Green's function, meaning that this Green's function is not yet complete. For \(G\) to be continuous it must satisfy
@@ -209,7 +209,7 @@ To illustrate the key ideas of the method, we will consider several examples whi
     \begin{equation*}
         \begin{split}
             \int_{x^-}^{x^+} L_\xi G(\x,x) d\x &= \int_{x^-}^{x^+} \d(\x-x)d\x = 1.\\
-            &=p(x)\left[G_\x(\x,x)\bounds{x^-}{x^+}-G(\x,x)\bounds{x^-}{x^+}\right]+q(x)\int_{x^-}^{x^+}G(\x,x)d\x=1.
+            &=p(x)\left[G_\x(\x,x)\bounds{x^-}{x^+}-G(\x,x)\bounds{x^-}{x^+}\right]+\int_{x^-}^{x^+}q(\x)G(\x,x)d\x=1.
         \end{split}
     \end{equation*}
     Because we require \(G(\x,x)\) to be continuous at \(\x=x\), 
@@ -277,9 +277,9 @@ To illustrate the key ideas of the method, we will consider several examples whi
         A=C,
     \end{equation}
     and reduces equation (\ref{eq:GenGInt}) to the jump condition 
-    \begin{equation*}
+    \begin{equation}\label{eq:genJump}
         G_\x\bounds{x^-}{x^+} = 1.
-    \end{equation*}
+    \end{equation}
     or
     \begin{equation*}
         C\cos x - A\cos x = 1.
@@ -314,14 +314,14 @@ To illustrate the key ideas of the method, we will consider several examples whi
     \begin{equation*}
         (v, G_{\x\x}+G) = (v, \d(\x-x)),
     \end{equation*}
-    we could say that the singularity arises becuase \(v\) is not "orthogonal" to \(\d(\x-x)\), to wit, the right side is not zero. Now, instead of requiring \(G\) satisfy equation (\ref{eq:LGDeltaGen}), we require
-    \begin{equation*}
+    we could say that the singularity arises because \(v\) is not "orthogonal" to \(\d(\x-x)\), to wit, the right side is not zero. Now, instead of requiring \(G\) satisfy equation (\ref{eq:LGDeltaGen}), we require
+    \begin{equation}\label{eq:GenCorrection}
         \Lstar G = \d(\x-x) + F
-    \end{equation*}
+    \end{equation}
     where \(F\) is a function for which \(v(\x)\) is orthogonal to \(\d(\x-x) + F\). 
 
     \begin{theorem}
-        A general form for \(F\) which satisfies the orthogonality requirement is
+        A general form for \(F\), which satisfies the orthogonality requirement, is
     \begin{equation*}
         F=-\frac{v(x)v(\x)}{\int_{\lima}^{\limb}v^2(\xi)d\x}
     \end{equation*}
@@ -338,7 +338,95 @@ To illustrate the key ideas of the method, we will consider several examples whi
         \end{equation*}
     \end{proof}
 
-    For this example, \(v(\x)= \sin \x\) so \(F=-\frac{\pi v(x)v(\x)}{2}\).
+    Note that equation (\ref{eq:Gen1}) is of the same form as equation (\ref{eq:LGDeltaGen}). This means we can apply the same reasoning to show that just as how there is no solution to equation (\ref{eq:LGDeltaGen}) when the homogeneous solution \(v(\x)\) is not orthogonal to \(d(\x-x)\), there is no solution to equation (\ref{eq:Gen1}) when \(v(x)\) is not orthogonal to \(\phi(x)\). 
 
-    Note that equation (\ref{eq:Gen1}) is of the same form equation (\ref{eq:LGDeltaGen}). This means we can apply the same reasoning to show that just as how there is no solution to equation (\ref{eq:LGDeltaGen}) when the homogeneous solution \(v(\x)\) is not orthogonal to \(d(\x-x)\), there is no solution to equation (\ref{eq:Gen1}) when \(v(x)\) is not orthogonal to \(\phi(x)\). 
+    Next, we find the Green's function by solving (\ref{eq:GenCorrection}). For this example, \(v(\x)= \sin \x\) so \(F=-\frac{2 v(x)v(\x)}{\pi}\), so the Green's function is the solution to
+    \begin{equation*}
+        G_{\x\x} + G = \d(\xi-x) - \frac{2 v(x)v(\x)}{\pi}.
+    \end{equation*}
+    We find that the solution has the form
+    \begin{equation*}
+        \begin{split}
+            G(\x, x) &= \frac{(\sin x)(\x\cos \x)}{\pi} + \begin{cases}
+                A\sin\x + B\cos\x, & 0\leq\x < x\\
+                C\sin\x + D\cos\x, & x < \x \leq \pi. 
+            \end{cases}
+        \end{split}
+    \end{equation*}
+    The first term is the particular solution due to the added \(F\) term. The boundary conditions on \(G\) show 
+    \begin{equation}\label{eq:genBoundarySln}
+        \begin{split}
+            G(0,x) &= B = 0\\
+            G(\pi,x) &= -\sin x - D = 0.
+        \end{split}
+    \end{equation}
+
+    By integrating equation (\ref{eq:GenCorrection}) from \(\x = x^-\) to \(\x = x^+\) we see that continuity of \(G\) and the jump condtion (\ref{eq:genJump}) are sufficient matching condtions. From these, we see that 
+    \begin{equation}
+        A\sin x + B\cos x = C\sin x + D\cos x
+    \end{equation}
+    and 
+    \begin{equation}\label{eq:genJumpSln}
+        C\cos x - D\sin x -A \cos x + B\sin x = 1.
+    \end{equation}
+    From equations (\ref{eq:genBoundarySln}) - (\ref{eq:genJumpSln}) we can find the solution
+    \begin{equation*}
+        \begin{split}
+            A &= C - \cos x\\
+            B &= 0\\
+            C &= \text{arbitrary function of } x\\
+            D &= -\sin x
+        \end{split}
+    \end{equation*}
+    and thus, we have resolved the contraction. Knowing these coefficients, we write the Green's function as
+    \begin{equation*}
+        \begin{split}
+            G(\x,x) &= \frac{(\sin x)(\x\cos \x)}{\pi} + \begin{cases}
+                (C(x)-\cos x)\sin\x, & 0\leq\x < x\\
+                C(x)\sin\x -\sin x \cos\x, & x < \x \leq \pi
+            \end{cases}\\
+            &= C(x)\sin \x + \frac{(\sin x)(\x\cos \x)}{\pi} + \begin{cases}
+                -\cos x \sin\x, & 0\leq\x < x\\
+                -\sin x \cos\x, & x < \x \leq \pi.
+            \end{cases}
+        \end{split}
+    \end{equation*}
+
+    Note that in this example, there was only one non-trivial solution to the homogeneous differential equation. If there had been two non-trivial solutions, \(v_1(\x)\) and \(v_2(\x)\), instead, then we would expect the Green's function to satisfy 
+    \begin{equation*}
+        \Lstar G = \d(\x-x) +\a_1 v_1(\x)v_1(x) + \a_2 v_2(\x)v_2(x)
+    \end{equation*}
+    where \(\a_1\) and \(\a_2\) are chosen so that 
+    \begin{equation*}
+        \int_{\lima}^{\limb} v_j(\x)[\d(\x-x) +\a_1 v_1(\x)v_1(x) + \a_2 v_2(\x)v_2(x)]d\x = 0
+    \end{equation*} 
+    for \(j=1,2\).
 \subsection{The Eigenfunction Method}
+Throughout this text so far, by finding the Green's function, \(G\), for a linear differential operator, \(\L\), we have been searching for an inverse operator, \(\L^{-1}\), such that
+\begin{equation*}
+    u = \L^{-1} \phi.
+\end{equation*}
+As we have seen, this inverse operator turns out to be an integral operator for which the kernel is \(G\). Alternatively, there is the eigenfunction method.
+
+Consider the simple boundary value problem
+\begin{equation*}
+    u'' + \lambda u = 0;\quad u(0) = u(l) = 0.
+\end{equation*}
+
+The general solution of this differential equation is
+\begin{equation}
+    u(x) = A\sin\sqrt{\lambda}x+ B\cos\sqrt{\lambda}x.
+\end{equation}
+By letting \(B=0\), we satisfy the first boundary condition, and if we let \(A=0\), we would also satisfy the second. However, this gives us only the trivial solution, which we are not interested in. Additional solutions are admitted if \(\sqrt{\lambda}l\) is such that it coincides with a zero of the sine function. That is to say, if
+\begin{equation*}
+    \sqrt{\lambda}l = n\pi; 
+\end{equation*}
+and therefore
+\begin{equation*}
+    \lambda = \frac{n^2\pi^2}{l^2} \equiv \lambda_n
+\end{equation*}
+for \(n= 1,2,3, \dots\), giving us the solution
+\begin{equation*}
+    u(x) = A\sin (\frac{n\pi x}{l}) \equiv A\phi_n\ say
+\end{equation*}
+where \(A\) is an arbitrary constant. We exclude the case \(n=0\) from our solution because this yields only the trivial solution, \(\phi_0(x)=0\), and thus \(\lambda = 0\) is not an eigenvalue.

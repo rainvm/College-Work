@@ -1,9 +1,9 @@
 \section{The Adjoint Operator}
-To determine the Green's function for a particular differential equation and its boundary conditions, begin by finding the \df{adjoint operator}, denoted \(\mathcal{L}^*\). The adjoint operator consists of the formal adjoint, \(\Lstar  \), and the boundary conditions associated with the Green's function. To determine these, first form the product, \(v\L u\), and integrate it over the interval of interest. By repeated integration by parts, we can express the integral in the form (see appendix \ref{appendix:parts} for information about integration by parts)
+To determine the Green's function for a particular differential equation and its boundary conditions, begin by finding the \df{adjoint operator}, denoted \(\mathcal{L}^*\). The adjoint operator consists of the formal adjoint, \(\Lstar  \), and the boundary conditions associated with the Green's function. To determine these, first form the product, \(v\L u\), and integrate it over the interval of interest. By repeated integration by parts, we can express the integral in the form (see appendix \ref{appendix:parts} for information about tabular integration by parts)
 \begin{equation} \label{eq:adjoint}
 	\intl v \L u dx = [\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b} + \intl u\Lstar  v dx,
 \end{equation}
-where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary terms resulting from successive integration by parts. Here, \(u\) and \(v\) must be sufficiently differentiable functions so that the left and right sides are well defined. 
+where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary terms resulting from successive integration by parts. Here, \(u\) and \(v\) must be sufficiently differentiable functions so that the left and right sides are well-defined. 
 
 \begin{example}\label{ex:selfAdjoint}
 	Consider the general second-order linear differentiable operator
@@ -53,7 +53,7 @@ where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary ter
 	Evaluating \(\frac{d}{dx}\left(a(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}\right)\), we find
 	\begin{equation*}
 		\begin{split}
-			\frac{d}{dx}(a(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}) &= a'(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx} + a(x)\frac{b(x)-a'(x)}{a(x)}e^{\int \frac{b(x)-a'(x)}{a(x)}dx}\\
+			\frac{d}{dx}\left(a(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}\right) &= a'(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx} + a(x)\frac{b(x)-a'(x)}{a(x)}e^{\int \frac{b(x)-a'(x)}{a(x)}dx}\\
 			&=a'(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx} + b(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx} - a'(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}\\
 			&=b(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}.
 		\end{split}
