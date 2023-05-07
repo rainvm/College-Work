@@ -7,16 +7,24 @@ where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary ter
 
 \begin{example}\label{ex:selfAdjoint}
 	Consider the general second-order linear differentiable operator
-	\begin{equation}
-		\L= a(x) \frac{d^2}{dx^2} + b(x)\frac{d}{dx} + c(x).
+	\begin{equation}\label{eq:secondOrder}
+		\L= a(x) \frac{d^2}{dx^2} + b(x)\frac{d}{dx} + c(x),
 	\end{equation}
+	with boundary conditions given by
+	\begin{equation*}
+		\begin{split}
+			B_1(u) = a_{10}u(\lima) + a_{11}u'(\lima) + b_{10}u(\limb) + b_{11}u'(\limb) = c_1\\ 
+			B_2(u) = a_{22}u(\lima) + a_{11}u'(\lima) + b_{22}u(\limb) + b_{11}u'(\limb) = c_2
+		\end{split}
+	\end{equation*}
+
 	To find \(\Lstar  \), perform integration by parts on each term of the product \(v\L u\) until the integrand has the form \(u \L^* v\). That is to say, integrate by parts twice on the first term, once on the second, and not at all on the third. Doing this, we are left with
 	\begin{equation}
 		\begin{split}
 			\intl v\L u dx &= \intl (vau''+ vbu' + vc)dx\\
 			&=(vau'+vbu)\biggr\rvert_\mathrm{a}^\mathrm{b} + \intl (-(va)'u'-(vb)'u+vcu)dx\\
 			&=(vau'+vbu-(va)'u)\biggr\rvert_\mathrm{a}^\mathrm{b} + \intl ((va)''u-(vb)'u+vcu)dx\\
-			&=(vau'+vbu-(va)'u)\biggr\rvert_\mathrm{a}^\mathrm{b} + \intl u((va)''-(bv)'+cv)dx.
+			&=(avu'+bvu-(av)'u)\biggr\rvert_\mathrm{a}^\mathrm{b} + \intl u((av)''-(bv)'+cv)dx.
 		\end{split}
 	\end{equation}
 	From this, it is clear that 
@@ -27,7 +35,7 @@ where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary ter
 			     &= av''+(2a'-b)v'+(a''-b'+c)
 		\end{split}
 	\end{equation}
-	and so the formal adjoint of the second-order linear differential operator \(L\) must be of the form
+	and so the formal adjoint of the second-order linear differential operator \(\L\) must be of the form
 	\begin{equation}
 		\begin{split}
 			\Lstar =a\frac{d^2}{dx^2} + (2a'-b)\frac{d}{dx}+(a''-b'+c).
@@ -39,7 +47,7 @@ where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary ter
 \end{example}
 
 \begin{theorem}
-	For any such \(\L\), \(\sigma\L\) is self adjoint if
+	For \(\L\), given by equation (\ref*{eq:secondOrder}), \(\sigma\L\) is self adjoint if
 		\begin{equation}
 			\sigma = \exp\left({\int \frac{b-a'}{a}dx}\right).
 		\end{equation}
@@ -48,14 +56,14 @@ where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary ter
 \begin{proof}
 	It follows from the previous example that \(\sigma\L\) is self adjoint if
 	\begin{equation*}
-		\frac{d}{dx}\left(a(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}\right) = b(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}.
+		\frac{d}{dx}\left(ae^{\int \frac{b-a'}{a}dx}\right) = be^{\int \frac{b-a'}{a}dx}.
 	\end{equation*}
-	Evaluating \(\frac{d}{dx}\left(a(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}\right)\), we find
+	We find
 	\begin{equation*}
 		\begin{split}
-			\frac{d}{dx}\left(a(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}\right) &= a'(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx} + a(x)\frac{b(x)-a'(x)}{a(x)}e^{\int \frac{b(x)-a'(x)}{a(x)}dx}\\
-			&=a'(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx} + b(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx} - a'(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}\\
-			&=b(x)e^{\int \frac{b(x)-a'(x)}{a(x)}dx}.
+			\frac{d}{dx}\left(ae^{\int \frac{b-a'}{a}dx}\right) &= a'e^{\int \frac{b-a'}{a}dx} + a\frac{b-a'}{a}e^{\int \frac{b-a'}{a}dx}\\
+			&=a'e^{\int \frac{b-a'}{a}dx} + be^{\int \frac{b-a'}{a}dx} - a'e^{\int \frac{b-a'}{a}dx}\\
+			&=be^{\int \frac{b-a'}{a}dx}.
 		\end{split}
 	\end{equation*}
 \end{proof}
@@ -82,5 +90,5 @@ where \([\cdots]\biggr\rvert_\mathrm{a}^\mathrm{b}\) represents the boundary ter
 			       &= u(1)(v(1)-3v(0)) + \int_0^1u\Lstar vdx
 		\end{split}
 	\end{equation}
-	Since the particular value of \(u(1)\) is not given, we must impose the condition \(v(1)-3v(0)=0\), because choosing \(u(1)=0\) would unduly restrict our solution. Therefore \(\mathcal{L^*}\) consists of \(\Lstar = -\frac{d}{dx}\) and the boundary condition \(v(1) - 3v(0)=0\). 
+	Since the particular value of \(u(1)\) is not given, we must impose the condition \(v(1)-3v(0)=0\), because choosing \(u(1)=0\) would unduly restrict our solution (note that the boundary condition is homogeneous). Therefore \(\mathcal{L^*}\) consists of \(\Lstar = -\frac{d}{dx}\) and the boundary condition \(v(1) - 3v(0)=0\). 
 \end{example}As a final note, if \(\mathcal{L}=\mathcal{L}^*\), then \(\mathcal{L}\) is called \df{self-adjoint}.

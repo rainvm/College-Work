@@ -8,7 +8,8 @@ over an interval \(\lima \leq x \leq \limb\) and subject to certain boundary con
 \begin{equation}\label{eq:linearity}
 	\L(\alpha v + \beta w) = \alpha \L v + \beta \L w
 \end{equation}
-for arbitrary functions \(v\) and \(w\), with \(\alpha\) and \(\beta\) being constant.} 
+for arbitrary functions \(v\) and \(w\), with \(\alpha\) and \(\beta\) being constant.}
+We begin by proving a theorem about such operators.
 
 
 \begin{theorem}
@@ -41,7 +42,7 @@ for arbitrary functions \(v\) and \(w\), with \(\alpha\) and \(\beta\) being con
 	\begin{equation*}
 		\sum_{k=0}^{n} a_k(x) D^{k}
 	\end{equation*}
-	is also linear because \(a_k(x) D^{k}\).\\
+	is also linear because \(a_k(x) D^{k}\) is linear and a sum of linear operators is linear.\\
 	\(\implies\)\\
 	Let
 	\begin{equation*}
@@ -70,17 +71,19 @@ for arbitrary functions \(v\) and \(w\), with \(\alpha\) and \(\beta\) being con
 	\begin{equation*}
 		f(x, \u + \epsilon \v) = f(x, \u) + \epsilon f(x, \v)
 	\end{equation*}
+	or
 	\begin{equation*}
-		\frac{f(x, \u + \epsilon \v)-f(x,\u)}{\epsilon} = f(x,\v)
+		\frac{f(x, \u + \epsilon \v)-f(x,\u)}{\epsilon} = f(x,\v).
 	\end{equation*}
-	Next, we take the limit as \(\epsilon \to 0\). 
+	Next, we take the limit as \(\epsilon \to 0\).,
 	\begin{equation}\label{eq:dirDiv}
 		\begin{split}
 			\lim_{\epsilon \to 0}\frac{f(x, \u + \epsilon \v )-f(x,\u )}{\epsilon} &= \D_\v f(x,\u)\\
 			&= \v \cdot \nabla f(x,\u)\\
-			&= f(x,\v).
+			&= f(x,\v),
 		\end{split}
 	\end{equation}
+	where \(\D=\langle \frac{\partial}{\partial u}, \frac{\partial}{\partial u'}, \dots, \frac{\partial^(n)}{\partial u^(n)\rangle} \)
 	Let 
 	\begin{equation*}
 		\u = \v = \langle 0, \dots, u^{(i)}, 0, \dots, 0 \rangle
@@ -100,10 +103,10 @@ for arbitrary functions \(v\) and \(w\), with \(\alpha\) and \(\beta\) being con
 	and so 
 	\begin{equation*}
 		\begin{split}
-			f(x,\u) &= f(x, \sum_i \langle 0, 0, \dots, u^(i), \dots, 0, 0 \rangle)\\
+			f(x,\u) &= f(x, \sum_i \langle 0, 0, \dots, u^{(i)}, \dots, 0, 0 \rangle)\\
 			&=\sum_i f(x,u^{(i)}) \\
 			&= \sum_i a_i(x)u^{(i)}(x)\\
-			&= a_n(x) \frac{d^n}{dx^n}u + a_{n-1}(x) \frac{d^{n-1}}{dx^{n-1}}u + \cdots + a_0(x)u.
+			&= \left[a_n(x) \frac{d^n}{dx^n} + a_{n-1}(x) \frac{d^{n-1}}{dx^{n-1}} + \cdots + a_0(x)\right]u.
 		\end{split}
 	\end{equation*}
 \end{proof}

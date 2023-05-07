@@ -18,7 +18,7 @@ or
 \begin{equation}
     w_k(x)=\frac{k}{\pi (1+k^2x^2)}\,,
 \end{equation}
-where \(k\) is some larger natural number. In Fig 3.2, we see that \(w\) becomes highly concentrated at \(x=0\) when \(k\) is large.
+where \(k\) is some larger natural number. In figures 3.1 and 3.2, we see that \(w\) becomes highly concentrated at \(x=0\) when \(k\) is large.
 
 \begin{figure}
     \centering
@@ -97,13 +97,13 @@ where \(k\) is some larger natural number. In Fig 3.2, we see that \(w\) becomes
 
 If we let \(k \rightarrow \infty\), then the mass distribution approaches our idea of a point mass at \(x=0\). We would like to write
 \begin{equation} \label{eq:deltaSeqLim}
-    \delta(x) \overset{?}{=} \lim_{k\rightarrow \infty} w_k(x)
+    \delta(x) \overset{?}{=} \lim_{k\rightarrow \infty} w_k(x),
 \end{equation}
-where, \(\d(x)\) is the \df{Dirac delta function}. This "definition" feels intuitive, but it is not a rigorous definition of the Dirac delta function because the limit is infinite for \(x=0\). That is, the right-hand side is not a function. We instead define the Dirac delta function, \(\d(x)\), in the following way
+where \(\d(x)\) is the \df{Dirac delta function}. This ``definition'' feels intuitive but is not a rigorous definition of the Dirac delta function because the limit is infinite for \(x=0\). That is, the right-hand side is not a function. We instead define the Dirac delta function, \(\d(x)\), in the following way
 \begin{equation}\label{eq:seqDef}
     \begin{split}
         \lim_{k\rightarrow \inf}\intR h(x)w_k(x)dx &= \intR h(x)\d(x)dx \\
-        &= h(0)
+        &= h(0),
     \end{split}
 \end{equation}
 and call any \(w_k(x)\) which has this property a \df{\(\d\)-sequence}. This way of defining the Dirac delta function is more rigorous while still being as intuitive as equation (\ref{eq:deltaSeqLim}). However, keep in mind that the delta function is not a function.
@@ -153,6 +153,8 @@ We would like to be able to check that a particular sequence \(w_k(x)\), is a \(
 
 
 \end{proof}
+
+\input{include/3.1.tex}
 
 \subsection{The Dirac Delta Function as a Generalized Function}
 The Dirac delta function can also be defined as a generalized function. To understand this way of defining \(\d\), we will begin by defining some terms.
@@ -217,7 +219,7 @@ Although \(\delta(x)\) has support at \(x=0\), it can be adjusted to have suppor
             \intR g'(x)h(x) dx= g(x)h(x)\biggr\rvert_{-\infty}^{\infty} - \intR g(x)h'(x)dx.
     \end{equation}
 \end{definition}
-The integral term is fairly simple to interpret since it is of the same form as equation (\ref{eq:generalizedFunction}), but the boundary term is not as nice because it involves knowing the values of \(g\), which are never known. However, our restriction that \(h\) has compact support gives the intuition that it must vanish at infinity, and since we are integrating from \(-\inf\) to \(\inf\), the boundary term must be zero,
+The integral term is fairly simple to interpret since it is of the same form as equation (\ref{eq:generalizedFunction}), but the boundary term is not as nice because it involves knowing the values of \(g\), which are never known. However, our restriction that \(h\) has compact support gives the intuition that it must vanish at infinity, and since we are integrating from \(-\inf\) to \(\inf\), we define the boundary term to be zero.
 \begin{equation}
     \intR g'(x)h(x)dx = -\intR g(x)h'(x)dx.
 \end{equation}
@@ -237,13 +239,13 @@ For the Dirac delta function, this means
     \end{equation}
 \end{theorem}
 \begin{proof} We prove the statement by induction.\\
-    \textbf{Base case:} Proven to be true for \(k\) = 1 in equation (\ref{eq:deltafirst}).\\
+    \textbf{Base step:} Proven to be true for \(k\) = 1 in equation (\ref{eq:deltafirst}).\\
     \textbf{Induction step:} Let \(k \in \mathbb{N}\) and suppose the statements holds for some \(k\geq 1\). Then,
     \begin{align*}
         \intR \delta^{(k+1)}(\xi-x)h(\xi)d\xi &= \d^{(k)}(\xi-x)h(\xi)\bounds{-\inf}{\inf}-\intR \delta^{(k)}(\xi-x)h'(\xi)d\xi\\
         &=-\intR \delta^{(k)}(\xi-x)h'(\xi)d\xi\\
         &=-(-1)^{k}(h')^{(k)}(x)\\
-        &=(-1)^{k+1}h^{(k+1)}(x)
+        &=(-1)^{k+1}h^{(k+1)}(x).
     \end{align*}
 \end{proof}
 
@@ -260,10 +262,10 @@ Since
     \intR \delta(x-\xi)h(x)dx=h(\xi)
 \end{equation}
 it must be the case that, in the sense of generalized functions,
-\begin{equation}
+\begin{equation}\label{eq:Hprime}
     H'(x-\xi) = \delta(x-\xi).
 \end{equation}
-Such equalities between generalized functions, as seen in (3.18), are understood in the sense that if some \(h\) in \(\mathcal{D}\) is multiplied through, and we integrate over \((-\infty, \infty)\) then the result will hold. To wit, we consider generalized functions, \(g_1\) and \(g_2\), to be equal if, for all \(h\in \mathcal{D}\),
+Such equalities between generalized functions, as seen in (\ref{eq:Hprime}), are understood in the sense that if some \(h\) in \(\mathcal{D}\) is multiplied through, and we integrate over \((-\infty, \infty)\) then the result will hold. To wit, we consider generalized functions, \(g_1\) and \(g_2\), to be equal if, for all \(h\in \mathcal{D}\),
 \begin{equation}
     \intR g_1(x)h(x)dx = \intR g_2(x)h(x)dx.
 \end{equation}
@@ -276,7 +278,5 @@ as a result of
 \begin{equation}
     \intR x^n\delta(x)h(x)dx=[x^nh(x)]|_{x=0} = 0.
 \end{equation}
-
-\input{include/3.1.tex}
 
 \input{include/3.6.tex}
