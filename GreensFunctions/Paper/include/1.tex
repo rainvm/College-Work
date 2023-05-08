@@ -20,8 +20,8 @@ We begin by proving a theorem about such operators.
 \end{theorem}
 
 \begin{proof}\(\impliedby\)\\
-	We prove, by induction, that \(\D^{(k)}\) is a linear differential operator for all \(i \in \mathbb{N}\). Note: \(f^{(i)}=\D^{i}f\)\\
-	\textbf{Base Case} Let \(k=1\).\\
+	We prove, by induction, that \(\D^{k}\) is a linear differential operator for all \(k \in \mathbb{N}\). Note: \(f^{(k)}=\D^{k}f\)\\
+	\textbf{Base Step} Let \(k=1\).\\
 	\begin{equation*}
 		\begin{split}
 			\D (\a u(x) + \b v(x)) &= \lim_{h\to 0} \frac{\a u(x+h) + \b v(x+h)-(\a u(x) + \b v(x))}{h}\\
@@ -75,7 +75,7 @@ We begin by proving a theorem about such operators.
 	\begin{equation*}
 		\frac{f(x, \u + \epsilon \v)-f(x,\u)}{\epsilon} = f(x,\v).
 	\end{equation*}
-	Next, we take the limit as \(\epsilon \to 0\).,
+	Next, we take the limit as \(\epsilon \to 0\),
 	\begin{equation}\label{eq:dirDiv}
 		\begin{split}
 			\lim_{\epsilon \to 0}\frac{f(x, \u + \epsilon \v )-f(x,\u )}{\epsilon} &= \D_\v f(x,\u)\\
@@ -83,7 +83,7 @@ We begin by proving a theorem about such operators.
 			&= f(x,\v),
 		\end{split}
 	\end{equation}
-	where \(\D=\langle \frac{\partial}{\partial u}, \frac{\partial}{\partial u'}, \dots, \frac{\partial^(n)}{\partial u^(n)\rangle} \)
+	where \(\D=\langle \frac{\partial}{\partial u}, \frac{\partial}{\partial u'}, \dots, \frac{\partial^(n)}{\partial u^{(n)}\rangle} \)
 	Let 
 	\begin{equation*}
 		\u = \v = \langle 0, \dots, u^{(i)}, 0, \dots, 0 \rangle
@@ -95,6 +95,13 @@ We begin by proving a theorem about such operators.
 	Then it follows from equation (\ref{eq:dirDiv}) that,
 	\begin{equation*}
 		u^{(i)}\frac{\partial f(x, u^{(i)})}{\partial u^{(i)}} = f(x,u^{(i)}).
+	\end{equation*}
+	We solve this equation with separation of variables, 
+	\begin{equation*}
+		\begin{split}
+			\frac{\partial f(x, u^{(i)})}{f(x,u^{(i)})} &= \frac{\partial u^{(i)}}{u^{(i)}}\\
+			\int\frac{\partial f(x, u^{(i)})}{f(x,u^{(i)})} &= \int \frac{\partial u^{(i)}}{u^{(i)}}\\
+		\end{split}
 	\end{equation*}
 	Thus, 
 	\begin{equation*}

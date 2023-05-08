@@ -30,7 +30,7 @@ where \(k\) is some larger natural number. In figures 3.1 and 3.2, we see that \
             axis lines = middle,
             xlabel = \(x\),
             ylabel = \(w_k(x)\),
-            ymin = 0,
+            ymin = -0.18,
             ymax = 4.3,
             xmin = -1,
             xmax = 1,
@@ -50,6 +50,9 @@ where \(k\) is some larger natural number. In figures 3.1 and 3.2, we see that \
             \addplot [mark=none] coordinates {(-1/8, 0) (-1/8, 8/2)};
             \addplot [mark=none] coordinates {(-1/8, 8/2) (1/8, 8/2)};  
             \node at (axis cs:0.25, 3) {$k=8$};  
+            \node at (axis cs:-0.04, -0.08) {0};
+            \node at (axis cs:-0.05, 4.1) {4};
+            \node at (axis cs:0.5, -0.1) {1/2};
         \end{axis}
     \end{tikzpicture}
     \caption{Mass Density; eq 3.2}
@@ -106,16 +109,31 @@ where \(\d(x)\) is the \df{Dirac delta function}. This ``definition'' feels intu
         &= h(0),
     \end{split}
 \end{equation}
-and call any \(w_k(x)\) which has this property a \df{\(\d\)-sequence}. This way of defining the Dirac delta function is more rigorous while still being as intuitive as equation (\ref{eq:deltaSeqLim}). However, keep in mind that the delta function is not a function.
+where \(h\) is infinitely differentiable and vanishes outside some finite interval. We call any \(w_k(x)\) which has this property a \df{\(\d\)-sequence}.  This way of defining the Dirac delta function is more rigorous while still being intuitive. However, keep in mind that the delta function is not a function. 
 
-We would like to be able to check that a particular sequence \(w_k(x)\), is a \(\d-sequence\). We can do this by showing that equation (\ref{eq:seqDef}), holds for \(w_k(x)\). However, for certain, \(w_k(x)\), it is sufficient to show that \(\intR w_k(x)dx=1\).
+We would like to be able to check that a particular sequence \(w_k(x)\) is a \(\d\)-sequence. We can do this by showing that equation (\ref{eq:seqDef}) holds for \(w_k(x)\). The following theorem allows us to easily construct \(\d\)-sequences. First, we need a definition and a theorem.
+
+% \begin{definition}
+%     A function, \(f\), is \df[uniform continuity]{uniformly continuous} if for all \(\e>0\), a \(\d >0\) exists such that, if \(|a-b|<\d\), then \(|f(a)-f(b)|<\e\), for all \(a,b\in X\).
+% \end{definition}
 
 \begin{definition}
-    A function, \(f\), is \df[uniform continuity]{uniformly continuous} if for all \(\e>0\), a \(\d >0\) exists such that, if \(|a-b|<\d\), then \(|f(a)-f(b)|<\e\), for all \(a,b\in X\).
+    A function, \(f: A \to \mathbb{R}\), is \df{continuous} at point \(a \in A\) for all \(\e>0\) if there exists a \(\d>0\) such that for all \(x\in A\), \(|x-y|<\d\) implies \(|f(x)-f(y)|<\e\).
 \end{definition}
 
+\begin{definition}
+    A sequence of functions, \(f_k\), \df[uniform convergence]{converges uniformly} to the function, \(f(x)\), on \([a,b]\) if for any \(\e>0\) there exists an \(n\) such that \(|f_n(x)-f(x)|< \e\) for all \(x\in[a,b]\). (Note: This is a stronger notion of convergence than pointwise convergence.)
+\end{definition}
+
+\begin{theorem}
+    If \(f_k(x)\) converges uniformly to \(f(x)\) on \([a,b]\), then
+    \begin{equation*}
+        \lim_{k\to\inf} \int_{a}^{b}f_k(x) dx = \int_{a}^{b} \lim_{k\to\inf}  f_k(x)dx = \int_{a}^{b} f(x) dx.
+    \end{equation*}
+\end{theorem}
+
 \begin{theorem}\label{th:assertion}
-    If \(w(x)\) is non-negative \(\intR w(x) dx = 1\), and \(w(x)=O(1/x^{1+\a})\) (see appendix \ref{sec:BigO} for a description of big O notation) as \(|x| \rightarrow \inf\) with \(\a>0\), then \( w_k(x) \equiv kw(kx)\) is a \(\d\)-sequence.
+    If \(w(x)\) is non-negative \(\intR w(x) dx = 1\), and \(w(x)=O(1/|x|^{1+\a})\) (see appendix \ref{sec:BigO} for a description of big O notation) as \(|x| \rightarrow \inf\) with \(\a>0\), then \( w_k(x) \equiv kw(kx)\) is a \(\d\)-sequence.
 \end{theorem}
 \begin{proof}    
     We have
@@ -124,11 +142,11 @@ We would like to be able to check that a particular sequence \(w_k(x)\), is a \(
             \lim_{k\rightarrow \inf}\intR w_k(x)h(x) dx &= \underbrace{\lim_{k\rightarrow\inf} \intR w_k(x)[h(x)-h(0)]dx}_I+ \underbrace{\lim_{k\rightarrow\inf} \intR w_k(x)h(0)dx}_J.
         \end{split}
     \end{equation}
-    Consider J,
+    Consider \(J\),
     \begin{equation}
         \begin{split}
-            J &= h(0) \lim_{k\rightarrow\inf} \intR kw(kx)dx\ \&\ \text{Let  }\xi =kx\\
-            &=h(0){k\rightarrow \inf} \intR w(\xi) d\xi\\
+            J &= h(0) \lim_{k\rightarrow\inf} \intR kw(kx)dx, \ \ \text{Let  }\xi =kx\\
+            &=h(0)\intR w(\xi) d\xi\\
             &= h(0).
         \end{split}
     \end{equation}
@@ -138,15 +156,17 @@ We would like to be able to check that a particular sequence \(w_k(x)\), is a \(
             I &= \underbrace{\lim_{k\rightarrow \inf} \int_{-\inf}^{-\d} w_k(x)(h(x)-h(0)) dx}_{I_1} + \underbrace{\lim_{k\rightarrow \inf} \int_{-\d}^{\d} w_k(x)(h(x)-h(0)) dx}_{I_2} \\ & + \underbrace{\lim_{k\rightarrow \inf} \int_{\d}^{\inf} w_k(x)(h(x)-h(0)) dx}_{I_3}.\\
         \end{split}
     \end{equation}
-    Clearly, \( \lim_{k\rightarrow \inf} w_k(x)=0\), for each fixed \(x \neq 0\) , because \(w_k(x)=kw(kx)=O(k\cdot k^{-1-\alpha} |x|^{-1-\a}) = O(k^{-\a}) \rightarrow 0\) as \(k \rightarrow \inf\). 
-    Since \(w_k(x)\rightarrow 0\) uniformly, over \(-\inf< x < -\d\) and \(\d < x < \inf \), then \(I_1=I_3 =0\). By the definition of uniform continuity \(|h(x)-h(0)|<\e\) whenever \(|x-0|=|x|<\d\). Because \(\e\) can be selected as small as we like, \(|h(x)-h(0)|=0\). As a result,
+    Note that \(w_k\) converges uniformly to 0 for \(x\neq 0\) and thus, \(I_1=I_3 =0\). Since \(h\) is continuous \(|h(x)-h(0)|<\e\) whenever \(|x-0|=|x|<\d\)
     \begin{equation*}
         \begin{split}
-            I_2 &= \lim_{k\rightarrow \inf} \int_{-\d}^{\d} w_k(x)(0) dx\\
-            &=0
+            \left| \lim_{k\to \inf} \int_{-\d}^{\d} w_k(x)(h(x)-h(0))dx \right| & \leq  \lim_{k\to \inf} \int_{-\d}^{\d} w_k(x)|h(x)-h(0)|dx \\
+            & \leq \lim_{k\to \inf} \e\int_{-\d}^{\d}w_k(x)dx\\
+            &= \e \lim_{k\to \inf} \int_{-k\d}{k\d} kw(kx)dx\\
+            &= \e \lim_{k\to \inf} \int_\mathbb{R} kw(kx)dx\\
+            &= \e.
         \end{split}
     \end{equation*}
-    Thus, \(I=0\) and so 
+    Since \(\e\) may be chosen as small as we like, the integral must vanish. Thus,
     \begin{equation}
         \lim_{k\rightarrow \inf}\intR w_k(x)h(x) dx = h(0).
     \end{equation}
@@ -157,42 +177,46 @@ We would like to be able to check that a particular sequence \(w_k(x)\), is a \(
 \input{include/3.1.tex}
 
 \subsection{The Dirac Delta Function as a Generalized Function}
-The Dirac delta function can also be defined as a generalized function. To understand this way of defining \(\d\), we will begin by defining some terms.
+The Dirac delta function can also be defined as a generalized function. To understand this, we will begin by defining some terms.
 
 \begin{definition}
-     A \df{closed region} is one that includes its endpoints.
+     A \df{closed region} is one that includes its boundary.
 \end{definition}
 
 \begin{definition}
-    The \df{support} of a function, \(f\), is the subset, \(\mathcal{S}\), of the domain of \(f\) such that for all \(x\in \mathcal{S}\), \(f(x) \neq 0\).
+    The \df{support} of a function, \(f\), is the subset, \(\mathcal{S}\), of the domain of \(f\) where \(f\) is nonzero.
 \end{definition}
 
 \begin{definition}
-    A function has \df{compact support} if the subset of its domain for which its range is non-zero is closed and bounded.
+    A function has \df{compact support} if its support is closed and bounded.
 \end{definition}
-We will call the space of infinitely differentiable functions with compact support \(\mathcal{D}\).
+We will denote the space of infinitely differentiable functions with compact support by \(\mathcal{D}\).
 
 \begin{definition}
-    \df[generalized function]{Generalized functions} are linear functionals that are uniformly continuous on \(\mathcal{D}\), such that all generalized functions have derivatives which are also generalized functions.
+    A \df{continuous functional} is a functional \(\mathcal{F}\) on \(\mathcal{D}\), is a continuous functional if for any functional sequence \(g_k\) in \(\mathcal{D}\) which converges to \(g\) in \(\mathcal{D}\) as \(k \to \infty\), then the numerical sequence \(F(g_k)\) converges to \(F(g)\).
+\end{definition}
+
+\begin{definition}
+    \df[generalized function]{Generalized functions} are linear functionals that are continuous on \(\mathcal{D}\).
 \end{definition}
 
 We consider the following functional,
 \begin{equation}\label{eq:generalizedFunction}
-    \mathcal{F}(h) = \int_{-\infty}^{\infty} g(x)h(x)dx.
+    \mathcal{F}(h) = \int_{-\infty}^{\infty} g(x)h(x)dx,
 \end{equation}
-This functional assigns a numerical value, \(\mathcal{F}(h)\), for each function \(h\) within the domain, \(\mathcal{D}\), of \(\mathcal{F}\).
+where \(g\) is some fixed integrable function. This functional assigns a numerical value, \(\mathcal{F}(h)\), for each function \(h\) within the domain, \(\mathcal{D}\), of \(\mathcal{F}\).
 
 \begin{example}
-    Suppose \(\mathcal{F}(h)\) is the integral of \(h\) from \(\xi\) to \(\infty\).
+    Suppose \(\mathcal{F}(h)\) is the integral of \(h\) from \(\xi\) to \(\infty\),
     \begin{equation}
-        \int_{\infty}^{\infty} g(x)h(x)dx = \int_{\xi}^{\infty} h(x) dx
+        \int_{\infty}^{\infty} g(x)h(x)dx = \int_{\xi}^{\infty} h(x) dx.
     \end{equation}
     Then, \(g(x)\) is equivalent to the \df{Heaviside step function},
     \begin{equation}
         H(x) = \begin{cases}
             1, & x>0\\
             0, & x<0\\
-            \frac{1}{2}, & x=0
+            \frac{1}{2}, & x=0,
         \end{cases}
     \end{equation}
     which is a function in the classical sense. \footnote{We have defined \(H(0)\) to be \(\frac{1}{2}\), which is a common convention. However, for our purposes, the value at any particular point is not important since we are only ever interested in integrating the function.}    
@@ -202,24 +226,27 @@ If \(\mathcal{F}(h)\) is \(h(0)\) so that
 \begin{equation}\label{eq:introtodelta}
     \int_{-\infty}^{\infty}g(x)h(x) dx=h(0)
 \end{equation}
-then it can be shown that there is no function, \(g(x)\), which exists such that equation (\ref{eq:introtodelta}) is true for all functions, \(h(x)\), in the domain, \(\mathcal{D}\). We call \(g\) defined by equation (\ref{eq:introtodelta}) a generalized function, and in particular, it is the Dirac delta function. As such, \(\delta\) is defined in the following way.
+then it can be shown that there is no function, \(g(x)\), which exists such that equation (\ref{eq:introtodelta}) is true for all functions, \(h(x)\), in the domain, \(\mathcal{D}\). We call \(g\) defined by equation (\ref{eq:introtodelta}) a generalized function, and in particular, it is the Dirac delta function. As such, \(\delta\) is defined in the following way,
 \begin{equation}\label{eq:deltadef}
     \int_{-\infty}^{\infty} \delta(x)h(x) dx = h(0)
 \end{equation}
 for all \(h\in \mathcal{D}\).
 
-Although \(\delta(x)\) has support at \(x=0\), it can be adjusted to have support at any point by shifting the argument. Thus, \(\delta(x-\xi)\) acts at \(x=\xi\),
+Although \(\delta(x)\) has support only at \(x=0\), it can be adjusted to have support at any point by shifting the argument. Thus, \(\delta(x-\xi)\) acts at \(x=\xi\), \footnote{By saying that \(\d\) acts at \(x=\x\), we mean that \(\d(x-\x)\) has support only at \(x=\x\) and 
+\begin{equation*}
+    \int_{-\infty}^{\infty} \delta(x - \x )h(x) dx = h(\xi).
+\end{equation*} }
 \begin{equation}
     \int_{-\inf}^{\infty} \delta(x-\xi)h(x)dx = h(\xi).
 \end{equation}
 
 \begin{definition}
-    We define the derivative of a generlaized function, \(g'\), in relation to \(g\) by performing integration by parts on
+    We define the derivative of a generalized function by integrating by parts
     \begin{equation}
             \intR g'(x)h(x) dx= g(x)h(x)\biggr\rvert_{-\infty}^{\infty} - \intR g(x)h'(x)dx.
     \end{equation}
 \end{definition}
-The integral term is fairly simple to interpret since it is of the same form as equation (\ref{eq:generalizedFunction}), but the boundary term is not as nice because it involves knowing the values of \(g\), which are never known. However, our restriction that \(h\) has compact support gives the intuition that it must vanish at infinity, and since we are integrating from \(-\inf\) to \(\inf\), we define the boundary term to be zero.
+The integral term is fairly simple to interpret since it is of the same form as equation (\ref{eq:generalizedFunction}), but the boundary term is not as nice because it involves knowing the values of \(g\), which are never known. However, our restriction that \(h\) has compact support gives the intuition that it must vanish at infinity, and since we are integrating from \(-\inf\) to \(\inf\), we define the boundary term to be zero. We define
 \begin{equation}
     \intR g'(x)h(x)dx = -\intR g(x)h'(x)dx.
 \end{equation}
