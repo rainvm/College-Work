@@ -1,37 +1,22 @@
-#set page(paper: "us-letter", margin: (x: 0.75in, y: 0.75in), numbering: "1")
-#set par(leading: 0.55em, first-line-indent: 0em, justify: true)
-#set footnote.entry(indent: 0em)
-#set text(font: "New Computer Modern", size: 12pt)
-#show raw: set text(font: "New Computer Modern Mono")
-#show par: set block(spacing: 0.55em)
-#show heading: set block(above: 1.4em, below: 1em)
-#set heading(numbering: "1.1  ")
-#set outline(indent: auto)
-
-// #show: content => locate(loc => [
-//     #set math.equation(
-//         numbering: (..nums) => ounter(heading)
-//         .display()
-//     )
-// ])
-#let s = state("s", 1)
-#let head_level(head) = {
-    x
-}
-
-#set math.equation(numbering: (..nums)=> counter(heading).display(bottom)
-)
+#import "preamble\defs.typ": *
 
 #outline()
 
-= Introduction
-== Nonhomogeneous Linear Differential Equations
-This text isd concerned with the solutions to non-homogeneous linear differential equations, which have the form
-$ bold(upright(L)) u = phi.alt, $
-over an interval a $<=$ x $<=$ b and subject to certain boundary conditions, where *L* is an $n$th order linear ordinary differential operator and where the function $phi.alt$ is integrable on the given interval. #footnote[For *L* to be linear, it must satisfy the condition $ bold(upright(L))(alpha v + beta w) = alpha  v + beta bold(upright(L)) w $ arbitrary functions _v_ and _w_, with $alpha$ and $beta$ being constant.]
-We begin by proving a theorem about such operators.
+#pagebreak()
 
-= test
+#import "include\sec1.typ": *
+
+#sec("Testing")
+#theorem[
+    Testing
+]
+
+$ a = 1 $
+
+$ b = 2 $
+
+#neq($c=4$)
+
 // \begin{theorem}
 // 	\(\L\) is linear if and only if it is of the form
 // 	\begin{equation} 
