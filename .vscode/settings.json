@@ -4,5 +4,9 @@
         "extremize",
         "Extremizing",
         "plumbob"
+    ],
+    "todo-tree.highlights.useColourScheme": true,
+    "todo-tree.highlights.backgroundColourScheme": [
+        "green"
     ]
 }
