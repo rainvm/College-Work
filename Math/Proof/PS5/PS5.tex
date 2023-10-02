@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsfonts}
+
+\renewcommand*{\neg}{{\sim}}
+
+\allowdisplaybreaks
+
+\begin{document}
+    \title{Problem Set 5}
+    \author{Ryan Coyne}
+    \maketitle
+    \begin{enumerate}
+        \item \begin{enumerate}
+            \item \(\forall z \in U, \exists x \in S, \exists y \in T,~ z=x+y \)
+            \item \(\forall x \in S, \forall y \in T, \exists z \in S,~ z = xy\)
+            \item \(\forall x\in S, \exists y \in T,~ y>x\)
+        \end{enumerate}
+        \item\begin{enumerate}
+            \item True
+            \item True
+            \item False
+            \item True
+            \item True
+            \item False
+            \item True
+        \end{enumerate}
+        \item Option (d) implies that \((\neg P(x)) \implies Q(x)\) is false for some \(x\in \mathbb{Q}\). The others do not.
+        \item \begin{enumerate}
+            \item For all circles, \(C_1\), in \(\mathcal{A}\) there is at least one circle, \(C_2\), in \(\mathcal{B}\), such that \(C_1\) and \(C_2\) have exactly two points in common.
+            \item \(\exists C_1 \in \mathcal{A}, \forall C_2 \in \mathcal{B}, \neg P(C_1, C_2)\).
+            \item There exists a circle, \(C_1\), in \(\mathcal{A}\), such that there is no circle, \(C_2\), in \(\mathcal{B}\), for which \(C_1\) and \(C_2\) share exactly two points.
+            \item The statement in (a) is true. The statements in (b) and (c) are false.
+        \end{enumerate}
+        \item \begin{enumerate}
+            \item This is true.  If two lines are perpendicular, all angles between them are \(90\degree\). Since \(\ell_1\) and \(\ell_2\) are perpendicular to \(\ell_3\), the angles between \(\ell_1\) and \(\ell_3\) and the angles between \(\ell_2\) and \(\ell_3\) will all be \(90\degree\). Thus, the corresponding angles will be congruent, and by the corresponding angles theorem, \(\ell_1\) and \(\ell_2\) are parallel.
+            \item This is true. Two lines are parallel if they never intersect. Any third line that does intersect \(\ell_1\) is parallel to \(\ell_1\), and if that line also doesn't intersect \(\ell_2\) it is parallel to \(\ell_2\). Since \(\ell_1\) and \(\ell_2\) are parallel to the same line, they are parallel by the parallel transitive theorem.
+            \item This is true by the corresponding angles theorem.
+            \item This is false. Parallel lines do not cover the entire space that they exist in.
+        \end{enumerate}
+        \item \(\forall a,b,c \in S, a + b + c = 0 \implies abc < 0\), where \(S = \{x |x = 2k + 1, k\in\mathbb{Z}\}\).\\
+        Let \(a = 2k+1\), \(b=2l + 1\), \(c = 2m + 1\), where \(k, l, m \in \mathbb{Z}\). \\
+        \(a + b + c= 2k+1 + 2l+1 + 2m+1\)\\
+        \(~~~~~~~~~~~~\, =2(k+l+m + 1) + 1\)\\
+        Therefore \(\forall a, b, c\in S\), \(a + b + c \neq 0\). Thus, the implication is true for all \(a, b, c \in S\) since the premise is always false. 
+        \item Prove: \(\forall k \in \mathbb{Z}, \exists x \in \mathbb{Z}, x=2k \implies \exists l \in \mathbb{Z}, 7x-3 = 2l + 1\).\\
+        \(7x-3 = 7(2k)-3\)\\
+        \(~~~~~~~~~\,=2(7k)-3\)\\
+        \(~~~~~~~~~\,=2(7k-2) + 1\)\\
+        Let \(l = 7k-2\).\\
+        Therefore, \(7x-3=2l+1\).\\
+        Prove: \(\forall l \in \mathbb{Z}, \exists x \in \mathbb{Z}, 7x-3 = 2l + 1 \implies \exists k \in \mathbb{Z}, x = 2k \). \\
+        \(7x-3=2l-1\)\\
+        \(7x = 2l+2\)\\
+        \(x = \frac{2}{7}(l+1)\)\\
+        Since \(x \in \mathbb{Z}\), it follows that \(\frac{l+1}{7} \in \mathbb{Z}\). \\
+        Let \(k=(l+1)/7\).\\
+        Therefore \(x = 2k\).\\\\\\
+        \item Prove: \(\forall k\in \mathbb{Z}, \exists x \in \mathbb{Z}, 3x-1=2k \implies \exists l \in \mathbb{Z}, 5x+2 = 2l+1\).\\
+        Suppose x is even.\\
+        \(x= 2m\), \(m\in\mathbb{Z}\).\\
+        \(6m-1 = 2k\).\\
+        \(m = \frac{1}{3}k - \frac{1}{6}\#\).
+        Therefore, \(x\) must be odd.\\
+        \(x = 2m+1\)\\
+        \(5(2m+1) + 2 = 2l+1\)\\
+        \(10m + 7 = 2l+1\)\\
+        \(2(5m + 3) + 1 = 2l+1\)\\
+        Therefore, if \(3x-1\) is even, \(5x + 2\) must be odd.\\
+        Prove: \(\forall l \in \mathbb{Z}, \exists x \in \mathbb{Z}, 5x + 2 = 2l + 1 \implies \exists k\in \mathbb{Z}, 3x-1=2k\).\\
+        Suppose \(x\) is even.\\
+        \(x = 2m\), \(m \in \mathbb{Z}\)\\
+        \(5(2m)+2=2l+1\)\\
+        \(10m + 2 = 2l + 1\)\\
+        \(m = \frac{1}{5}l + \frac{1}{10}\#\). Therefore, \(x\) is odd.\\
+        \(x = 2m + 1\)\\
+        \(3(2m+1) -1 = 2k\)\\
+        \(6m + 2 = 2k\)\\
+        \(2(3m+1)= 2k\)\\
+        Therefore, if \(5x+2\) is odd, \(3x-1\) must bee even.
+    \end{enumerate}
+\end{document}
