@@ -1,0 +1,26 @@
+\documentclass[12pt]{article}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage[export]{adjustbox}
+\usepackage[letterpaper, margin=0.5in]{geometry}
+
+\allowdisplaybreaks
+
+\begin{document}
+    \title{Computational Assignment \#1}
+    \author{Ryan Coyne}
+    \maketitle
+    I used the Python package numpy to generate lists of random numbers that fit a normal distribution with the "numpy.random.normal()" function. I generated twenty of these lists of size N, such that the first list had ten elements, and each subsequent list was ten elements larger. While generating the lists, I also used numpy to calculate the mean and standard deviation of each. Next, I used the package matplotlib to create plots of each list's mean and standard deviation as a function of the list size, \(N\). Finally, I used numpy to format the data for a histogram and then matplotlib to plot the histograms and the normal distribution scaled by the maximum value of the histogram bins.
+
+    N should be at least 100 for us to expect that it will reasonably follow a normal distribution. There is still some variability, and of course, when \(N\) is, that variability is reduced, but \(N=100\) appears to be quite close. 
+    \begin{figure*}[h]
+        \centering
+        \includegraphics*[width=0.9\linewidth]{"../fig.png"}
+        \caption{Plots}
+    \end{figure*}
+\end{document}
