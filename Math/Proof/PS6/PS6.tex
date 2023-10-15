@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsfonts}
+
+\renewcommand*{\neg}{{\sim}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\allowdisplaybreaks
+
+\begin{document}
+    \title{Problem Set 6}
+    \author{Ryan Coyne}
+    \maketitle
+
+    \begin{enumerate}
+        \item Let \(x,y,z\in \mathbb{Z}\). Prove: If exactly two of \(x,y,z\) are even, then \(3x+5y+7z\) is odd.\\ Case 1: Let \(x, y\) be even and let \(z\) be odd. Then, \(x=2k\), \(y=2l\), and \(z = 2m+1\), for some \(k, l, m\in\Z\). Now, \begin{equation*}
+            \begin{split}
+                3x+5y+7z &= 6k + 10l + 14m+7\\
+                &=6k+10l+14m+6+1\\
+                &= 2(3k+5l+7m+3)+1
+            \end{split}
+        \end{equation*}
+        which is odd, by definition.\\
+        Case 2: Let \(x,z\) be even and let \(y\) be odd. Then, \(x=2k\), \(y=2l+1\), and \(z = 2m\), for some \(k, l, m\in\Z\). Now, \begin{equation*}
+            \begin{split}
+                3x+5y+7z &= 6k + 10l + 5 + 14m\\
+                &=6k+10l+14m+4+1\\
+                &= 2(3k+5l+7m+2)+1
+            \end{split}
+        \end{equation*}
+        which is odd, by definition.\\
+        Case 3: Let \(y,z\) be odd and let \(x\) be odd. Then, \(x=2k+1\), \(y=2l\), and \(z = 2m\), for some \(k, l, m\in\Z\). Now, \begin{equation*}
+            \begin{split}
+                3x+5y+7z &= 6k + 3 + 10l + 14m\\
+                &=6k+10l+14m+2+1\\
+                &= 2(3k+5l+7m+1)+1
+            \end{split}
+        \end{equation*}
+        which is odd, by definition.\pagebreak
+        \item Let \(a,b\in\Z\). Prove: If \(ab=4\), then \((a-b)^3-9(a-b)=0\).\\ Case 1: Let \(a=1\) and \(b=4\). Then, \begin{equation*}
+            \begin{split}
+                (a-b)^3-9(a-b)&=(1-4)^3-9(1-4)\\
+                &=-3^3-9\cdot-3\\
+                &=-27+27\\
+                &=0.
+            \end{split}
+        \end{equation*}
+        Case 2: Let \(a=1\) and \(b=4\). Then, \begin{equation*}
+            \begin{split}
+                (a-b)^3-9(a-b)&=(-1+4)^3-9(-1+4)\\
+                &=3^3-9\cdot3\\
+                &=27-27\\
+                &=0.
+            \end{split}
+        \end{equation*}
+        Case 3: Let \(a=2\) and \(b=2\). Then, \begin{equation*}
+            \begin{split}
+                (a-b)^3-9(a-b)&=(2-2)^3-9(2-2)\\
+                &=0^3-9\cdot 0\\
+                &=0.
+            \end{split}
+        \end{equation*}
+        Case 4: Let \(a=-2\) and \(b=-2\). Then, \begin{equation*}
+            \begin{split}
+                (a-b)^3-9(a-b)&=(-2+2)^3-9(-2+2)\\
+                &=0^3-9\cdot 0\\
+                &=0.
+            \end{split}
+        \end{equation*}
+        Therefore, by exhaustion, \((a-b)^3-9(a-b)=0\).
+        \item Let \(a\in\Z\). Prove: If \(3 \mid 2a\), then \(3\mid a\).\\ By Result 4.8 from the textbook, if \(3\mid cd\), then \(3\mid c\) or \(3\mid d\), for some \(c, d\in\Z\). Since \(3\mid 2a\) and \(3\nmid 2\), then it must be the case that \(3\mid a\).
+        \item Let \(x,y\in\Z\). Prove: If 3 divides neither \(x\) or \(y\), then \(3\mid (x^2-y^2)\).\\ Since, 3 divides neither \(x\) or \(y\), then \(3\nmid xy\).\\ 
+        Case 1: 
+        \end{enumerate}
+\end{document}
