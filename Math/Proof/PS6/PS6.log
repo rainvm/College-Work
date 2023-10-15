@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.26)  15 OCT 2023 17:25
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.26)  15 OCT 2023 17:20
+>>>>>>> f57b810cae6d43abab18b3ad662d740c6032ae29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -254,7 +258,11 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,15n,65p,341b,245s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+<<<<<<< HEAD
 Output written on PS6.pdf (2 pages, 61616 bytes).
+=======
+Output written on PS6.pdf (2 pages, 61603 bytes).
+>>>>>>> f57b810cae6d43abab18b3ad662d740c6032ae29
 PDF statistics:
  41 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream
