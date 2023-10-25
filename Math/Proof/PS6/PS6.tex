@@ -8,9 +8,12 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage{amsfonts}
+\usepackage[margin=1in]{geometry}
 
 \renewcommand*{\neg}{{\sim}}
 \newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\qed}{\(\blacksquare\)}
 
 \allowdisplaybreaks
 
@@ -43,7 +46,7 @@
                 &= 2(3k+5l+7m+1)+1
             \end{split}
         \end{equation*}
-        which is odd, by definition.\pagebreak
+        which is odd, by definition. \(\blacksquare\)
         \item Let \(a,b\in\Z\). Prove: If \(ab=4\), then \((a-b)^3-9(a-b)=0\).\\ Case 1: Let \(a=1\) and \(b=4\). Then, \begin{equation*}
             \begin{split}
                 (a-b)^3-9(a-b)&=(1-4)^3-9(1-4)\\
@@ -74,8 +77,8 @@
                 &=0.
             \end{split}
         \end{equation*}
-        Therefore, by exhaustion, \((a-b)^3-9(a-b)=0\).
-        \item Let \(a\in\Z\). Prove: If \(3 \mid 2a\), then \(3\mid a\).\\ By Result 4.8 from the textbook, if \(3\mid cd\), then \(3\mid c\) or \(3\mid d\), for some \(c, d\in\Z\). Since \(3\mid 2a\) and \(3\nmid 2\), then it must be the case that \(3\mid a\).
+        Therefore, \((a-b)^3-9(a-b)=0\). \(\blacksquare\)
+        \item Let \(a\in\Z\). Prove: If \(3 \mid 2a\), then \(3\mid a\).\\ By Result 4.8 from the textbook, if \(3\mid cd\), then \(3\mid c\) or \(3\mid d\), for some \(c, d\in\Z\). Since \(3\mid 2a\) and \(3\nmid 2\), then it must be the case that \(3\mid a\).\(\blacksquare\)
         \item Let \(x,y\in\Z\). Prove: If 3 divides neither \(x\) or \(y\), then \(3\mid (x^2-y^2)\).\\ Since \((x^2-y^2)\) can be factored into \((x+y)(x-y)\), \(3\mid(x^2-y^2)\) exactly when \(3\mid(x+y)\) or \(3\mid(x-y)\). Proceeding by cases according to the remainder of 3 divided by \(x\) and the remainder of 3 divided by \(y\). \\  (i) Let \(x=3k+1\), and \(y=3l+1\) for some \(k,l\in\Z\). Then,
         \begin{equation*}
             \begin{split}
@@ -86,7 +89,47 @@
         \end{equation*}
         which is divisible by 3.\\ (ii) Let \(x=3k+2\), and \(y=3l+2\) for some \(k,l\in\Z\). Then,
         \begin{equation*}
-            
+            \begin{split}
+                x-y&=3k+2-3l-2\\
+                &=3k-3l\\
+                &=3(k-l),
+            \end{split}
         \end{equation*}
+        which is divisible by 3.\\ (iii) Without loss of generality, let \(x=3k+1\), and \(y=3l+2\) for some \(k, l\in\Z\). Then,
+        \begin{equation*}
+            \begin{split}
+                x+y&=3k+1+3l+2\\
+                &= 3(k+l+1),
+            \end{split}
+        \end{equation*}
+        which is divisible by 3.\\ The statement is, therefore, true. \(\blacksquare\)
+        \item Let \(m,n\in\N\) such that \(m\mid n\). Prove: if \(a\) and \(b\) are integers such that \(a\equiv b\)(mod \(n\)), then \(a\equiv b\)(mod \(m\)).\\
+        Since, \(a\equiv b\)(mod \(n\)), then, \(n\mid(b-a)\). Then \(b-a=nc\), for some \(c\in\N\), and given that \(m\mid n\), then, \(b-a=mcd\), for some \(c,d\in\N\). Therefore, \(m|(b-a)\), and by definition \(a\equiv b\)(mod \(m\)). \(\blacksquare\)
+        \item Let \(a_1,a_2,\dots,a_n\), \(n\geq 3\), be \(n\) integers such that \(|a_{i+1}-a_i|\leq1\) for \(1\leq i \leq n-1\). Prove: if \(k\) is any integer that lies strictly between \(a_1\) and \(a_n\), then there is an integer \(j\) with \(i < j < n\) such that \(a_j = k\). \\
+        Since, \(|a_{i+1}-a_i|\leq1\), and all \(a_j\) are integers, \(a_{i+1}=a_i\), \(a_{i+1}=a_i+1\), or \(a_{i+1}=a_i-1\). Because each integer must be equal to or only differ from the previous by 1, then in order to progress from \(a_1\) to \(a_n\) in the sequence, we must step through each integer between them. Each integer between \(a_1\) and \(a_n\) must be contained in the sequence. \qed
+        \item Let \(n\in\Z\). Prove: \(2\mid (n^4-3)\) if and only if \(4 \mid (n^2+3)\).\\
+        (\(\implies\)) Since \(2\mid (n^4-3)\), then \(n^4-3=2k\), for some \(k\in\Z\). Then, \(n^4=2k+3=2(k+1)+1\), and \(n^4\) is therefore odd, and so \(n^2\) must also be odd, and then \(n\) must be odd. Now, \(n = 2l + 1\) for some \(l\in\Z\), and therefore
+        \begin{equation*}
+            \begin{split}
+                n^2 + 3 &= 4l^2+4l+4\\
+                &= 4(l^2+l+1)
+            \end{split}
+        \end{equation*}
+        which is divisible by \(4\). \\
+        (\(\impliedby\)) Since \(4|(n^2+3)\), then, \(n^2 + 3 = 4k\) for some \(k \in\Z\). Then, \(n^2 = 4b-3\). Now, 
+        \begin{equation*}
+            \begin{split}
+                n^4 -3 &= (4k-3)^2-3\\
+                &= 16k^2-14k+6\\
+                &= 2(8k^2-12k+3).
+            \end{split}
+        \end{equation*}
+        Therefore \(2|(n^4-3)\). \qed
+        \item Let \(a,b\in\Z\). Prove: \(a^2 +2b^2\equiv 0\)(mod 3) if and only if either \(a\) and \(b\) are congruent to 0 mod 3 or neither is congruent to 0 mod 3.\\ We will prove the statement by the contrapositive. Assume that either \(a\) is congruent to 0 mod 3, or \(b\) is, but not both. There are 4 cases.\\
+        Case 1: Assume, \(a\equiv 0\)(mod 3) and \(b\equiv1\)(mod 3). Then \(a^2+2b^2\equiv0+2\equiv2\) (mod 3), and so, \(a^2+2b^2\not\equiv 0\)(mod 3)\\
+        Case 2: Assume, \(a\equiv 0\)(mod 3) and \(b\equiv2\)(mod 3). Then \(a^2+2b^2\equiv0+2\equiv8\equiv2\) (mod 3), and so, \(a^2+2b^2\not\equiv 0\)(mod 3)\\
+        Case 3: Assume, \(a\equiv 1\)(mod 3) and \(b\equiv0\)(mod 3). Then \(a^2+2b^2\equiv1+0\equiv1\) (mod 3), and so, \(a^2+2b^2\not\equiv 0\)(mod 3)\\
+        Case 4: Assume, \(a\equiv 2\)(mod 3) and \(b\equiv0\)(mod 3). Then \(a^2+2b^2\equiv2+0\equiv2\) (mod 3), and so, \(a^2+2b^2\not\equiv 0\)(mod 3)\\
+        Therefore, the contrapositive holds and we have shown the original statement to be true. \qed
     \end{enumerate}
 \end{document}
