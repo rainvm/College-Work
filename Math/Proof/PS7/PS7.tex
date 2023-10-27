@@ -1,0 +1,104 @@
+\documentclass[12pt]{article}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsfonts}
+\usepackage[margin=1in]{geometry}
+
+\renewcommand*{\neg}{{\sim}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\qed}{\(\blacksquare\)}
+
+\allowdisplaybreaks
+
+\begin{document}
+    \title{Problem Set 7}
+    \author{Ryan Coyne}
+    \maketitle
+
+    \begin{enumerate}
+        \item Let \(a, b, c, d \in\R\). Prove: \(ac + bd \leq \sqrt{a^2+b^2}\cdot\sqrt{c^2+d^2}\).\\ Proof: Consider the square of each side of the relation,
+        \begin{equation*}
+            \begin{split}
+                (ac+bd)^2&\leq(a^2+b^2)(c^2+d^2)\\
+                a^2c^2 + 2abcd + b^2d^2 &\leq a^2c^2 + b^2c^2 + a^2d^2 + b^2d^2\\
+                2abcd &\leq b^2c^2 + a^2d^2.\\
+            \end{split}
+        \end{equation*}
+        Now, we rearrange the relation to relate it to a known quantity. In this case, 0,
+        \begin{equation*}
+            \begin{split}
+                b^2c^2-2abcd+a^2d^2&\geq 0\\.                
+            \end{split}            
+        \end{equation*}
+        The left side can be easily factored, leading to
+        \begin{equation*}
+            \begin{split}
+                (bc-ad)^2\geq 0,
+            \end{split}
+        \end{equation*}
+        which is trivially true in the real numbers. \qed
+        \item Let \(x, y, z \in\R\). Prove: \(|x-z|\leq|x-y|+|y-z|\).\\ Proof: Note that the sum of arguments on the right is equal to the argument on the left. That is to say,
+        \begin{equation*}
+            (x-y)+(y-z) = x-z.
+        \end{equation*}
+        Therefore, by the triangle inequality, the statement must be true. \qed
+        \item Prove: For every two positive real numbers, \(a\) and \(b\). 
+        \begin{equation*}
+            \frac{a}{b} + \frac{b}{a} \geq 2.
+        \end{equation*}
+        First, make a common denominator and add the fractions,
+        \begin{equation*}
+            \begin{split}
+                \frac{a}{b} + \frac{b}{a} &= \frac{a^2}{ab} + \frac{b^2}{ab}\\
+                &=\frac{a^2 + b^2}{ab}.
+            \end{split}
+        \end{equation*}
+        Next, multiply both sides by \(ab\) and rearrange,
+        \begin{equation*}
+            \begin{split}
+                \frac{a^2 + b^2}{ab} &\geq 2\\
+                a^2 + b^2 &\geq 2ab\\
+                a^2 -2ab + b^2 &\geq 0.
+            \end{split}
+        \end{equation*}
+        Now, factor the right side,
+        \begin{equation*}
+            (a-b)^2\geq 0.
+        \end{equation*}
+        This relation is true because the square of any real number is at least 0. Thus, the initial statement is true. \qed\\
+        To find the solution set, we begin from \((a-b)^2=0\), we take the square root, finding \(x-y=0\), and therefore, \(y=x\). However, we must not divide by zero, so the complete solution set is \(y=x\) where \(x\neq 0\).
+        \item Let \(A\) and \(B\) be sets. Prove: \(A\cup B = A\cap B\)  if and only if \(A = B\). \\ (\(\implies\)) Let \(a\in A\). Then, \(a\in A\cup B\), and by hypothesis, \(a \in A\cap B\). Now, \(a\in B\), for all \(a \in A\). Thus, \(A\subseteq B\).\\ Let \(b\in B\). Then, \(b\in A\cup B\), and by hypothesis, \(b \in A\cap B\). Now, \(b\in A\), for all \(b \in B\). Thus, \(B\subseteq A\). \\ Now, since \(A\subseteq B\) and \(B \subseteq A\), it follows that \(A=B\) by definition.\\ (\(\impliedby\)) Since, \(A=B\), it follows that
+        \begin{equation*}
+            \begin{split}
+                A \cup B &= A\cup A\\
+                &=A
+            \end{split}
+        \end{equation*}
+        and that 
+        \begin{equation*}
+            \begin{split}
+                A \cap B &= A \cap A\\
+                &=A.
+            \end{split}
+        \end{equation*}
+        Therefore, \(A\cup B= A \cap B\). \qed
+        \item Let \(A, B, C\) be sets. Prove: \(A\cap\overline{(B\cap C)} = \overline{(\overline{A}\cup B)\cap(\overline{A}\cap\overline{C})}\).\\Proof: We begin by showing that \(A\cap\overline{(B\cap C)}\subseteq \overline{(\overline{A}\cup B)\cap(\overline{A}\cap\overline{C})}\). For all \(x\in A\cap\overline{(B\cap C)}\), \(x\in A\). Thus,\(x\not\in\overline{A}\), and so \(x\not\in \overline{A}\cap\overline{C}\). Now, \(x\not\in(\overline{A}\cup B)\cap(\overline{A}\cap\overline{C}) \), and so \(x\in\overline{(\overline{A}\cup B)\cap(\overline{A}\cap\overline{C})}\). Therfore, \(A\cap\overline{(B\cap C)}\subseteq \overline{(\overline{A}\cup B)\cap(\overline{A}\cap\overline{C})}\). \\ Next we show that \(\overline{(\overline{A}\cup B)\cap(\overline{A}\cap\overline{C})} \subseteq A\cap\overline{(B\cap C)}\). Let \(y\in\overline{(\overline{A}\cup B)\cap(\overline{A}\cap\overline{C})}\), so \(y\not\in(\overline{A}\cup B)\cap(\overline{A}\cap\overline{C})\).
+        \item For sets A and B, find a necessary and sufficient condition for
+        \begin{equation*}
+            (A\times B)\cap(B\times A) = \emptyset.
+        \end{equation*}
+        \(A\times B =\{(a,b)|a\in A\text{ and }b\in B\}\)\\
+        \(B\times A =\{(b,a)|b\in B\text{ and }a\in A\}\)\\
+        If \((A\times B)\cap(B\times A) = \emptyset\), then \((a,b)=(b,a)\) for some \(a\in A\) and \(b\in B\).\\
+        Now, \((A\times B)\cap(B\times A) = \emptyset\) if and only if \(a\neq b\) for all \(a \in A\) and \(b \in B\). 
+        \item Let \(A, B, C\), and \(D\) be sets. Prove: \((A\times B)\cap(C\times D) = (A\cap C)\times (B\cap D)\).\\ Proof: First we showt that \((A\times B)\cap(C\times D)\subseteq (A\cap C)\times (B\cap D)\). Let \((x,y)\in (A\times B)\cap (C\times D)\). Then,\((x,y)\in A\times B\), and \((x,y)\in C\times D\). Thus, by definition, \(x\in A,\ y\in B,\ x\in C\), and \(y\in D\). Since \(x\) is in both \(A\) and \(C\), \(x\in A\cap C\), and since \(y\) is in both \(B\) and \(D\), \(y\in B\cap D\). Therefore, \((x,y)\in(A\cap C)\times(B\cap D)\). By following the steps in the reverse order, we can see that \((A\cap C)\times (B\cap D)\subseteq (A\times B)\cap(C\times D)\). Therefore, the statement holds for all \(A, B, C,\) and \(D\). \qed
+    \end{enumerate}
+\end{document}
