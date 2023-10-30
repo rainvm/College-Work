@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1698416370 "c:/Users/coyne/College-Work/Math/Proof/PS7/PS7.tex" "PS7.pdf" "PS7" 1698416372 0
-  "PS7.aux" 1698416372 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
-  "PS7.tex" 1698416369 6679 57f26b26fe1b7f2fb510dc02fc2e9d60 ""
-  "c:/Users/coyne/College-Work/Math/Proof/PS7/PS7.tex" 1698416369 6679 57f26b26fe1b7f2fb510dc02fc2e9d60 ""
+["pdflatex"] 1698696780 "c:/Users/coyne/College-Work/Math/Proof/PS8/PS8.tex" "PS8.pdf" "PS8" 1698696783 0
+  "PS8.aux" 1698696783 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "PS8.tex" 1698696779 1280 081d3f83cc283c9c25944081bbb83e58 ""
+  "c:/Users/coyne/College-Work/Math/Proof/PS8/PS8.tex" 1698696779 1280 081d3f83cc283c9c25944081bbb83e58 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1690389316 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1690387236 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1690387236 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -22,10 +22,12 @@
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1690388272 1116 933a60c408fc0a863a92debe84b2d294 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1690388272 1120 8b7d695260f3cff42e636090a8002094 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1690387236 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1690387236 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1690387236 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1690387236 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
-  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1690387236 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1690387236 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1690387236 32587 65067f817f408bc71a7312f3d9828a9b ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1690387236 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1690387236 31764 459c573c03a4949a528c2cc7f557e217 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1690387236 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1690390987 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -65,7 +67,7 @@
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1690393609 8172428 1fafb6d2aa2cc61ad4de2c170b04921f ""
   "c:/texlive/2023/texmf.cnf" 1690393431 713 e69b156964470283e0530f5060668171 ""
   (generated)
-  "PS7.aux"
-  "PS7.log"
-  "PS7.pdf"
+  "PS8.aux"
+  "PS8.log"
+  "PS8.pdf"
   (rewritten before read)

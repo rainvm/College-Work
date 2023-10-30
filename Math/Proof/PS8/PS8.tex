@@ -1,0 +1,31 @@
+\documentclass[12pt]{article}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsfonts}
+\usepackage[margin=1in]{geometry}
+
+\renewcommand*{\neg}{{\sim}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\qed}{\(\blacksquare\)}
+
+\allowdisplaybreaks
+
+\begin{document}
+    \title{Problem Set 7}
+    \author{Ryan Coyne}
+    \maketitle
+
+    \begin{enumerate}
+        \item Prove: the product of an irrational number and a nonzero rational number is irrational.\\ Proof: Suppose that \(xy=z\), for some \(x,z\in\Q\) and \(y\in\R-\Q\). By definition, \(x=\frac{a}{b}\) and \(z=\frac{a'}{b'}\), for some \(a,a',b,b'\in\Z\), with \(a,a',b,b'\neq0\). Then, \(\frac{a}{b}y=\frac{a'}{b'}\), and so, \(y=\frac{a'b}{b'a}\). Now, \(a'b\) and \(b'a\), are integers, and so \(y\) must be rational by definition. This contradicts the initial assumption that \(y\) is irrational, and thus, the product of an irrational and a nonzero rational number, cannot be rational. The product must therefore be rational. \qed
+        \item  
+    \end{enumerate}
+\end{document}

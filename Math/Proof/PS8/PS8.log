@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.26)  27 OCT 2023 10:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.26)  30 OCT 2023 16:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/coyne/College-Work/Math/Proof/PS7/PS7.tex
-(c:/Users/coyne/College-Work/Math/Proof/PS7/PS7.tex
+**c:/Users/coyne/College-Work/Math/Proof/PS8/PS8.tex
+(c:/Users/coyne/College-Work/Math/Proof/PS8/PS8.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
 (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
@@ -200,31 +200,31 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count281
 \l__pdf_internal_box=\box58
-) (./PS7.aux)
-\openout1 = `PS7.aux'.
+) (./PS8.aux)
+\openout1 = `PS8.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Info: Redefining \celsius on input line 21.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Info: Redefining \celsius on input line 22.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 22.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 21.
-Package gensymb Info: Using \Omega for \ohm on input line 21.
+LaTeX Info: Redefining \ohm on input line 22.
+Package gensymb Info: Using \Omega for \ohm on input line 22.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -284,34 +284,34 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./PS7.aux)
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./PS8.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5242 strings out of 475237
- 84602 string characters out of 5768549
- 1934238 words of memory out of 5000000
- 26451 multiletter control sequences out of 15000+600000
+ 5238 strings out of 475237
+ 84486 string characters out of 5768549
+ 1921238 words of memory out of 5000000
+ 26447 multiletter control sequences out of 15000+600000
  565612 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,15n,65p,1094b,243s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on PS7.pdf (3 pages, 78303 bytes).
+ 57i,6n,65p,713b,213s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on PS8.pdf (1 page, 83184 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
