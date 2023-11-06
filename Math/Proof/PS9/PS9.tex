@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsfonts}
+\usepackage[margin=1in]{geometry}
+\usepackage{parskip}
+
+\input{../preamble/envs.tex}
+\input{../preamble/defs.tex}
+
+\allowdisplaybreaks
+
+\begin{document}
+
+    \title{Problem Set 9}
+    \author{Ryan Coyne}
+    \maketitle
+
+    \begin{proof}{There exist two distinct irrational numbers \(a\) and \(b\) such that \(a^b\) is rational.}
+        Consider the number \(\sqrt{6}^{\sqrt{2}}\). Now, there are two cases.\\
+        \textit{Case} 1: The number \(\sqrt{6}^{\sqrt{2}}\) is rational. Then \(a=\sqrt6\), \(b=\sqrt2\), and \(a^b\) is rational. \\
+        \textit{Case} 2: The number \(\sqrt{6}^{\sqrt{2}}\) is irrational. Now, raise this number to the power of \(\sqrt2\), \((\sqrt{6}^{\sqrt{2}})^{\sqrt2}=\sqrt{6}^2=6\), which is rational. Then, \(a=\sqrt{6}^{\sqrt{2}}\), \(b=\sqrt2\), and \(a^b\) is rational. 
+    \end{proof}
+    \vspace{12pt}
+    \begin{proof}{There exists four distinct positive integers such that each of the integers divides (evenly) the sum of the remaining three integers.}
+            Consider the numbers \(2,4,6,12\). Now sum each combination of three numbers, \(4+6+12=22\), \(2+6+12=20\), \(2+4+12=18\), and \(2+4+6=12\). Then,  \(2|22\), \(4|20\), \(6|18\), and \(12|12\). Therefore there are four such integers.
+    \end{proof}
+    \vspace{12pt}    
+    \begin{proof}{There are no integers \(a\geq2\) and \(n\geq1\) such that \(a^2+1=2^n\)}
+        Suppose to the contrary, that \(a^2+1=2^n\). Now rearrange into, \(a^2 = 2^n-1\).
+        Then, consider two cases: \(n=1\) and \(n\geq2\). \\ \textit{Case} 1: If \(n=1\), then \(2^1-1=1\). However, this is incompatible because \(a\geq2\). \\ \textit{Case} 2: Let \(n\geq2\). Now, \(a^2=2^n-1\) suggests that \(2^n-1\) is a perfect square because \(a\) is assumed to be an integer. However, \(2^n-1=(2^{n/2}+1)(2^{n/2}-1)\) and thus cannot be a perfect square.\\ Therefore, by contradiction, there cannot be integers \(a\geq2\) and \(n\geq1\) such that \(a^2+1=2^n\).
+    \end{proof}
+    \vspace{12pt}
+    \begin{proof}{There do not exists real numbers \(a\) and \(b\) in the open interval \((0,1)\) such that \(4a(1-b)>1\) and \(4b(1-a)>1\).}
+        Start by manipulating the first equation,  
+        \begin{equation*}
+            \begin{split}
+                4a(1-b) &> 1\\
+                a&>\frac{1}{4(1-b)}
+            \end{split}
+        \end{equation*}
+        Now, consider the second equation, 
+        \begin{equation*}
+            \begin{split}
+                4b(1-a) &> 1\\
+                4b-4ab &> 1\\
+                -4ab &> 1-4b\\
+                a &< \frac{4b-1}{4b}.
+            \end{split}
+        \end{equation*}
+        Then,
+        \begin{equation*}
+            \begin{split}
+                \frac{4b-1}{4b} &> \frac{1}{4(1-b)}\\
+                4(4b-1)(1-b) &> 4b\\
+                (4b-1)(1-b) &> b\\
+                4b-4b^2-1+b &> b\\
+                -4b^2+4b-1 &> 0.
+            \end{split}
+        \end{equation*}
+        In this manipulation, we can be sure that we never divide by zero or implicitly multiply by a negative number because we have already restricted ourselves to the interval \((0,1)\). Now, the sole value for \(b\) at which \(-4b^2+4b-1 = 0\) is \(b=\frac{1}{2}\). This value is not valid because we require \(-4b^2+4b-1>0\). Now, we choose values within the interval \((0,1)\) and on either side of \(b=\frac{1}{2}\) to check the truth of the hypothesis. \\
+        \textit{Case} 1: Let \(b=\frac{1}{4}\). Now, \(-4b^2+4b-1=-1<0\). Therefore there are no values on the interval \((0,\frac{1}{2}]\) which satisfy both inequalities.\\
+        \textit{Case} 2: Let \(b=\frac{3}{4}\). Now, \(-4b^2+4b-1=-1<0\). Therefore there are no values on the interval \((\frac{1}{2},1]\) which satisfy both inequalities.\\
+        Therefore there are no values of \(b\) on the interval \((0,1)\) that can satisfy both \(4a(1-b)>1\) and \(4b(1-a)>1\), for any value of \(a\).
+    \end{proof}
+\end{document}
