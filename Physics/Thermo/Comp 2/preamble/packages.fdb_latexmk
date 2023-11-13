@@ -1,0 +1,13 @@
+# Fdb version 4
+["pdflatex"] 1699560601 "c:/Users/coyne/College-Work/Math/Proof/preamble/packages.tex" "packages.pdf" "packages" 1699560602 2
+  "c:/Users/coyne/College-Work/Math/Proof/preamble/packages.tex" 1699560598 231 48b5249cbff434d762f3d82d0569ea01 ""
+  "c:/texlive/2023/texmf-dist/web2c/texmf.cnf" 1691452566 40967 d940221f8762fd5848760382d97d1226 ""
+  "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1691462766 8172669 497bf4bedea1c77d0a1b541bacec401a ""
+  "c:/texlive/2023/texmf.cnf" 1691462631 713 e69b156964470283e0530f5060668171 ""
+  "packages.aux" 1699560601 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "packages.tex" 1699560598 231 48b5249cbff434d762f3d82d0569ea01 ""
+  (generated)
+  "packages.aux"
+  "packages.log"
+  "packages.pdf"
+  (rewritten before read)
