@@ -1,20 +1,46 @@
 \documentclass[12pt]{article}
-
 \input{../preamble/packages.tex}
+
 \input{../preamble/envs.tex}
 \input{../preamble/defs.tex}
 
 \allowdisplaybreaks
 
 \begin{document}
-    \title{Problem Set 10}
+
+    \title{Problem Set 9}
     \author{Ryan Coyne}
     \maketitle
-    
-    \begin{proof}{Consider the sequence of \textit{Fibbonacci numbers} {\(F_n\)}, where \begin{equation*}
-        F_1 = 1,\ F_2 = 1,\ F_n = F_{n-1} + F_{n-2},
+
+    \noindent\begin{proof}{Find a formula for \begin{equation*}
+        1+4+7+ \cdots (3n-2)
     \end{equation*}
-    for \(n\geq3\).}
-    
+    for positive integers then verify your formula by mathematical induction.}
+
+    \end{proof}
+    \begin{proof}{Prove the following inequality for every positive integer n:\begin{equation*}
+        2!\cdot4!\cdot6!\cdots(2n)!\geq((n+1)!)^n.
+    \end{equation*}}
+        We proceed by induction. Since \((2\cdot1)!=(2!)^1\), the statement is true when \(n=1\). Assume that
+        \begin{equation*}
+            2!\cdot4!\cdot6!\cdots(2k)!\geq((k+1)!)^k
+        \end{equation*}
+        for some integer, \(k\). We show,
+        \begin{equation*}
+            \begin{split}
+                2!\cdot4!\cdot6!\cdots(2k)!\cdot(2(k+1))&\geq((k+2)!)^{k+1}.
+            \end{split}
+        \end{equation*}
+        Now observe that,
+        \begin{equation*}
+            2!\cdot4!\cdot6!\cdots(2k)!\cdot(2(k+1))!\geq((k+1)!)^k\cdot(2(k+1))!.
+        \end{equation*}
+        We divide by \(2!\cdot4!\cdot6!\cdots(2k)!\),
+        \begin{equation*}
+            \begin{split}
+                (2(k+1))!&\geq((k+1)!)^k\frac{(2(k+1))!}{2!\cdot4!\cdot6!\cdots(2k)!}\\
+                &\geq((k+1)!)^k(2k+2)
+            \end{split}
+        \end{equation*}
     \end{proof}
 \end{document}
