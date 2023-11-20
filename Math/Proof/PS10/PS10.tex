@@ -15,32 +15,117 @@
     \noindent\begin{proof}{Find a formula for \begin{equation*}
         1+4+7+ \cdots (3n-2)
     \end{equation*}
-    for positive integers then verify your formula by mathematical induction.}
-
+    for positive integers then verify your formula by mathematical induction.\\
+    The formula is \begin{equation*}
+        1+4+7+ \cdots (3n-2) = \frac{n(3n-1)}{2}
+    \end{equation*}
+    for all positive integers, \(n\).}
+    We will prove by induction that 
+    \begin{equation*}
+        1+4+7+ \cdots (3n-2) = \frac{n(3n-1)}{2}
+    \end{equation*}
+    for all positive integers \(n\). 
+    Base Step: Let \(n=1\). Now, \(3n-2=3-2=1\), and so the sum is equal to one. Now, consider the right side \begin{equation*}
+        \begin{split}
+            \frac{1\cdot(3\cdot 1-1)}{2} &= \frac{3-1}{2}\\
+            &=\frac{2}{2}\\
+            &=1.
+        \end{split}
+    \end{equation*}
+    Thus, the formula is valid for \(n=1\).\\
+    We show that,
+    \begin{equation*}
+        1+4+7+ \cdots (3(k+1)-2) = \frac{(k+1)(3(k+1)-1)}{2}
+    \end{equation*}
+    Now, assume that \(1+4+7+ \cdots (3k-2) = \frac{k(3k-1)}{2}\) is valid for all \(k\in \N\). Add \(3(k+1)-2\) to both sides,
+    \begin{equation*}
+        \begin{split}
+            1+4+7+ \cdots (3k-2) + (3k+1) &= \frac{k(3k-1)}{2} + 3k+1.
+        \end{split}
+    \end{equation*}
+    Next, write the right side with a common denominator and rearrange the numerator into our desired form,
+    \begin{equation*}
+        \begin{split}
+            1+4+7+ \cdots (3k-2) + (3k+1) &= \frac{k(3k-1)+ 6k+2}{2}\\
+            &=\frac{3k^2-k + 6k+2}{2}\\
+            &=\frac{3k^2+5k+2}{2}\\
+            &=\frac{(k+1)(3k+2)}{2}\\
+            &=\frac{(k+1)(3(k+1)-1)}{2}.
+        \end{split}
+    \end{equation*}
+    Thus, by the principle of mathematical induction, \(1+4+7+ \cdots (3n-2) = \frac{n(3n-1)}{2}\).
     \end{proof}
     \begin{proof}{Prove the following inequality for every positive integer n:\begin{equation*}
         2!\cdot4!\cdot6!\cdots(2n)!\geq((n+1)!)^n.
     \end{equation*}}
         We proceed by induction. Since \((2\cdot1)!=(2!)^1\), the statement is true when \(n=1\). Assume that
-        \begin{equation*}
+        \begin{equation}
             2!\cdot4!\cdot6!\cdots(2k)!\geq((k+1)!)^k
-        \end{equation*}
+        \end{equation}
         for some integer, \(k\). We show,
         \begin{equation*}
             \begin{split}
                 2!\cdot4!\cdot6!\cdots(2k)!\cdot(2(k+1))&\geq((k+2)!)^{k+1}.
             \end{split}
         \end{equation*}
-        Now observe that,
+        Now, multiply either side of equation (1) by \((2(k+1))!\),
         \begin{equation*}
             2!\cdot4!\cdot6!\cdots(2k)!\cdot(2(k+1))!\geq((k+1)!)^k\cdot(2(k+1))!.
         \end{equation*}
-        We divide by \(2!\cdot4!\cdot6!\cdots(2k)!\),
+        Now, we show that \(((k+1)!)^k\cdot(2(k+1))!\geq((k+2)!)^{k+1}\) directly. Divide both sides by \(((k+1)!)^k\),
         \begin{equation*}
             \begin{split}
-                (2(k+1))!&\geq((k+1)!)^k\frac{(2(k+1))!}{2!\cdot4!\cdot6!\cdots(2k)!}\\
-                &\geq((k+1)!)^k(2k+2)
+                \frac{((k+1)!)^k\cdot(2(k+1))!}{((k+1)!)^k}&\geq\frac{((k+2)!)^{k+1}}{((k+1)!)^k}\\
+                (2k+2)! &\geq \frac{((k+1)!)^{k+1}(k+2)^{k+1}}{((k+1)!)^{k}}\\
+                &\geq (k+1)!(k+2)^{k+1}.
             \end{split}
         \end{equation*}
+        Now, divide by \((k+1)!\),
+        \begin{equation*}
+            \begin{split}
+                \frac{(2k+2)!}{(k+1)!}&\geq \frac{(k+1)!(k+2)^{k+1}}{(k+1)!}\\
+                \underbrace{(k+2)\cdot(k+3)\cdots(2k+1)\cdot(2k+2)}_{k+1\text{ factors}} & \geq (k+2)^{k+1}.
+            \end{split}
+        \end{equation*}
+        Note that both sides involve the multiplication of integers \(k+1\) times. However, all of the factors on the right are \(k+2\), and exactly one of the factors on the left is \(k+2\). Additionally, \(k\) of the factors on the left are greater than \(k+2\). Thus, it is true that \(((k+1)!)^k\cdot(2(k+1))!\geq((k+2)!)^{k+1}\), and by induction.
+    \end{proof}
+    \begin{proof}{Prove that for every real number \(x>-1\) and every positive integer \(n\), \begin{equation*}
+        (1+x)^n\geq 1+nx
+    \end{equation*}}
+    
+    \end{proof}
+    \begin{proof}{Prove that \(81|(10^{n+1}-9n-10) \) for every positive integer \(n\).}
+        Base Case: Let \(n=1\). Now, \(10^2-9 - 10 = 81\). Thus, \(81|(10^{n+1}-9n-10)\) when \(n=1\).\\
+        Induction Step: Now, assume that \(81|(10^{k+1}-9k-10)\). Next, consider \(10^{k+2}-9(k+1)-10 = 10^{k+2} - 9k -19\). Now, subtract \(10(10^{k+1} -9k-10)\) from both sides
+        \begin{equation*}
+            \begin{split}
+                10^{k+2}-9(k+1)-10 - 10(10^{k+1} -9k-10) &= 10^{k+2} - 9k -19 - 10(10^{k+1} -9k-10)\\
+                &=10^{k+2} - 9k -19 - 10^{k+2} + 90k + 100\\
+                &= 81(k+1).\\
+            \end{split}
+        \end{equation*}
+        Then, add \(10(10^{k+1} -9k-10)\) to both sides,
+        \begin{equation*}
+            \begin{split}
+                10^{k+2}-9(k+1)-10 &= 81(k+1) + 10(10^{k+1} -9k-10).
+            \end{split}
+        \end{equation*}
+        Since, \(81|(10^{k+1}-9k-10)\), then \(10^{k+1}-9k-10=81j\), for some \(j\in\N\). Thus, 
+        \begin{equation*}
+            \begin{split}
+                10^{k+2}-9(k+1)-10 &= 81(k+1) + 10(81j)\\
+                &=81(k+1) + 81(10j)\\
+                &=81(k+1+10j).
+            \end{split}
+        \end{equation*}
+        Thus, \(81|(10^{k+2}-9(k+1)-10)\). Therefore, \(81|(10^{n+1}-9n-10) \) for all \(n\in\N\).
+    \end{proof}
+    \begin{proof}{A sequence \(\{a_n\}\) is defined recursively by
+        \begin{equation*}
+            a_1 = 1,\ a_2=2;\ a_n=a_{n-1} + 2a_{n-2},
+        \end{equation*}
+        for \(n\geq3\). Conjecture a formula for \(a_n\) and verify that your conjecture is correct.\\
+        One such formula is \(a_n=2^{n-1}\).}
+                    
     \end{proof}
 \end{document}
