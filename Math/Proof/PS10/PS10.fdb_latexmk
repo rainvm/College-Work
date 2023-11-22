@@ -1,11 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1700465673 "c:/Users/coyne/College-Work/Math/Proof/PS10/PS10.tex" "PS10.pdf" "PS10" 1700465673 0
+["pdflatex"] 1700517050 "c:/Users/coyne/College-Work/Math/Proof/PS10/PS10.tex" "PS10.pdf" "PS10" 1700517050 0
   "../preamble/defs.tex" 1700461025 345 ec7ffc3cd354f706abeff4fb9afd86ab ""
   "../preamble/envs.tex" 1700461031 123 f1c355cf243d307c9bc3cb871e5a5c07 ""
   "../preamble/packages.tex" 1699560598 231 48b5249cbff434d762f3d82d0569ea01 ""
-  "PS10.aux" 1700465673 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
-  "PS10.tex" 1700465672 5954 99d6afe5a252c98d93effff170e8f8e6 ""
-  "c:/Users/coyne/College-Work/Math/Proof/PS10/PS10.tex" 1700465672 5954 99d6afe5a252c98d93effff170e8f8e6 ""
+  "PS10.aux" 1700517050 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
+  "PS10.tex" 1700517049 7264 b027632c24f22bebba0e98bc67d5edfb ""
+  "c:/Users/coyne/College-Work/Math/Proof/PS10/PS10.tex" 1700517049 7264 b027632c24f22bebba0e98bc67d5edfb ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1691455995 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1691452844 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1691452844 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""

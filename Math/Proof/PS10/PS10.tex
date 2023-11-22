@@ -124,8 +124,29 @@
         \begin{equation*}
             a_1 = 1,\ a_2=2;\ a_n=a_{n-1} + 2a_{n-2},
         \end{equation*}
-        for \(n\geq3\). Conjecture a formula for \(a_n\) and verify that your conjecture is correct.\\
-        One such formula is \(a_n=2^{n-1}\).}
-                    
+        for \(n\geq3\). Conjecture a formula for \(a_n\) and verify that your conjecture is correct.}
+        We prove by induction that for the sequence defined above, \(a_n=2^{n-1}\). \\
+        Since, \(a_1=2^0=1\), the formula holds for \(n=1\). Assume for an arbitrary \(k\) that \(a_i=2^{i-1}\) for every integer \(i\) with \(1\leq i \leq k\). We show that \(a_{k+1} = 2^k\). If \(k=1\), then \(a_{k+1} = a_2=2^1=2\). Since, \(a_2=2\), it follows that \(a_{k+1} = 2^k\) for \(k=1\). Now, we may assume that \(k\geq2\). Since \(k+1\geq3\), it follows that
+        \begin{equation*}
+            \begin{split}
+                a_{k+1} &= a_{k} + 2a_{k-1}\\
+                & = 2^{k-1} + 2\cdot2^{k-2}\\
+                & = 2^{k-1} + 2^{k-1}\\
+                & = 2\cdot 2^{k-1}\\
+                &= 2^{k},
+            \end{split}
+        \end{equation*}
+        which is the desired result. By the strong principle of mathematical induction, \(a_n=2^{n-1}\), for all \(n\in\N\).
+    \end{proof}
+    \begin{proof}{Consider the sequence of Fibonacci numbers \(\{F_n\}\), where
+        \begin{equation*}
+            F_1 = 1,\ F_2 =1,\ F_n=F_{n-1} + F_{n-2},
+        \end{equation*}
+        for \(n\geq3\).\\
+        \textbf{(a)} Prove \(2|F_n\) if and only if \(3|n\).}
+        Since, \(3|n\), it is clear that \(n=3m\) for some \(m\in N\). In the case where \(m=1\), we have
+        \begin{equation*}
+            F_n=F_3=F_2+F_1=1+1=2
+        \end{equation*}
     \end{proof}
 \end{document}
