@@ -1,4 +1,5 @@
 \newcounter{results}
+\newcounter{questions}
 
 \def\neg{{\sim}}
 \def\Z{\mathbb{Z}}
@@ -7,3 +8,4 @@
 \def\Q{\mathbb{Q}}
 \def\qed{\(\blacksquare\)}
 \newcommand{\result}[1]{\stepcounter{results}{\bfseries Result \arabic{results}}: #1}
+\newcommand{\question}[1]{\stepcounter{questions}{\bfseries \arabic{questions}}: #1}
