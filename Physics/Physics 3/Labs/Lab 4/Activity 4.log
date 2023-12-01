@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.7)  9 NOV 2023 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.26)  30 NOV 2023 13:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **"c:/Users/coyne/College-Work/Physics/Physics 3/Labs/Lab 4/Activity 4.tex"
 (c:/Users/coyne/College-Work/Physics/Physics 3/Labs/Lab 4/Activity 4.tex
 LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-03>
+L3 programming layer <2023-06-30>
 (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (c:/texlive/2023/texmf-dist/tex/latex/base/size12.clo
@@ -136,6 +136,8 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen160
 \xmathstrut@box=\box55
 \xmathstrut@dim=\dimen161
+) (c:/texlive/2023/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (c:/texlive/2023/texmf-dist/tex/latex/gensymb/gensymb.sty
 Package: gensymb 2022/10/17 v1.0.2 (KJH)
 ) (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -161,9 +163,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box57
 ) (c:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/07/31 v3.6n Customizing captions (AR)
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
  (c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
 \caption@tempdima=\dimen164
 \captionmargin=\dimen165
 \caption@leftmargin=\dimen166
@@ -219,18 +221,17 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
+\symgns@font=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 7.
+Package gensymb Info: Math companion symbols declared on input line 7.
+LaTeX Info: Redefining \degree on input line 7.
 LaTeX Info: Redefining \celsius on input line 7.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 7.
-
-
-Package gensymb Warning: Not defining \perthousand.
-
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 7.
 LaTeX Info: Redefining \ohm on input line 7.
-Package gensymb Info: Using \Omega for \ohm on input line 7.
-
-Package gensymb Warning: Not defining \micro.
-
-(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+Package gensymb Info: Using \textohm for \ohm on input line 7.
+Package gensymb Info: Using \textmu for \micro on input line 7.
+ (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count283
 \scratchdimen=\dimen180
@@ -304,19 +305,19 @@ Package pdftex.def Info: atom.png  used on input line 42.
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./atom.png>] (./Activity 4.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-03>
+L3 programming layer <2023-06-30>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5299 strings out of 475188
- 85669 string characters out of 5767799
- 1922248 words of memory out of 5000000
- 26546 multiletter control sequences out of 15000+600000
- 567166 words of font info for 72 fonts, out of 8000000 for 9000
+ 5343 strings out of 475237
+ 86385 string characters out of 5768549
+ 1922238 words of memory out of 5000000
+ 26531 multiletter control sequences out of 15000+600000
+ 569536 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,68p,334b,256s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 62i,10n,68p,333b,256s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Activity 4.pdf" (1 page, 146137 bytes).
+Output written on "Activity 4.pdf" (1 page, 146135 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream
