@@ -4,6 +4,8 @@
 \input{../preamble/envs.tex}
 \input{../preamble/defs.tex}
 
+\newcommand{\mc}[1]{\mathcal{#1}}
+
 \allowdisplaybreaks
 
 \begin{document}
@@ -12,7 +14,20 @@
     \maketitle
 
     \begin{enumerate}
-        \item Let the set \(\mathcal{R}\) be a relation on the set \(A=\{x, y, z, w\}\), such that . So, \(\mathcal{R} = \{(a,b)|\}\)
-        \item 
+        \item Suppose that \(A\) is a set with exactly 4 elements. What is the maximum number of elements that a relation, \(\mathcal{R}\), on \(A\) can contain so that \(\mathcal{R} \cap \mathcal{R}^{-1} = \emptyset\)? The maximum number of elements of \(\mathcal{R}\) is 6.\\ \textsc{Proof:} Let \((a,b)\in \mc{R}\). Now, by definition, \((b,a) \in \mc{R}^{-1}\). Since \(\mc{R}\cap\mc{R}^{-1}=\emptyset\), it follows that \((b,a)\not\in\mc R\). Thus, \((a,b)\neq(b,a)\) and \(a\neq b\). With 4 elements of \(A\), there are four elements of \(\mc R\) for which \(a=b\). Since \(|A\times A| = 2^{|A|} = 2^4 = 16\), there are 12 elements, \((a,b)\), of \(A\times A\) such that \(a \neq b\).  Now, for each element \((a,b)\in A\times A\), there exists \((b,a)\in A\times A\). Thus there are six pairs of elements \(\{(a,b), (b,a)\}\subset A\times A\). If both elements in any of those pairs are in \(\mc R\), then they are also both in \(\mc R^{-1}\). So, at most one element from each pair may be in \(\mc R\). Therefore there can be at most 6 elements in \(\mc R\).
+        \item \begin{enumerate}
+            \item 
+        \end{enumerate}
+        \item Determine the maximum number of elements in a relation \(\mc R\) on \(A = \{a, b, c\}\) such that \(\mc R\) has none of the properties reflexive, symmetric and transitive. Note that \(A \times A  = \{(a, a), (b,b), (c,c), (a,b), (a,c), (b, a), (b,c), (c, a), (c,b)\}\) Suppose that \(R = \{(a, a), (b,b), (a,b), (a,c)\}\). Now, none of the other elements of \(A\times A\) can be included in \(\mc R\). The inclusion element \((c,c)\) would result in the relation being reflexive. Including \((b,a)\), or \((c, a)\), would result in the 
+        \item \(\mc R = \{(1,1), (2,2), (3,3), (4,4), (5,5), (6,6), (1,4), (4,1), (4,5), (5,4), (1,5), (5,1), (2,6),\\ ~~~~~~~~~ (6,2)\}\)
+        \item Let \(H = \{2^m|m \in \Z\}\). Define \(\mc R\) to be the relation defined on \(\Q^+\) by \(a \mc R b\) if \(a/b \in H\). \begin{enumerate}
+            \item Prove that \(\mc R\) is an equivalence relation on \(\Q^+\). \\
+            To show that the relation is reflexive, consider \(a\in \Q^+\). Now, \(a/a = 1 = 2^0 \in H\). To show that the relation is symmetric consider \(a, b \in \Q^+\). Suppose, \(a/b\in H\). Now, \(a/b = 2^m\) for some \(m \in \Z\). Since, \(b/a = (a/b)^{-1} = 2^{-m} \in H\). Thus, if \((a,b)\in \mc R\) then \((b,a)\in \mc R\) for all \(a,b \in \Q^+\). To show that the relation is transitive, suppose that \(a/b \in H\) and \(b/c\in H\) for some \(a, b, c\in \Q^+\). Now, \(a/b = 2^k\) and \(b/c = 2^l\) for some \(k, l \in \Q^+\). Since, \((a/b)(b/c) = a/c\), it follows that \(a/c = 2^k\cdot2^l = 2^{k+l}\in H\). Therefore \(\mc R\) is an equivalence relation. 
+            \item Describe the elements in the equivalence class [3]. \\ \(\mc [3] = \{3\cdot2^n|n\in \Z\}\). 
+        \end{enumerate}
+        \item Recall that relations on a set A are, by definition, subsets of \(A\times A\). \begin{enumerate}
+            \item {\sc Prove:} The intersection of two equivalence relations on a non-empty set \(A\) is also an equivalence relation on \(A\). Let \(\mc{R}_1\) and \(\mc{R}_2\) be equivalence relatiosn on a set, \(A\). Now, by the reflexivity property of equivalence relations, for all \(a\in A\), \((a, a) \in \mc R_1\) and \((a, a) \in \mc R_2\). Thus, \((a, a)\in \mc R_1\cap \mc R_2\), so the intersection of two equivalence relations defined on \(A\) is reflexive. Now, for all \(a,b\in A\), if 
+        \end{enumerate}
+        \item Define a relation \(\mc R\) on \(\Z\) by \(x\mc Ry\) exactly when \(x^3 \equiv y^3 \) (mod 4), and assume \(\mc R\) is an equivalence relation. Determine the equivalence classes of \(\mc R\). \\ {\sc Proof:} 
     \end{enumerate}
 \end{document}
