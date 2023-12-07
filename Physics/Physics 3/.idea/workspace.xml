@@ -5,23 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0a05d93-bf16-463b-b204-d0bd8755cdab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Labs/Activity 6/Ass3_Data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Activity 6/data.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Activity 6/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Labs/Activity 6/millikan.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Math/Proof/PS11/PS11.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/../../Math/Proof/PS11/PS11.fdb_latexmk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Math/Proof/PS11/PS11.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Math/Proof/PS11/PS11.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Math/Proof/PS11/PS11.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Math/Proof/PS11/PS11.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Math/Proof/PS11/PS11.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../../Math/Proof/PS11/PS11.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Math/Proof/PS11/PS11.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Math/Proof/PS11/PS11.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Math/Proof/preamble/packages.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../../Math/Proof/preamble/packages.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Physics 3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Physics 3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Activity 6/DataAnalysisTools.py" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Activity 6/DataAnalysisTools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Activity 6/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Activity 6/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.aux" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.fdb_latexmk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.fls" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.fls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/preamble/packages.tex" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Lab 4/preamble/packages.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +105,7 @@
       <updated>1701368580409</updated>
       <workItem from="1701368581388" duration="10937000" />
       <workItem from="1701381284881" duration="12250000" />
+      <workItem from="1701804848485" duration="631000" />
     </task>
     <servers />
   </component>
