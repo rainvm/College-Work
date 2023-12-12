@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+
+\input{../preamble/packages.tex}
+\input{../preamble/envs.tex}
+\input{../preamble/defs.tex}
+
+\newcommand{\mc}[1]{\mathcal{#1}}
+
+\allowdisplaybreaks
+
+\begin{document}
+\title{Problem Set 12}
+\author{Ryan Coyne}
+\maketitle
+
+\begin{enumerate}
+    \item \begin{enumerate}
+        \item The relation \(R_1\) is a function since there are no elements in the domain, \(\R\), that cannot be mapped to an element in the codomain, \(\R\), and \(y=4x-3\) produces only one \(y\) value for each \(x\) value.
+        \item The relation \(R_2\) is not a function because each element \(a\in A_2\), where \(a>0\), maps to two elements of the codomain. For example, \((4,0)\) and \((4,-4)\) are both elements of \(R_2\).
+        \item The relation \(R_3\) is not a function because each element \(a\in A_3\) to two elements, \(b_1, b_2 \in \R\). In particular \(b_1\) and \(b_2\) are related by \(b_2 = b_1 + 4\). As an example, \((0,-2)\) and \((0,2)\) are both in \(R_3\).
+    \end{enumerate}
+    \item \begin{enumerate}
+        \item \(f(n) = n\)
+        \item \(f(n) = n + 1\)
+        \item \(f(n) = \begin{cases}
+            1 ,& x = 1\\
+            n-1, & x > 1
+        \end{cases}\)
+        \item \(f(n) = 1\)
+    \end{enumerate}
+    \item The relation, \(\mc F\), is a set such that, \(\mc F = \{(2,7), (4,1), (6, 4)\}\). Thus, this relation is a function since all of the elements in the domain are mapped to exactly one element of the codomain. The relation \(\mc F\) is also one-to-one because no element of the codomain is mapped to by more than one element of the domain. 
+    \item \begin{enumerate}
+        \item Let \(x\in A\). Now, \((f\circ f\circ f)(x) = f(f(f(x)))\). Thus, \begin{equation*}
+            \begin{split}
+                f(f(f(x))) &= 1 - \frac{1}{1 - \frac{1}{1 - \frac{1}{x}}}\\
+                &= 1- \frac{1}{\frac{1-\frac{1}{x}-1}{1-\frac{1}{x}}}\\
+                &= 1 - \frac{1}{\frac{\frac{1}{x}}{\frac{1}{x}-1}}\\
+                &= 1 - \frac{\frac{1}{x}-1}{\frac{1}{x}}\\
+                &= 1 - (1-x)\\
+                &=x
+            \end{split}
+        \end{equation*}
+        Therefore \(f\circ f\circ f\) is the identity function.
+        \item Since, \(f \circ f \circ f\) is the identity function, it follows that \(f\circ f^{-1} = f \circ f \circ f\). Thus, \begin{equation*}
+            \begin{split}
+                f^{-1}(x) &= f \circ f(x) = 1 - \frac{1}{1-\frac{1}{x}}\\
+                &= 1 - \frac{1}{\frac{x-1}{x}}\\
+                &= 1 - \frac{x}{x-1}\\
+                &= \frac{x-1-x}{x-1}\\
+                &= \frac{1}{1-x}
+            \end{split}
+        \end{equation*}
+    \end{enumerate}
+    \item \begin{enumerate}
+        \item The function, \(F\), is not one-to-one because \(F(2)=F(4)=0\). In fact, \(F(a)=0\) for any \(a\in(\N\cup\{0\})\cap\E\), where \(\E\) is the set of even integers.
+        \item I conjecture that it is onto, but I cannot find a proof of it. 
+    \end{enumerate}
+    \item Let \(T,S\) be sets. Now, \(T-S = \{a\in T| a\not\in S\} = \{a\in T| a\not \in T\cap S\}\). Thus, \(T-S = T - T\cap S\). By the same process, it can be shown that \(S - T = S - T\cap S\). Assuming the hypothesis that \(|T-S| = |S-T|\), it follows that ,\(|T - T\cap S| = |S - T\cap S|\). Now since, \(T\cap S \subset T\) and \(T\cap S\subset S\), it is the case that \(|T|-|T\cap S| = |S| - |T\cap S|\). Finally, by algebraic manipulation, \(|T|=|S|\). 
+\end{enumerate}
+
+
+\end{document}
