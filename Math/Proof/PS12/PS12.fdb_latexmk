@@ -1,11 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1702340313 "c:/Users/coyne/College-Work/Math/Proof/PS12/PS12.tex" "PS12.pdf" "PS12" 1702340313 0
+["pdflatex"] 1702340351 "c:/Users/coyne/College-Work/Math/Proof/PS12/PS12.tex" "PS12.pdf" "PS12" 1702340352 0
   "../preamble/defs.tex" 1702331479 365 4ada29e0720d72affd07cb0d89a3868f ""
   "../preamble/envs.tex" 1701197588 123 f1c355cf243d307c9bc3cb871e5a5c07 ""
   "../preamble/packages.tex" 1701197675 241 f3c00772f9d455f538b6e3e4b8659698 ""
-  "PS12.aux" 1702340313 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "PS12.tex" 1702340312 3526 60b519ed38cc4d9510e76f7758be8b7e ""
-  "c:/Users/coyne/College-Work/Math/Proof/PS12/PS12.tex" 1702340312 3526 60b519ed38cc4d9510e76f7758be8b7e ""
+  "PS12.aux" 1702340352 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "PS12.tex" 1702340351 3524 72a617e9eb4443a0553d62c4a9f890b8 ""
+  "c:/Users/coyne/College-Work/Math/Proof/PS12/PS12.tex" 1702340351 3524 72a617e9eb4443a0553d62c4a9f890b8 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1690389316 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1690388885 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm" 1690388885 1536 73da8e8f1d2a4c957d51ca133585586b ""
