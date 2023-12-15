@@ -4,7 +4,59 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0a05d93-bf16-463b-b204-d0bd8755cdab" name="Changes" comment="" />
+    <list default="true" id="f0a05d93-bf16-463b-b204-d0bd8755cdab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 1/uncertainty of pi data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 2/Lab 2.aux" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 2/Lab 2.fdb_latexmk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 2/Lab 2.fls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 2/Lab 2.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 2/Lab 2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 2/Lab 2.synctex.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 2/Lab 2.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/Activity 4.aux" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/Activity 4.fdb_latexmk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/Activity 4.fls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/Activity 4.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/Activity 4.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/Activity 4.synctex.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/Activity 4.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/atom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/preamble/defs.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/preamble/envs.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/preamble/packages.aux" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/preamble/packages.fdb_latexmk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/preamble/packages.fls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/preamble/packages.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Activity 4/preamble/packages.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Experiment 1/Experiment 1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Experiment 1/Experiment+Activity+1+-+Spectral+Lines.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Experiment 2/Experiment+Activity+2+-+Electron+Charge-to-Mass+Ratio.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Experiment 3/Experiment 3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Labs/Experiment 3/Experiment+Activity+3+-+Photoelectric+Effect.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 1/uncertainty of pi data.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 2/Lab 2.aux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 2/Lab 2.fdb_latexmk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 2/Lab 2.fls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 2/Lab 2.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 2/Lab 2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 2/Lab 2.synctex.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 2/Lab 2.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.aux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.fdb_latexmk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.fls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.synctex.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/Activity 4.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/atom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/preamble/defs.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/preamble/envs.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/preamble/packages.aux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/preamble/packages.fdb_latexmk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/preamble/packages.fls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/preamble/packages.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab 4/preamble/packages.tex" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,22 +73,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/coyne/College-Work/Physics/Physics 3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/coyne/College-Work/Physics/Physics 3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.main">
     <configuration name="DataAnalysisTools" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Physics 3" />
@@ -94,7 +146,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-67fca87a943a-c986f194a52a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.11799.259" />
+        <option value="bundled-python-sdk-7a29c1521ef0-c986f194a52a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.11799.298" />
       </set>
     </attachedChunks>
   </component>
@@ -110,6 +162,7 @@
       <workItem from="1701381284881" duration="12250000" />
       <workItem from="1701804848485" duration="631000" />
       <workItem from="1701984466649" duration="30000" />
+      <workItem from="1702505791956" duration="30000" />
     </task>
     <servers />
   </component>

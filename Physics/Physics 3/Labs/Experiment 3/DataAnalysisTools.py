@@ -66,3 +66,6 @@ def fitQuality(x, y, dy, m, b):
 
 def relativeError(measured, accepted):
     return np.abs((measured - accepted) / accepted)
+
+def dataIntersectionPoint(x, y1, y2):
+    idx = np.argwhere(np.diff(np.sign(y1-y2)))
