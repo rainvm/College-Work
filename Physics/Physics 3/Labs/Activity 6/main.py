@@ -6,7 +6,7 @@ import DataAnalysisTools as dat
 
 
 def main():
-    problem3()
+    problem4()
 
 
 def problem4():
