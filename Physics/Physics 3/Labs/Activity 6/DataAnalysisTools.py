@@ -36,6 +36,7 @@ def combineMeasurement(xresults, dxresults):
 
 
 def lineFit(x, y):
+    """Unweighted line of best fit. Returns m, b."""
     Ex = np.mean(x)
     Ey = np.mean(y)
     Exx = np.mean([i ** 2 for i in x])
@@ -43,29 +44,43 @@ def lineFit(x, y):
     return (Exy - (Ex * Ey)) / (Exx - (Ex ** 2)), ((Exx * Ey) - (Ex * Exy)) / (Exx - Ex ** 2)
 
 
+
 def lineFitWt(x, y, dy):
+    """Weighted line of best fit. Returns m, b, dm, db."""
     w = [1 / (dy[i] ** 2) for i in range(len(dy))]
     b = ((np.sum(np.multiply(w, [i ** 2 for i in x])) * np.sum(np.multiply(w, y))) - (
             np.sum(np.multiply(w, x)) * np.sum(np.multiply(np.multiply(w, x), y)))) / (
                 np.sum(w) * np.sum(np.multiply(np.multiply(x, x), w)) - (np.sum(np.multiply(w, x))) ** 2)
     m = (np.sum(w) * np.sum(np.multiply(np.multiply(w, x), y)) - (np.sum(np.multiply(w, x)) * np.sum(
         np.multiply(w, y)))) / (np.sum(w) * np.sum(np.multiply(np.multiply(x, x), w)) - np.sum(np.multiply(w, x)) ** 2)
-    dm = np.sqrt(np.sum(w)/(np.sum(w)*np.sum(np.multiply(np.multiply(x, x), w)) - (np.sum(np.multiply(w, x)))**2))
-    db = np.sqrt(np.sum(np.multiply(np.multiply(x, x), w))/(np.sum(w)*np.sum(np.multiply(np.multiply(x, x), w)) - (
-        np.sum(np.multiply(w, x)))**2))
+    dm = np.sqrt(np.sum(w) / (np.sum(w) * np.sum(np.multiply(np.multiply(x, x), w)) - (np.sum(np.multiply(w, x))) ** 2))
+    db = np.sqrt(np.sum(np.multiply(np.multiply(x, x), w)) / (np.sum(w) * np.sum(np.multiply(np.multiply(x, x), w)) - (
+        np.sum(np.multiply(w, x))) ** 2))
     return m, b, dm, db
 
 
 def fitQuality(x, y, dy, m, b):
+    """Calculates the quality of a weighted fit. Returns Q."""
     n = len(y)
     total = 0
     for i in range(n):
         total += ((y[i] - m * x[i] - b) / dy[i]) ** 2
-    return 1/(n-2) * total
+    return 1 / (n - 2) * total
 
 
 def relativeError(measured, accepted):
     return np.abs((measured - accepted) / accepted)
 
-def dataIntersectionPoint(x, y1, y2):
-    idx = np.argwhere(np.diff(np.sign(y1-y2)))
+
+def dataIntersectionPoint(x, y1, y2, x_unc = 0, y1_unc = 0, y2_unc = 0):
+    idx = np.argwhere(np.diff(np.sign(y1 - y2)) != 0).flatten()
+    xInt = []
+    x_uncInt = []
+    yInt = []
+    y_uncInt = []
+    for i in idx:
+        xInt.append((x[i] + x[i+1])/2)
+        x_uncInt.append((x_unc[i] + x_unc[i+1])/2)
+        yInt.append((y1[i] + y1[i+1] + y2[i] + y2[i+1])/4)
+        y_uncInt.append((y1_unc[i] + y1_unc[i+1] + y1_unc[i] + y1_unc[i+1])/4)
+    return xInt, yInt, x_uncInt, y_uncInt

@@ -1,12 +1,15 @@
 import numpy as np
 import plotly.graph_objects as go
-import plotly.express as ex
+import pandas as pd
 
 import DataAnalysisTools as dat
 
 
 def main():
-    problem3()
+    rData = [28.4, 28.5, 28.2, 28.3, 31.5, 31.0, 31.3, 31.0]
+    r = np.mean(rData)
+    dr = dat.totalUncertainty(rData, 0.25)
+    print(r, dr)
 
 
 def problem4():
@@ -16,6 +19,7 @@ def problem4():
                     [float(j[3]) for j in data])
     v = np.multiply(r, i)
     dv = np.abs(v)*np.sqrt(np.square(np.divide(di, i)) + np.square(np.divide(dr, r)))
+    print(v, r, i, dv)
     m, b, dm, db = dat.lineFitWt(r, v, dv)
     rfit = np.linspace(100, 11000000, 100000)
     vfit = m*rfit + b

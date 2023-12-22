@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+
+\input{../preamble/packages.tex}
+\input{../preamble/envs.tex}
+\input{../preamble/defs.tex}
+
+\allowdisplaybreaks
+
+\begin{document}
+    \title{Experiment 1}
+    \author{Ryan Coyne}
+    \date{}
+    \maketitle
+
+    \begin{enumerate}
+        \item \begin{enumerate}
+            \item The diffraction grating has 1000 lines/mm, thus the distance between lines is 1/1000 mm or 1000 nm.
+            \item The slit blocks out ambient light, and should be as narrow as possible so that there is as little ambient light as possible.
+            \item Purple at \(20\degree\), Green at \(30\degree\), Red at \(35\degree\).
+            \item It is blueish white. I would have expected more of a violet color, but it's pretty close to what I would have predicted. 
+        \end{enumerate}
+        \item \begin{align*}
+            \lambda &= \frac{d}{m} \sin\theta\\
+            \delta \lambda a&= \frac{d}{m} \cos(\theta) \delta \theta
+        \end{align*}
+        \item \, 
+        \begin{table}[h]
+            \centering
+            \begin{tabular}{c|c|c|c}
+                m & Spectral Line Color & \(\theta_R \pm \delta \theta_R\) & \(\theta_R \pm \delta \theta_R\)\\
+                \hline
+                1 & Purple & 30 & 20 \\
+                1 & Green & 40 & 30 \\
+                1 & Red & 45 & 35
+            \end{tabular}
+        \end{table}
+        \item \, 
+        \begin{table}[h]
+            \centering
+            \begin{tabular}{c|c|c|c}
+                Your Wavelengths & Uncertainty & NIST & Agreement?\\
+                \hline
+                1000 nm \(\cdot\) sin(\(\frac{5\pi}{36}\))=423 nm & 1000 nm \(\cdot \cos(\frac{5\pi}{36})\cdot0.0087\) = 7.88 nm & 435 nm & No \\
+                1000 nm \(\cdot\) sin(\(\frac{7\pi}{36}\))=574 nm & 1000 nm \(\cdot \cos(\frac{7\pi}{36})\cdot0.0087\) = 7.13 nm & 577 nm & Yes \\
+                1000 nm \(\cdot\) sin(\(\frac{2\pi}{9}\))=643 nm & 1000 nm \(\cdot \cos(\frac{2\pi}{9})\cdot0.0087\) = 6.66 nm & 690 & No
+            \end{tabular}
+        \end{table}\pagebreak
+        \item \, 
+        \begin{table}[h]
+            \centering
+            \begin{tabular}{c|c|c|c|c|c}
+                m & Spectral Line Color & \(\theta_R\) & \(\theta_R\) & \(\theta_1 \) & \(\lambda_1\)\\
+                \hline
+                1 & Green & 30 & 30 & 30 & 500 nm\\
+                1 & Yellow/Orange & 40 & 40 & 643 nm
+            \end{tabular}
+        \end{table}
+        \item Neon
+        \item I would use an electronic detector to identify the wavelengths of light. 
+        \item In 1704 Sir Isaac Newton published \textit{Optiks: or, A Treatise of the Reflexions, Refractions, Inflexions and Colours of Light}, in which he included experiments and theoretical explanations for the dispersion of light, as when passed through a prism. In the 1860s, Gustav Kirchhoff and Robert Bunsen showed that spectral lines are a result of different chemical elements absorbing or emitting light at different energies. This knowledge allowed them to discover the elements cesium and rubidium. In 1885 Johann Balmer, a Swiss high school teacher and adjunct professor at the University of Basel, showed that the spectral lines of hydrogen could be represented by the formula \(\lambda = h \frac{m^2}{m^2-n^2}\). 
+        \item Light is emitted by the gas tube lamp because when electricity is passed through the gas, electrons in the atoms become excited. This excited state is, however, not stable, but when the electrons return to lower energy levels the energy cannot be lost, and so, photons of particular wavelengths are emitted. These wavelengths are determined by which energy levels are involved in the transition. A diffraction grating causes light of different wavelengths to continue in different directions because when the light passes through the slits in the grating, each acts as a point source of that light, and all of these sources create an interference pattern.
+    \end{enumerate}
+\end{document}
