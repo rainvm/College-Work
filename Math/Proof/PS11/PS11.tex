@@ -11,6 +11,7 @@
 \begin{document}
     \title{Problem Set 11}
     \author{Ryan Coyne}
+    \date{}
     \maketitle
 
     \begin{enumerate}
@@ -23,7 +24,7 @@
             \item \(\mc R = \{(1,2), (2,1)\}\)
             \item \(\mc R = \{(1,2), (2,3), (1,3)\}\)
         \end{enumerate}
-        \item Determine the maximum number of elements in a relation \(\mc R\) on \(A = \{a, b, c\}\) such that \(\mc R\) has none of the properties reflexive, symmetric and transitive. Note that \(A \times A  = \{(a, a), (b,b), (c,c), (a,b), (a,c), (b, a), (b,c), (c, a), (c,b)\}\) Suppose that \(R = \{(a, a), (b,b), (a,b), (a,c)\}\). Now, none of the other elements of \(A\times A\) can be included in \(\mc R\). The inclusion element \((c,c)\) would result in the relation being reflexive. Including \((b,a)\), or \((c, a)\), would result in the relation being transitive, and if we include both, the relation is symmetric.
+        \item Determine the maximum number of elements in a relation \(\mc R\) on \(A = \{a, b, c\}\) such that \(\mc R\) has none of the properties reflexive, symmetric and transitive. Note that \(A \times A  = \{(a, a), (b,b), (c,c), (a,b), (a,c), (b, a), (b,c), (c, a), (c,b)\}\) Suppose that \(R = \{(a, a), (b,b), (a,b), (a,c)\}\). Now, none of the other elements of \(A\times A\) can be included in \(\mc R\). The inclusion element \((c,c)\) would result in the relation being reflexive. Including \((b,a)\), or \((c, a)\), would result in the relation being transitive, and if we include both, the relation is symmetric. 
         \item \(\mc R = \{(1,1), (2,2), (3,3), (4,4), (5,5), (6,6), (1,4), (4,1), (4,5), (5,4), (1,5), (5,1), (2,6),\\ ~~~~~~~~~ (6,2)\}\)
         \item Let \(H = \{2^m|m \in \Z\}\). Define \(\mc R\) to be the relation defined on \(\Q^+\) by \(a \mc R b\) if \(a/b \in H\). \begin{enumerate}
             \item Prove that \(\mc R\) is an equivalence relation on \(\Q^+\). \\
@@ -31,8 +32,12 @@
             \item Describe the elements in the equivalence class [3]. \\ \(\mc [3] = \{3\cdot2^n|n\in \Z\}\). 
         \end{enumerate}
         \item Recall that relations on a set A are, by definition, subsets of \(A\times A\). \begin{enumerate}
-            \item {\sc Prove:} The intersection of two equivalence relations on a non-empty set \(A\) is also an equivalence relation on \(A\). Let \(\mc{R}_1\) and \(\mc{R}_2\) be equivalence relatiosn on a set, \(A\). Now, by the reflexivity property of equivalence relations, for all \(a\in A\), \((a, a) \in \mc R_1\) and \((a, a) \in \mc R_2\). Thus, \((a, a)\in \mc R_1\cap \mc R_2\), so the intersection of two equivalence relations defined on \(A\) is reflexive. Now, for all \(a,b\in A\), if 
+            \item {\sc Prove:} The intersection of two equivalence relations on a non-empty set \(A\) is also an equivalence relation on \(A\). Let \(\mc{R}_1\) and \(\mc{R}_2\) be equivalence relatiosn on a set, \(A\). Now, by the reflexivity property of equivalence relations, for all \(a\in A\), \((a, a) \in \mc R_1\) and \((a, a) \in \mc R_2\). Thus, \((a, a)\in \mc R_1\cap \mc R_2\), so the intersection of two equivalence relations defined on \(A\) is reflexive. Now, for all \(a,b\in A\), if \((a, b)\in \mc R_1\), then, by the symmetric property, it follows that \((b, a)\in \mc R_1\). So, if \((a,b) \in \mc R_1\), and \((a,b) \in \mc R_2\), then \((a,b), (b,a)\in\mc R_1\cap\mc R_2\). On the other hand, if \((a,b) \not\in \mc R_1\), or \((a,b) \not\in \mc R_2\), then \((a,b), (b,a) \not\in\mc R_1\cap\mc R_2\). Thus, \(\mc R_1\cap\mc R_2\), is symmetric. Let \((a,b), (b, c)\in R_1\) for some \(a,b,c\in A\). Now, by the transitive property, \((a,c)\in R_1\). Thus, if \((a,b), (b,c)\in \mc R_2\), then \((a,b), (b,c), (a,c) \in \mc R_1\cap\mc R_2\). If \((a,b)\not \in \mc R_2\) or \((b,c)\not\in \mc R_2\), then \((a,c)\) is not required to be in \(\mc \R_1\cap \mc R_2\). Therefore \(\mc \R_1\cap \mc R_2\) is transitive. Since \(\mc R_1 \cap \mc R_2\) is reflexive, symmetric, and transitive, it is an equivalence relation.
+            \item Suppose that \(\mc R_1 = \{(a,a), (b,b), (c,c), (a,b), (b,a)\}\) and \(\mc R_2 = \{(a,a), (b,b), (c,c),\\ (b,c), (c,b)\}\) are equivalence relations on the set, \(A = \{a, b, c, d\}\). Now, \begin{equation*}
+                \mc R_1 \cup \mc R_2 = \{(a,a), (b,b), (c,c), (a,b), (b,a), (b,c), (c,b)\}.
+            \end{equation*}
+            Because, \((a,b), (b,c)\in \mc R_1 \cup \mc R_2\), but \((a,c) \not\in\mc R_1 \cup \mc R_2\). The transitive property of equivalence relations is not satisfied for \(\mc R_1 \cup \mc R_2\), and it is therefore not an equivalence relation.
         \end{enumerate}
-        \item Define a relation \(\mc R\) on \(\Z\) by \(x\mc Ry\) exactly when \(x^3 \equiv y^3 \) (mod 4), and assume \(\mc R\) is an equivalence relation. Determine the equivalence classes of \(\mc R\). \\ {\sc Proof:} 
+        \item Define a relation \(\mc R\) on \(\Z\) by \(x\mc Ry\) exactly when \(x^3 \equiv y^3 \) (mod 4), and assume \(\mc R\) is an equivalence relation. Determine the equivalence classes of \(\mc R\). \\ {\sc Proof:} Under modulus 4, there are at most four equivalence classes, one for each remainder when dividing by four. Consider \(a = 4k\) for some \(k \in \Z\). Now, \(a^3 = 64k^3 = 4(16k^3)\). So if \(a \equiv 0 \) (mod 4), then \(a^3 \equiv 0\) (mod 4). Next consider \(a = 4k + 1 \) for some \(k \in \Z\). Now, \(a^3 = 64k^3 + 48k^2 + 12k + 1 = 4(16k^3 + 12k^2 + 3k) + 1\). So if \(a \equiv 1 \) (mod 4), then \(a^3 \equiv 1\) (mod 4). Next consider \(a = 4k + 2 \) for some \(k \in \Z\). Now, \(a^3 = 64k^3 + 96k^2 + 24k + 4 = 4(16k^3 + 24k^2 + 6k+ 1)\). So if \(a \equiv 2\) (mod 4), then \(a^3 \equiv 0\) (mod 4). Next consider \(a = 4k + 3 \) for some \(k \in \Z\). Now, \(a^3 = 64k^3 + 144k^2 + 108k + 9 = 4(16k^3 + 36k^2 + 27k + 2 ) + 1\) . So if \(a \equiv 3 \) (mod 4), then \(a^3 \equiv 1\) (mod 4). Thus, for \(\mc R\) there are two equivalence classes, \([0]\) and \([1]\).
     \end{enumerate}
 \end{document}
