@@ -128,6 +128,7 @@ INPUT c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT notes.aux
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
