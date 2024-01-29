@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0a05d93-bf16-463b-b204-d0bd8755cdab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Activity 2/Lab 2.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Activity 6/DataAnalysisTools.py" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Activity 6/DataAnalysisTools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Activity 6/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Activity 6/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Experiment 1/Experiment 1 Activity.tex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Experiment 3/DataAnalysisTools.py" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Experiment 3/DataAnalysisTools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Experiment 3/Experiment 3.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Experiment 3/Experiment 3.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Experiment 3/Experiment+Activity+3+-+Photoelectric+Effect.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Experiment 3/Experiment+Activity+3+-+Photoelectric+Effect.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Experiment 3/Re_ Experiment 3 Data.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../String Theory/Notes on The Calabi-Yau Landscape/notes.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/../String Theory/Notes on The Calabi-Yau Landscape/notes.fdb_latexmk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../String Theory/Notes on The Calabi-Yau Landscape/notes.fls" beforeDir="false" afterPath="$PROJECT_DIR$/../String Theory/Notes on The Calabi-Yau Landscape/notes.fls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../String Theory/Notes on The Calabi-Yau Landscape/notes.log" beforeDir="false" afterPath="$PROJECT_DIR$/../String Theory/Notes on The Calabi-Yau Landscape/notes.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../String Theory/Notes on The Calabi-Yau Landscape/notes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../String Theory/Notes on The Calabi-Yau Landscape/notes.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +45,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/coyne/College-Work/Physics/Physics 3/Labs/Experiment 2",
+    "last_opened_file_path": "C:/Users/coyne/College-Work/Physics/Experimental 1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -65,7 +60,7 @@
       <recent name="C:\Users\coyne\College-Work\Physics\Physics 3\Labs\Experiment 2" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.DataAnalysisTools">
     <configuration name="DataAnalysisTools" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Physics 3" />
       <option name="ENV_FILES" value="" />
@@ -146,7 +141,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-7a29c1521ef0-c986f194a52a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.11799.298" />
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
       </set>
     </attachedChunks>
   </component>
@@ -164,6 +159,7 @@
       <workItem from="1701984466649" duration="30000" />
       <workItem from="1702505791956" duration="30000" />
       <workItem from="1702752267777" duration="30557000" />
+      <workItem from="1706296640003" duration="45000" />
     </task>
     <servers />
   </component>
