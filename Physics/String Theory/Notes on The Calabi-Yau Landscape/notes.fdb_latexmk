@@ -1,12 +1,17 @@
 # Fdb version 4
-["pdflatex"] 1706573161 "c:/Users/coyne/College-Work/Physics/String Theory/Notes on The Calabi-Yau Landscape/notes.tex" "notes.pdf" "notes" 1706573162 0
+["pdflatex"] 1707162367 "c:/Users/coyne/College-Work/Physics/String Theory/Notes on The Calabi-Yau Landscape/notes.tex" "notes.pdf" "notes" 1707162368 0
   "../../preamble/defs.tex" 1699571293 236 1f98b27da32dd3906bd46236c3ab489d ""
   "../../preamble/envs.tex" 1699571293 121 5e7f5ac9fa18bb6fb15cd1d3f948b585 ""
-  "../../preamble/packages.tex" 1699571293 231 48b5249cbff434d762f3d82d0569ea01 ""
+  "../../preamble/packages.tex" 1707162366 254 05f8c1cd043b572911a672ee5e02165b ""
   "c:/Users/coyne/College-Work/Physics/String Theory/Notes on The Calabi-Yau Landscape/notes.tex" 1706573160 1411 e0212ecbe36813279188aa23de12d193 ""
   "c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1690388287 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1690389316 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1690388885 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm" 1690388885 1536 73da8e8f1d2a4c957d51ca133585586b ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0800.tfm" 1690388885 1536 05df9db6aeccc4eea94fec15c9024f79 ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1690388885 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1690388885 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
+  "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1440.tfm" 1690388885 1536 3290a75021d32d016616fe527bc9884c ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1690387236 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1690387236 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1690387236 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -48,6 +53,7 @@
   "c:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty" 1690387242 2444 0d0c1ee65478277e8015d65b86983da2 ""
   "c:/texlive/2023/texmf-dist/tex/latex/base/article.cls" 1690390200 20144 fbcf51733730d8f1a62143512ff5b1fe ""
   "c:/texlive/2023/texmf-dist/tex/latex/base/size12.clo" 1690390201 8449 9de778d73ba774a5f2bd601f23f8922e ""
+  "c:/texlive/2023/texmf-dist/tex/latex/base/textcomp.sty" 1690390201 2894 3ac7bdb70dd9b75530be2ade2842c355 ""
   "c:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty" 1690388059 55778 14d5c99aa26410e440820bb9ea5b8b3a ""
   "c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty" 1690388059 71836 1a735454ad10692452eb2f2fc37f3865 ""
   "c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1690389001 13886 d1306dcf79a944f6988e688c1785f9ce ""
@@ -70,7 +76,7 @@
   "c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1690393447 4683009 f44d3a562855f206dbb66b0b8d7fb6a7 ""
   "c:/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1690393609 8172428 1fafb6d2aa2cc61ad4de2c170b04921f ""
   "c:/texlive/2023/texmf.cnf" 1690393431 713 e69b156964470283e0530f5060668171 ""
-  "notes.aux" 1706573162 128 d6164b5f4ff286b01de3f598a63cdb37 "pdflatex"
+  "notes.aux" 1707162368 128 d6164b5f4ff286b01de3f598a63cdb37 "pdflatex"
   "notes.tex" 1706573160 1411 e0212ecbe36813279188aa23de12d193 ""
   (generated)
   "notes.aux"
