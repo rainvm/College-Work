@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.26)  29 JAN 2024 19:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.26)  5 FEB 2024 14:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -136,6 +136,8 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen160
 \xmathstrut@box=\box55
 \xmathstrut@dim=\dimen161
+) (c:/texlive/2023/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (c:/texlive/2023/texmf-dist/tex/latex/gensymb/gensymb.sty
 Package: gensymb 2022/10/17 v1.0.2 (KJH)
 ) (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -219,18 +221,17 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
+\symgns@font=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 7.
+Package gensymb Info: Math companion symbols declared on input line 7.
+LaTeX Info: Redefining \degree on input line 7.
 LaTeX Info: Redefining \celsius on input line 7.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 7.
-
-
-Package gensymb Warning: Not defining \perthousand.
-
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 7.
 LaTeX Info: Redefining \ohm on input line 7.
-Package gensymb Info: Using \Omega for \ohm on input line 7.
-
-Package gensymb Warning: Not defining \micro.
-
-(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+Package gensymb Info: Using \textohm for \ohm on input line 7.
+Package gensymb Info: Using \textmu for \micro on input line 7.
+ (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count283
 \scratchdimen=\dimen180
@@ -302,15 +303,15 @@ L3 programming layer <2023-06-30>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5274 strings out of 475237
- 85297 string characters out of 5768549
+ 5321 strings out of 475237
+ 86084 string characters out of 5768549
  1923238 words of memory out of 5000000
- 26470 multiletter control sequences out of 15000+600000
- 566862 words of font info for 70 fonts, out of 8000000 for 9000
+ 26509 multiletter control sequences out of 15000+600000
+ 568554 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,6n,68p,361b,235s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on notes.pdf (1 page, 91290 bytes).
+Output written on notes.pdf (1 page, 91291 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream
