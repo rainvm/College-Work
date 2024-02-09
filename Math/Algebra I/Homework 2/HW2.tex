@@ -1,0 +1,24 @@
+\documentclass[12pt]{article}
+
+\input{../../preamble/defs.tex}
+\input{../../preamble/envs.tex}
+\input{../../preamble/packages.tex}
+
+\title{Homework 2}
+\author{Ryan Coyne}
+
+\begin{document}
+    \maketitle
+
+    \begin{proof}{Let (\(G, \circ\)) be a group, and let \(g, h\in G\). Then 
+        \begin{equation*}
+            (g\circ h)^{-1} = h^{-1} \circ g^{-1}.
+        \end{equation*}}
+        First, we compose \((g \circ h)^{-1}\) with \((g\circ h)\). This gives us, \[(g \circ h)^{-1}\circ(g\circ h) = e.\] Next compose \(g^{-1}\circ h^{-1}\) with \((g\circ h)\). This gives us \begin{align*}
+            (h^{-1}\circ g^{-1}) \circ (g\circ h) &= h^{-1} \circ (g^{-1} \circ g) \circ h\\
+            & = h^{-1} \circ h\\
+            & = e.
+        \end{align*}
+        Now, since \((g \circ h)^{-1}\circ(g\circ h) = (h^{-1}\circ g^{-1}) \circ (g\circ h)\), it follows that \((g \circ h)^{-1} = h^{-1}\circ g^{-1}\).
+    \end{proof}
+\end{document}
