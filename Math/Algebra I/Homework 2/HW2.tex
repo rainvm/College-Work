@@ -7,6 +7,9 @@
 \title{Homework 2}
 \author{Ryan Coyne}
 
+\def\ZN{\mathbb{Z}_N}
+
+
 \begin{document}
     \maketitle
 
@@ -20,5 +23,19 @@
             & = e.
         \end{align*}
         Now, since \((g \circ h)^{-1}\circ(g\circ h) = (h^{-1}\circ g^{-1}) \circ (g\circ h)\), it follows that \((g \circ h)^{-1} = h^{-1}\circ g^{-1}\).
+    \end{proof}
+
+    \begin{proof}{Let \(\mathbb{Z}_N = {0, 1, 2, \cdots, N-1}\). Show that the operation \(\circ: \mathbb{Z}_N \times \ZN \rightarrow \ZN\) defined by \begin{equation*}
+        a \circ b := \begin{cases}
+            a + b,  &a + b < N\\
+            a + b - N, & a + b \geq N
+        \end{cases}
+    \end{equation*}
+    is associative. i.e. Show that for any \(a, b, c \in \ZN\), we have 
+    \begin{equation*}
+        (a\circ b) \circ c = a \circ (b \circ c)
+    \end{equation*}}
+    
+    \underline{Case 1:} 
     \end{proof}
 \end{document}

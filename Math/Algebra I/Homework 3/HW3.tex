@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+
+\input{../../preamble/defs.tex}
+\input{../../preamble/envs.tex}
+\input{../../preamble/packages.tex}
+
+\title{Homework 3}
+\author{Ryan Coyne}
+
+\begin{document}
+    \maketitle
+
+    \section*{Question 1}
+    Let (\(G, \circ\)) be a group, \(g\in G\) and \(n\in \Z\). We define the notation
+    \begin{equation*}
+        \begin{split}
+            g^0 &:= e\\
+            g^n &:= \underbrace{g\circ g\circ\cdots\circ g}_{n\text{ times}}\\
+            g^{n-1} &:= \underbrace{g^{-1}\circ g^{-1}\circ \cdots \circ g^{-1}}_{n\text{ times}}.
+        \end{split}
+    \end{equation*}
+    \begin{enumerate}[label=\alph*)]
+        \item Show that
+        \begin{equation*}
+            \langle g \rangle := \{g^n | n \in \Z\}
+        \end{equation*}
+        is a subgroup of \(G\).
+        \item Consider the group \((S_5, 0)\). Determine the elements of \(\langle (12)(345) \rangle\).
+    \end{enumerate}
+
+    \section*{Question 2}
+    Consider the group \((S_4, \circ )\). Find one subgroup of \(S_4\) with:
+    \begin{enumerate}[label=\alph*)]
+        \item 2 elements,
+        \item 3 elements,
+        \item 4 elements,
+        \item 6 elements,
+        \item 8 elements,
+        \item 12 elements.
+    \end{enumerate}
+    You do not need to justify that your answers are subgroups.
+\end{document}
