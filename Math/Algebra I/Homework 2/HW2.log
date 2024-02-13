@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.26)  10 FEB 2024 18:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.7)  12 FEB 2024 18:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **"c:/Users/coyne/College-Work/Math/Algebra I/Homework 2/HW2.tex"
 (c:/Users/coyne/College-Work/Math/Algebra I/Homework 2/HW2.tex
 LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-06-30>
+L3 programming layer <2023-08-03>
 (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (c:/texlive/2023/texmf-dist/tex/latex/base/size12.clo
@@ -166,9 +166,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box57
 ) (c:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/03/12 v3.6j Customizing captions (AR)
+Package: caption 2023/07/31 v3.6n Customizing captions (AR)
  (c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen164
 \captionmargin=\dimen165
 \caption@leftmargin=\dimen166
@@ -182,6 +182,14 @@ Package caption Info: Standard document class detected.
 \c@caption@flags=\count278
 \c@continuedfloat=\count279
 Package caption Info: float package is loaded.
+) (c:/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip59
+\enit@outerparindent=\dimen172
+\enit@toks=\toks26
+\enit@inbox=\box58
+\enit@count@id=\count280
+\enitdp@description=\count281
 )) (c:/texlive/2023/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (c:/texlive/2023/texmf-dist/tex/generic/iftex/ifvtex.sty
@@ -189,22 +197,22 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
  (c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count280
-\Gm@cntv=\count281
-\c@Gm@tempcnt=\count282
-\Gm@bindingoffset=\dimen172
-\Gm@wd@mp=\dimen173
-\Gm@odd@mp=\dimen174
-\Gm@even@mp=\dimen175
-\Gm@layoutwidth=\dimen176
-\Gm@layoutheight=\dimen177
-\Gm@layouthoffset=\dimen178
-\Gm@layoutvoffset=\dimen179
-\Gm@dimlist=\toks26
+\Gm@cnth=\count282
+\Gm@cntv=\count283
+\c@Gm@tempcnt=\count284
+\Gm@bindingoffset=\dimen173
+\Gm@wd@mp=\dimen174
+\Gm@odd@mp=\dimen175
+\Gm@even@mp=\dimen176
+\Gm@layoutwidth=\dimen177
+\Gm@layoutheight=\dimen178
+\Gm@layouthoffset=\dimen179
+\Gm@layoutvoffset=\dimen180
+\Gm@dimlist=\toks27
 ) (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count283
-\l__pdf_internal_box=\box58
+\l__color_backend_stack_int=\count285
+\l__pdf_internal_box=\box59
 ) (./HW2.aux)
 \openout1 = `HW2.aux'.
 
@@ -234,17 +242,17 @@ Package gensymb Info: Using \textohm for \ohm on input line 13.
 Package gensymb Info: Using \textmu for \micro on input line 13.
  (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count284
-\scratchdimen=\dimen180
-\scratchbox=\box59
-\nofMPsegments=\count285
-\nofMParguments=\count286
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count287
-\MPscratchDim=\dimen181
-\MPnumerator=\count288
-\makeMPintoPDFobject=\count289
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count286
+\scratchdimen=\dimen181
+\scratchbox=\box60
+\nofMPsegments=\count287
+\nofMParguments=\count288
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count289
+\MPscratchDim=\dimen182
+\MPnumerator=\count290
+\makeMPintoPDFobject=\count291
+\everyMPtoPDFconversion=\toks29
 ) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -300,22 +308,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./HW2.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-06-30>
+L3 programming layer <2023-08-03>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5333 strings out of 475237
- 86197 string characters out of 5768549
- 1923238 words of memory out of 5000000
- 26521 multiletter control sequences out of 15000+600000
- 568249 words of font info for 74 fonts, out of 8000000 for 9000
+ 5661 strings out of 475188
+ 91788 string characters out of 5767799
+ 1921248 words of memory out of 5000000
+ 26895 multiletter control sequences out of 15000+600000
+ 567942 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,68p,329b,213s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on HW2.pdf (1 page, 109389 bytes).
+ 62i,8n,68p,330b,216s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on HW2.pdf (1 page, 77081 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
