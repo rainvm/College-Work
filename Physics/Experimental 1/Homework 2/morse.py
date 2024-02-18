@@ -37,6 +37,11 @@ def main(args):
     for letter, code in morse.items():
         argument = argument.replace(letter, code)
         argument = argument.replace(letter.upper(), code)
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(16, GPIO.IN)
+    GPIO.setup(18, GPIO.OUT)
+    pwm = GPIO.PWM(18, 1000)
+    pwm.start(0)
     if GPIO.input(16):
         for c in argument:
             if c == " ":
