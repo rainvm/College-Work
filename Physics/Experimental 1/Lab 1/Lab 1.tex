@@ -8,6 +8,7 @@
 
 \title{Lab 1 Progress}
 \author{Ryan Coyne \\ Partner: Daniel Albu}
+\date{Febrary 16, 2024}
 
 \begin{document}
     \maketitle
@@ -17,10 +18,10 @@
     In this lab, we familiarized ourselves with the Analog Discovery 2 and a Mastech multimeter and measured the internal resistances of the voltmeters in the Analog Discovery 2 and the multimeter's voltmeter as well as the internal resistance of the multimeter's ammeter. We also analyzed the I-V curves of diodes and LEDs.
 
     \section{Active Discovery 2 Calibration}
-    First, we used the built-in calibration in the "Waveforms" program to calibrate the Active Discovery 2 by following this guide from Diligent \href{https://digilent.com/reference/instrumentation/guides/waveforms-calibration}{https://digilent.com/reference/instrumentation/guides/waveforms-calibration}.
+    First, we used the built-in calibration in the "Waveforms" program to calibrate the waveform generator, oscilloscope, and positive and negative supplies of the Active Discovery 2 by following this guide from Diligent \href{https://digilent.com/reference/instrumentation/guides/waveforms-calibration}{https://digilent.com/reference/instrumentation/guides/waveforms-calibration}.
 
     \section{Voltmeter Internal Resistance}
-    We next measured the internal resistance of the voltmeter portion of the Mastech multimeter. To begin with we measured the resistance of five resistors because the reported resistance may not be accurate. Next, we created a circuit with the voltmeter in series with one of the measured resistors as shown in Figure 1. Once the circuit was set up, we recorded the voltage measured by the voltmeter for each of the previously measured resistors. Next, we followed the same procedure with the Analog Discovery 2 using five different resistors because we did not keep track of the ones we used for the Mastech voltmeter. The internal resistances were calculated using the formula \(R_{int} = \frac{V_m}{5V - V_m}R\), where \(V_m\) is the voltage measured by the voltmeter and \(R\) is the measured value of the resistor. 
+    We next measured the internal resistance of the voltmeter portion of the Mastech multimeter. To begin with we measured the resistance of five resistors because the reported resistance may not be accurate. Next, we created a circuit with the voltmeter in series with one of the measured resistors as shown in Figure 1. Once the circuit was set up, we recorded the voltage measured by the voltmeter for each of the previously measured resistors. Next, we followed the same procedure with the Analog Discovery 2 using five different resistors because, while we recorded the resistances, we did not physically separate the ones that we used for the Mastech voltmeter, so it would be much more effort than it is worth to find the exact ones that were used before. The internal resistances were calculated using the formula \(R_{int} = \frac{V_m}{5V - V_m}R\), which was derived by us, where \(V_m\) is the voltage measured by the voltmeter and \(R\) is the measured value of the resistor. 
 
     \begin{figure}
         \centering
@@ -60,7 +61,7 @@
         \caption{Analog Discovery 2 Oscilliscope Internal Resistance}
     \end{table}
 
-    In conclusion, the internal resistance of the Mastech voltmeter was measured to be \(10.57\) M\O. The internal resistance of the Active Discovery 2 oscilloscope was measured to be 1.04 M\O.
+    The first two resistors had resistances that were too small compared to the internal resistances of the voltmeter, so the voltage drop across that resistor did not affect the reading of the voltmeter. The internal resistance of the Mastech voltmeter was measured to be \(10.57\) M\O. The internal resistance of the Active Discovery 2 oscilloscope was measured to be 1.04 M\O. The first two resistors had resistances that were too small compared to the internal resistances of the voltmeter, so the voltage drop across that resistor did not affect the reading of the voltmeter.
 
     \section{Ammeter Internal Resistance}
 
@@ -74,23 +75,38 @@
     \begin{table}[H]
         \centering
         \begin{tabular}[pos]{c|c|c}
-            \(R_1\) (\O) & \(I_2\) (mA) & \(R_{int}\) (m\O)\\
+            \(R_1\) (\O) & \(I_2\) (mA) & \(R_{int}\) (\O)\\
             \hline
-            1.41 & 1.68 & 22.6\\
-            2.63 & 5.04 & 22.6\\
-            5.24 & 9.31 & 22.6\\
-            7.38 & 10.75 & 22.6\\
-            10.69 & 13.10 & 22.6\\
+            1.41 & 2.68 & 11.85\\
+            2.63 & 5.04 & 21.99\\
+            5.24 & 9.31 & 12.47\\
+            7.38 & 10.75 & 15.95\\
+            10.69 & 13.10 & 17.65\\
             \hline
-            Average & & 22.6
+            Average & & 15.97
         \end{tabular}
         \caption{Mastech Ammeter Internal Resistance}
     \end{table}
-
-    In conclusion, the internal resistance of the Mastech ammeter was measured to be \(22.6\) mA.
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.4\linewidth]{am.png}
+        \caption{Internal Resistance of an Ammeter}
+    \end{figure}
+    In conclusion, the internal resistance of the Mastech ammeter was measured to be \(15.97\) \O. This seems reasonable because the ammeter should have a low internal resistance but it cannot be zero.  
 
     \section{I-V Curves of Electrical Components}
-    In the second part of the lab, we measured the I-V curves of LED lights, diodes, and a resistor. The plots for these are still in progress. 
+    In the second part of the lab, we measured the I-V curves of LED lights, diodes, and a resistor, which are shown in Figure 3. The circuit was set up with an oscilloscope measuring the voltage drop across a 1 k\O resistor and another measuring the voltage drop across a diode, as in Figure 4. 
+    
+    \begin{figure*}[h!]
+        \centering
+        \includegraphics[width=0.5\linewidth]{I-V Curves.png}
+        \caption{I-V Curves}
+    \end{figure*}
+    \begin{figure*}[h!]
+        \centering
+        \includegraphics[width=0.4\linewidth]{diode_circuit.png}
+        \caption{Measuring the I-V Curve of a Diode}
+    \end{figure*}
 
     \section{Things I Learned}
     \begin{itemize}

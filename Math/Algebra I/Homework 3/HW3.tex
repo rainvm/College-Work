@@ -4,6 +4,8 @@
 \input{../../preamble/envs.tex}
 \input{../../preamble/packages.tex}
 
+\def\g{\langle g \rangle}
+
 \title{Homework 3}
 \author{Ryan Coyne}
 
@@ -24,19 +26,52 @@
         \begin{equation*}
             \langle g \rangle := \{g^n | n \in \Z\}
         \end{equation*}
-        is a subgroup of \(G\).
-        \item Consider the group \((S_5, 0)\). Determine the elements of \(\langle (12)(345) \rangle\).
+        is a subgroup of \(G\).\\[12pt]
+        \begin{proof}
+            \ The set \(\langle g \rangle\) is non-empty because \(e = g^0 \in\g\). Next, let \(g^n, g^m\in \g\) for some \(m,n\in \Z\). Thus,
+            \begin{equation*}
+                \begin{split}
+                    g^n \circ g^{-m} &= \underbrace{g\circ g\circ \cdots \circ g}_{n \text{ times}} \circ \underbrace{g^{-1} \circ g^{-1} \circ \cdots \circ g^{-1}}_{m \text{ times}}.
+                \end{split}
+            \end{equation*}
+            If \(n>m\), then each \(g^{-1}\) is canceled by a \(g\). Thus,
+            \begin{equation*}
+                \begin{split}
+                    g^n \circ g^{-m} &= \underbrace{g\circ g\circ \cdots \circ g}_{n-m \text{ times}}\\
+                    &= g^{n-m}.
+                \end{split}
+            \end{equation*}
+            Now, \(g^n \circ g^{-m}\in\g\) because \(n-m\in\Z\).\\
+            If \(n<m\), then each \(g\) is cancelled by a \(g^{-1}\) and we have
+            \begin{equation*}
+                \begin{split}
+                    g^n \circ g^{-m} &= \underbrace{g^{-1}\circ g^{-1}\circ \cdots \circ g^{-1}}_{m-n \text{ times}}\\
+                    &= (g^{-1})^{m-n}\\
+                    &= g^{n-m}
+                \end{split}                
+            \end{equation*}
+            Now, \(g^n \circ g^{-m}\in\g\) because \(n-m\in\Z\).\\
+            If \(n=m\), then each \(g\) is cancelled by a \(g^{-1}\) and vice-versa. Therefore, 
+            \begin{equation*}
+                \begin{split}
+                    g^n \circ g^{-m} &= e.
+                \end{split}
+            \end{equation*}
+            Now, \(g^n \circ g^{-m}\in\g\) because \(e\in\g\). Therefore, \(g^n \circ g^{-m}\in\g\) for all \(m, n\in\Z\).
+        \end{proof}
+        \item Consider the group \((S_5, 0)\). Determine the elements of \(\langle (12)(345) \rangle\).\\
+        The set \(\langle (12)(345) \rangle = \{(), (12)(345), (354), (12), (345), (12)(543)\}\)
     \end{enumerate}
 
     \section*{Question 2}
     Consider the group \((S_4, \circ )\). Find one subgroup of \(S_4\) with:
     \begin{enumerate}[label=\alph*)]
-        \item 2 elements,
-        \item 3 elements,
-        \item 4 elements,
-        \item 6 elements,
-        \item 8 elements,
-        \item 12 elements.
+        \item 2 elements: \(\{(), (12)\}\)
+        \item 3 elements: \{(), (123), (132)\}
+        \item 4 elements: \{(), (1234), (13)(24), (1432)\}
+        \item 6 elements: \{(), (12), (23), (123), (132), (13)\}
+        \item 8 elements: \{(), \}
+        \item 12 elements: \{(), \}
     \end{enumerate}
     You do not need to justify that your answers are subgroups.
 \end{document}

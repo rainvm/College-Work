@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.7)  5 FEB 2024 23:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.26)  21 FEB 2024 18:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **"c:/Users/coyne/College-Work/Physics/Experimental 1/Lab 1/Lab 1.tex"
 (c:/Users/coyne/College-Work/Physics/Experimental 1/Lab 1/Lab 1.tex
 LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-03>
+L3 programming layer <2023-06-30>
 (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (c:/texlive/2023/texmf-dist/tex/latex/base/size10.clo
@@ -165,9 +165,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box57
 ) (c:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/07/31 v3.6n Customizing captions (AR)
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
  (c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
 \caption@tempdima=\dimen164
 \captionmargin=\dimen165
 \caption@leftmargin=\dimen166
@@ -315,34 +315,34 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 ) (./Lab 1.aux)
 \openout1 = `"Lab 1.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 12.
-Package gensymb Info: Math companion symbols declared on input line 12.
-LaTeX Info: Redefining \degree on input line 12.
-LaTeX Info: Redefining \celsius on input line 12.
-Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 12.
-LaTeX Info: Redefining \ohm on input line 12.
-Package gensymb Info: Using \textohm for \ohm on input line 12.
-Package gensymb Info: Using \textmu for \micro on input line 12.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 13.
+Package gensymb Info: Math companion symbols declared on input line 13.
+LaTeX Info: Redefining \degree on input line 13.
+LaTeX Info: Redefining \celsius on input line 13.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 13.
+LaTeX Info: Redefining \ohm on input line 13.
+Package gensymb Info: Using \textohm for \ohm on input line 13.
+Package gensymb Info: Using \textmu for \micro on input line 13.
  (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count295
@@ -365,7 +365,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 12.
+Package hyperref Info: Link coloring OFF on input line 13.
  (./Lab 1.out) (./Lab 1.out)
 \@outlinefile=\write3
 \openout3 = `"Lab 1.out"'.
@@ -405,42 +405,63 @@ Package hyperref Info: Link coloring OFF on input line 12.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 <vm.png, id=29, 772.8875pt x 505.89pt>
 File: vm.png Graphic file (type png)
 <use vm.png>
-Package pdftex.def Info: vm.png  used on input line 27.
+Package pdftex.def Info: vm.png  used on input line 28.
 (pdftex.def)             Requested size: 187.89914pt x 122.98308pt.
  [1
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./vm.png>] [2] [3{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./Lab 1.aux)
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./vm.png>]
+<am.png, id=47, 1065.9825pt x 539.01375pt>
+File: am.png Graphic file (type png)
+<use am.png>
+Package pdftex.def Info: am.png  used on input line 92.
+(pdftex.def)             Requested size: 187.89914pt x 95.01146pt.
+ [2]
+<I-V Curves.png, id=56, 615.0177pt x 865.7946pt>
+File: I-V Curves.png Graphic file (type png)
+<use I-V Curves.png>
+Package pdftex.def Info: I-V Curves.png  used on input line 102.
+(pdftex.def)             Requested size: 234.8775pt x 330.64352pt.
+<diode_circuit.png, id=57, 931.48pt x 595.22375pt>
+File: diode_circuit.png Graphic file (type png)
+<use diode_circuit.png>
+Package pdftex.def Info: diode_circuit.png  used on input line 107.
+(pdftex.def)             Requested size: 187.89914pt x 120.06894pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3 <./am.png> <./I-V Curves.png>] [4{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./diode_circuit.png>] (./Lab 1.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-03>
+L3 programming layer <2023-06-30>
  ***********
 Package rerunfilecheck Info: File `"Lab 1".out' has not changed.
 (rerunfilecheck)             Checksum: 07BAE80EC83D67DA13E7D50DD33A027B;1042.
  ) 
 Here is how much of TeX's memory you used:
- 12277 strings out of 475188
- 192792 string characters out of 5767799
- 1932248 words of memory out of 5000000
- 33396 multiletter control sequences out of 15000+600000
+ 12299 strings out of 475237
+ 193229 string characters out of 5768549
+ 1933238 words of memory out of 5000000
+ 33365 multiletter control sequences out of 15000+600000
  567344 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,11n,82p,910b,439s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,11n,82p,1077b,512s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on "Lab 1.pdf" (3 pages, 137314 bytes).
+Output written on "Lab 1.pdf" (4 pages, 268186 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 54 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
+ 69 words of extra memory for PDF output out of 10000 (max. 10000000)
 

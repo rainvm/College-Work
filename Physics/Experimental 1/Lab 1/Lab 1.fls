@@ -197,6 +197,21 @@ INPUT ./vm.png
 INPUT ./vm.png
 INPUT ./vm.png
 INPUT c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT ./am.png
+INPUT ./am.png
+INPUT ./am.png
+INPUT ./am.png
+INPUT ./am.png
+INPUT ./I-V Curves.png
+INPUT ./I-V Curves.png
+INPUT ./I-V Curves.png
+INPUT ./I-V Curves.png
+INPUT ./I-V Curves.png
+INPUT ./diode_circuit.png
+INPUT ./diode_circuit.png
+INPUT ./diode_circuit.png
+INPUT ./diode_circuit.png
+INPUT ./diode_circuit.png
 INPUT c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT Lab 1.aux
 INPUT ./Lab 1.out

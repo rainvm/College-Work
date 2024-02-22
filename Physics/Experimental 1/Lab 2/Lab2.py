@@ -2,6 +2,7 @@ import time
 import sys
 import RPi.GPIO as GPIO
 
+# Morse Code dictionary
 morse = {
     "a": ".-",
     "b": "-...",
@@ -32,6 +33,8 @@ morse = {
 }
 
 
+# Turns on pin 17 for 2 seconds one second after it receives a signal from pin 16.
+
 def blink_on_switch():
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(16, GPIO.IN)
@@ -44,20 +47,23 @@ def blink_on_switch():
             GPIO.output(17, GPIO.LOW)
 
 
+# Increases the signal strength through pin 18 each time it receives a signal from pin 16 until it reaches 100
+# and then resets to zero.
 def variable_power():
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(16, GPIO.IN)
     GPIO.setup(18, GPIO.OUT)
-    pwm = GPIO.PWM(18, 1000)
+    pwm = GPIO.PWM(18, 100)
     pwm.start(0)
     i = 10
     while True:
         if GPIO.input(16):
             pwm.ChangeDutyCycle(i)
-            i = (i+10) % 100
+            i = (i + 10) % 100
             time.sleep(0.5)
 
 
+# Blinks Dan's name in morse code.
 def morse_name():
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(16, GPIO.IN)
@@ -65,28 +71,29 @@ def morse_name():
     pwm = GPIO.PWM(18, 1000)
     pwm.start(0)
     name = "daniel albu"
-    t = 2
+    t = 0.2  # Time of a dot
     while True:
         if GPIO.input(16):
             for c in name:
                 if c == " ":
-                    time.sleep(0.2*t)
+                    time.sleep(t * 7)
                 else:
                     for l in morse[c]:
                         if l == "-":
                             pwm.ChangeDutyCycle(1)
-                            time.sleep(0.2*t)
+                            time.sleep(t * 3)
                             pwm.ChangeDutyCycle(0)
                         elif l == ".":
                             pwm.ChangeDutyCycle(1)
-                            time.sleep(0.1*t)
+                            time.sleep(t)
                             pwm.ChangeDutyCycle(0)
-                        time.sleep(0.1*t)
-                    time.sleep(0.1*t)
+                        time.sleep(t)
+                    time.sleep(t * 3)
 
 
 if __name__ == "__main__":
-    if sys.argv[1] == "blink_on_switch" or sys.argv[1] == "blink":
+    # Calls one of the three functions based on arguments passed in the command line
+    if sys.argv[1] == "blink":
         blink_on_switch()
     if sys.argv[1] == "pwm":
         variable_power()

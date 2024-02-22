@@ -1,11 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1707687579 "c:/Users/coyne/College-Work/Math/Algebra I/Homework 3/HW3.tex" "HW3.pdf" "HW3" 1707687580 0
+["pdflatex"] 1708049758 "c:/Users/coyne/College-Work/Math/Algebra I/Homework 3/HW3.tex" "HW3.pdf" "HW3" 1708049759 0
   "../../preamble/defs.tex" 1707332619 359 ec4a230f46f89d5fc11b669916944d24 ""
-  "../../preamble/envs.tex" 1707610847 68 de24f3cc8c2f6970fa445938f5d6b693 ""
+  "../../preamble/envs.tex" 1708047601 71 fbc5b2052158bfd6e364f18b40ee5e7d ""
   "../../preamble/packages.tex" 1707609449 266 c5062475b4ff9c01798a4728bf36adad ""
-  "HW3.aux" 1707687580 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "HW3.tex" 1707687575 1359 1816736f42bd26d29a36feb704dc0d54 ""
-  "c:/Users/coyne/College-Work/Math/Algebra I/Homework 3/HW3.tex" 1707687575 1359 1816736f42bd26d29a36feb704dc0d54 ""
+  "HW3.aux" 1708049759 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "HW3.tex" 1708049756 3384 e810888fa9c38c618a0d1743b8162f39 ""
+  "c:/Users/coyne/College-Work/Math/Algebra I/Homework 3/HW3.tex" 1708049756 3384 e810888fa9c38c618a0d1743b8162f39 ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1690389316 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1690388885 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm" 1690388885 1536 73da8e8f1d2a4c957d51ca133585586b ""
@@ -40,6 +40,7 @@
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1690387236 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1690387236 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1690387236 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1690387236 31764 459c573c03a4949a528c2cc7f557e217 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1690387236 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1690390987 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty" 1690389847 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
@@ -54,6 +55,7 @@
   "c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsopn.sty" 1690387242 4474 b811654f4bf125f11506d13d13647efb ""
   "c:/texlive/2023/texmf-dist/tex/latex/amsmath/amstext.sty" 1690387242 2444 0d0c1ee65478277e8015d65b86983da2 ""
   "c:/texlive/2023/texmf-dist/tex/latex/base/article.cls" 1690390200 20144 fbcf51733730d8f1a62143512ff5b1fe ""
+  "c:/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd" 1690390200 2469 7cf25c0dd8ba984c37b877b83027725f ""
   "c:/texlive/2023/texmf-dist/tex/latex/base/size12.clo" 1690390201 8449 9de778d73ba774a5f2bd601f23f8922e ""
   "c:/texlive/2023/texmf-dist/tex/latex/base/textcomp.sty" 1690390201 2894 3ac7bdb70dd9b75530be2ade2842c355 ""
   "c:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty" 1690388059 55778 14d5c99aa26410e440820bb9ea5b8b3a ""
