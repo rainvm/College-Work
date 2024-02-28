@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+
+\input{../../preamble/defs.tex}
+\input{../../preamble/envs.tex}
+\input{../../preamble/packages.tex}
+
+\title{Homework 4}
+\author{Ryan Coyne}
+
+\begin{document}
+
+\maketitle
+
+\section*{Question 1}
+\begin{enumerate}[label=\alph*)]
+    \item Prove the following theorem
+    \begin{theorem}
+        Let \((G, \circ)\) be a group, and \(H_1, H_2\subseteq G\) two subgroups of \(G\). Then \(H_1\cap H_2\) is a subgroup of \(G\).
+    \end{theorem}
+    \begin{proof}
+        We begin by showing that \(H_1\cap H_2\) is non-empty. Since \(H_1\) is a subgroup of \(G\), \(e\in H_1\) and because \(H_2\) is also a subgroup of \(G\), \(e\in H_2\). It then follows that \(e\in H_1\cap H_2\). 
+        
+        Next we show that \(h_1\circ h_2^{-1}\in H_1\cap H_2\) for all \(h_1, h_2\in H_1\cap H_2\). Let \(h_1, h_2\in H_1 \cap H_2\). Now, \(h_1, h_2\in H_1\) and \(h_1, h_2\in H_2\). Because, \(H_1\) and \(H_2\) are subgroups of \(G\), we have that \(h_1\circ h_2^{-1}\in H_1\) and \(h_1\circ h_2^{-1}\in H_2\) and so \(h_1\circ h_2^{-1}\in H_1\cap H_2\). Therefore \(H_1\cap H_2\) is a subgroup of \(G\).
+    \end{proof}
+    \item Give an example of a group \((G, \circ)\), and two subgroups \(H_1, H_2\subseteq G\) such that \(H_1 \cup H_2 \) is {\textbf not} as subgroup of \(G\).
+
+    One such group is \(S_3\), with the subgroups \(H_1 = \{(), (12)\}\) and \(H_2 = \{(), (23)\}\). Now, \(H_1\cup H_2 = \{(), (12), (23)\}\) is not a subgroup becuase \((12)\circ (23) = (13) \not\in H_1\cup H_2\) .
+\end{enumerate}
+
+\section*{Question 2}
+Let \(N\in\N_{\geq 1}\), and consider the group \(GL(N), \cdot\). We define
+\begin{equation*}
+    O(N) := \left\{ M\in GL(N)| M^T\cdot M = I_N \right\}
+\end{equation*}
+where \(M^T\) denotes the matrix transpose of \(M\). Show that \(O(N)\) is a subgroup of \(GL(N)\).
+
+\begin{proof}
+    We begin by showing that the identity element, \(I_N\), is in \(O(N)\). The identity matrix is always its own transpose, that is to say, \(I_N = I_N^T\). Thus, 
+    \begin{equation*}
+        \begin{split}
+            I_N^T \cdot I_N &= I_N\cdot I_N \\ &= I_N.
+        \end{split}
+    \end{equation*}
+    The identity element is therefore in \(O(N)\). 
+
+    Next, we show that for all \(M\in O(N)\) there exists \(M^{-1}\in O(N)\). Let \(M\in O(N)\), and thus, \(M^T\cdot M = I_N\). It follows that \(M^T = M^{-1}\). Now,
+    \begin{equation*}
+        \begin{split}
+            (M^T)^T\cdot M^T &= M\cdot M^T\\
+            &= M \cdot M^{-1}\\
+            &= I_N.
+        \end{split}
+    \end{equation*}
+    Thus, \(M^T\in O(N)\). Since \(M^T = M^{-1}\), we have that \(M^{-1}\in O(N)\) for all \(M\in O(N)\).
+
+    Lastly, we show that \(M_1 \cdot M_2 \in O(N)\) for all \(M_1, M_2\in O(N)\). Let \(M_1, M_2 \in O(N)\). Now, because \(M_1^T = M_1^{-1}\) and \(M_2^T = M_2^{-1}\), \(M_1\) and \(M_2\) are orthonormal matrices, and all orthonomal matrices in \(GL(N)\) are in \(O(N)\) and so \(M_1 \cdot M_2\) is also orthonormal. Now, \((M_1 \cdot M_2)^T \cdot (M_1 \cdot M_2) = I_N\), and thus \(M_1 \cdot M_2\in O(N)\).
+    
+    Therefore, \(O(N)\) satisfies all of the conditions for being a subgroup of \(GL(N)\).
+\end{proof}
+\end{document}
