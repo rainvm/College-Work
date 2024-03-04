@@ -1,0 +1,11 @@
+{
+    "LaTeX Template": {
+        "prefix": ["init"],
+        "body": ["\\documentclass[12pt]{article}", "", "\\input{../../preamble/defs.tex}", "\\input{../../preamble/envs.tex}", "\\input{../../preamble/packages.tex}", "", "\\title{$1}", "\\author{Ryan Coyne$2}", "", "\\begin{document}", "", "\\maketitle", "", "$3", "", "\\end{document}"],
+        "description": "Insert latex document template."
+    },
+    "caption": {
+        "prefix": "cap",
+        "body": "\\caption{$1}",
+    }
+}
