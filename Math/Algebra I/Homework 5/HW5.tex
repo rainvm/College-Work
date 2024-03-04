@@ -4,6 +4,8 @@
 \input{../../preamble/envs.tex}
 \input{../../preamble/packages.tex}
 
+\def\bar{\rule{\linewidth}{0.4pt}}
+
 \title{Homework 5}
 \author{Ryan Coyne}
 
@@ -11,7 +13,7 @@
 
 \maketitle
 
-\section{Question 1}
+\section*{Question 1}
 Prove the following theorem:
 \begin{theorem}
     Let \(H_1\) and \(H_2\) be groups, and define
@@ -29,14 +31,59 @@ Prove the following theorem:
         \item \((H_1\times\left\{ e \right\})(\left\{ e \right\}\times H_2) = H_1 \times H_2\).
     \end{enumerate}
 \end{theorem}
-\begin{proof}
+\bar
+    \begin{enumerate}[label=\alph*)]
+        \item \begin{proof}
+            Let \((h_1, h_2)\in H_1\times H_2\) so \(h_1\in H_1\) and \(h_2 \in H_2\) and let \((x, e) \in H_1\times\{e\}\) so \(x\in H_1\). Now, 
+            \begin{equation*}
+                \begin{split}
+                    (h_1, h_2)\circ(x, e)\circ(h_1, h_2)^{-1} &= (h_1, h_2)\circ(x, e)\circ(h_1^{-1}, h_2^{-1})\\
+                    &= (h_1xh_1^{-1}, h_2eh_2^{-1})\\
+                    &= (h_1xh_1^{-1}, h_2h_2^{-1})\\
+                    &=(h_1xh_1^{-1}, e).
+                \end{split}
+            \end{equation*}
+            Since, \(h_1, h_1^{-1}, x\in H_1\), it follows that \(h_1xh_1^{-1}\in H_1\). Thus, \((h_1, h_2)\circ(x, e)\circ(h_1, h_2)^{-1} = (h_1xh_1^{-1}, e)\in H_1\times H_2\) and therefore \(H_1\times \{e\}\) is normal. \\
+            Now, let \(y\in H_1\). We have that
+            \begin{equation*}
+                \begin{split}
+                    (h_1, h_2)\circ(e, y)\circ(h_1, h_2)^{-1} &= (h_1, h_2)\circ(e, y)\circ(h_1^{-1}, h_2^{-1})\\
+                    &= (h_1eh_1^{-1}, h_2yh_2^{-1})\\
+                    &= (h_1h_1^{-1}, h_2yh_2^{-1})\\
+                    &=(e, h_2yh_2^{-1}).
+                \end{split}
+            \end{equation*}
+            Since, \(h_2, h_2^{-1}, y\in H_1\), it follows that \(h_2yh_2^{-1}\in H_2\). Thus, \((h_1, h_2)\circ(y, e)\circ(h_1, h_2)^{-1} = (e, h_2yh_2^{-1})\in H_1\times H_2\) and therefore \(\{e\}\times H_2\) is normal. 
+        \end{proof}
+        \item \begin{proof}
+            Let \(x \in (H_1\times \left\{ e \right\}) \cap (\left\{ e \right\}\times H_2)\). Now, \(x \in \left\{ e \right\}\times H_2\) and \(x \in H_1\times \left\{ e \right\}\). Thus, \((h_1, e) = x = (e, h_2)\) for some \(h_1\in H_1\) and \(h_2\in H_2\). Since \((h_1, e) = (e, h_2)\) it follows that \(h_1 = e\) and \(h_2 = e\). Thus \(x = (e, e)\) and so, \((H_1\times \left\{ e \right\}) \cap (\left\{ e \right\}\times H_2)\) = \(\left\{ (e,e) \right\}\).
+        \end{proof}
+        \item \begin{proof}
+            By definition
+            \begin{equation*}
+                \begin{split}
+                    (H_1\times\{ e \})(\{ e \}\times H_2) &=\{(h_1, e)(e, h_2)|h_1 \in H_1 \text{ and } h_2 \in H_2\}\\
+                    &= \{(h_1e, eh_2)|h_1 \in H_1 \text{ and } h_2 \in H_2\}\\
+                    & = \{(h_1, h_2)|h_1 \in H_1 \text{ and } h_2 \in H_2\}\\
+                    &= H_1 \times H_2.
+                \end{split}
+            \end{equation*}
+        \end{proof}
+    \end{enumerate}
     
-\end{proof}
-    
-\section{Question 2}
+\section*{Question 2}
 Prove the following theorem:
 \begin{theorem}
     Let \(G\) be a group, and \(H\) a subgroup of \(G\). Then H is normal if and only if \(gH = Hg\) for all \(g \in G\).
 \end{theorem}
+\bar\\
+\begin{proof}
+    \\(\(\Leftarrow\)) Let \(h\in H\) and \(g\in G\). Now, \(gh = hg\) and so, \(ghg^{-1} = h \in H\). Therefore, \(H\) is normal.\\
+    (\(\Rightarrow\)) Suppose H is normal. Then, \(gh_1g^{-1}=h_2\in H\) for some \(h_1\in H\) and \(g\in G\). It follows that \(gh_1 = h_2g\). Now, we define a function, \(f:H\rightarrow H\), as
+    \begin{equation}
+        f(h) = ghg^{-1}
+    \end{equation}   
+    and let \(x \in \ker(f)\). Then, \(gxg^{=1} = e\), and so \(x = g^{-1}g = e\). Therefore \(\ker(f) = \{e\} \) and \(f\) is injective. Since \(f\) is a function between two finite sets of the same size, it must also be surjective. Thus, \(f\) produces a different \(h_2 \in H\) for each \(h_1\in H\), and every \(h_2\) is produced by some \(h_1\). Therefore, \(gH = Hg\) for all \(g\in G\).
+\end{proof}
 
 \end{document}
