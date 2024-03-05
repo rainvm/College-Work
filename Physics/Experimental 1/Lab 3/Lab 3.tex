@@ -17,6 +17,15 @@
 In this lab, we analyzed a low pass filter, a high pass filter, and an RLC circuit using the Analog Discovery 2. 
 
 \section{Measuring Capacitance}
+We built a low pass filter circuit (Figure 1) with the oscilloscope of the AD 2 monitoring the input and output voltages. Using the impedance function in the Waveforms software we measured the series capacitance of the capacitor, C1. We measured 3 capacitors. One was reported to be 100 nF. The second was reported to be 10 nF. The last was reported to be 1 \(\mu\)F. In the diagram, R1 is 10 k\O for the 100 nF capacitor, 100 k\O for the 10 nF capacitor, and 1 k\O for the 1 \(\mu\)F capacitor. We also measured the capacitances using the Mastech MS8268 Multi-Meter. The capacitances were 90.6 nF, 9.2 nF, and 1.13 nF respectively. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = \linewidth]{Scheme-it-export-New-Project-2024-03-04-19-03.png}    
+    \caption{Low Pass Filter}
+\end{figure}
+
+We conclude that the reported capacitance values of the capacitors are not accurate. The measurements made by the Active Discovery 2 and the multimeter are fairly close. I trust the measurements made by the active discovery more because it reports the capacitance for a particular frequency while the multimeter does not. 
 
 \begin{table}[H]
     \centering
@@ -47,7 +56,7 @@ In this lab, we analyzed a low pass filter, a high pass filter, and an RLC circu
 \begin{table}[H]
     \centering
     \begin{tabular}{c|c}
-        Frequency (Hz) & Capacitance (nF)\\
+        Frequency (Hz) & Capacitance (\(\mu\)F)\\
         \hline
         1000 & 1.05\\
         500 & 1.08\\
@@ -58,7 +67,7 @@ In this lab, we analyzed a low pass filter, a high pass filter, and an RLC circu
 \end{table}
 
 \section{Low Pass Filter}
-
+In this part of the lab, we continue to use the previous circuit (Figure 1), with R1=10 k\O\ and C1=100 nF. 
 
 \section{High Pass Filter}
 

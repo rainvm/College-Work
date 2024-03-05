@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.7)  4 MAR 2024 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.26)  4 MAR 2024 19:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,7 +6,7 @@ entering extended mode
 **"c:/Users/coyne/College-Work/Physics/Experimental 1/Lab 3/Lab 3.tex"
 (c:/Users/coyne/College-Work/Physics/Experimental 1/Lab 3/Lab 3.tex
 LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-03>
+L3 programming layer <2023-06-30>
 (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (c:/texlive/2023/texmf-dist/tex/latex/base/size10.clo
@@ -165,9 +165,9 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box57
 ) (c:/texlive/2023/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/07/31 v3.6n Customizing captions (AR)
+Package: caption 2023/03/12 v3.6j Customizing captions (AR)
  (c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
 \caption@tempdima=\dimen164
 \captionmargin=\dimen165
 \caption@leftmargin=\dimen166
@@ -412,29 +412,35 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
  (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+<Scheme-it-export-New-Project-2024-03-04-19-03.png, id=24, 1165.35374pt x 326.21875pt>
+File: Scheme-it-export-New-Project-2024-03-04-19-03.png Graphic file (type png)
+<use Scheme-it-export-New-Project-2024-03-04-19-03.png>
+Package pdftex.def Info: Scheme-it-export-New-Project-2024-03-04-19-03.png  used on input line 24.
+(pdftex.def)             Requested size: 469.75502pt x 131.49565pt.
+ [1
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./Lab 3.aux)
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Scheme-it-export-New-Project-2024-03-04-19-03.png>] [2] (./Lab 3.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
-L3 programming layer <2023-08-03>
+L3 programming layer <2023-06-30>
  ***********
 Package rerunfilecheck Info: File `"Lab 3".out' has not changed.
 (rerunfilecheck)             Checksum: F0FFE5AE343B53CA1CA8F5D4409A4C61;674.
  ) 
 Here is how much of TeX's memory you used:
- 12255 strings out of 475188
- 192417 string characters out of 5767799
- 1928248 words of memory out of 5000000
- 33379 multiletter control sequences out of 15000+600000
+ 12264 strings out of 475237
+ 192855 string characters out of 5768549
+ 1927238 words of memory out of 5000000
+ 33337 multiletter control sequences out of 15000+600000
  567344 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,8n,82p,359b,433s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on "Lab 3.pdf" (1 page, 57898 bytes).
+ 80i,9n,82p,722b,434s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on "Lab 3.pdf" (2 pages, 86079 bytes).
 PDF statistics:
- 59 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 72 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
