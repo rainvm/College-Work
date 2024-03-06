@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+
+\input{../../preamble/defs.tex}
+\input{../../preamble/envs.tex}
+\input{../../preamble/packages.tex}
+
+\title{Theorems for Exam 1}
+\author{Ryan Coyne}
+
+\begin{document}
+
+\maketitle
+
+\begin{theorem}
+    Let (\(G, \circ\)) be a group, and let \(g\in G\). Then
+    \begin{equation*}
+        g^{-1} \circ g = e.
+    \end{equation*}
+\end{theorem}
+
+\begin{proof}
+    We define \(x = g^{-1}\circ g\). Then we have
+    \begin{equation*}
+        \begin{split}
+            x &= x\circ e\\
+            & = x \circ x \circ x^{-1}\\
+            &= g^{-1} \circ g \circ g^{-1} \circ g \circ x^{-1}\\
+            &= g^{-1} \circ g \circ x^{-1}\\
+            &= x \circ x^{-1}\\
+            &= e
+        \end{split}
+    \end{equation*}
+    Thus \(g^-1\circ g = e\).
+\end{proof}
+
+\begin{theorem}
+    Let \((G, \circ)\) be a group and \(H\subseteq G\). Then \(H\) is a group if and only if:
+    \begin{enumerate}[label=\alph*)]
+        \item \(H\neq \emptyset\), and
+        \item \(h_1 \circ h_2^{-1}\in H\) for all \(h_1, h_2\in H\).
+    \end{enumerate}
+\end{theorem}
+\begin{proof}
+    First, suppose that \(H\) is a subgroup. We get that \(e\in H\), so \(H\neq 0\). Thus, (a) holds. Now, let \(h_1, h_2\in H\), then we have that \(h_2^{-1}\in H\). Thus, \(h_1\circ h_2^{-1}\in H\). Hence (b) holds. 
+
+    Now, suppose that (a) and (b) hold. From (a) we have that \(H\neq 0\), so there exists \(h\in H\). Thus from (b) we get that 
+    \begin{equation*}
+        e = h\circ h^{-1}\in H
+    \end{equation*}
+    and so (1) holds. 
+
+    Let \(h\in H\). We have shown that \(e\in H\). So, from (b) we get
+    \begin{equation*}
+        h^{-1} = e \circ h^{-1} \in H.
+    \end{equation*}
+    So, (2) holds.
+    
+    Let \(h_1, h_2\in H\). We have shown that \(h_2^{-1}\in H\). Hence (b) gives that
+    \begin{equation*}
+        h_1\circ h_2= h_1\circ (h_2^{-1})^{-1} \in H.
+    \end{equation*}
+    Thus, (3) holds. Therefore \(H\) is a subgroup. 
+\end{proof}
+
+\begin{theorem}
+    Let \((G, \circ)\) be a group, and \(H\) a subgroup of \(G\). Then for all \(g_1, g_2\in G\)    
+\end{theorem}
+
+\end{document}
