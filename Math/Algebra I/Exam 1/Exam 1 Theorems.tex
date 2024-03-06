@@ -11,6 +11,8 @@
 
 \maketitle
 
+\setlength{\parindent}{0pt}
+
 \begin{theorem}
     Let (\(G, \circ\)) be a group, and let \(g\in G\). Then
     \begin{equation*}
@@ -63,7 +65,78 @@
 \end{proof}
 
 \begin{theorem}
-    Let \((G, \circ)\) be a group, and \(H\) a subgroup of \(G\). Then for all \(g_1, g_2\in G\)    
+    Let \((G, \circ)\) be a group, and \(H\) a subgroup of \(G\). Then for all \(g_1, g_2\in G\) there exists a bijection \(g_1H\rightarrow g_2H\). 
+\end{theorem}
+\begin{proof}
+    Let \(x\in g_1H\). We define
+    \begin{equation*}
+        f(x) = g_2g_1^{-1}x.
+    \end{equation*}
+    As \(x = g1h\) for some \(h\in H\), we have that \(f(x) = g_2g_1^{-1}g_1h = g_2h\in g_2H\). Therefore \(f(x) \in g_2H\) and \(f\) is a function \(g_1H\rightarrow g_2H\). 
+
+    We next claim that \(f\) is a bijection.\\ 
+    inj) Let \(x_1, x_2\in g_1H\) such that \(f(x_1) = f(x_2)\). Then we have
+    \begin{equation*}
+        \begin{split}
+            g_2g_2^{-1}x_1 = g_2g_1^{-1}x_2 &\Longrightarrow g_1^{-1}x_1 = g_1^{-1}x_2\\
+            &\Longrightarrow x_1 = x_2. 
+        \end{split}
+    \end{equation*}
+    Thus, \(f\) is injective.\\
+    sur) Let \(y \in g_2H\). Then there exists \(h\in H\) such that \(y = g_2h\). We define
+    \begin{equation*}
+        x = g_1h\in g_1H.
+    \end{equation*}
+    We then have
+    \begin{equation*}
+        f(x) = g_2g_1^{-1}g_1h = g_2h = y.
+    \end{equation*}
+    Thus, \(f\) is bijective.
+\end{proof}
+
+\begin{theorem}
+    Let \((G_1, \circ)\) and \((G_2, *)\) be groups, and \(f\) : \(G_1 \rightarrow G_2\) a group homomorphism. Then, \(\ker(f)\) is a subgroup of \(G_1\).
+\end{theorem}
+
+\begin{proof}
+    As \(f(e_{G_1}) = e_{G_2}\), we have that \(e_{G_1}\in \ker(f)\), and so \(\ker(f)\neq \emptyset\). 
+    
+    Let \(g_1, g_2\in ker(f)\). Then,
+    \begin{equation*}
+        f(g_1) = e_{G_2} = f(g_2).
+    \end{equation*}
+    Therefore
+    \begin{equation*}
+        f(g_1\circ g_2^{-1}) = f(g_1)*f(g_2)^{-1} = e_{G_2} * e_{G_2}^{-1} = e_{G_2}.
+    \end{equation*}
+    Thus, \(g_1\circ g_2^{-1}\in \ker(f)\) and \(\ker(f)\) is a subgroup of \(G_1\).
+\end{proof}
+
+\begin{theorem}
+    Let \((G_1, \circ)\) and \((G_2, *)\) be groups, and \(f\) : \(G_1 \rightarrow G_2\) a group homomorphism. Then, \(f\) is injective if an only if \(\ker(f) = \{e_{G_1}\}\).
+\end{theorem}
+
+\begin{proof}
+    \(\Longrightarrow\) ) Assume \(f\) is injective, and let \(g\in \ker(f)\). THen \(f(g) = e_{G_2} = f(e_{G_1})\). As \(f\) is injective, we get that \(g=e_{G_1}\), and so \(\ker(f)= \{e_{G_1}\}\). 
+
+    \(\Longleftarrow\) ) Assume \(\ker(f) = \{e_{G_1}\}\) and let \(g_1, g_2\in G_1\) such that \(f(g_1) = f(g_2)\). We then have
+    \begin{equation*}
+        \begin{split}
+            &f(g_1) * f(g_2)^{-1} = e_{G_2}\\
+            \Longrightarrow & f(g_1\circ g_2^{-1}) = e_{G_2}\\
+            \Longrightarrow & g_1 \circ g_2^{-1}\in \ker(f)\\
+            \Longrightarrow & g_1\circ g_2^{-1} = e_{G_1}\\
+            \Longrightarrow & g_1 = g_2.
+        \end{split}
+    \end{equation*}
+    Hence \(f\) is injective.
+\end{proof}
+
+\begin{theorem}
+    Let \(G\) and \(H\) be groups, then \((G\times H, \circ)\) is a group where
+    \begin{equation*}
+        (g_1, h_1)\circ(g_2, h_2) := (g_1g_2, h_1h_2).
+    \end{equation*}
 \end{theorem}
 
 \end{document}
