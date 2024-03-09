@@ -1,11 +1,11 @@
 # Fdb version 4
-["pdflatex"] 1709354394 "c:/Users/coyne/College-Work/Math/Algebra I/Homework 6/HW6.tex" "HW6.pdf" "HW6" 1709354395 0
+["pdflatex"] 1709945297 "c:/Users/coyne/College-Work/Math/Algebra I/Homework 6/HW6.tex" "HW6.pdf" "HW6" 1709945297 0
   "../../preamble/defs.tex" 1707507269 359 ec4a230f46f89d5fc11b669916944d24 ""
   "../../preamble/envs.tex" 1709257004 123 ddd0fda377f315973fbb56f5119570c7 ""
   "../../preamble/packages.tex" 1707780822 266 c5062475b4ff9c01798a4728bf36adad ""
-  "HW6.aux" 1709354395 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "HW6.tex" 1709354394 684 6cbf943677e53c404ee5797981726faa ""
-  "c:/Users/coyne/College-Work/Math/Algebra I/Homework 6/HW6.tex" 1709354394 684 6cbf943677e53c404ee5797981726faa ""
+  "HW6.aux" 1709945297 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "HW6.tex" 1709945296 2038 8613005abaae6f9972753d5885e9e93b ""
+  "c:/Users/coyne/College-Work/Math/Algebra I/Homework 6/HW6.tex" 1709945296 2038 8613005abaae6f9972753d5885e9e93b ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1691455995 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1691455345 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm0700.tfm" 1691455345 1536 73da8e8f1d2a4c957d51ca133585586b ""
@@ -37,6 +37,7 @@
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1691452844 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1691452844 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1691452844 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1691452844 31764 459c573c03a4949a528c2cc7f557e217 ""
   "c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1691452844 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1691458661 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty" 1691457014 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
