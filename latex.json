@@ -7,5 +7,11 @@
     "caption": {
         "prefix": "cap",
         "body": "\\caption{$1}",
+        "description": "Insert Caption."
+    },
+    "Table Template": {
+        "prefix": ["table"],
+        "body": ["\\begin{table}[H]", " \\centering", " \\begin{tabular}{$1}", "        $2", "  \\end{tabular}", "  \\end{table}"],
+        "description": "Latex table template"
     }
 }
